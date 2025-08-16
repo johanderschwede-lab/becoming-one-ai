@@ -1,0 +1,96 @@
+
+# 🧠 Becoming One™ Automation Project Handover: Cursor + Claude 3.5
+
+This document serves as the COMPLETE handover file for the Becoming One™ project's automation and AI system, designed to support transition from ChatGPT to Cursor (Claude 3.5) for Make.com, Supabase, and Pinecone-based development.
+
+---
+
+## 📌 Project Summary
+
+**Objective:** Build a fully autonomous, AI-assisted Make.com automation system for the Becoming One™ ecosystem (Telegram, Supabase, Pinecone, GPT).
+
+**Tools Used:**
+- Make.com (AI agent, HTTP API, error patching)
+- Supabase (event logs, user identity, session data)
+- Pinecone (semantic memory + retrieval)
+- Telegram Bot (entry point, user guidance)
+- ChatGPT (current project lead & blueprint creator)
+
+---
+
+## ✅ COMPLETED COMPONENTS
+
+### 1. Supabase
+- **Project URL:** https://emgidzzjpjtujozttzyv.supabase.co
+- **Anon Key:** `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...WxQ`
+- **Tables Created:**
+  - `ops_autoheal_log` – logs AI agent actions for auto-patching
+  - `interactions_log` – logs Telegram + scenario interaction events (TBD)
+- **Purpose:** Logging all automation activities, errors, patch results, and escalations
+
+### 2. Make.com
+- **Agent Created:**
+  - ID: `14ddbe97-b677-4073-9c6d-5d83f30ebc30`
+  - Name: `WillB • Global Auto-Heal`
+- **Scenario Blueprint (partial):** 
+  - DLQ watcher scenario to auto-heal and retry failed Make executions using the Agent
+  - Trigger: Scheduler every 5 minutes
+  - Modules: GET /scenarios → GET /dlqs → GET /dlq details → Agent → patch/retry/log/escalate
+- **Telegram Chat ID for Escalations:** `1139989892`
+
+### 3. Pinecone
+- **Project:** Becoming One
+- **API Key:** `pcsk_7XLg8W_QDHwGsL7gWufmWduABFqv5fYVDCJc8NyZ1ZAQ6XNu1nRr1XAsABWmhwaCcF1HL`
+
+---
+
+## 🔁 NEXT STEPS IN CURSOR
+
+### Suggested Setup
+1. **Install Cursor**: https://www.cursor.sh
+2. **Sign in with Claude 3.5 enabled**
+3. **Load this document into your project**
+4. **Use Claude prompt to begin:**
+
+```
+You are now managing an AI-powered automation system for a Telegram-based customer journey. Using the Supabase DB, Pinecone vector memory, and Make.com scenarios, generate:
+- a complete DLQ auto-heal Make.com scenario in JSON
+- webhook POSTs to Supabase + Telegram
+- retry/patch logic using the provided agent ID
+- use existing agent prompt + blueprint JSON structure
+```
+
+### Hand Tasks for Claude
+- Finish Make.com scenario using agent ID
+- Implement retry + patch + log flow
+- Validate webhook + Supabase integration
+- Build Telegram alert webhook handler
+
+---
+
+## 📎 Files Included
+
+1. `supabase_schema.sql` – SQL to recreate `ops_autoheal_log`
+2. `agent_payload.json` – JSON to create AI Agent in Make.com
+3. `scenario_blueprint_partial.json` – Sample structure of Make.com DLQ watcher
+4. `telegram_escalation_template.md` – Message template to notify Johan/Marianne
+5. `handover_instructions.txt` – This file (also in Markdown)
+
+---
+
+## 🔐 Credentials Summary
+
+| Tool      | Key / URL                                                                 |
+|-----------|---------------------------------------------------------------------------|
+| Supabase  | https://emgidzzjpjtujozttzyv.supabase.co                                  |
+| Supabase Key | `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...WxQ`                             |
+| Pinecone  | `pcsk_7XLg8W_QDHwGsL7gWufmWduABFqv5fYVDCJc8NyZ1ZAQ6XNu1nRr1XAsABWmhwaCcF1HL` |
+| Make AI Agent ID | `14ddbe97-b677-4073-9c6d-5d83f30ebc30`                             |
+| Telegram Chat ID | `1139989892`                                                      |
+
+---
+
+## 👋 Summary
+
+You are now equipped to **build, repair, or extend** the Becoming One automation system using Claude 3.5 and Cursor. Let Claude be the executor. Your job is vision and quality control.
+
