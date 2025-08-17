@@ -185,7 +185,7 @@ Traditional goal-setting often fails because it focuses on external outcomes rat
 ◆ The feeling-state you're seeking is available now. When you can generate it internally, external movement becomes natural."""
     
     else:
-        return """◆ Thank you for sharing ◆
+        return """◆ GitHub auth test ◆
 
 I hear you. What you're experiencing is valid and workable.
 
