@@ -17,7 +17,7 @@ class BecomingOneAISimple:
         if not self.openai_api_key:
             raise ValueError("OPENAI_API_KEY environment variable is required")
         
-        openai.api_key = self.openai_api_key
+        self.openai_client = openai.OpenAI(api_key=self.openai_api_key)
         
         # Core system prompt that defines the bot's personality
         self.system_prompt = """You are an AI companion for the Becoming One™ method - a practical approach to human development created by Johan and Marianne.
@@ -89,7 +89,7 @@ Remember: You're not trying to fix anyone. You're helping them discover what's a
             loop = asyncio.get_event_loop()
             response = await loop.run_in_executor(
                 None,
-                lambda: openai.ChatCompletion.create(
+                lambda: self.openai_client.chat.completions.create(
                     model="gpt-4",
                     messages=messages,
                     max_tokens=300,
