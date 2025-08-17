@@ -1,1 +1,1 @@
-web: python3 working_bot.py
+web: python src/bots/telegram/enhanced_telegram_bot.py

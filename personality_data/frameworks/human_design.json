@@ -1,0 +1,27 @@
+{
+  "framework_id": "human_design",
+  "name": "Human Design",
+  "description": "Synthesis of astrology, I Ching, Kabbalah, and chakras",
+  "version": "1.0",
+  "status": "active",
+  "confidence": "working",
+  "source_authority": "Ra Uru Hu",
+  "integration_date": "2025-08-16T20:39:35.324854",
+  "last_updated": "2025-08-16T20:39:35.324854",
+  "core_concepts": [
+    "type_manifestor_generator_projector_reflector",
+    "strategy",
+    "authority",
+    "profile",
+    "centers",
+    "channels",
+    "gates"
+  ],
+  "cross_references": {},
+  "validation_methods": [
+    "birth_data_calculation",
+    "strategy_testing",
+    "authority_validation"
+  ],
+  "usage_stats": {}
+}
