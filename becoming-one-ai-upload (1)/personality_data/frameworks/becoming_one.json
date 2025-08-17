@@ -1,0 +1,29 @@
+{
+  "framework_id": "becoming_one",
+  "name": "Becoming One\u2122 Method",
+  "description": "Emotional anchor recognition and feeling-state navigation",
+  "version": "2.0",
+  "status": "active",
+  "confidence": "core",
+  "source_authority": "Johan/Marianne",
+  "integration_date": "2025-08-16T20:39:35.324856",
+  "last_updated": "2025-08-16T20:39:35.324857",
+  "core_concepts": [
+    "emotional_anchors",
+    "feeling_states",
+    "anti_bypass",
+    "procrastination_as_portal",
+    "loyalty_debts",
+    "secondary_gains",
+    "the_pearl",
+    "anchor_burning",
+    "turn_180"
+  ],
+  "cross_references": {},
+  "validation_methods": [
+    "experiential_validation",
+    "transformation_tracking",
+    "pearl_extraction"
+  ],
+  "usage_stats": {}
+}

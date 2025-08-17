@@ -1,0 +1,17 @@
+.env
+.env.local
+.env.production
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.DS_Store
+*.log
+node_modules/
+.railway/

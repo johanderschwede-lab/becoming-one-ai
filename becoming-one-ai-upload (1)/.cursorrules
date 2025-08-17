@@ -1,0 +1,149 @@
+# Becoming One™ AI System - Cursor Rules
+# Custom rules for authentic, practical human development AI system
+
+## Core Philosophy
+- Write code that reflects authentic human connection, not spiritual bypassing
+- Use clear, simple language that a child could understand
+- Focus on practical methods that actually work
+- Avoid mystical jargon or guru-like positioning
+- Meet users exactly where they are without judgment
+
+## Python Development Standards
+
+### Code Style
+- Use clear, descriptive variable names
+- Write docstrings for all classes and functions
+- Follow PEP 8 with 88-character line limit (Black formatter)
+- Use type hints consistently
+- Prefer explicit over implicit
+
+### Architecture Principles
+- Modular design with clear separation of concerns
+- Dependency injection for testability
+- Error handling with meaningful messages
+- Logging with appropriate levels (loguru)
+- Configuration via environment variables
+
+### Telegram Bot Development
+- Use python-telegram-bot library patterns
+- Implement proper error handling for network issues
+- Clean, geometric symbols (▲ ■ ◆ ●) instead of emojis
+- Authentic human language, never mystical or spiritual jargon
+- RBAC-aware message handling
+- Tier-appropriate feature access
+
+### Database Operations (Supabase)
+- Use async/await patterns consistently
+- Proper error handling for database operations
+- UUID for all primary keys
+- Audit trails for important operations
+- Row-level security considerations
+
+### AI Integration (OpenAI)
+- Structured prompts with clear context
+- Token usage optimization
+- Graceful fallbacks for API failures
+- User tier-aware feature access
+- Anti-hallucination patterns with source citations
+
+## Messaging and Communication
+
+### User-Facing Text
+- Speak as fellow humans, not authorities
+- Use practical language over theoretical concepts
+- Ask questions about direct experience
+- Suggest methods as experiments, not commandments
+- Acknowledge limitations honestly
+- Focus on what's actually happening
+
+### Error Messages
+- Clear, actionable error descriptions
+- No technical jargon for end users
+- Helpful next steps provided
+- Contact information when needed
+
+### Documentation
+- Write for practitioners, not academics
+- Include practical examples
+- Step-by-step instructions
+- Troubleshooting sections
+- Real-world use cases
+
+## File Organization
+
+### Structure
+```
+src/
+├── bots/telegram/          # Telegram bot implementation
+├── core/                   # Core AI and personality systems
+├── database/              # Database operations and models
+├── integrations/          # External service integrations
+└── utils/                 # Utility functions
+```
+
+### Naming Conventions
+- Files: snake_case.py
+- Classes: PascalCase
+- Functions/variables: snake_case
+- Constants: UPPER_SNAKE_CASE
+- Private methods: _leading_underscore
+
+## Testing Standards
+- Unit tests for all business logic
+- Integration tests for external services
+- Mock external dependencies
+- Test both success and failure cases
+- Clear test names describing behavior
+
+## Security Considerations
+- Never log sensitive information (API keys, tokens)
+- Validate all user inputs
+- Use parameterized queries
+- Implement rate limiting
+- RBAC enforcement at all levels
+
+## Deployment and Operations
+- Environment-specific configuration
+- Health check endpoints
+- Structured logging
+- Metrics collection
+- Graceful shutdown handling
+
+## Git Practices
+- Conventional commit messages
+- Feature branches for development
+- Pull request reviews required
+- Automated testing before merge
+- Semantic versioning for releases
+
+## Performance Guidelines
+- Async operations for I/O bound tasks
+- Database query optimization
+- Caching for expensive operations
+- Connection pooling for databases
+- Resource cleanup (context managers)
+
+## Specific to Becoming One™ System
+
+### Personality Analysis
+- Respect user privacy and consent
+- Store insights, not raw personal data
+- Confidence scoring for all analyses
+- Multiple system synthesis approach
+- User-controlled data retention
+
+### Knowledge Management
+- Source attribution for all content
+- Version control for teaching materials
+- Anti-hallucination verification
+- Tier-based content access
+- Search result relevance scoring
+
+### Community Features
+- Authentic human connection focus
+- No spiritual authority positioning
+- Practical method sharing
+- Peer-to-peer learning support
+- Safe space maintenance
+
+Remember: We're building tools to help humans discover practical methods for development, not to position ourselves as spiritual authorities. Every line of code should reflect this authentic, respectful approach.

@@ -1,0 +1,26 @@
+{
+  "framework_id": "enneagram",
+  "name": "Enneagram",
+  "description": "Nine personality types based on core motivations and fears",
+  "version": "1.0",
+  "status": "active",
+  "confidence": "validated",
+  "source_authority": "Ichazo/Naranjo/Riso-Hudson",
+  "integration_date": "2025-08-16T20:39:35.324839",
+  "last_updated": "2025-08-16T20:39:35.324842",
+  "core_concepts": [
+    "type_identification",
+    "centers_of_intelligence",
+    "wings",
+    "levels_of_development",
+    "instinctual_variants",
+    "arrows"
+  ],
+  "cross_references": {},
+  "validation_methods": [
+    "behavioral_observation",
+    "self_reporting",
+    "motivation_analysis"
+  ],
+  "usage_stats": {}
+}

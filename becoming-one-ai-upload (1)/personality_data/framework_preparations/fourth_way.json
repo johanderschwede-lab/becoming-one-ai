@@ -1,0 +1,28 @@
+{
+  "framework_id": "fourth_way",
+  "name": "Fourth Way",
+  "description": "Gurdjieff/Ouspensky system of conscious development",
+  "planned_concepts": [
+    "centers_of_intelligence",
+    "states_of_consciousness",
+    "chief_feature",
+    "false_personality",
+    "self_remembering",
+    "work_on_self",
+    "being_vs_knowing",
+    "octaves_and_laws",
+    "types_of_man"
+  ],
+  "integration_points": {
+    "enneagram": "Both use nine types, Gurdjieff originated enneagram symbol",
+    "becoming_one": "Self-remembering aligns with anti-bypass approach",
+    "human_design": "Centers concept has parallels in both systems"
+  },
+  "validation_methods": [
+    "self_observation",
+    "conscious_suffering",
+    "work_verification",
+    "being_level_assessment",
+    "presence_quality"
+  ]
+}
