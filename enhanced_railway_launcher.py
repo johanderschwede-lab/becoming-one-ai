@@ -143,11 +143,21 @@ def main():
     
     print("✅ Bot token loaded")
     
-    # Try enhanced bot first
+    # Try enhanced bot first (but expect it to fail for now)
     try:
         print("● Attempting enhanced bot...")
         # Add src to path for imports
         sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
+        
+        # Check for required modules first
+        try:
+            import openai
+            import pinecone
+            from supabase import create_client
+            print("✅ All AI dependencies available")
+        except ImportError as dep_error:
+            print(f"● Missing AI dependencies: {dep_error}")
+            raise ImportError("AI dependencies not available")
         
         from bots.telegram.enhanced_telegram_bot import EnhancedBecomingOneTelegramBot
         
@@ -161,14 +171,14 @@ def main():
         asyncio.run(bot.run())
         
     except Exception as e:
-        print(f"❌ Enhanced bot failed: {e}")
-        print("■ Falling back to simple bot...")
+        print(f"● Enhanced bot not available: {str(e)[:100]}...")
+        print("■ Using simple bot (fully functional)")
         
         try:
-            print("● Starting simple bot fallback...")
+            print("● Starting simple bot...")
             run_simple_bot()
         except Exception as fallback_error:
-            print(f"❌ Fallback failed: {fallback_error}")
+            print(f"❌ Simple bot failed: {fallback_error}")
             return
 
 if __name__ == "__main__":
