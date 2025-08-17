@@ -5,6 +5,8 @@ Minimal version without external database dependencies
 """
 import os
 import logging
+import threading
+from http.server import HTTPServer, BaseHTTPRequestHandler
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 from dotenv import load_dotenv
@@ -18,6 +20,32 @@ logger = logging.getLogger(__name__)
 
 # Load environment variables
 load_dotenv()
+
+class HealthHandler(BaseHTTPRequestHandler):
+    """Simple HTTP handler for Railway health checks"""
+    def do_GET(self):
+        if self.path == '/health' or self.path == '/':
+            self.send_response(200)
+            self.send_header('Content-type', 'text/plain')
+            self.end_headers()
+            self.wfile.write(b'Becoming One™ AI Bot is running')
+        else:
+            self.send_response(404)
+            self.end_headers()
+    
+    def log_message(self, format, *args):
+        # Suppress HTTP server logs to keep output clean
+        pass
+
+def start_health_server():
+    """Start HTTP health check server for Railway"""
+    port = int(os.getenv('PORT', 8000))
+    try:
+        server = HTTPServer(('0.0.0.0', port), HealthHandler)
+        logger.info(f"● Health server starting on port {port}")
+        server.serve_forever()
+    except Exception as e:
+        logger.error(f"Health server failed: {e}")
 
 async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Handle /start command"""
@@ -182,6 +210,11 @@ def main():
         return
     
     print("✅ Bot token loaded")
+    
+    # Start health server for Railway in background thread
+    health_thread = threading.Thread(target=start_health_server, daemon=True)
+    health_thread.start()
+    print("✅ Health server started for Railway")
     
     # Create application
     application = Application.builder().token(bot_token).build()
