@@ -47,13 +47,24 @@ def start_health_server():
     except Exception as e:
         logger.error(f"Health server failed: {e}")
 
-def run_simple_bot():
-    """Run the simple bot as fallback"""
+def run_ai_bot():
+    """Run the AI-powered bot"""
     import logging
     from telegram import Update
     from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
     logger = logging.getLogger(__name__)
+
+    # Initialize AI engine
+    ai_engine = None
+    try:
+        sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
+        from core.ai_engine_simple import BecomingOneAISimple
+        ai_engine = BecomingOneAISimple()
+        print("✅ AI engine loaded successfully")
+    except Exception as e:
+        print(f"● AI engine failed to load: {e}")
+        ai_engine = None
 
     async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         """Handle /start command"""
@@ -77,7 +88,7 @@ Just talk to me naturally. What's on your mind?"""
         await update.message.reply_text(welcome_message)
 
     async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
-        """Handle regular messages"""
+        """Handle regular messages with AI"""
         user = update.effective_user
         message_text = update.message.text
         
@@ -89,16 +100,19 @@ Just talk to me naturally. What's on your mind?"""
                 action="typing"
             )
             
-            # Simple response
-            response = """◆ What you've shared is workable ◆
-
-I hear you. What you're experiencing is valid.
-
-■ Practical question: If this situation is here to teach you something about yourself, what might that be?
-
-● Sometimes the very thing we're struggling with contains the seed of our next evolution.
-
-What feels most alive or important about what you shared?"""
+            # Try AI response first
+            if ai_engine:
+                try:
+                    user_context = {
+                        "name": user.first_name,
+                        "telegram_id": user.id
+                    }
+                    response = await ai_engine.process_message(message_text, user_context)
+                except Exception as ai_error:
+                    logger.error(f"AI processing failed: {ai_error}")
+                    response = get_fallback_response()
+            else:
+                response = get_fallback_response()
             
             await update.message.reply_text(response)
             
@@ -108,6 +122,18 @@ What feels most alive or important about what you shared?"""
                 "◆ Something went wrong on my end.\n\n"
                 "In the meantime, here's a practical question: What feels most important to you right now in this moment?"
             )
+
+    def get_fallback_response():
+        """Fallback response when AI is not available"""
+        return """◆ What you've shared is workable ◆
+
+I hear you. What you're experiencing is valid.
+
+■ Practical question: If this situation is here to teach you something about yourself, what might that be?
+
+● Sometimes the very thing we're struggling with contains the seed of our next evolution.
+
+What feels most alive or important about what you shared?"""
 
     # Create and run bot
     bot_token = os.getenv("TELEGRAM_BOT_TOKEN")
@@ -119,7 +145,10 @@ What feels most alive or important about what you shared?"""
     application.add_handler(CommandHandler("start", start_command))
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
     
-    logger.info("● Starting Simple Becoming One™ AI Bot...")
+    if ai_engine:
+        logger.info("● Starting AI-Powered Becoming One™ Bot...")
+    else:
+        logger.info("● Starting Simple Becoming One™ Bot (AI unavailable)...")
     asyncio.run(application.run_polling())
 
 def main():
@@ -175,8 +204,8 @@ def main():
         print("■ Using simple bot (fully functional)")
         
         try:
-            print("● Starting simple bot...")
-            run_simple_bot()
+            print("● Starting AI bot...")
+            run_ai_bot()
         except Exception as fallback_error:
             print(f"❌ Simple bot failed: {fallback_error}")
             return
