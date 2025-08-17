@@ -1,82 +1,175 @@
 #!/usr/bin/env python3
 """
 Railway launcher for Enhanced Telegram Bot
-Fixes import paths for the enhanced bot with full AI features
+Includes health check server and robust fallback
 """
-import sys
 import os
-from pathlib import Path
-
-# Add src to Python path
-src_path = Path(__file__).parent / "src"
-sys.path.insert(0, str(src_path))
-
-# Set up environment
-from dotenv import load_dotenv
-load_dotenv()
-
+import sys
+import threading
 import asyncio
 import logging
-from loguru import logger
+from http.server import HTTPServer, BaseHTTPRequestHandler
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 # Configure logging
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO
 )
+logger = logging.getLogger(__name__)
+
+class HealthHandler(BaseHTTPRequestHandler):
+    """Health check handler for Railway"""
+    def do_GET(self):
+        if self.path == '/health' or self.path == '/':
+            self.send_response(200)
+            self.send_header('Content-type', 'text/plain')
+            self.end_headers()
+            self.wfile.write(b'Enhanced Becoming One AI Bot is running')
+        else:
+            self.send_response(404)
+            self.end_headers()
+    
+    def log_message(self, format, *args):
+        # Suppress HTTP server logs to keep output clean
+        pass
+
+def start_health_server():
+    """Start health check server for Railway"""
+    port = int(os.getenv('PORT', 8000))
+    try:
+        server = HTTPServer(('0.0.0.0', port), HealthHandler)
+        logger.info(f"● Health server starting on port {port}")
+        server.serve_forever()
+    except Exception as e:
+        logger.error(f"Health server failed: {e}")
+
+def run_simple_bot():
+    """Run the simple bot as fallback"""
+    import logging
+    from telegram import Update
+    from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
+
+    logger = logging.getLogger(__name__)
+
+    async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+        """Handle /start command"""
+        user = update.effective_user
+        welcome_message = f"""▲ Welcome to Becoming One™ AI ▲
+
+Hello {user.first_name}! 
+
+■ I'm a practical guide for human development
+■ I use clear, simple methods that actually work
+■ No mystical jargon - just honest, helpful conversation
+
+◆ What I can help with:
+• Understanding stuck patterns
+• Working with procrastination 
+• Emotional navigation
+• Personal growth questions
+
+Just talk to me naturally. What's on your mind?"""
+        
+        await update.message.reply_text(welcome_message)
+
+    async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
+        """Handle regular messages"""
+        user = update.effective_user
+        message_text = update.message.text
+        
+        logger.info(f"Message from {user.first_name}: {message_text[:50]}...")
+        
+        try:
+            await context.bot.send_chat_action(
+                chat_id=update.effective_chat.id,
+                action="typing"
+            )
+            
+            # Simple response
+            response = """◆ What you've shared is workable ◆
+
+I hear you. What you're experiencing is valid.
+
+■ Practical question: If this situation is here to teach you something about yourself, what might that be?
+
+● Sometimes the very thing we're struggling with contains the seed of our next evolution.
+
+What feels most alive or important about what you shared?"""
+            
+            await update.message.reply_text(response)
+            
+        except Exception as e:
+            logger.error(f"Error processing message: {e}")
+            await update.message.reply_text(
+                "◆ Something went wrong on my end.\n\n"
+                "In the meantime, here's a practical question: What feels most important to you right now in this moment?"
+            )
+
+    # Create and run bot
+    bot_token = os.getenv("TELEGRAM_BOT_TOKEN")
+    if not bot_token:
+        logger.error("Missing TELEGRAM_BOT_TOKEN")
+        return
+
+    application = Application.builder().token(bot_token).build()
+    application.add_handler(CommandHandler("start", start_command))
+    application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
+    
+    logger.info("● Starting Simple Becoming One™ AI Bot...")
+    asyncio.run(application.run_polling())
 
 def main():
     """Main launcher function"""
     print("\n" + "="*60)
-    print("▲ BECOMING ONE™ ENHANCED AI TELEGRAM BOT")
+    print("▲ BECOMING ONE™ AI TELEGRAM BOT")
     print("="*60)
-    print("■ Full AI system with RBAC and payments")
-    print("◆ Initializing enhanced features...")
+    print("■ Attempting enhanced version with fallback")
+    print("◆ Initializing...")
     
-    # Check for required environment variables
-    required_vars = ["TELEGRAM_BOT_TOKEN"]
-    missing_vars = []
+    # Start health server in background
+    health_thread = threading.Thread(target=start_health_server, daemon=True)
+    health_thread.start()
+    print("✅ Health server started for Railway")
     
-    for var in required_vars:
-        if not os.getenv(var):
-            missing_vars.append(var)
-    
-    if missing_vars:
-        print(f"❌ Missing environment variables: {', '.join(missing_vars)}")
+    # Check for bot token
+    bot_token = os.getenv("TELEGRAM_BOT_TOKEN")
+    if not bot_token:
+        print("❌ Missing TELEGRAM_BOT_TOKEN environment variable")
         return
     
-    print("✅ Environment variables loaded")
+    print("✅ Bot token loaded")
     
+    # Try enhanced bot first
     try:
-        # Import and run the enhanced bot
+        print("● Attempting enhanced bot...")
+        # Add src to path for imports
+        sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
+        
         from bots.telegram.enhanced_telegram_bot import EnhancedBecomingOneTelegramBot
         
         bot = EnhancedBecomingOneTelegramBot()
-        
-        print("● Starting Enhanced Becoming One™ AI Bot...")
+        print("✅ Enhanced bot loaded successfully")
         print("■ RBAC system enabled")
         print("◆ Payment system ready")
         print("▲ Full AI engine loaded")
-        print("● Bot is running... Press Ctrl+C to stop")
+        print("● Enhanced bot is running...")
         
         asyncio.run(bot.run())
         
-    except ImportError as e:
-        print(f"❌ Import error: {e}")
+    except Exception as e:
+        print(f"❌ Enhanced bot failed: {e}")
         print("■ Falling back to simple bot...")
         
-        # Fallback to simple bot if enhanced bot fails
         try:
-            from simple_railway_bot import main as simple_main
-            simple_main()
+            print("● Starting simple bot fallback...")
+            run_simple_bot()
         except Exception as fallback_error:
             print(f"❌ Fallback failed: {fallback_error}")
             return
-            
-    except Exception as e:
-        logger.error(f"Enhanced bot failed: {e}")
-        print(f"❌ Enhanced bot error: {e}")
-        print("■ Check logs for details")
 
 if __name__ == "__main__":
     try:
