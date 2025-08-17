@@ -181,7 +181,6 @@ def main():
         # Check for required modules first
         try:
             import openai
-            import pinecone
             from supabase import create_client
             print("✅ All AI dependencies available")
         except ImportError as dep_error:
