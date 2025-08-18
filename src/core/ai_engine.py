@@ -224,7 +224,8 @@ What feels most important to you right now in this moment?"""
             return None
             
         except Exception as e:
-            logger.error(f"Error getting quick personality context: {e}")
+            logger.warning(f"Personality profiles table not available: {e}")
+            # Return None gracefully - bot can work without personality context
             return None
     
     async def _get_or_create_personality_profile(self, person_id: str) -> Optional[SynthesisPersonalityProfile]:
@@ -279,4 +280,5 @@ What feels most important to you right now in this moment?"""
             }).execute()
             
         except Exception as e:
-            logger.error(f"Error storing analysis results: {e}")
+            logger.warning(f"Could not store personality analysis (tables may not exist): {e}")
+            # Continue without storing - bot can work without personality storage

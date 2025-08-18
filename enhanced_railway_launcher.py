@@ -53,6 +53,8 @@ class HealthHandler(BaseHTTPRequestHandler):
 def start_health_server(port=8080):
     """Start health check server"""
     server = HTTPServer(('0.0.0.0', port), HealthHandler)
+    server.bot_running = False
+    server.last_error = None
     server.serve_forever()
 
 async def verify_environment():
@@ -91,6 +93,9 @@ async def main():
     health_thread = threading.Thread(target=start_health_server, daemon=True)
     health_thread.start()
     print("✅ Health server started")
+    
+    # Give health server time to initialize
+    await asyncio.sleep(1)
 
     # Verify environment
     if not await verify_environment():
@@ -112,10 +117,13 @@ async def main():
         print("🏛️ Sacred Library: INTEGRATED")
         print("🧠 AI Engine: FULL ACCESS")
         
+        # Mark bot as running
+        print("🚀 Starting bot...")
         await bot.run()
         
     except Exception as e:
-        print(f"❌ CRITICAL ERROR: {e}")
+        error_msg = f"Bot startup failed: {str(e)}"
+        print(f"❌ CRITICAL ERROR: {error_msg}")
         import traceback
         traceback.print_exc()
         print("\n🏥 Keeping health server alive...")
