@@ -30,7 +30,9 @@ try:
     ai_engine = BecomingOneAI()
     logger.info("✅ Enhanced AI engine with Sacred Library loaded")
 except Exception as e:
-    logger.warning(f"Could not load enhanced AI engine: {e}")
+    logger.error(f"❌ Could not load enhanced AI engine: {e}")
+    import traceback
+    logger.error(f"Full traceback: {traceback.format_exc()}")
     ai_engine = None
 
 # Load environment variables
@@ -122,6 +124,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         if ai_engine:
             # Use our enhanced AI engine with Sacred Library
             person_id = str(user.id)
+            logger.info(f"Using enhanced AI engine for: {message_text[:50]}...")
             ai_response = await ai_engine.process_message(
                 person_id=person_id,
                 message=message_text,
@@ -240,6 +243,11 @@ def main():
     print("✅ OpenAI integration ready")
     print("✅ Supabase database connected")
     print("✅ Telegram bot initialized")
+    
+    if ai_engine:
+        print("✅ Enhanced AI engine with Sacred Library active")
+    else:
+        print("⚠️  Using fallback OpenAI (Enhanced AI engine failed to load)")
     
     # Create application
     application = Application.builder().token(os.getenv("TELEGRAM_BOT_TOKEN")).build()
