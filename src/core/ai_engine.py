@@ -89,6 +89,51 @@ class BecomingOneAI:
             found_terms.extend(meaningful_words[:3])
         
         return found_terms if found_terms else ['life', 'development']
+    
+    async def vector_search_sacred_library(self, query: str, limit: int = 3) -> List[Dict[str, Any]]:
+        """Vector search Sacred Library for semantically relevant quotes"""
+        try:
+            # Create embedding for the query
+            embedding_response = self.openai_client.embeddings.create(
+                model="text-embedding-3-large",
+                input=query
+            )
+            
+            query_embedding = embedding_response.data[0].embedding
+            
+            # Search Pinecone for sacred library content
+            search_results = self.pinecone_client.index.query(
+                vector=query_embedding,
+                filter={"sacred_library": True},
+                top_k=limit,
+                include_metadata=True
+            )
+            
+            # Convert Pinecone results to our format
+            sacred_quotes = []
+            for match in search_results.matches:
+                if match.score > 0.7:  # Only high-confidence matches
+                    metadata = match.metadata
+                    quote_data = {
+                        'material_id': metadata.get('material_id'),
+                        'content': metadata.get('content', ''),
+                        'title': metadata.get('title', ''),
+                        'metadata': {
+                            'language': metadata.get('language', 'unknown'),
+                            'chapter': metadata.get('chapter', 'Unknown'),
+                            'book': metadata.get('book', 'Unknown'),
+                            'author': metadata.get('author', 'Henry T. Laurency'),
+                            'tradition': metadata.get('tradition', 'hylozoics'),
+                            'semantic_score': match.score
+                        }
+                    }
+                    sacred_quotes.append(quote_data)
+            
+            return sacred_quotes
+            
+        except Exception as e:
+            logger.error(f"Error in vector search Sacred Library: {e}")
+            return []
 
     async def process_message(
         self, 
@@ -134,6 +179,17 @@ class BecomingOneAI:
             sacred_quotes = await self.search_sacred_library(message, limit=2)
             if sacred_quotes:
                 logger.info(f"Found {len(sacred_quotes)} relevant Sacred Library quotes")
+            
+            # STEP 6.6: Vector search Sacred Library for semantic matches
+            vector_sacred_quotes = await self.vector_search_sacred_library(message, limit=2)
+            if vector_sacred_quotes:
+                logger.info(f"Found {len(vector_sacred_quotes)} semantic Sacred Library matches")
+                # Combine with keyword search results, avoiding duplicates
+                combined_quotes = sacred_quotes.copy()
+                for vq in vector_sacred_quotes:
+                    if not any(q.get('material_id') == vq.get('material_id') for q in combined_quotes):
+                        combined_quotes.append(vq)
+                sacred_quotes = combined_quotes[:3]  # Keep best 3 total
             
             # STEP 7: Generate personalized response using complete personality synthesis
             personalized_response = self.personality_analyzer.generate_personalized_response(

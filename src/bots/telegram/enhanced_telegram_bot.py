@@ -23,6 +23,11 @@ from ...core.ai_engine import BecomingOneAI
 from ...integrations.make_webhooks import MakeWebhookClient
 from ...core.rbac_system import SimpleRBAC, UserTier, Permission
 from .commands.sacred_library_commands import sacred_search_handler, sacred_browse_handler, sacred_callback_handler
+from .commands.hylozoic_study_commands import (
+    enter_hylozoic_study_handler, 
+    hylozoic_study_callback_handler,
+    process_study_question
+)
 
 
 class EnhancedBecomingOneTelegramBot:
@@ -666,6 +671,67 @@ What level would work best for you?
         )
     
     # ============================================================================
+    # MESSAGE HANDLING
+    # ============================================================================
+    
+    async def handle_message(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+        """Handle regular messages with study mode and AI responses"""
+        user = update.effective_user
+        message = update.message.text if update.message.text else ""
+        chat_id = update.effective_chat.id
+        
+        if not message:
+            return
+        
+        try:
+            # Check if user is in study mode and awaiting a question
+            if context.user_data.get('awaiting_study_question'):
+                await process_study_question(update, context)
+                return
+            
+            # Check if user is asking for Hylozoic input
+            hylozoic_triggers = ['hylozoic', 'laurency', 'sacred', 'teachings']
+            wants_hylozoic = any(trigger in message.lower() for trigger in hylozoic_triggers)
+            
+            if wants_hylozoic or context.user_data.get('study_mode') == 'hylozoic':
+                # Provide Hylozoic-enhanced response
+                person_id = uuid.uuid4()  # Temporary
+                response = await self.ai_engine.process_message(
+                    person_id=person_id,
+                    message=message,
+                    source="telegram",
+                    user_tier="premium"  # You have full access
+                )
+                
+                await update.message.reply_text(response)
+            else:
+                # Ask if they want Hylozoic perspective
+                keyboard = [
+                    [
+                        InlineKeyboardButton("🏛️ Get Hylozoic View", callback_data=f"add_hylozoic_{hash(message) % 10000}"),
+                        InlineKeyboardButton("🎓 Enter Study Room", callback_data="enter_study_room")
+                    ]
+                ]
+                
+                # Generate normal response
+                person_id = uuid.uuid4()  # Temporary
+                response = await self.ai_engine.process_message(
+                    person_id=person_id,
+                    message=message,
+                    source="telegram",
+                    user_tier="free"  # Normal mode
+                )
+                
+                await update.message.reply_text(
+                    response,
+                    reply_markup=InlineKeyboardMarkup(keyboard)
+                )
+                
+        except Exception as e:
+            logger.error(f"Error handling message: {e}")
+            await update.message.reply_text("I'm having trouble processing that. Please try again.")
+    
+    # ============================================================================
     # SETUP AND RUN
     # ============================================================================
     
@@ -681,19 +747,20 @@ What level would work best for you?
         # Sacred Library commands
         self.application.add_handler(CommandHandler("sacred", sacred_search_handler))
         self.application.add_handler(CommandHandler("browse_sacred", sacred_browse_handler))
+        self.application.add_handler(CommandHandler("study", enter_hylozoic_study_handler))
+        self.application.add_handler(CommandHandler("hylozoic", enter_hylozoic_study_handler))
         
         # Callback query handlers
         self.application.add_handler(CallbackQueryHandler(self.handle_upgrade_callback))
         self.application.add_handler(CallbackQueryHandler(sacred_callback_handler, pattern="^sacred_"))
+        self.application.add_handler(CallbackQueryHandler(hylozoic_study_callback_handler, pattern="^study_"))
         
         # Payment handlers
         self.application.add_handler(PreCheckoutQueryHandler(self.precheckout_callback))
         self.application.add_handler(MessageHandler(filters.SUCCESSFUL_PAYMENT, self.successful_payment_callback))
         
-        # Message handlers
-        self.application.add_handler(
-            MessageHandler(filters.TEXT & ~filters.COMMAND, self.handle_message)
-        )
+        # General message handler (must be last)
+        self.application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, self.handle_message))
         self.application.add_handler(
             MessageHandler(filters.VOICE, self.handle_message)
         )

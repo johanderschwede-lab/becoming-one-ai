@@ -172,9 +172,9 @@ def main():
     
     print("✅ Bot token loaded")
     
-    # Try enhanced bot first (but expect it to fail for now)
+    # Force use of Enhanced Bot with Sacred Library
     try:
-        print("● Attempting enhanced bot...")
+        print("● Loading Enhanced Bot with Sacred Library...")
         # Add src to path for imports
         sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
         
@@ -184,8 +184,10 @@ def main():
             from supabase import create_client
             print("✅ All AI dependencies available")
         except ImportError as dep_error:
-            print(f"● Missing AI dependencies: {dep_error}")
-            raise ImportError("AI dependencies not available")
+            print(f"❌ Missing AI dependencies: {dep_error}")
+            print("● Falling back to simple bot...")
+            run_ai_bot()
+            return
         
         from bots.telegram.enhanced_telegram_bot import EnhancedBecomingOneTelegramBot
         
@@ -193,20 +195,23 @@ def main():
         print("✅ Enhanced bot loaded successfully")
         print("■ RBAC system enabled")
         print("◆ Payment system ready")
-        print("▲ Full AI engine loaded")
+        print("🏛️  SACRED LIBRARY INTEGRATED (4,871 quotes)")
+        print("▲ Full AI engine with Hylozoics access")
         print("● Enhanced bot is running...")
         
         asyncio.run(bot.run())
         
     except Exception as e:
-        print(f"● Enhanced bot not available: {str(e)[:100]}...")
-        print("■ Using simple bot (fully functional)")
+        print(f"❌ Enhanced bot failed: {str(e)}")
+        import traceback
+        traceback.print_exc()
+        print("\n● Attempting simple bot as fallback...")
         
         try:
-            print("● Starting AI bot...")
+            print("● Starting simple AI bot...")
             run_ai_bot()
         except Exception as fallback_error:
-            print(f"❌ Simple bot failed: {fallback_error}")
+            print(f"❌ Simple bot also failed: {fallback_error}")
             return
 
 if __name__ == "__main__":
