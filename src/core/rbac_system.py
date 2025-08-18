@@ -745,3 +745,43 @@ async def get_advanced_schaubilder(user_id: str):
 async def access_practitioner_dashboard(user_id: str):
     """Example function requiring practitioner tools access"""
     pass
+
+
+class SimpleRBAC:
+    """Simple RBAC system for Enhanced Telegram Bot"""
+    
+    def __init__(self):
+        self.users: Dict[str, 'UserProfile'] = {}
+        logger.info("SimpleRBAC system initialized")
+    
+    def has_permission(self, user_id: str, permission: Permission) -> bool:
+        """Check if user has specific permission"""
+        if user_id not in self.users:
+            return False
+        
+        user = self.users[user_id]
+        tier = user.tier
+        
+        # Define permissions by tier
+        tier_permissions = {
+            UserTier.FREE: [Permission.BASIC_CHAT],
+            UserTier.PREMIUM: [Permission.BASIC_CHAT, Permission.VOICE_ANALYSIS],
+            UserTier.PRO: [Permission.BASIC_CHAT, Permission.VOICE_ANALYSIS, Permission.ADVANCED_ANALYSIS],
+            UserTier.MASTER: [Permission.BASIC_CHAT, Permission.VOICE_ANALYSIS, Permission.ADVANCED_ANALYSIS, Permission.PRACTITIONER_TOOLS],
+            UserTier.ADMIN: list(Permission)  # All permissions
+        }
+        
+        return permission in tier_permissions.get(tier, [])
+
+
+@dataclass
+class UserProfile:
+    """User profile for RBAC system"""
+    user_id: str
+    name: str
+    tier: UserTier
+    created_at: datetime = None
+    
+    def __post_init__(self):
+        if self.created_at is None:
+            self.created_at = datetime.now()
