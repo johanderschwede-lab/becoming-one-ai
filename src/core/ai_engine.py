@@ -15,6 +15,14 @@ from core.personality_analyzer import BecomingOnePersonalityAnalyzer
 from core.personality_synthesis_model import SynthesisPersonalityProfile
 from core.sacred_library_local import local_sacred_library
 
+# Try to import enhanced library, but don't fail if it's not available
+try:
+    from core.sacred_library_enhanced import enhanced_sacred_library
+    ENHANCED_LIBRARY_AVAILABLE = True
+except ImportError as e:
+    logger.warning(f"Enhanced Sacred Library not available: {e}")
+    ENHANCED_LIBRARY_AVAILABLE = False
+
 class BecomingOneAI:
     """Main AI processing engine with async analysis"""
     
@@ -138,8 +146,15 @@ class BecomingOneAI:
             # Get any existing personality insights
             personality_context = await self._get_quick_personality_context(person_id)
             
-            # Search Sacred Library
-            sacred_quotes = await self.search_sacred_library(message, limit=2)
+            # Search Sacred Library (try enhanced first, fallback to basic)
+            if ENHANCED_LIBRARY_AVAILABLE:
+                try:
+                    sacred_quotes = await enhanced_sacred_library.enhanced_search(message, limit=2)
+                except Exception as e:
+                    logger.warning(f"Enhanced search failed: {e}, falling back to basic search")
+                    sacred_quotes = await self.search_sacred_library(message, limit=2)
+            else:
+                sacred_quotes = await self.search_sacred_library(message, limit=2)
             
             # Build system prompt
             system_prompt = """You are an AI mentor trained in the Becoming One™ method, a transformative approach to personal growth and authentic living.

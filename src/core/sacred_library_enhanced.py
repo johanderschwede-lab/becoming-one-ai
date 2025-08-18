@@ -25,7 +25,15 @@ class EnhancedSacredLibrary:
     
     def __init__(self):
         self.openai_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY")) if os.getenv("OPENAI_API_KEY") else None
-        self.pinecone_client = PineconeClient() if PINECONE_AVAILABLE and os.getenv("PINECONE_API_KEY") else None
+        
+        # Only initialize Pinecone if available and API key is set
+        self.pinecone_client = None
+        if PINECONE_AVAILABLE and os.getenv("PINECONE_API_KEY"):
+            try:
+                self.pinecone_client = PineconeClient()
+            except Exception as e:
+                logger.warning(f"Failed to initialize Pinecone client: {e}")
+                
         # Use absolute path from project root
         project_root = Path(__file__).parent.parent.parent
         self.sacred_dir = project_root / "sacred_library_files"
