@@ -181,11 +181,11 @@ CRITICAL: If RELEVANT TEACHINGS are provided below, structure your response as f
 1. START with a brief direct answer (2-3 sentences max)
 2. Then provide sources in this exact format:
 
-◆ SACRED LIBRARY ◆
+■ SOURCE ■
 [Exact quote with full citation]
-■ Source: [Chapter] ([Language])
+Reference: [Chapter] ([Language])
 
-▲ SEMANTIC INSIGHTS ▲
+● COMMENT ●
 [Your interpretive understanding - clearly mark this as "based on semantic analysis, not exact quotes"]
 
 3. Keep total response under 300 words
@@ -225,14 +225,14 @@ CRITICAL: If RELEVANT TEACHINGS are provided below, structure your response as f
                 
                 # Add exact quotes
                 if exact_quotes:
-                    system_prompt += "\nEXACT QUOTES (use in ◆ SACRED LIBRARY ◆ section):\n"
+                    system_prompt += "\nEXACT QUOTES (use in ■ SOURCE ■ section):\n"
                     for quote in exact_quotes:
                         system_prompt += f"\nFrom {quote['metadata'].get('chapter', 'Unknown')} ({quote['metadata'].get('language', 'unknown').upper()}):\n"
                         system_prompt += f'"{quote["content"]}"\n'
                 
                 # Add semantic insights
                 if semantic_insights:
-                    system_prompt += "\nSEMANTIC INSIGHTS (use in ▲ SEMANTIC INSIGHTS ▲ section, clearly mark as interpretive):\n"
+                    system_prompt += "\nSEMANTIC INSIGHTS (use in ● COMMENT ● section, clearly mark as interpretive):\n"
                     for quote in semantic_insights:
                         similarity = quote['metadata'].get('similarity_score', 0.0)
                         system_prompt += f"\nSemantically related content (similarity: {similarity:.2f}) from {quote['metadata'].get('chapter', 'Unknown')}:\n"
