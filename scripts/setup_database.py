@@ -29,29 +29,25 @@ def setup_database():
     """Set up Supabase database with required tables"""
     logger.info("Starting database setup...")
     
-    # Load environment variables
-    from dotenv import load_dotenv
-    load_dotenv()
-    
+    # Get credentials from environment (set by Railway)
     url = os.getenv("SUPABASE_URL")
     service_role_key = os.getenv("SUPABASE_SERVICE_ROLE_KEY")
     
     if not url or not service_role_key:
-        logger.error("SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY must be set")
-        logger.error("Copy config/env.example to .env and fill in your credentials")
+        logger.error("SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY must be set in Railway")
         return False
     
     try:
         # Use service role key for admin operations
         supabase = create_client(url, service_role_key)
         
-        # Load schema file
-        schema_path = Path(__file__).parent.parent / "database" / "schemas" / "supabase_schema.sql"
-        schema_sql = load_sql_file(str(schema_path))
+        # Load schema files
+        schema_path = Path(__file__).parent.parent / "database" / "schemas"
         
-        # Execute schema
-        logger.info("Creating database tables...")
-        result = supabase.rpc("exec_sql", {"sql": schema_sql})
+        # Personality analysis schema
+        personality_schema = load_sql_file(str(schema_path / "personality_analysis_schema.sql"))
+        logger.info("Creating personality analysis tables...")
+        supabase.rpc("exec_sql", {"sql": personality_schema})
         
         logger.info("Database setup completed successfully!")
         
@@ -59,21 +55,28 @@ def setup_database():
         logger.info("Testing database connection...")
         test_client = SupabaseClient()
         
-        # Try to insert a test record
-        identity_result = test_client.client.table("identity_registry").insert({
-            "name": "Database Setup Test",
-            "consent": False
-        }).execute()
-        
+        # Try to insert test records
+        identity_result = test_client.client.table("identity_registry").select("*").limit(1).execute()
         if identity_result.data:
             test_person_id = identity_result.data[0]["person_id"]
-            logger.info(f"Test record created with person_id: {test_person_id}")
+            logger.info(f"Using existing person_id: {test_person_id}")
             
-            # Clean up test record
-            test_client.client.table("identity_registry").delete().eq(
-                "person_id", test_person_id
-            ).execute()
-            logger.info("Test record cleaned up")
+            # Test personality profile
+            profile_result = test_client.client.table("personality_profiles").insert({
+                "person_id": test_person_id,
+                "core_patterns": ["test_pattern"],
+                "growth_edges": ["test_edge"],
+                "essence_level": "test_level"
+            }).execute()
+            
+            if profile_result.data:
+                logger.info("Test personality profile created")
+                
+                # Clean up test profile
+                test_client.client.table("personality_profiles").delete().eq(
+                    "person_id", test_person_id
+                ).execute()
+                logger.info("Test profile cleaned up")
         
         logger.info("✅ Database setup and testing completed successfully!")
         return True
@@ -92,7 +95,10 @@ def verify_setup():
         client = SupabaseClient()
         
         # Check if tables exist by trying to query them
-        tables_to_check = ["identity_registry", "event_log", "channel_mapping"]
+        tables_to_check = [
+            "personality_profiles",
+            "personality_analysis"
+        ]
         
         for table in tables_to_check:
             result = client.client.table(table).select("*").limit(1).execute()
