@@ -110,11 +110,11 @@ class BecomingOneAI:
             logger.error(f"Local Sacred Library error: {e}")
         
         return []
-    
+        
     async def process_message(
         self, 
         person_id: str,
-        message: str,
+        message: str, 
         source: str,
         user_tier: str = "free"
     ) -> str:
@@ -152,18 +152,16 @@ RESPONSE STYLE:
 - Balance support with gentle challenge
 
 SACRED LIBRARY INTEGRATION:
-CRITICAL: If RELEVANT TEACHINGS are provided below, you MUST use them in your response.
-1. ALWAYS ask permission first: "Would you like me to share authentic teachings from the Sacred Library?"
-2. Share the exact quotes with full citations
-3. Provide zero-hallucination vector summary
-4. Connect to their specific question
+CRITICAL: If RELEVANT TEACHINGS are provided below, you MUST use them directly in your response.
+1. Share the exact quotes immediately with full citations
+2. Provide zero-hallucination vector summary
+3. Connect to their specific question
 
 FORMAT when Sacred Library quotes are available:
 ◆ SACRED LIBRARY ◆
-[Ask permission first]
 [Quote with citation]
 ▲ REFLECTION ▲
-[Your commentary]"""
+[Your commentary and connection to their question]"""
 
             # Add personality context if available
             if personality_context:
