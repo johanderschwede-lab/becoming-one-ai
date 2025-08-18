@@ -37,9 +37,15 @@ class BecomingOneAI:
         self.analysis_queue = asyncio.Queue()
         self.background_task = None
         
-        # Start background analysis task (only if not in test mode)
+        # Start background analysis task (only if not in test mode and event loop is running)
         if not os.getenv("TESTING_MODE"):
-            self.background_task = asyncio.create_task(self._process_analysis_queue())
+            try:
+                loop = asyncio.get_running_loop()
+                self.background_task = loop.create_task(self._process_analysis_queue())
+            except RuntimeError:
+                # No event loop running, skip background analysis
+                logger.warning("No event loop running, background analysis disabled")
+                self.background_task = None
     
     async def search_sacred_library(self, query: str, limit: int = 3) -> List[Dict[str, Any]]:
         """Search Sacred Library for relevant quotes"""
@@ -88,13 +94,18 @@ class BecomingOneAI:
     ) -> str:
         """Process a user message and generate response"""
         try:
-            # Queue message for background analysis
-            await self.analysis_queue.put({
-                'person_id': person_id,
-                'message': message,
-                'source': source,
-                'timestamp': datetime.utcnow()
-            })
+            # Queue message for background analysis (if available)
+            if self.background_task:
+                try:
+                    await self.analysis_queue.put({
+                        'person_id': person_id,
+                        'message': message,
+                        'source': source,
+                        'timestamp': datetime.utcnow()
+                    })
+                except:
+                    # Skip if queue not available
+                    pass
             
             # Get any existing personality insights
             personality_context = await self._get_quick_personality_context(person_id)
