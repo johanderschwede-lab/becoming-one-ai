@@ -1,50 +1,57 @@
-# QUICK FIX REFERENCE
-**Immediate Solutions for Common Issues**
+# Quick Fix Reference
 
-## 🚨 **RAILWAY DEPLOYMENT ERRORS**
+Quick reference for common deployment fixes. For detailed explanations, see PROVEN_DEPLOYMENT_FIXES.md.
 
-### **Import Error Fix:**
-```bash
-# Error: "attempted relative import beyond top-level package"
-# Fix: Convert relative imports to absolute in these files:
-sed -i 's/from \.\.\./from /g' src/bots/telegram/enhanced_telegram_bot.py
-sed -i 's/from \.\./from /g' src/core/ai_engine.py
-```
+## Common Issues & Fixes
 
-### **Dependency Conflict Fix:**
-```bash
-# Error: "ERROR: ResolutionImpossible" with httpx versions
-# Fix: Use compatible versions in requirements.txt:
-# supabase==2.6.0 (not 2.7.4)
-# python-telegram-bot==20.7
-# DO NOT pin httpx explicitly
-```
-
-### **Deploy Commands:**
-```bash
-# Normal deployment
-git add . && git commit -m "fix: Apply proven Railway fixes" && git push origin main
-
-# Force Railway deployment (if no build starts)
-git commit --allow-empty -m "trigger: Manual Railway deployment trigger" && git push origin main
-```
-
-## 🏛️ **SACRED LIBRARY STATUS**
-
-### **Check Quote Count:**
+### Import Errors
 ```python
-# Should return 4,871
+# ❌ DON'T use relative imports
+from ...database.operations import db
+
+# ✅ DO use absolute imports
 from database.operations import db
-result = db.client.table('teaching_materials').select('count', count='exact').eq('material_type', 'sacred_quote').execute()
-print(result.count)
+
+# ✅ DO add in command files:
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 ```
 
-### **Test Bot Response:**
-Send: `"What does Laurency say about consciousness?"`
-Expect: Authentic quotes with citations
+### Dependency Conflicts
+```txt
+# ✅ DO use flexible version ranges
+python-telegram-bot>=20.0,<21.0
+openai>=1.0,<2.0
+supabase>=2.0,<3.0
+passlib==1.7.4
+```
 
-## 📍 **PROJECT INFO**
-- **Railway:** web-production-048a5.up.railway.app
-- **Repo:** johanderschwede-lab/becoming-one-ai.git
-- **Sacred Quotes:** 4,871 in Supabase `teaching_materials`
-- **Commands:** `/sacred`, `/study`, `/hylozoic`
+### Railway Deployment
+```bash
+# ✅ DO trigger deployment with empty commit
+git commit --allow-empty -m "trigger: Manual Railway deployment trigger"
+git push origin main
+```
+
+### Code Organization
+- Check for duplicate methods
+- Merge similar functionality
+- Use consistent import patterns
+- Follow project structure
+
+### Quick Test
+```bash
+# ✅ DO test locally first
+python scripts/test_railway_locally.py
+
+# ✅ DO use quick deploy script
+python scripts/quick_railway_deploy.py
+```
+
+## Project Info
+
+- Railway Project: energetic-upliftment
+- Service: becoming-one-ai
+- Environment: production
+- Web URL: web-production-048a5.up.railway.app
