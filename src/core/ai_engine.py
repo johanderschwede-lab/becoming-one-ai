@@ -134,7 +134,7 @@ class BecomingOneAI:
             logger.warning(f"Enhanced Sacred Library search failed: {e}")
             # Fallback to basic search
             return await self.search_sacred_library(query, limit=limit)
-    
+        
     async def process_message(
         self, 
         person_id: str,
@@ -176,16 +176,21 @@ RESPONSE STYLE:
 - Balance support with gentle challenge
 
 SACRED LIBRARY INTEGRATION:
-CRITICAL: If RELEVANT TEACHINGS are provided below, you MUST use them directly in your response.
-1. Share the exact quotes immediately with full citations
-2. Provide zero-hallucination vector summary
-3. Connect to their specific question
+CRITICAL: If RELEVANT TEACHINGS are provided below, structure your response as follows:
 
-FORMAT when Sacred Library quotes are available:
+1. START with a brief direct answer (2-3 sentences max)
+2. Then provide sources in this exact format:
+
 ◆ SACRED LIBRARY ◆
-[Quote with citation]
-▲ REFLECTION ▲
-[Your commentary and connection to their question]"""
+[Exact quote with full citation]
+■ Source: [Chapter] ([Language])
+
+▲ SEMANTIC INSIGHTS ▲
+[Your interpretive understanding - clearly mark this as "based on semantic analysis, not exact quotes"]
+
+3. Keep total response under 300 words
+4. If response would be longer, end with "...read more" indicator
+5. NEVER mix exact quotes with interpretive content - keep them clearly separated"""
 
             # Add personality context if available
             if personality_context:
@@ -201,13 +206,38 @@ FORMAT when Sacred Library quotes are available:
             if sacred_quotes:
                 logger.info(f"Adding {len(sacred_quotes)} Sacred Library quotes to prompt")
                 system_prompt += "\n\nRELEVANT TEACHINGS:\n"
+                
+                exact_quotes = []
+                semantic_insights = []
+                
                 for i, quote in enumerate(sacred_quotes):
                     chapter = quote['metadata'].get('chapter', 'Unknown')
                     language = quote['metadata'].get('language', 'unknown').upper()
+                    search_source = quote['metadata'].get('search_source', 'local')
                     content = quote["content"][:100] + "..." if len(quote["content"]) > 100 else quote["content"]
-                    logger.info(f"Quote {i+1}: {chapter} ({language}): {content}")
-                    system_prompt += f"\nFrom {quote['metadata'].get('chapter', 'Unknown')} ({quote['metadata'].get('language', 'unknown').upper()}):\n"
-                    system_prompt += f'"{quote["content"]}"\n'
+                    
+                    logger.info(f"Quote {i+1}: {chapter} ({language}) [{search_source}]: {content}")
+                    
+                    if search_source == 'vector':
+                        semantic_insights.append(quote)
+                    else:
+                        exact_quotes.append(quote)
+                
+                # Add exact quotes
+                if exact_quotes:
+                    system_prompt += "\nEXACT QUOTES (use in ◆ SACRED LIBRARY ◆ section):\n"
+                    for quote in exact_quotes:
+                        system_prompt += f"\nFrom {quote['metadata'].get('chapter', 'Unknown')} ({quote['metadata'].get('language', 'unknown').upper()}):\n"
+                        system_prompt += f'"{quote["content"]}"\n'
+                
+                # Add semantic insights
+                if semantic_insights:
+                    system_prompt += "\nSEMANTIC INSIGHTS (use in ▲ SEMANTIC INSIGHTS ▲ section, clearly mark as interpretive):\n"
+                    for quote in semantic_insights:
+                        similarity = quote['metadata'].get('similarity_score', 0.0)
+                        system_prompt += f"\nSemantically related content (similarity: {similarity:.2f}) from {quote['metadata'].get('chapter', 'Unknown')}:\n"
+                        system_prompt += f'"{quote["content"]}"\n'
+                        
             else:
                 logger.warning("No Sacred Library quotes found for this query")
             
@@ -219,7 +249,7 @@ FORMAT when Sacred Library quotes are available:
                     {"role": "user", "content": message}
                 ],
                 temperature=0.7,
-                max_tokens=1000
+                max_tokens=400  # Shorter responses for better chat experience
             )
             
             return response.choices[0].message.content.strip()
