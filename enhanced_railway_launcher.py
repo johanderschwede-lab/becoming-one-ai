@@ -161,31 +161,64 @@ async def main():
     try:
         # Test OpenAI connection first
         print("  🔍 Testing OpenAI connection...")
-        test_response = bot.openai_client.chat.completions.create(
-            model="gpt-4-turbo-preview",
-            messages=[{"role": "user", "content": "test"}],
-            max_tokens=1
-        )
-        print("  ✅ OpenAI connection working")
+        try:
+            test_response = bot.openai_client.chat.completions.create(
+                model="gpt-4-turbo-preview",
+                messages=[{"role": "user", "content": "test"}],
+                max_tokens=1
+            )
+            print("  ✅ OpenAI connection working")
+        except Exception as openai_error:
+            print(f"  ❌ OpenAI error: {openai_error}")
+            print("  🔍 OpenAI configuration:")
+            print(f"    API Key (first 10 chars): {os.getenv('OPENAI_API_KEY')[:10]}...")
+            print(f"    Base URL: {bot.openai_client.base_url}")
+            raise openai_error
         
         # Test Telegram webhook
         print("  🔍 Testing Telegram webhook...")
-        me = await bot.application.bot.get_me()
-        print(f"  ✅ Telegram bot active: @{me.username}")
+        try:
+            me = await bot.application.bot.get_me()
+            print(f"  ✅ Telegram bot active: @{me.username}")
+        except Exception as telegram_error:
+            print(f"  ❌ Telegram error: {telegram_error}")
+            print("  🔍 Telegram configuration:")
+            print(f"    Bot Token (first 10 chars): {os.getenv('TELEGRAM_BOT_TOKEN')[:10]}...")
+            raise telegram_error
         
-        # Run the bot
+        # Test Supabase connection
+        print("  🔍 Testing Supabase connection...")
+        try:
+            from database.operations import db
+            result = db.client.table('teaching_materials').select("count", count="exact").execute()
+            count = result.count
+            print(f"  ✅ Supabase connection working ({count} teaching materials)")
+        except Exception as supabase_error:
+            print(f"  ❌ Supabase error: {supabase_error}")
+            print("  🔍 Supabase configuration:")
+            print(f"    URL: {os.getenv('SUPABASE_URL')}")
+            raise supabase_error
+        
+        # Run the bot with detailed error handling
         print("  🚀 Starting bot polling...")
-        await bot.run()
+        try:
+            await bot.run()
+        except Exception as bot_error:
+            print(f"  ❌ Bot runtime error: {bot_error}")
+            print("  📋 Full error details:")
+            import traceback
+            traceback.print_exc()
+            raise bot_error
+            
     except Exception as run_error:
         print(f"❌ CRITICAL: Enhanced Bot runtime error: {run_error}")
-        import traceback
-        traceback.print_exc()
         print("🏥 Keeping health server alive for Railway...")
         # Keep health server running so Railway doesn't kill the deployment
         import time
         while True:
             time.sleep(60)
             print("💓 Health server still running...")
+            print(f"   Last error: {run_error}")
         return
 
 if __name__ == "__main__":

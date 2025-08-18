@@ -459,16 +459,23 @@ Ready to try your new access? Type /menu to get started.
     
     async def handle_message(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         """Enhanced message handling with RBAC permissions and study mode"""
-        user = update.effective_user
-        chat_id = str(update.effective_chat.id)
-        message_text = update.message.text if update.message.text else ""
-        
-        if not message_text and not update.message.voice:
-            return
-            
         try:
+            print("📨 Received message...")
+            
+            user = update.effective_user
+            chat_id = str(update.effective_chat.id)
+            message_text = update.message.text if update.message.text else ""
+            
+            print(f"  👤 From: {user.first_name} (ID: {user.id})")
+            print(f"  💬 Message: {message_text[:50]}...")
+            
+            if not message_text and not update.message.voice:
+                print("  ⚠️ Empty message, ignoring")
+                return
+            
             # Check if user is in study mode and awaiting a question
             if context.user_data.get('awaiting_study_question'):
+                print("  📚 Processing study question...")
                 await process_study_question(update, context)
                 return
             
