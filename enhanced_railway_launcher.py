@@ -23,6 +23,25 @@ class HealthHandler(BaseHTTPRequestHandler):
             self.send_header('Content-type', 'text/plain')
             self.end_headers()
             self.wfile.write(b'Becoming One AI is running')
+        elif self.path == '/status':
+            self.send_response(200)
+            self.send_header('Content-type', 'application/json')
+            self.end_headers()
+            
+            # Get bot status
+            status = {
+                'health': 'ok',
+                'bot_running': getattr(self.server, 'bot_running', False),
+                'last_error': getattr(self.server, 'last_error', None),
+                'environment': {
+                    'telegram_token': 'present' if os.getenv('TELEGRAM_BOT_TOKEN') else 'missing',
+                    'openai_key': 'present' if os.getenv('OPENAI_API_KEY') else 'missing',
+                    'supabase_url': 'present' if os.getenv('SUPABASE_URL') else 'missing'
+                }
+            }
+            
+            import json
+            self.wfile.write(json.dumps(status, indent=2).encode())
         else:
             self.send_response(404)
             self.end_headers()
