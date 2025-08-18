@@ -13,6 +13,7 @@ from datetime import datetime
 from database.operations import db
 from core.personality_analyzer import BecomingOnePersonalityAnalyzer
 from core.personality_synthesis_model import SynthesisPersonalityProfile
+from core.sacred_library_local import local_sacred_library
 
 class BecomingOneAI:
     """Main AI processing engine with async analysis"""
@@ -50,7 +51,7 @@ class BecomingOneAI:
     async def search_sacred_library(self, query: str, limit: int = 3) -> List[Dict[str, Any]]:
         """Search Sacred Library for relevant quotes"""
         try:
-            # Extract key terms
+            # Try Supabase first
             words = [w for w in query.lower().split() if len(w) > 4]
             search_terms = words[:3] if words else ['life', 'development']
             
@@ -79,11 +80,36 @@ class BecomingOneAI:
                     if len(unique_quotes) >= limit:
                         break
             
-            return unique_quotes
+            # If we got results, return them
+            if unique_quotes:
+                logger.info(f"Sacred Library search via Supabase: found {len(unique_quotes)} quotes")
+                return unique_quotes
+            
+            # If no results, this might be a Supabase issue, try local fallback
+            logger.warning("No results from Supabase, trying local Sacred Library fallback")
             
         except Exception as e:
-            logger.error(f"Error searching Sacred Library: {e}")
-            return []
+            logger.warning(f"Supabase Sacred Library error: {e}, falling back to local search")
+        
+        # Fallback to local search
+        try:
+            if local_sacred_library.is_available():
+                local_quotes = local_sacred_library.search_quotes(query, limit=limit)
+                if local_quotes:
+                    logger.info(f"Sacred Library search via local fallback: found {len(local_quotes)} quotes")
+                    return local_quotes
+                else:
+                    # If no search results, get random quotes
+                    random_quotes = local_sacred_library.get_random_quotes(limit=limit)
+                    if random_quotes:
+                        logger.info(f"Sacred Library providing {len(random_quotes)} random quotes")
+                        return random_quotes
+            else:
+                logger.error("Local Sacred Library not available")
+        except Exception as e:
+            logger.error(f"Local Sacred Library error: {e}")
+        
+        return []
     
     async def process_message(
         self, 
