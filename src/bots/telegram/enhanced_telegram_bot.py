@@ -5,6 +5,7 @@ Integrates RBAC, Telegram Payments, and Advanced Features
 
 import os
 import asyncio
+import uuid
 from typing import Optional, Dict, Any
 from datetime import datetime
 from telegram import (
@@ -188,7 +189,7 @@ Type /upgrade to see more options.
         subscription_status = "✅ Active" if user_profile.subscription_status == "active" else "⏰ Trial"
         expires_info = ""
         if user_profile.subscription_expires:
-            expires_info = f"\\n📅 Expires: {user_profile.subscription_expires.strftime('%Y-%m-%d')}"
+            expires_info = f"\n📅 Expires: {user_profile.subscription_expires.strftime('%Y-%m-%d')}"
         
         profile_text = f"""
 ◆ Your Current Status ◆
@@ -268,6 +269,7 @@ Want more access? Type /upgrade
 • Specialized content access
 
 ■ **Pro ($99/month)**
+• Everything in Premium +
 • Full method library
 • All teaching materials
 • Video analysis capabilities
@@ -276,6 +278,7 @@ Want more access? Type /upgrade
 • Multiple specialized tools
 
 ◆ **Master ($297/month)**
+• Everything in Pro +
 • Complete content access
 • Master method library
 • Practitioner tools
@@ -283,7 +286,7 @@ Want more access? Type /upgrade
 • All specialized tools
 • Priority support
 
-What level would be most useful for you?
+What level would work best for you?
         """.strip()
         
         await update.message.reply_text(
@@ -313,7 +316,7 @@ What level would be most useful for you?
         elif query.data == "main_menu":
             keyboard = await self._create_main_menu_keyboard(person_id)
             await query.edit_message_text(
-                "■ Main Menu ■\\n\\nWhat would you like to try?",
+                "■ Main Menu ■\n\nWhat would you like to try?",
                 reply_markup=keyboard,
                 parse_mode='Markdown'
             )
@@ -354,10 +357,10 @@ What level would be most useful for you?
             )
             
             await query.edit_message_text(
-                f"◆ Payment Invoice Created ◆\\n\\n"
-                f"Complete the payment to get {tier_name} access.\\n\\n"
-                f"**Amount:** ${price:.2f}/month\\n"
-                f"**Access:** Full {tier_name} level\\n\\n"
+                f"◆ Payment Invoice Created ◆\n\n"
+                f"Complete the payment to get {tier_name} access.\n\n"
+                f"**Amount:** ${price:.2f}/month\n"
+                f"**Access:** Full {tier_name} level\n\n"
                 f"Payment is secure and processed by Telegram.",
                 parse_mode='Markdown'
             )
@@ -365,7 +368,7 @@ What level would be most useful for you?
         except Exception as e:
             logger.error(f"Error creating payment invoice: {e}")
             await query.edit_message_text(
-                "■ Payment Error ■\\n\\n"
+                "■ Payment Error ■\n\n"
                 "There was an issue creating the payment. Please try again or contact support.",
                 parse_mode='Markdown'
             )
@@ -451,16 +454,24 @@ Ready to try your new access? Type /menu to get started.
             )
     
     # ============================================================================
-    # MESSAGE HANDLING WITH RBAC
+    # MESSAGE HANDLING WITH RBAC AND STUDY MODE
     # ============================================================================
     
     async def handle_message(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
-        """Enhanced message handling with RBAC permissions"""
+        """Enhanced message handling with RBAC permissions and study mode"""
         user = update.effective_user
         chat_id = str(update.effective_chat.id)
-        message_text = update.message.text
+        message_text = update.message.text if update.message.text else ""
         
+        if not message_text and not update.message.voice:
+            return
+            
         try:
+            # Check if user is in study mode and awaiting a question
+            if context.user_data.get('awaiting_study_question'):
+                await process_study_question(update, context)
+                return
+            
             # Get person_id and user profile
             person_id = await db.get_or_create_person_id(
                 channel_type="telegram",
@@ -513,17 +524,30 @@ Ready to try your new access? Type /menu to get started.
                 )
                 return
             
-            # Process with AI engine (with tier context)
-            response = await self.ai_engine.process_message(
-                person_id=person_id,
-                message=message_text,
-                source="telegram",
-                user_tier=user_profile.tier.value  # Pass tier for personalized responses
-            )
+            # Check if user is asking for Hylozoic input
+            hylozoic_triggers = ['hylozoic', 'laurency', 'sacred', 'teachings']
+            wants_hylozoic = any(trigger in message_text.lower() for trigger in hylozoic_triggers)
             
-            # Add tier-specific suggestions
-            if user_profile.tier == UserTier.FREE and len(response) > 200:
-                response += "\\n\\n→ *Want deeper analysis? Premium level has advanced methods. Type /upgrade*"
+            if wants_hylozoic or context.user_data.get('study_mode') == 'hylozoic':
+                # Provide Hylozoic-enhanced response
+                response = await self.ai_engine.process_message(
+                    person_id=person_id,
+                    message=message_text,
+                    source="telegram",
+                    user_tier="premium"  # Full access to Sacred Library
+                )
+            else:
+                # Process with AI engine (with tier context)
+                response = await self.ai_engine.process_message(
+                    person_id=person_id,
+                    message=message_text,
+                    source="telegram",
+                    user_tier=user_profile.tier.value  # Pass tier for personalized responses
+                )
+                
+                # Add tier-specific suggestions
+                if user_profile.tier == UserTier.FREE and len(response) > 200:
+                    response += "\n\n→ *Want deeper analysis? Premium level has advanced methods. Type /upgrade*"
             
             # Log the response
             await db.log_event(
@@ -537,22 +561,22 @@ Ready to try your new access? Type /menu to get started.
                 }
             )
             
-            # Send response
-            await update.message.reply_text(response, parse_mode='Markdown')
+            # Create keyboard for non-Hylozoic responses
+            keyboard = None
+            if not wants_hylozoic and context.user_data.get('study_mode') != 'hylozoic':
+                keyboard = InlineKeyboardMarkup([
+                    [
+                        InlineKeyboardButton("🏛️ Get Hylozoic View", callback_data=f"add_hylozoic_{hash(message_text) % 10000}"),
+                        InlineKeyboardButton("🎓 Enter Study Room", callback_data="enter_study_room")
+                    ]
+                ])
             
-            # Make.com webhook removed for now
-            # await self.make_client.trigger_message_webhook({
-            #     "person_id": str(person_id),
-            #     "message": message_text,
-            #     "response": response,
-            #     "source": "telegram",
-            #     "tier": user_profile.tier.value,
-            #     "user_info": {
-            #         "telegram_id": user.id,
-            #         "username": user.username,
-            #         "name": f"{user.first_name} {user.last_name}".strip()
-            #     }
-            # })
+            # Send response
+            await update.message.reply_text(
+                response,
+                parse_mode='Markdown',
+                reply_markup=keyboard
+            )
             
         except Exception as e:
             logger.error(f"Error processing message: {e}")
@@ -618,7 +642,7 @@ Ready to try your new access? Type /menu to get started.
             if permission in feature_map:
                 features.append(f"• {feature_map[permission]}")
         
-        return "\\n".join(features) if features else "• Basic methods only"
+        return "\n".join(features) if features else "• Basic methods only"
     
     async def _show_tier_comparison(self, query):
         """Show detailed tier comparison"""
@@ -671,67 +695,6 @@ What level would work best for you?
             reply_markup=InlineKeyboardMarkup(keyboard),
             parse_mode='Markdown'
         )
-    
-    # ============================================================================
-    # MESSAGE HANDLING
-    # ============================================================================
-    
-    async def handle_message(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
-        """Handle regular messages with study mode and AI responses"""
-        user = update.effective_user
-        message = update.message.text if update.message.text else ""
-        chat_id = update.effective_chat.id
-        
-        if not message:
-            return
-        
-        try:
-            # Check if user is in study mode and awaiting a question
-            if context.user_data.get('awaiting_study_question'):
-                await process_study_question(update, context)
-                return
-            
-            # Check if user is asking for Hylozoic input
-            hylozoic_triggers = ['hylozoic', 'laurency', 'sacred', 'teachings']
-            wants_hylozoic = any(trigger in message.lower() for trigger in hylozoic_triggers)
-            
-            if wants_hylozoic or context.user_data.get('study_mode') == 'hylozoic':
-                # Provide Hylozoic-enhanced response
-                person_id = uuid.uuid4()  # Temporary
-                response = await self.ai_engine.process_message(
-                    person_id=person_id,
-                    message=message,
-                    source="telegram",
-                    user_tier="premium"  # You have full access
-                )
-                
-                await update.message.reply_text(response)
-            else:
-                # Ask if they want Hylozoic perspective
-                keyboard = [
-                    [
-                        InlineKeyboardButton("🏛️ Get Hylozoic View", callback_data=f"add_hylozoic_{hash(message) % 10000}"),
-                        InlineKeyboardButton("🎓 Enter Study Room", callback_data="enter_study_room")
-                    ]
-                ]
-                
-                # Generate normal response
-                person_id = uuid.uuid4()  # Temporary
-                response = await self.ai_engine.process_message(
-                    person_id=person_id,
-                    message=message,
-                    source="telegram",
-                    user_tier="free"  # Normal mode
-                )
-                
-                await update.message.reply_text(
-                    response,
-                    reply_markup=InlineKeyboardMarkup(keyboard)
-                )
-                
-        except Exception as e:
-            logger.error(f"Error handling message: {e}")
-            await update.message.reply_text("I'm having trouble processing that. Please try again.")
     
     # ============================================================================
     # SETUP AND RUN
