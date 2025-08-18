@@ -1,0 +1,21 @@
+{
+  "language": "swedish",
+  "language_info": {
+    "name": "Svenska",
+    "flag": "🇸🇪",
+    "nav_frame": "Swedish/sideswe.htm",
+    "path": "Swedish/",
+    "is_original": true
+  },
+  "download_date": "2025-08-18T02:57:30.825490",
+  "total_files": 1,
+  "files": [
+    {
+      "type": "dictionary",
+      "title": "Litet esoteriskt lexikon",
+      "path": "laurency_complete/swedish_Svenska/Dictionaries/dictionary_swedish.html",
+      "size": 758889,
+      "url": "https://www.laurency.com/Swedish/lexikon.htm"
+    }
+  ]
+}

@@ -1,0 +1,1265 @@
+{
+  "language": "finnish",
+  "language_info": {
+    "name": "Suomi",
+    "flag": "🇫🇮",
+    "nav_frame": "Finnish/sidefin.htm",
+    "path": "Finnish/",
+    "is_original": false
+  },
+  "download_date": "2025-08-18T03:09:14.524791",
+  "total_files": 139,
+  "files": [
+    {
+      "type": "book",
+      "series": "Tieto todellisuudesta",
+      "title": "Suomenkielisen \r\n  painoksen alkusanat",
+      "filename": "KVsf_intr1.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Tieto todellisuudesta/KVsf_intr1.pdf",
+      "size": 11854,
+      "url": "https://www.laurency.com/KVsf/KVsf_intr1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Tieto todellisuudesta",
+      "title": "Mita kirja \r\n  käsittelee",
+      "filename": "KVsf_intr2.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Tieto todellisuudesta/KVsf_intr2.pdf",
+      "size": 12282,
+      "url": "https://www.laurency.com/KVsf/KVsf_intr2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Tieto todellisuudesta",
+      "title": "TODELLISUUDEN \r\n  ONGELMAT, 1. OSA",
+      "filename": "KVsf1.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Tieto todellisuudesta/KVsf1.pdf",
+      "size": 127882,
+      "url": "https://www.laurency.com/KVsf/KVsf1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Tieto todellisuudesta",
+      "title": "TODELLISUUDEN\r\n  ONGELMAT, 2. OSA",
+      "filename": "KVsf2.PDF",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Tieto todellisuudesta/KVsf2.PDF",
+      "size": 59539,
+      "url": "https://www.laurency.com/KVsf/KVsf2.PDF"
+    },
+    {
+      "type": "book",
+      "series": "Tieto todellisuudesta",
+      "title": "TIEDON\r\n  JA FIKTIOIDEN ALKUPERÄ",
+      "filename": "KVsf3.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Tieto todellisuudesta/KVsf3.pdf",
+      "size": 93225,
+      "url": "https://www.laurency.com/KVsf/KVsf3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Tieto todellisuudesta",
+      "title": "SFINKSIN\r\n  KOLME KYSYMYSTÄ:MISTÄ?\r\n  MITEN? MIHIN?",
+      "filename": "KVsf4.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Tieto todellisuudesta/KVsf4.pdf",
+      "size": 24361,
+      "url": "https://www.laurency.com/KVsf/KVsf4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Tieto todellisuudesta",
+      "title": "ERÄÄN\r\n  ESOTEERIKON NÄKEMYS EUROOPPALAISEN FILOSOFIAN HISTORIASTA",
+      "filename": "KVsf5.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Tieto todellisuudesta/KVsf5.pdf",
+      "size": 379855,
+      "url": "https://www.laurency.com/KVsf/KVsf5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Tieto todellisuudesta",
+      "title": "STEINERIN\r\n  ANTROPOSOFINEN HENKITIEDE",
+      "filename": "KVsf6.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Tieto todellisuudesta/KVsf6.pdf",
+      "size": 84758,
+      "url": "https://www.laurency.com/KVsf/KVsf6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Tieto todellisuudesta",
+      "title": "JOOGA\r\n  ESOTERIIKAN VALOSSA",
+      "filename": "KVsf7.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Tieto todellisuudesta/KVsf7.pdf",
+      "size": 122105,
+      "url": "https://www.laurency.com/KVsf/KVsf7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Tieto todellisuudesta",
+      "title": "\"Tieto todellisuudesta\"",
+      "filename": "KVsf.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Tieto todellisuudesta/KVsf.pdf",
+      "size": 1579752,
+      "url": "https://www.laurency.com/KVsf/KVsf.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Tieto todellisuudesta",
+      "title": "Suomenkielisen painoksen alkusanat",
+      "filename": "KVsf_intr1.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Tieto todellisuudesta/KVsf_intr1.pdf",
+      "size": 11854,
+      "url": "https://www.laurency.com/KVsf/KVsf_intr1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Tieto todellisuudesta",
+      "title": "Mita kirja käsittelee",
+      "filename": "KVsf_intr2.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Tieto todellisuudesta/KVsf_intr2.pdf",
+      "size": 12282,
+      "url": "https://www.laurency.com/KVsf/KVsf_intr2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Tieto todellisuudesta",
+      "title": "TODELLISUUDEN\r\n  ONGELMAT, 1. OSA",
+      "filename": "KVsf1.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Tieto todellisuudesta/KVsf1.pdf",
+      "size": 127882,
+      "url": "https://www.laurency.com/KVsf/KVsf1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Tieto todellisuudesta",
+      "title": "TODELLISUUDEN\r\n  ONGELMAT, 2. OSA",
+      "filename": "KVsf2.PDF",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Tieto todellisuudesta/KVsf2.PDF",
+      "size": 59539,
+      "url": "https://www.laurency.com/KVsf/KVsf2.PDF"
+    },
+    {
+      "type": "book",
+      "series": "Tieto todellisuudesta",
+      "title": "TIEDON\r\n  JA FIKTIOIDEN ALKUPERÄ",
+      "filename": "KVsf3.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Tieto todellisuudesta/KVsf3.pdf",
+      "size": 93225,
+      "url": "https://www.laurency.com/KVsf/KVsf3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Tieto todellisuudesta",
+      "title": "",
+      "filename": "KVsf4.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Tieto todellisuudesta/KVsf4.pdf",
+      "size": 24361,
+      "url": "https://www.laurency.com/KVsf/KVsf4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Tieto todellisuudesta",
+      "title": "SFINKSIN\r\n  KOLME KYSYMYSTÄ:MISTÄ?\r\n  MITEN? MIHIN?",
+      "filename": "KVsf4.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Tieto todellisuudesta/KVsf4.pdf",
+      "size": 24361,
+      "url": "https://www.laurency.com/KVsf/KVsf4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Tieto todellisuudesta",
+      "title": "ERÄÄN\r\n  ESOTEERIKON NÄKEMYS EUROOPPALAISEN FILOSOFIAN HISTORIASTA",
+      "filename": "KVsf5.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Tieto todellisuudesta/KVsf5.pdf",
+      "size": 379855,
+      "url": "https://www.laurency.com/KVsf/KVsf5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Tieto todellisuudesta",
+      "title": "STEINERIN\r\n  ANTROPOSOFINEN HENKITIEDE",
+      "filename": "KVsf6.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Tieto todellisuudesta/KVsf6.pdf",
+      "size": 84758,
+      "url": "https://www.laurency.com/KVsf/KVsf6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Tieto todellisuudesta",
+      "title": "JOOGA\r\n  ESOTERIIKAN VALOSSA",
+      "filename": "KVsf7.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Tieto todellisuudesta/KVsf7.pdf",
+      "size": 122105,
+      "url": "https://www.laurency.com/KVsf/KVsf7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Viisasten kivi",
+      "title": "EKSOTEERINEN \r\n  MAAILMAN- JA ELÄMÄNKATSOMUS",
+      "filename": "DVSsf1.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Viisasten kivi/DVSsf1.pdf",
+      "size": 299900,
+      "url": "https://www.laurency.com/DVSsf/DVSsf1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Viisasten kivi",
+      "title": "ESOTEERINEN \r\n    MAAILMANKATSOMUS",
+      "filename": "DVSsf2.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Viisasten kivi/DVSsf2.pdf",
+      "size": 466218,
+      "url": "https://www.laurency.com/DVSsf/DVSsf2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Viisasten kivi",
+      "title": "ESOTEERINEN ELÄMÄNKATSOMUS",
+      "filename": "DVSsf3.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Viisasten kivi/DVSsf3.pdf",
+      "size": 651964,
+      "url": "https://www.laurency.com/DVSsf/DVSsf3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Viisasten kivi",
+      "title": "\"Viisasten \r\n  kivi\"",
+      "filename": "DVSsf.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Viisasten kivi/DVSsf.pdf",
+      "size": 1582258,
+      "url": "https://www.laurency.com/DVSsf/DVSsf.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Viisasten kivi",
+      "title": "EKSOTEERINEN MAAILMAN- JA \r\n    ELÄMÄNKATSOMUS",
+      "filename": "DVSsf1.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Viisasten kivi/DVSsf1.pdf",
+      "size": 299900,
+      "url": "https://www.laurency.com/DVSsf/DVSsf1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Viisasten kivi",
+      "title": "ESOTEERINEN \r\n    MAAILMANKATSOMUS",
+      "filename": "DVSsf2.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Viisasten kivi/DVSsf2.pdf",
+      "size": 466218,
+      "url": "https://www.laurency.com/DVSsf/DVSsf2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Viisasten kivi",
+      "title": "ESOTEERINEN ELÄMÄNKATSOMUS",
+      "filename": "DVSsf3.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Viisasten kivi/DVSsf3.pdf",
+      "size": 651964,
+      "url": "https://www.laurency.com/DVSsf/DVSsf3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "JOHDANTOJA",
+      "filename": "MVsf1.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/MVsf1.pdf",
+      "size": 297184,
+      "url": "https://www.laurency.com/MVsf/MVsf1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "MONADIPORTAAT",
+      "filename": "MVsf2.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/MVsf2.pdf",
+      "size": 40730,
+      "url": "https://www.laurency.com/MVsf/MVsf2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "ENSIMINÄ",
+      "filename": "MVsf3.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/MVsf3.pdf",
+      "size": 169693,
+      "url": "https://www.laurency.com/MVsf/MVsf3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "ENSIMINÄN FYSIKAALIOLENTO",
+      "filename": "MVsf4.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/MVsf4.pdf",
+      "size": 71683,
+      "url": "https://www.laurency.com/MVsf/MVsf4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "ENSIMINÄN EMOTIONAALIOLENTO",
+      "filename": "MVsf5.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/MVsf5.pdf",
+      "size": 255516,
+      "url": "https://www.laurency.com/MVsf/MVsf5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "ENSIMINÄN MENTAALIOLENTO",
+      "filename": "MVsf6.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/MVsf6.pdf",
+      "size": 204518,
+      "url": "https://www.laurency.com/MVsf/MVsf6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "KAUSAALIOLENTO",
+      "filename": "MVsf7.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/MVsf7.pdf",
+      "size": 71697,
+      "url": "https://www.laurency.com/MVsf/MVsf7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "AUGOEIDES",
+      "filename": "MVsf8.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/MVsf8.pdf",
+      "size": 166454,
+      "url": "https://www.laurency.com/MVsf/MVsf8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "TOISMINÄ",
+      "filename": "MVsf9.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/MVsf9.pdf",
+      "size": 740300,
+      "url": "https://www.laurency.com/MVsf/MVsf9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "KAUSAALIMINÄ",
+      "filename": "Mvsf10.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/Mvsf10.pdf",
+      "size": 133183,
+      "url": "https://www.laurency.com/MVsf/Mvsf10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "ESSENTIAALIMINÄ",
+      "filename": "Mvsf11.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/Mvsf11.pdf",
+      "size": 78027,
+      "url": "https://www.laurency.com/MVsf/Mvsf11.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "SUPERESSENTIAALIMINÄ",
+      "filename": "Mvsf12.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/Mvsf12.pdf",
+      "size": 16659,
+      "url": "https://www.laurency.com/MVsf/Mvsf12.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "PROTOGONOS JA KOLMASMINÄ",
+      "filename": "Mvsf13.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/Mvsf13.pdf",
+      "size": 38432,
+      "url": "https://www.laurency.com/MVsf/Mvsf13.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "SUBMANIFESTAALIMINÄ",
+      "filename": "Mvsf14.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/Mvsf14.pdf",
+      "size": 12292,
+      "url": "https://www.laurency.com/MVsf/Mvsf14.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "MANIFESTAALIMINÄ",
+      "filename": "Mvsf15.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/Mvsf15.pdf",
+      "size": 16285,
+      "url": "https://www.laurency.com/MVsf/Mvsf15.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "PLANEETTAHIERARKIA",
+      "filename": "Mvsf16.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/Mvsf16.pdf",
+      "size": 96791,
+      "url": "https://www.laurency.com/MVsf/Mvsf16.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "PLANEETTAHALLITUS",
+      "filename": "Mvsf17.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/Mvsf17.pdf",
+      "size": 52609,
+      "url": "https://www.laurency.com/MVsf/Mvsf17.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "TERMINOLOGIA JA SYMBOLIIKKA",
+      "filename": "Mvsf18.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/Mvsf18.pdf",
+      "size": 69076,
+      "url": "https://www.laurency.com/MVsf/Mvsf18.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "JOHDANTOJA",
+      "filename": "MVsf1.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/MVsf1.pdf",
+      "size": 297184,
+      "url": "https://www.laurency.com/MVsf/MVsf1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "MONADIPORTAAT",
+      "filename": "MVsf2.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/MVsf2.pdf",
+      "size": 40730,
+      "url": "https://www.laurency.com/MVsf/MVsf2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "ENSIMINÄ",
+      "filename": "MVsf3.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/MVsf3.pdf",
+      "size": 169693,
+      "url": "https://www.laurency.com/MVsf/MVsf3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "ENSIMINÄN FYSIKAALIOLENTO",
+      "filename": "MVsf4.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/MVsf4.pdf",
+      "size": 71683,
+      "url": "https://www.laurency.com/MVsf/MVsf4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "ENSIMINÄN EMOTIONAALIOLENTO",
+      "filename": "MVsf5.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/MVsf5.pdf",
+      "size": 255516,
+      "url": "https://www.laurency.com/MVsf/MVsf5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "",
+      "filename": "MVsf6.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/MVsf6.pdf",
+      "size": 204518,
+      "url": "https://www.laurency.com/MVsf/MVsf6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "ENSIMINÄN MENTAALIOLENTO",
+      "filename": "MVsf6.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/MVsf6.pdf",
+      "size": 204518,
+      "url": "https://www.laurency.com/MVsf/MVsf6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "KAUSAALIOLENTO",
+      "filename": "MVsf7.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/MVsf7.pdf",
+      "size": 71697,
+      "url": "https://www.laurency.com/MVsf/MVsf7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "AUGOEIDES",
+      "filename": "MVsf8.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/MVsf8.pdf",
+      "size": 166454,
+      "url": "https://www.laurency.com/MVsf/MVsf8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "TOISMINÄ",
+      "filename": "MVsf9.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/MVsf9.pdf",
+      "size": 740300,
+      "url": "https://www.laurency.com/MVsf/MVsf9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "KAUSAALIMINÄ",
+      "filename": "Mvsf10.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/Mvsf10.pdf",
+      "size": 133183,
+      "url": "https://www.laurency.com/MVsf/Mvsf10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "ESSENTIAALIMINÄ",
+      "filename": "Mvsf11.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/Mvsf11.pdf",
+      "size": 78027,
+      "url": "https://www.laurency.com/MVsf/Mvsf11.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "SUPERESSENTIAALIMINÄ",
+      "filename": "Mvsf12.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/Mvsf12.pdf",
+      "size": 16659,
+      "url": "https://www.laurency.com/MVsf/Mvsf12.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "PROTOGONOS JA KOLMASMINÄ",
+      "filename": "Mvsf13.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/Mvsf13.pdf",
+      "size": 38432,
+      "url": "https://www.laurency.com/MVsf/Mvsf13.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "SUBMANIFESTAALIMINÄ",
+      "filename": "Mvsf14.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/Mvsf14.pdf",
+      "size": 12292,
+      "url": "https://www.laurency.com/MVsf/Mvsf14.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "MANIFESTAALIMINÄ",
+      "filename": "Mvsf15.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/Mvsf15.pdf",
+      "size": 16285,
+      "url": "https://www.laurency.com/MVsf/Mvsf15.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "PLANEETTAHIERARKIA",
+      "filename": "Mvsf16.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/Mvsf16.pdf",
+      "size": 96791,
+      "url": "https://www.laurency.com/MVsf/Mvsf16.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "PLANEETTAHALLITUS",
+      "filename": "Mvsf17.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/Mvsf17.pdf",
+      "size": 52609,
+      "url": "https://www.laurency.com/MVsf/Mvsf17.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Ihmisen tie",
+      "title": "TERMINOLOGIA JA SYMBOLIIKKA",
+      "filename": "Mvsf18.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Ihmisen tie/Mvsf18.pdf",
+      "size": 69076,
+      "url": "https://www.laurency.com/MVsf/Mvsf18.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Yksi",
+      "title": "MEDITAATIO",
+      "filename": "L1sf1.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Yksi/L1sf1.pdf",
+      "size": 195744,
+      "url": "https://www.laurency.com/L1sf/L1sf1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Yksi",
+      "title": "GNOSTIIKKA",
+      "filename": "L1sf2.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Yksi/L1sf2.pdf",
+      "size": 86952,
+      "url": "https://www.laurency.com/L1sf/L1sf2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Yksi",
+      "title": "GNOSTISET SYMBOLIT",
+      "filename": "L1sf3.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Yksi/L1sf3.pdf",
+      "size": 79625,
+      "url": "https://www.laurency.com/L1sf/L1sf3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Yksi",
+      "title": "OPPILAISUUS",
+      "filename": "L1sf4.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Yksi/L1sf4.pdf",
+      "size": 232126,
+      "url": "https://www.laurency.com/L1sf/L1sf4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Yksi",
+      "title": "PLANEETTAHIERARKIA",
+      "filename": "L1sf5.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Yksi/L1sf5.pdf",
+      "size": 179768,
+      "url": "https://www.laurency.com/L1sf/L1sf5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Yksi",
+      "title": "SAMASTUMINEN JA VAPAUTUMINEN",
+      "filename": "L1sf6.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Yksi/L1sf6.pdf",
+      "size": 46676,
+      "url": "https://www.laurency.com/L1sf/L1sf6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Yksi",
+      "title": "PEDAGOGIIKKA",
+      "filename": "L1sf7.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Yksi/L1sf7.pdf",
+      "size": 175962,
+      "url": "https://www.laurency.com/L1sf/L1sf7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Yksi",
+      "title": "OIKEUSKÄSITYS",
+      "filename": "L1sf8.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Yksi/L1sf8.pdf",
+      "size": 149100,
+      "url": "https://www.laurency.com/L1sf/L1sf8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Yksi",
+      "title": "LAKI",
+      "filename": "L1sf9.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Yksi/L1sf9.pdf",
+      "size": 522352,
+      "url": "https://www.laurency.com/L1sf/L1sf9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Yksi",
+      "title": "SFINKSIN SALAISUUS",
+      "filename": "L1sf10.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Yksi/L1sf10.pdf",
+      "size": 10853,
+      "url": "https://www.laurency.com/L1sf/L1sf10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Yksi",
+      "title": "MEDITAATIO",
+      "filename": "L1sf1.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Yksi/L1sf1.pdf",
+      "size": 195744,
+      "url": "https://www.laurency.com/L1sf/L1sf1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Yksi",
+      "title": "GNOSTIIKKA",
+      "filename": "L1sf2.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Yksi/L1sf2.pdf",
+      "size": 86952,
+      "url": "https://www.laurency.com/L1sf/L1sf2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Yksi",
+      "title": "GNOSTISET SYMBOLIT",
+      "filename": "L1sf3.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Yksi/L1sf3.pdf",
+      "size": 79625,
+      "url": "https://www.laurency.com/L1sf/L1sf3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Yksi",
+      "title": "OPPILAISUUS",
+      "filename": "L1sf4.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Yksi/L1sf4.pdf",
+      "size": 232126,
+      "url": "https://www.laurency.com/L1sf/L1sf4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Yksi",
+      "title": "PLANEETTAHIERARKIA",
+      "filename": "L1sf5.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Yksi/L1sf5.pdf",
+      "size": 179768,
+      "url": "https://www.laurency.com/L1sf/L1sf5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Yksi",
+      "title": "SAMASTUMINEN JA VAPAUTUMINEN",
+      "filename": "L1sf6.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Yksi/L1sf6.pdf",
+      "size": 46676,
+      "url": "https://www.laurency.com/L1sf/L1sf6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Yksi",
+      "title": "PEDAGOGIIKKA",
+      "filename": "L1sf7.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Yksi/L1sf7.pdf",
+      "size": 175962,
+      "url": "https://www.laurency.com/L1sf/L1sf7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Yksi",
+      "title": "OIKEUSKÄSITYS",
+      "filename": "L1sf8.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Yksi/L1sf8.pdf",
+      "size": 149100,
+      "url": "https://www.laurency.com/L1sf/L1sf8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Yksi",
+      "title": "LAKI",
+      "filename": "L1sf9.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Yksi/L1sf9.pdf",
+      "size": 522352,
+      "url": "https://www.laurency.com/L1sf/L1sf9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Yksi",
+      "title": "SFINKSIN SALAISUUS",
+      "filename": "L1sf10.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Yksi/L1sf10.pdf",
+      "size": 10853,
+      "url": "https://www.laurency.com/L1sf/L1sf10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Kaksi",
+      "title": "HYLOZOIIKKA",
+      "filename": "L2sf1.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Kaksi/L2sf1.pdf",
+      "size": 84353,
+      "url": "https://www.laurency.com/L2sf/L2sf1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Kaksi",
+      "title": "HYLOZOIIKAN MAAILMANKATSOMUS",
+      "filename": "L2sf2.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Kaksi/L2sf2.pdf",
+      "size": 141857,
+      "url": "https://www.laurency.com/L2sf/L2sf2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Kaksi",
+      "title": "ESOTERIIKKA",
+      "filename": "L2sf3.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Kaksi/L2sf3.pdf",
+      "size": 286994,
+      "url": "https://www.laurency.com/L2sf/L2sf3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Kaksi",
+      "title": "LIIKEASPEKTI",
+      "filename": "L2sf4.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Kaksi/L2sf4.pdf",
+      "size": 77304,
+      "url": "https://www.laurency.com/L2sf/L2sf4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Kaksi",
+      "title": "TAJUNNANASPEKTI",
+      "filename": "L2sf5.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Kaksi/L2sf5.pdf",
+      "size": 151142,
+      "url": "https://www.laurency.com/L2sf/L2sf5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Kaksi",
+      "title": "AINEASPEKTI",
+      "filename": "L2sf6.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Kaksi/L2sf6.pdf",
+      "size": 134297,
+      "url": "https://www.laurency.com/L2sf/L2sf6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Kaksi",
+      "title": "TAJUNNAN \r\n\tKEHITYS",
+      "filename": "L2sf7.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Kaksi/L2sf7.pdf",
+      "size": 112761,
+      "url": "https://www.laurency.com/L2sf/L2sf7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Kaksi",
+      "title": "IHMISEN \r\n\tKEHITYSASTEET",
+      "filename": "L2sf8.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Kaksi/L2sf8.pdf",
+      "size": 199768,
+      "url": "https://www.laurency.com/L2sf/L2sf8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Kaksi",
+      "title": "ESOTEERINEN \r\n\tFILOSOFIA",
+      "filename": "L2sf9.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Kaksi/L2sf9.pdf",
+      "size": 218911,
+      "url": "https://www.laurency.com/L2sf/L2sf9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Kaksi",
+      "title": "ESOTEERINEN \r\n\tPSYKOLOGIA",
+      "filename": "L2sf10.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Kaksi/L2sf10.pdf",
+      "size": 171271,
+      "url": "https://www.laurency.com/L2sf/L2sf10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Kaksi",
+      "title": "HYLOZOIIKKA",
+      "filename": "L2sf1.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Kaksi/L2sf1.pdf",
+      "size": 84353,
+      "url": "https://www.laurency.com/L2sf/L2sf1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Kaksi",
+      "title": "HYLOZOIIKAN \r\n\tMAAILMANKATSOMUS",
+      "filename": "L2sf2.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Kaksi/L2sf2.pdf",
+      "size": 141857,
+      "url": "https://www.laurency.com/L2sf/L2sf2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Kaksi",
+      "title": "ESOTERIIKKA",
+      "filename": "L2sf3.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Kaksi/L2sf3.pdf",
+      "size": 286994,
+      "url": "https://www.laurency.com/L2sf/L2sf3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Kaksi",
+      "title": "LIIKEASPEKTI",
+      "filename": "L2sf4.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Kaksi/L2sf4.pdf",
+      "size": 77304,
+      "url": "https://www.laurency.com/L2sf/L2sf4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Kaksi",
+      "title": "TAJUNNANASPEKTI",
+      "filename": "L2sf5.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Kaksi/L2sf5.pdf",
+      "size": 151142,
+      "url": "https://www.laurency.com/L2sf/L2sf5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Kaksi",
+      "title": "AINEASPEKTI",
+      "filename": "L2sf6.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Kaksi/L2sf6.pdf",
+      "size": 134297,
+      "url": "https://www.laurency.com/L2sf/L2sf6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Kaksi",
+      "title": "TAJUNNAN KEHITYS",
+      "filename": "L2sf7.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Kaksi/L2sf7.pdf",
+      "size": 112761,
+      "url": "https://www.laurency.com/L2sf/L2sf7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Kaksi",
+      "title": "IHMISEN KEHITYSASTEET",
+      "filename": "L2sf8.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Kaksi/L2sf8.pdf",
+      "size": 199768,
+      "url": "https://www.laurency.com/L2sf/L2sf8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Kaksi",
+      "title": "ESOTEERINEN FILOSOFIA",
+      "filename": "L2sf9.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Kaksi/L2sf9.pdf",
+      "size": 218911,
+      "url": "https://www.laurency.com/L2sf/L2sf9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Kaksi",
+      "title": "ESOTEERINEN PSYKOLOGIA",
+      "filename": "L2sf10.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Kaksi/L2sf10.pdf",
+      "size": 171271,
+      "url": "https://www.laurency.com/L2sf/L2sf10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Kolme",
+      "title": "ESOTEERISET TIETOKUNNAT",
+      "filename": "L3sf1.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Kolme/L3sf1.pdf",
+      "size": 94567,
+      "url": "https://www.laurency.com/L3sf/L3sf1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Kolme",
+      "title": "ESOTEERISET TIETOKUNNAT",
+      "filename": "L3sf1.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Kolme/L3sf1.pdf",
+      "size": 94567,
+      "url": "https://www.laurency.com/L3sf/L3sf1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Viisi",
+      "title": "TIETIETOON JA YKSEYTEEN",
+      "filename": "L5sf5.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Viisi/L5sf5.pdf",
+      "size": 70957,
+      "url": "https://www.laurency.com/L5sf/L5sf5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Elämäntieto Viisi",
+      "title": "TIE TIETOON JA YKSEYTEEN",
+      "filename": "L5sf5.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Elämäntieto Viisi/L5sf5.pdf",
+      "size": 70957,
+      "url": "https://www.laurency.com/L5sf/L5sf5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Pieniä kirjasia",
+      "title": "TEHOKKUUDEN FILOSOFIA",
+      "filename": "EffektSF.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Pieniä kirjasia/EffektSF.pdf",
+      "size": 157892,
+      "url": "https://www.laurency.com/Miscfin/EffektSF.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Pieniä kirjasia",
+      "title": "Effektsf",
+      "filename": "EffektSF.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Pieniä kirjasia/EffektSF.pdf",
+      "size": 157892,
+      "url": "https://www.laurency.com/Miscfin/EffektSF.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Pieniä kirjasia",
+      "title": "SFINKSIN \r\n  KOLME KYSYMYSTá: MISTá? MITEN? MIHIN?",
+      "filename": "KVsf4.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Pieniä kirjasia/KVsf4.pdf",
+      "size": 24361,
+      "url": "https://www.laurency.com/KVsf/KVsf4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Pieniä kirjasia",
+      "title": "Kvsf4",
+      "filename": "KVsf4.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Pieniä kirjasia/KVsf4.pdf",
+      "size": 24361,
+      "url": "https://www.laurency.com/KVsf/KVsf4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Pieniä kirjasia",
+      "title": "KAIKUJA \r\n  planeettahierarkian ensimmðisestð departementista",
+      "filename": "EkonSF.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Pieniä kirjasia/EkonSF.pdf",
+      "size": 305842,
+      "url": "https://www.laurency.com/Miscfin/EkonSF.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Selitys",
+      "title": "Ensimmäinen selitys",
+      "filename": "Fksf_intro.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Selitys/Fksf_intro.pdf",
+      "size": 75151,
+      "url": "https://www.laurency.com/FKsf/Fksf_intro.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Selitys",
+      "title": "YKSI",
+      "filename": "FKsf1.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Selitys/FKsf1.pdf",
+      "size": 73007,
+      "url": "https://www.laurency.com/FKsf/FKsf1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Selitys",
+      "title": "KAKSI",
+      "filename": "FKsf2.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Selitys/FKsf2.pdf",
+      "size": 60796,
+      "url": "https://www.laurency.com/FKsf/FKsf2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Selitys",
+      "title": "KOLME",
+      "filename": "FKsf3.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Selitys/FKsf3.pdf",
+      "size": 63341,
+      "url": "https://www.laurency.com/FKsf/FKsf3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Selitys",
+      "title": "NELJÄ",
+      "filename": "FKsf4.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Selitys/FKsf4.pdf",
+      "size": 65559,
+      "url": "https://www.laurency.com/FKsf/FKsf4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Selitys",
+      "title": "VIISI",
+      "filename": "FKsf5.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Selitys/FKsf5.pdf",
+      "size": 85681,
+      "url": "https://www.laurency.com/FKsf/FKsf5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Selitys",
+      "title": "KUUSI",
+      "filename": "FKsf6.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Selitys/FKsf6.pdf",
+      "size": 84285,
+      "url": "https://www.laurency.com/FKsf/FKsf6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Selitys",
+      "title": "SEITSEMÄN",
+      "filename": "FKsf7.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Selitys/FKsf7.pdf",
+      "size": 58860,
+      "url": "https://www.laurency.com/FKsf/FKsf7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Selitys",
+      "title": "KAHDEKSAN",
+      "filename": "FKsf8.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Selitys/FKsf8.pdf",
+      "size": 67751,
+      "url": "https://www.laurency.com/FKsf/FKsf8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Selitys",
+      "title": "YHDEKSÄN",
+      "filename": "FKsf9.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Selitys/FKsf9.pdf",
+      "size": 77510,
+      "url": "https://www.laurency.com/FKsf/FKsf9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Selitys",
+      "title": "KYMMENEN",
+      "filename": "FKsf10.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Selitys/FKsf10.pdf",
+      "size": 71958,
+      "url": "https://www.laurency.com/FKsf/FKsf10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Selitys",
+      "title": "YKSITOISTA",
+      "filename": "FKsf11.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Selitys/FKsf11.pdf",
+      "size": 81589,
+      "url": "https://www.laurency.com/FKsf/FKsf11.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Selitys",
+      "title": "KAKSITOISTA",
+      "filename": "FKsf12.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Selitys/FKsf12.pdf",
+      "size": 96270,
+      "url": "https://www.laurency.com/FKsf/FKsf12.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Selitys",
+      "title": "Ensimmäinen selitys",
+      "filename": "Fksf_intro.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Selitys/Fksf_intro.pdf",
+      "size": 75151,
+      "url": "https://www.laurency.com/FKsf/Fksf_intro.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Selitys",
+      "title": "YKSI",
+      "filename": "FKsf1.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Selitys/FKsf1.pdf",
+      "size": 73007,
+      "url": "https://www.laurency.com/FKsf/FKsf1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Selitys",
+      "title": "KAKSI",
+      "filename": "FKsf2.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Selitys/FKsf2.pdf",
+      "size": 60796,
+      "url": "https://www.laurency.com/FKsf/FKsf2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Selitys",
+      "title": "KOLME",
+      "filename": "FKsf3.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Selitys/FKsf3.pdf",
+      "size": 63341,
+      "url": "https://www.laurency.com/FKsf/FKsf3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Selitys",
+      "title": "NELJÄ",
+      "filename": "FKsf4.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Selitys/FKsf4.pdf",
+      "size": 65559,
+      "url": "https://www.laurency.com/FKsf/FKsf4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Selitys",
+      "title": "VIISI",
+      "filename": "FKsf5.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Selitys/FKsf5.pdf",
+      "size": 85681,
+      "url": "https://www.laurency.com/FKsf/FKsf5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Selitys",
+      "title": "KUUSI",
+      "filename": "FKsf6.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Selitys/FKsf6.pdf",
+      "size": 84285,
+      "url": "https://www.laurency.com/FKsf/FKsf6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Selitys",
+      "title": "SEITSEMÄN",
+      "filename": "FKsf7.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Selitys/FKsf7.pdf",
+      "size": 58860,
+      "url": "https://www.laurency.com/FKsf/FKsf7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Selitys",
+      "title": "KAHDEKSAN",
+      "filename": "FKsf8.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Selitys/FKsf8.pdf",
+      "size": 67751,
+      "url": "https://www.laurency.com/FKsf/FKsf8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Selitys",
+      "title": "YHDEKSÄN",
+      "filename": "FKsf9.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Selitys/FKsf9.pdf",
+      "size": 77510,
+      "url": "https://www.laurency.com/FKsf/FKsf9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Selitys",
+      "title": "KYMMENEN",
+      "filename": "FKsf10.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Selitys/FKsf10.pdf",
+      "size": 71958,
+      "url": "https://www.laurency.com/FKsf/FKsf10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Selitys",
+      "title": "YKSITOISTA",
+      "filename": "FKsf11.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Selitys/FKsf11.pdf",
+      "size": 81589,
+      "url": "https://www.laurency.com/FKsf/FKsf11.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Selitys",
+      "title": "KAKSITOISTA",
+      "filename": "FKsf12.pdf",
+      "path": "laurency_ultimate/finnish_Suomi/Books/Selitys/FKsf12.pdf",
+      "size": 96270,
+      "url": "https://www.laurency.com/FKsf/FKsf12.pdf"
+    }
+  ]
+}

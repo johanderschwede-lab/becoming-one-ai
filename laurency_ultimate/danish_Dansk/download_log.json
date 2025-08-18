@@ -1,0 +1,302 @@
+{
+  "language": "danish",
+  "language_info": {
+    "name": "Dansk",
+    "flag": "🇩🇰",
+    "nav_frame": "Danish/sidedan.htm",
+    "path": "Danish/",
+    "is_original": false
+  },
+  "download_date": "2025-08-18T03:11:56.833729",
+  "total_files": 32,
+  "files": [
+    {
+      "type": "book",
+      "series": "Forklaringen",
+      "title": "Forord",
+      "filename": "Forkl_inled.PDF",
+      "path": "laurency_ultimate/danish_Dansk/Books/Forklaringen/Forkl_inled.PDF",
+      "size": 6496,
+      "url": "https://www.laurency.com/FKd/Forkl_inled.PDF"
+    },
+    {
+      "type": "book",
+      "series": "Forklaringen",
+      "title": "ET",
+      "filename": "forkl_1.pdf",
+      "path": "laurency_ultimate/danish_Dansk/Books/Forklaringen/forkl_1.pdf",
+      "size": 36311,
+      "url": "https://www.laurency.com/FKd/forkl_1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Forklaringen",
+      "title": "TO",
+      "filename": "forkl_2.pdf",
+      "path": "laurency_ultimate/danish_Dansk/Books/Forklaringen/forkl_2.pdf",
+      "size": 34681,
+      "url": "https://www.laurency.com/FKd/forkl_2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Forklaringen",
+      "title": "TRE",
+      "filename": "forkl_3.pdf",
+      "path": "laurency_ultimate/danish_Dansk/Books/Forklaringen/forkl_3.pdf",
+      "size": 27504,
+      "url": "https://www.laurency.com/FKd/forkl_3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Forklaringen",
+      "title": "FIRE",
+      "filename": "forkl_4.pdf",
+      "path": "laurency_ultimate/danish_Dansk/Books/Forklaringen/forkl_4.pdf",
+      "size": 34328,
+      "url": "https://www.laurency.com/FKd/forkl_4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Forklaringen",
+      "title": "FEM",
+      "filename": "forkl_5.pdf",
+      "path": "laurency_ultimate/danish_Dansk/Books/Forklaringen/forkl_5.pdf",
+      "size": 37509,
+      "url": "https://www.laurency.com/FKd/forkl_5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Forklaringen",
+      "title": "SEKS",
+      "filename": "forkl_6.pdf",
+      "path": "laurency_ultimate/danish_Dansk/Books/Forklaringen/forkl_6.pdf",
+      "size": 40457,
+      "url": "https://www.laurency.com/FKd/forkl_6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Forklaringen",
+      "title": "SYV",
+      "filename": "forkl_7.pdf",
+      "path": "laurency_ultimate/danish_Dansk/Books/Forklaringen/forkl_7.pdf",
+      "size": 35792,
+      "url": "https://www.laurency.com/FKd/forkl_7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Forklaringen",
+      "title": "OTTE",
+      "filename": "forkl_8.pdf",
+      "path": "laurency_ultimate/danish_Dansk/Books/Forklaringen/forkl_8.pdf",
+      "size": 40869,
+      "url": "https://www.laurency.com/FKd/forkl_8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Forklaringen",
+      "title": "NI",
+      "filename": "forkl_9.pdf",
+      "path": "laurency_ultimate/danish_Dansk/Books/Forklaringen/forkl_9.pdf",
+      "size": 48173,
+      "url": "https://www.laurency.com/FKd/forkl_9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Forklaringen",
+      "title": "TI",
+      "filename": "forkl_10.pdf",
+      "path": "laurency_ultimate/danish_Dansk/Books/Forklaringen/forkl_10.pdf",
+      "size": 42039,
+      "url": "https://www.laurency.com/FKd/forkl_10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Forklaringen",
+      "title": "ELLEVE",
+      "filename": "forkl_11.pdf",
+      "path": "laurency_ultimate/danish_Dansk/Books/Forklaringen/forkl_11.pdf",
+      "size": 46054,
+      "url": "https://www.laurency.com/FKd/forkl_11.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Forklaringen",
+      "title": "TOLV",
+      "filename": "forkl_12.pdf",
+      "path": "laurency_ultimate/danish_Dansk/Books/Forklaringen/forkl_12.pdf",
+      "size": 60039,
+      "url": "https://www.laurency.com/FKd/forkl_12.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Forklaringen",
+      "title": "Forord",
+      "filename": "Forkl_inled.PDF",
+      "path": "laurency_ultimate/danish_Dansk/Books/Forklaringen/Forkl_inled.PDF",
+      "size": 6496,
+      "url": "https://www.laurency.com/FKd/Forkl_inled.PDF"
+    },
+    {
+      "type": "book",
+      "series": "Forklaringen",
+      "title": "ET",
+      "filename": "forkl_1.pdf",
+      "path": "laurency_ultimate/danish_Dansk/Books/Forklaringen/forkl_1.pdf",
+      "size": 36311,
+      "url": "https://www.laurency.com/FKd/forkl_1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Forklaringen",
+      "title": "TO",
+      "filename": "forkl_2.pdf",
+      "path": "laurency_ultimate/danish_Dansk/Books/Forklaringen/forkl_2.pdf",
+      "size": 34681,
+      "url": "https://www.laurency.com/FKd/forkl_2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Forklaringen",
+      "title": "",
+      "filename": "forkl_3.pdf",
+      "path": "laurency_ultimate/danish_Dansk/Books/Forklaringen/forkl_3.pdf",
+      "size": 27504,
+      "url": "https://www.laurency.com/FKd/forkl_3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Forklaringen",
+      "title": "TRE",
+      "filename": "forkl_3.pdf",
+      "path": "laurency_ultimate/danish_Dansk/Books/Forklaringen/forkl_3.pdf",
+      "size": 27504,
+      "url": "https://www.laurency.com/FKd/forkl_3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Forklaringen",
+      "title": "F",
+      "filename": "forkl_4.pdf",
+      "path": "laurency_ultimate/danish_Dansk/Books/Forklaringen/forkl_4.pdf",
+      "size": 34328,
+      "url": "https://www.laurency.com/FKd/forkl_4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Forklaringen",
+      "title": "IRE",
+      "filename": "forkl_4.pdf",
+      "path": "laurency_ultimate/danish_Dansk/Books/Forklaringen/forkl_4.pdf",
+      "size": 34328,
+      "url": "https://www.laurency.com/FKd/forkl_4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Forklaringen",
+      "title": "",
+      "filename": "forkl_5.pdf",
+      "path": "laurency_ultimate/danish_Dansk/Books/Forklaringen/forkl_5.pdf",
+      "size": 37509,
+      "url": "https://www.laurency.com/FKd/forkl_5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Forklaringen",
+      "title": "FEM",
+      "filename": "forkl_5.pdf",
+      "path": "laurency_ultimate/danish_Dansk/Books/Forklaringen/forkl_5.pdf",
+      "size": 37509,
+      "url": "https://www.laurency.com/FKd/forkl_5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Forklaringen",
+      "title": "SEKS",
+      "filename": "forkl_6.pdf",
+      "path": "laurency_ultimate/danish_Dansk/Books/Forklaringen/forkl_6.pdf",
+      "size": 40457,
+      "url": "https://www.laurency.com/FKd/forkl_6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Forklaringen",
+      "title": "SYV",
+      "filename": "forkl_7.pdf",
+      "path": "laurency_ultimate/danish_Dansk/Books/Forklaringen/forkl_7.pdf",
+      "size": 35792,
+      "url": "https://www.laurency.com/FKd/forkl_7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Forklaringen",
+      "title": "OTTE",
+      "filename": "forkl_8.pdf",
+      "path": "laurency_ultimate/danish_Dansk/Books/Forklaringen/forkl_8.pdf",
+      "size": 40869,
+      "url": "https://www.laurency.com/FKd/forkl_8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Forklaringen",
+      "title": "NI",
+      "filename": "forkl_9.pdf",
+      "path": "laurency_ultimate/danish_Dansk/Books/Forklaringen/forkl_9.pdf",
+      "size": 48173,
+      "url": "https://www.laurency.com/FKd/forkl_9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Forklaringen",
+      "title": "TI",
+      "filename": "forkl_10.pdf",
+      "path": "laurency_ultimate/danish_Dansk/Books/Forklaringen/forkl_10.pdf",
+      "size": 42039,
+      "url": "https://www.laurency.com/FKd/forkl_10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Forklaringen",
+      "title": "ELLEVE",
+      "filename": "forkl_11.pdf",
+      "path": "laurency_ultimate/danish_Dansk/Books/Forklaringen/forkl_11.pdf",
+      "size": 46054,
+      "url": "https://www.laurency.com/FKd/forkl_11.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Forklaringen",
+      "title": "TOLV",
+      "filename": "forkl_12.pdf",
+      "path": "laurency_ultimate/danish_Dansk/Books/Forklaringen/forkl_12.pdf",
+      "size": 60039,
+      "url": "https://www.laurency.com/FKd/forkl_12.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Enkelte opsatser",
+      "title": "SFINKSENS\r\n  TRE SPØRGSMÅL:",
+      "filename": "sfindan.pdf",
+      "path": "laurency_ultimate/danish_Dansk/Books/Enkelte opsatser/sfindan.pdf",
+      "size": 28099,
+      "url": "https://www.laurency.com/Miscdan/sfindan.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Bestilling af bøger",
+      "title": "B",
+      "filename": "orderdan.pdf",
+      "path": "laurency_ultimate/danish_Dansk/Books/Bestilling af bøger/orderdan.pdf",
+      "size": 101328,
+      "url": "https://www.laurency.com/Danish/orderdan.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Bestilling af bøger",
+      "title": "estillingsseddelsom PDF-file",
+      "filename": "orderdan.pdf",
+      "path": "laurency_ultimate/danish_Dansk/Books/Bestilling af bøger/orderdan.pdf",
+      "size": 101328,
+      "url": "https://www.laurency.com/Danish/orderdan.pdf"
+    }
+  ]
+}

@@ -1,0 +1,2109 @@
+{
+  "language": "swedish",
+  "language_info": {
+    "name": "Svenska",
+    "flag": "🇸🇪",
+    "nav_frame": "Swedish/sideswe.htm",
+    "path": "Swedish/",
+    "is_original": true
+  },
+  "download_date": "2025-08-18T03:04:51.858810",
+  "total_files": 233,
+  "files": [
+    {
+      "type": "book",
+      "series": "Kunskapen om verkligheten",
+      "title": "VERKLIGHETSPROBLEMEN,\r\n  DEL ETT",
+      "filename": "kv1.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Kunskapen om verkligheten/kv1.pdf",
+      "size": 201894,
+      "url": "https://www.laurency.com/KV/kv1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Kunskapen om verkligheten",
+      "title": "VERKLIGHETSPROBLEMEN,\r\n  DEL TVÅ",
+      "filename": "kv2.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Kunskapen om verkligheten/kv2.pdf",
+      "size": 277402,
+      "url": "https://www.laurency.com/KV/kv2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Kunskapen om verkligheten",
+      "title": "KUNSKAPENS\r\n  OCH FIKTIONERNAS URSPRUNG",
+      "filename": "kv3.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Kunskapen om verkligheten/kv3.pdf",
+      "size": 97058,
+      "url": "https://www.laurency.com/KV/kv3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Kunskapen om verkligheten",
+      "title": "SFINXENS\r\n  TRE FRÅGOR: VARIFRÅN? HURU? VARTHÄN?",
+      "filename": "kv4.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Kunskapen om verkligheten/kv4.pdf",
+      "size": 30410,
+      "url": "https://www.laurency.com/KV/kv4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Kunskapen om verkligheten",
+      "title": "EN\r\n  ESOTERIKERS SYN PÅ EUROPEISKA FILOSOFIENS HISTORIA",
+      "filename": "kv5.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Kunskapen om verkligheten/kv5.pdf",
+      "size": 341412,
+      "url": "https://www.laurency.com/KV/kv5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Kunskapen om verkligheten",
+      "title": "STEINERS\r\n  ANTROPOSOFISKA ANDEVETENSKAP",
+      "filename": "kv6.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Kunskapen om verkligheten/kv6.pdf",
+      "size": 96750,
+      "url": "https://www.laurency.com/KV/kv6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Kunskapen om verkligheten",
+      "title": "YOGAN I\r\n  ESOTERISK BELYSNING",
+      "filename": "kv7.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Kunskapen om verkligheten/kv7.pdf",
+      "size": 140334,
+      "url": "https://www.laurency.com/KV/kv7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Kunskapen om verkligheten",
+      "title": "VERKLIGHETSPROBLEMEN, DEL ETT",
+      "filename": "kv1.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Kunskapen om verkligheten/kv1.pdf",
+      "size": 201894,
+      "url": "https://www.laurency.com/KV/kv1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Kunskapen om verkligheten",
+      "title": "VERKLIGHETSPROBLEMEN, DEL TVÅ",
+      "filename": "kv2.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Kunskapen om verkligheten/kv2.pdf",
+      "size": 277402,
+      "url": "https://www.laurency.com/KV/kv2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Kunskapen om verkligheten",
+      "title": "KUNSKAPENS OCH FIKTIONERNAS\r\n  URSPRUNG",
+      "filename": "kv3.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Kunskapen om verkligheten/kv3.pdf",
+      "size": 97058,
+      "url": "https://www.laurency.com/KV/kv3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Kunskapen om verkligheten",
+      "title": "SFINXENS\r\n  TRE FRÅGOR: VARIFRÅN? HURU? VARTHÄN?",
+      "filename": "kv4.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Kunskapen om verkligheten/kv4.pdf",
+      "size": 30410,
+      "url": "https://www.laurency.com/KV/kv4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Kunskapen om verkligheten",
+      "title": "EN\r\n  ESOTERIKERS SYN PÅ EUROPEISKA FILOSOFIENS HISTORIA",
+      "filename": "kv5.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Kunskapen om verkligheten/kv5.pdf",
+      "size": 341412,
+      "url": "https://www.laurency.com/KV/kv5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Kunskapen om verkligheten",
+      "title": "STEINERS\r\n  ANTROPOSOFISKA ANDEVETENSKAP",
+      "filename": "kv6.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Kunskapen om verkligheten/kv6.pdf",
+      "size": 96750,
+      "url": "https://www.laurency.com/KV/kv6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Kunskapen om verkligheten",
+      "title": "YOGAN I\r\n  ESOTERISK BELYSNING",
+      "filename": "kv7.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Kunskapen om verkligheten/kv7.pdf",
+      "size": 140334,
+      "url": "https://www.laurency.com/KV/kv7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "De vises sten",
+      "title": "EXOTERISK\r\n  VáRLDS- OCH LIVSéSKéDNING",
+      "filename": "dvsdel1.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/De vises sten/dvsdel1.pdf",
+      "size": 195116,
+      "url": "https://www.laurency.com/DVS/dvsdel1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "De vises sten",
+      "title": "ESOTERISKA\r\n  VáRLDSéSKéDNINGEN",
+      "filename": "dvsdel2.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/De vises sten/dvsdel2.pdf",
+      "size": 824542,
+      "url": "https://www.laurency.com/DVS/dvsdel2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "De vises sten",
+      "title": "ESOTERISK\r\n  LIVSéSKéDNING",
+      "filename": "dvsdel3.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/De vises sten/dvsdel3.pdf",
+      "size": 418948,
+      "url": "https://www.laurency.com/DVS/dvsdel3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "De vises sten",
+      "title": "EXOTERISK VáRLDS- OCH LIVSéSKéDNING",
+      "filename": "dvsdel1.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/De vises sten/dvsdel1.pdf",
+      "size": 195116,
+      "url": "https://www.laurency.com/DVS/dvsdel1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "De vises sten",
+      "title": "ESOTERISKA VáRLDSéSKéDNINGEN",
+      "filename": "dvsdel2.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/De vises sten/dvsdel2.pdf",
+      "size": 824542,
+      "url": "https://www.laurency.com/DVS/dvsdel2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "De vises sten",
+      "title": "ESOTERISK LIVSéSKéDNING",
+      "filename": "dvsdel3.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/De vises sten/dvsdel3.pdf",
+      "size": 418948,
+      "url": "https://www.laurency.com/DVS/dvsdel3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "INLEDNINGAR",
+      "filename": "mv1.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv1.pdf",
+      "size": 246089,
+      "url": "https://www.laurency.com/MV/mv1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "MONADSTEGEN",
+      "filename": "mv2.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv2.pdf",
+      "size": 40785,
+      "url": "https://www.laurency.com/MV/mv2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "FÖRSTAJAGET",
+      "filename": "mv3.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv3.pdf",
+      "size": 155163,
+      "url": "https://www.laurency.com/MV/mv3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "FÖRSTAJAGETS\r\n  FYSIKALVÄSEN",
+      "filename": "mv4.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv4.pdf",
+      "size": 64243,
+      "url": "https://www.laurency.com/MV/mv4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "FÖRSTAJAGETS\r\n  EMOTIONALVÄSEN",
+      "filename": "mv5.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv5.pdf",
+      "size": 227873,
+      "url": "https://www.laurency.com/MV/mv5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "FÖRSTAJAGETS\r\n  MENTALVÄSEN",
+      "filename": "mv6.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv6.pdf",
+      "size": 153061,
+      "url": "https://www.laurency.com/MV/mv6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "KAUSALVÄSENDET",
+      "filename": "mv7.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv7.pdf",
+      "size": 68342,
+      "url": "https://www.laurency.com/MV/mv7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "AUGOEIDES",
+      "filename": "mv8.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv8.pdf",
+      "size": 150950,
+      "url": "https://www.laurency.com/MV/mv8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "Del ett",
+      "filename": "mv9_1.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv9_1.pdf",
+      "size": 350718,
+      "url": "https://www.laurency.com/MV/mv9_1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "Del tvĺ",
+      "filename": "mv9_2.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv9_2.pdf",
+      "size": 296265,
+      "url": "https://www.laurency.com/MV/mv9_2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "KAUSALJAGET",
+      "filename": "mv10.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv10.pdf",
+      "size": 93208,
+      "url": "https://www.laurency.com/MV/mv10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "ESSENTIALJAGET",
+      "filename": "mv11.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv11.pdf",
+      "size": 75108,
+      "url": "https://www.laurency.com/MV/mv11.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "SUPERESSENTIALJAGET",
+      "filename": "mv12.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv12.pdf",
+      "size": 15237,
+      "url": "https://www.laurency.com/MV/mv12.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "PROTOGONOS OCH\r\n  TREDJEJAGET",
+      "filename": "mv13.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv13.pdf",
+      "size": 36350,
+      "url": "https://www.laurency.com/MV/mv13.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "SUBMANIFESTALJAGET",
+      "filename": "mv14.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv14.pdf",
+      "size": 10918,
+      "url": "https://www.laurency.com/MV/mv14.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "MANIFESTALJAGET",
+      "filename": "mv15.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv15.pdf",
+      "size": 15771,
+      "url": "https://www.laurency.com/MV/mv15.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "PLANETHIERARKIEN",
+      "filename": "mv16.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv16.pdf",
+      "size": 86398,
+      "url": "https://www.laurency.com/MV/mv16.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "PLANETREGERINGEN",
+      "filename": "mv17.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv17.pdf",
+      "size": 47446,
+      "url": "https://www.laurency.com/MV/mv17.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "TERMINOLOGI OCH\r\n  SYMBOLIK",
+      "filename": "mv18.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv18.pdf",
+      "size": 65707,
+      "url": "https://www.laurency.com/MV/mv18.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "INLEDNINGAR",
+      "filename": "mv1.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv1.pdf",
+      "size": 246089,
+      "url": "https://www.laurency.com/MV/mv1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "MONADSTEGEN",
+      "filename": "mv2.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv2.pdf",
+      "size": 40785,
+      "url": "https://www.laurency.com/MV/mv2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "FÖRSTAJAGET",
+      "filename": "mv3.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv3.pdf",
+      "size": 155163,
+      "url": "https://www.laurency.com/MV/mv3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "FÖRSTAJAGETS FYSIKALVÄSEN",
+      "filename": "mv4.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv4.pdf",
+      "size": 64243,
+      "url": "https://www.laurency.com/MV/mv4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "FÖRSTAJAGETS EMOTIONALVÄSEN",
+      "filename": "mv5.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv5.pdf",
+      "size": 227873,
+      "url": "https://www.laurency.com/MV/mv5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "FÖRSTAJAGETS MENTALVÄSEN",
+      "filename": "mv6.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv6.pdf",
+      "size": 153061,
+      "url": "https://www.laurency.com/MV/mv6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "KAUSALVÄSENDET",
+      "filename": "mv7.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv7.pdf",
+      "size": 68342,
+      "url": "https://www.laurency.com/MV/mv7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "AUGOEIDES",
+      "filename": "mv8.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv8.pdf",
+      "size": 150950,
+      "url": "https://www.laurency.com/MV/mv8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "",
+      "filename": "mv9_1.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv9_1.pdf",
+      "size": 350718,
+      "url": "https://www.laurency.com/MV/mv9_1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "",
+      "filename": "mv9_2.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv9_2.pdf",
+      "size": 296265,
+      "url": "https://www.laurency.com/MV/mv9_2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "Del 1,\r\n    9.1 - 9.133",
+      "filename": "mv9_1.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv9_1.pdf",
+      "size": 350718,
+      "url": "https://www.laurency.com/MV/mv9_1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "Mv9 2",
+      "filename": "mv9_2.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv9_2.pdf",
+      "size": 296265,
+      "url": "https://www.laurency.com/MV/mv9_2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "Del 2.  9.134\r\n-9.221",
+      "filename": "mv9_2.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv9_2.pdf",
+      "size": 296265,
+      "url": "https://www.laurency.com/MV/mv9_2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "KAUSALJAGET",
+      "filename": "mv10.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv10.pdf",
+      "size": 93208,
+      "url": "https://www.laurency.com/MV/mv10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "ESSENTIALJAGET",
+      "filename": "mv11.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv11.pdf",
+      "size": 75108,
+      "url": "https://www.laurency.com/MV/mv11.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "SUPERESSENTIALJAGET",
+      "filename": "mv12.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv12.pdf",
+      "size": 15237,
+      "url": "https://www.laurency.com/MV/mv12.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "PROTOGONOS OCH TREDJEJAGET",
+      "filename": "mv13.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv13.pdf",
+      "size": 36350,
+      "url": "https://www.laurency.com/MV/mv13.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "SUBMANIFESTALJAGET",
+      "filename": "mv14.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv14.pdf",
+      "size": 10918,
+      "url": "https://www.laurency.com/MV/mv14.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "MANIFESTALJAGET",
+      "filename": "mv15.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv15.pdf",
+      "size": 15771,
+      "url": "https://www.laurency.com/MV/mv15.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "PLANETHIERARKIEN",
+      "filename": "mv16.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv16.pdf",
+      "size": 86398,
+      "url": "https://www.laurency.com/MV/mv16.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "PLANETREGERINGEN",
+      "filename": "mv17.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv17.pdf",
+      "size": 47446,
+      "url": "https://www.laurency.com/MV/mv17.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Människans väg",
+      "title": "TERMINOLOGI OCH SYMBOLIK",
+      "filename": "mv18.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Människans väg/mv18.pdf",
+      "size": 65707,
+      "url": "https://www.laurency.com/MV/mv18.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Ett",
+      "title": "MEDITATION",
+      "filename": "l1_1.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Ett/l1_1.pdf",
+      "size": 96866,
+      "url": "https://www.laurency.com/L1/l1_1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Ett",
+      "title": "GNOSTIKEN",
+      "filename": "l1_2.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Ett/l1_2.pdf",
+      "size": 82186,
+      "url": "https://www.laurency.com/L1/l1_2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Ett",
+      "title": "GNOSTISKA\r\n  SYMBOLER",
+      "filename": "l1_3.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Ett/l1_3.pdf",
+      "size": 75813,
+      "url": "https://www.laurency.com/L1/l1_3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Ett",
+      "title": "LáRJUNGASKAP",
+      "filename": "l1_4.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Ett/l1_4.pdf",
+      "size": 205159,
+      "url": "https://www.laurency.com/L1/l1_4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Ett",
+      "title": "PLANETHIERARKIEN",
+      "filename": "l1_5.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Ett/l1_5.pdf",
+      "size": 139892,
+      "url": "https://www.laurency.com/L1/l1_5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Ett",
+      "title": "IDENTIFIKATION\r\n  OCH FRIGøRELSE",
+      "filename": "l1_6.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Ett/l1_6.pdf",
+      "size": 47042,
+      "url": "https://www.laurency.com/L1/l1_6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Ett",
+      "title": "PEDAGOGIK",
+      "filename": "l1_7.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Ett/l1_7.pdf",
+      "size": 135526,
+      "url": "https://www.laurency.com/L1/l1_7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Ett",
+      "title": "RáTTSUPPFATTNING",
+      "filename": "l1_8.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Ett/l1_8.pdf",
+      "size": 111615,
+      "url": "https://www.laurency.com/L1/l1_8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Ett",
+      "title": "LAGEN",
+      "filename": "l1_9.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Ett/l1_9.pdf",
+      "size": 428553,
+      "url": "https://www.laurency.com/L1/l1_9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Ett",
+      "title": "SFINXENS\r\n  HEMLIGHET",
+      "filename": "l1_10.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Ett/l1_10.pdf",
+      "size": 15764,
+      "url": "https://www.laurency.com/L1/l1_10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Ett",
+      "title": "MEDITATION",
+      "filename": "l1_1.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Ett/l1_1.pdf",
+      "size": 96866,
+      "url": "https://www.laurency.com/L1/l1_1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Ett",
+      "title": "GNOSTIKEN",
+      "filename": "l1_2.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Ett/l1_2.pdf",
+      "size": 82186,
+      "url": "https://www.laurency.com/L1/l1_2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Ett",
+      "title": "GNOSTISKA SYMBOLER",
+      "filename": "l1_3.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Ett/l1_3.pdf",
+      "size": 75813,
+      "url": "https://www.laurency.com/L1/l1_3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Ett",
+      "title": "LáRJUNGASKAP",
+      "filename": "l1_4.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Ett/l1_4.pdf",
+      "size": 205159,
+      "url": "https://www.laurency.com/L1/l1_4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Ett",
+      "title": "PLANETHIERARKIEN",
+      "filename": "l1_5.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Ett/l1_5.pdf",
+      "size": 139892,
+      "url": "https://www.laurency.com/L1/l1_5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Ett",
+      "title": "IDENTIFIKATION OCH FRIGøRELSE",
+      "filename": "l1_6.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Ett/l1_6.pdf",
+      "size": 47042,
+      "url": "https://www.laurency.com/L1/l1_6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Ett",
+      "title": "PEDAGOGIK",
+      "filename": "l1_7.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Ett/l1_7.pdf",
+      "size": 135526,
+      "url": "https://www.laurency.com/L1/l1_7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Ett",
+      "title": "RáTTSUPPFATTNING",
+      "filename": "l1_8.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Ett/l1_8.pdf",
+      "size": 111615,
+      "url": "https://www.laurency.com/L1/l1_8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Ett",
+      "title": "LAGEN",
+      "filename": "l1_9.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Ett/l1_9.pdf",
+      "size": 428553,
+      "url": "https://www.laurency.com/L1/l1_9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Ett",
+      "title": "SFINXENS HEMLIGHET",
+      "filename": "l1_10.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Ett/l1_10.pdf",
+      "size": 15764,
+      "url": "https://www.laurency.com/L1/l1_10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Två",
+      "title": "HYLOZOIK",
+      "filename": "l2_1.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Två/l2_1.pdf",
+      "size": 80111,
+      "url": "https://www.laurency.com/L2/l2_1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Två",
+      "title": "HYLOZOIKENS\r\n  VÄRLDSĊSKĊDNING",
+      "filename": "l2_2.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Två/l2_2.pdf",
+      "size": 144482,
+      "url": "https://www.laurency.com/L2/l2_2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Två",
+      "title": "ESOTERIK",
+      "filename": "l2_3.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Två/l2_3.pdf",
+      "size": 197561,
+      "url": "https://www.laurency.com/L2/l2_3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Två",
+      "title": "RÖRELSEASPEKTEN",
+      "filename": "l2_4.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Två/l2_4.pdf",
+      "size": 73947,
+      "url": "https://www.laurency.com/L2/l2_4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Två",
+      "title": "MEDVETENHETSASPEKTEN",
+      "filename": "l2_5.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Två/l2_5.pdf",
+      "size": 144765,
+      "url": "https://www.laurency.com/L2/l2_5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Två",
+      "title": "MATERIEASPEKTEN",
+      "filename": "l2_6.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Två/l2_6.pdf",
+      "size": 92444,
+      "url": "https://www.laurency.com/L2/l2_6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Två",
+      "title": "MEDVETENHETSUTVECKLING",
+      "filename": "l2_7.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Två/l2_7.pdf",
+      "size": 100080,
+      "url": "https://www.laurency.com/L2/l2_7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Två",
+      "title": "MÄNNISKANS\r\n  UTVECKLINGSSTADIER",
+      "filename": "l2_8.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Två/l2_8.pdf",
+      "size": 149921,
+      "url": "https://www.laurency.com/L2/l2_8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Två",
+      "title": "ESOTERISK\r\n  FILOSOFI",
+      "filename": "l2_9.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Två/l2_9.pdf",
+      "size": 211033,
+      "url": "https://www.laurency.com/L2/l2_9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Två",
+      "title": "ESOTERISK\r\n  PSYKOLOGI",
+      "filename": "l2_10.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Två/l2_10.pdf",
+      "size": 266436,
+      "url": "https://www.laurency.com/L2/l2_10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Två",
+      "title": "HYLOZOIK",
+      "filename": "l2_1.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Två/l2_1.pdf",
+      "size": 80111,
+      "url": "https://www.laurency.com/L2/l2_1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Två",
+      "title": "HYLOZOIKENS VÄRLDSĊSKĊDNING",
+      "filename": "l2_2.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Två/l2_2.pdf",
+      "size": 144482,
+      "url": "https://www.laurency.com/L2/l2_2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Två",
+      "title": "ESOTERIK",
+      "filename": "l2_3.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Två/l2_3.pdf",
+      "size": 197561,
+      "url": "https://www.laurency.com/L2/l2_3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Två",
+      "title": "RÖRELSEASPEKTEN",
+      "filename": "l2_4.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Två/l2_4.pdf",
+      "size": 73947,
+      "url": "https://www.laurency.com/L2/l2_4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Två",
+      "title": "MEDVETENHETSASPEKTEN",
+      "filename": "l2_5.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Två/l2_5.pdf",
+      "size": 144765,
+      "url": "https://www.laurency.com/L2/l2_5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Två",
+      "title": "MATERIEASPEKTEN",
+      "filename": "l2_6.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Två/l2_6.pdf",
+      "size": 92444,
+      "url": "https://www.laurency.com/L2/l2_6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Två",
+      "title": "MEDVETENHETSUTVECKLINGEN",
+      "filename": "l2_7.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Två/l2_7.pdf",
+      "size": 100080,
+      "url": "https://www.laurency.com/L2/l2_7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Två",
+      "title": "MÄNNISKANS UTVECKLINGSSTADIER",
+      "filename": "l2_8.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Två/l2_8.pdf",
+      "size": 149921,
+      "url": "https://www.laurency.com/L2/l2_8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Två",
+      "title": "ESOTERISK FILOSOFI",
+      "filename": "l2_9.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Två/l2_9.pdf",
+      "size": 211033,
+      "url": "https://www.laurency.com/L2/l2_9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Två",
+      "title": "ESOTERISK PSYKOLOGI",
+      "filename": "l2_10.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Två/l2_10.pdf",
+      "size": 266436,
+      "url": "https://www.laurency.com/L2/l2_10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "ESOTERISKA\r\n  KUNSKAPSORDNAR",
+      "filename": "l3_1.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_1.pdf",
+      "size": 79713,
+      "url": "https://www.laurency.com/L3/l3_1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "SYMBOLER",
+      "filename": "l3_2.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_2.pdf",
+      "size": 103114,
+      "url": "https://www.laurency.com/L3/l3_2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "ESOTERISK\r\n  TERMINOLOGI",
+      "filename": "l3_3.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_3.pdf",
+      "size": 73287,
+      "url": "https://www.laurency.com/L3/l3_3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "ALICE\r\n  A. BAILEY OCH D.K.",
+      "filename": "l3_4.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_4.pdf",
+      "size": 26037,
+      "url": "https://www.laurency.com/L3/l3_4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "TEOSOFI",
+      "filename": "l3_5.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_5.pdf",
+      "size": 186505,
+      "url": "https://www.laurency.com/L3/l3_5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "OCKULTA\r\n  SEKTER",
+      "filename": "l3_6.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_6.pdf",
+      "size": 118213,
+      "url": "https://www.laurency.com/L3/l3_6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "YOGA",
+      "filename": "l3_7.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_7.pdf",
+      "size": 74718,
+      "url": "https://www.laurency.com/L3/l3_7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "MYSTIK",
+      "filename": "l3_8.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_8.pdf",
+      "size": 109621,
+      "url": "https://www.laurency.com/L3/l3_8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "SPIRITUALISM",
+      "filename": "l3_9.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_9.pdf",
+      "size": 21801,
+      "url": "https://www.laurency.com/L3/l3_9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "LIVET MELLAN\r\n  INKARNATIONERNA",
+      "filename": "l3_10.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_10.pdf",
+      "size": 37322,
+      "url": "https://www.laurency.com/L3/l3_10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "REINKARNATION",
+      "filename": "l3_11.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_11.pdf",
+      "size": 75585,
+      "url": "https://www.laurency.com/L3/l3_11.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "DEVAER",
+      "filename": "l3_12.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_12.pdf",
+      "size": 72938,
+      "url": "https://www.laurency.com/L3/l3_12.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "HÄLSA",
+      "filename": "l3_13.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_13.pdf",
+      "size": 32884,
+      "url": "https://www.laurency.com/L3/l3_13.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "DE SJU\r\n  DEPARTEMENTEN",
+      "filename": "l3_14.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_14.pdf",
+      "size": 125417,
+      "url": "https://www.laurency.com/L3/l3_14.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "CENTRA I\r\n  MÄNNISKANS HÖLJEN",
+      "filename": "l3_15.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_15.pdf",
+      "size": 48728,
+      "url": "https://www.laurency.com/L3/l3_15.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "MAGI",
+      "filename": "l3_16.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_16.pdf",
+      "size": 24427,
+      "url": "https://www.laurency.com/L3/l3_16.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "ASTROLOGI",
+      "filename": "l3_17.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_17.pdf",
+      "size": 99405,
+      "url": "https://www.laurency.com/L3/l3_17.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "VĹR EPOK",
+      "filename": "l3_18.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_18.pdf",
+      "size": 123335,
+      "url": "https://www.laurency.com/L3/l3_18.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "ESOTERISKA KUNSKAPSORDNAR",
+      "filename": "l3_1.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_1.pdf",
+      "size": 79713,
+      "url": "https://www.laurency.com/L3/l3_1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "SYMBOLER",
+      "filename": "l3_2.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_2.pdf",
+      "size": 103114,
+      "url": "https://www.laurency.com/L3/l3_2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "ESOTERISK TERMINOLOGI",
+      "filename": "l3_3.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_3.pdf",
+      "size": 73287,
+      "url": "https://www.laurency.com/L3/l3_3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "ALICE\r\n  A. BAILEY OCH D.K.",
+      "filename": "l3_4.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_4.pdf",
+      "size": 26037,
+      "url": "https://www.laurency.com/L3/l3_4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "TEOSOFI",
+      "filename": "l3_5.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_5.pdf",
+      "size": 186505,
+      "url": "https://www.laurency.com/L3/l3_5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "OCKULTA\r\n  SEKTER",
+      "filename": "l3_6.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_6.pdf",
+      "size": 118213,
+      "url": "https://www.laurency.com/L3/l3_6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "YOGA",
+      "filename": "l3_7.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_7.pdf",
+      "size": 74718,
+      "url": "https://www.laurency.com/L3/l3_7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "MYSTIK",
+      "filename": "l3_8.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_8.pdf",
+      "size": 109621,
+      "url": "https://www.laurency.com/L3/l3_8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "SPIRITUALISM",
+      "filename": "l3_9.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_9.pdf",
+      "size": 21801,
+      "url": "https://www.laurency.com/L3/l3_9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "LIVET MELLAN INKARNATIONERNA",
+      "filename": "l3_10.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_10.pdf",
+      "size": 37322,
+      "url": "https://www.laurency.com/L3/l3_10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "REINKARNATION",
+      "filename": "l3_11.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_11.pdf",
+      "size": 75585,
+      "url": "https://www.laurency.com/L3/l3_11.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "DEVAER",
+      "filename": "l3_12.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_12.pdf",
+      "size": 72938,
+      "url": "https://www.laurency.com/L3/l3_12.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "HÄLSA",
+      "filename": "l3_13.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_13.pdf",
+      "size": 32884,
+      "url": "https://www.laurency.com/L3/l3_13.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "DE\r\n  SJU DEPARTEMENTEN",
+      "filename": "l3_14.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_14.pdf",
+      "size": 125417,
+      "url": "https://www.laurency.com/L3/l3_14.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "CENTRA I MÄNNISKANS HÖLJEN",
+      "filename": "l3_15.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_15.pdf",
+      "size": 48728,
+      "url": "https://www.laurency.com/L3/l3_15.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "MAGI",
+      "filename": "l3_16.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_16.pdf",
+      "size": 24427,
+      "url": "https://www.laurency.com/L3/l3_16.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "ASTROLOGI",
+      "filename": "l3_17.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_17.pdf",
+      "size": 99405,
+      "url": "https://www.laurency.com/L3/l3_17.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Tre",
+      "title": "VĹR\r\n  EPOK",
+      "filename": "l3_18.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Tre/l3_18.pdf",
+      "size": 123335,
+      "url": "https://www.laurency.com/L3/l3_18.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fyra",
+      "title": "LAURENCY",
+      "filename": "l4_1.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fyra/l4_1.pdf",
+      "size": 164758,
+      "url": "https://www.laurency.com/L4/l4_1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fyra",
+      "title": "KULTUR",
+      "filename": "l4_2.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fyra/l4_2.pdf",
+      "size": 141285,
+      "url": "https://www.laurency.com/L4/l4_2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fyra",
+      "title": "RELIGION",
+      "filename": "l4_3.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fyra/l4_3.pdf",
+      "size": 141540,
+      "url": "https://www.laurency.com/L4/l4_3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fyra",
+      "title": "TEOLOGI",
+      "filename": "l4_4.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fyra/l4_4.pdf",
+      "size": 211655,
+      "url": "https://www.laurency.com/L4/l4_4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fyra",
+      "title": "LITTERATUR",
+      "filename": "l4_5.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fyra/l4_5.pdf",
+      "size": 84434,
+      "url": "https://www.laurency.com/L4/l4_5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fyra",
+      "title": "KONST",
+      "filename": "l4_6.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fyra/l4_6.pdf",
+      "size": 34241,
+      "url": "https://www.laurency.com/L4/l4_6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fyra",
+      "title": "FILOSOFI",
+      "filename": "l4_7.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fyra/l4_7.pdf",
+      "size": 331022,
+      "url": "https://www.laurency.com/L4/l4_7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fyra",
+      "title": "LAURENCY",
+      "filename": "l4_1.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fyra/l4_1.pdf",
+      "size": 164758,
+      "url": "https://www.laurency.com/L4/l4_1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fyra",
+      "title": "KULTUR",
+      "filename": "l4_2.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fyra/l4_2.pdf",
+      "size": 141285,
+      "url": "https://www.laurency.com/L4/l4_2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fyra",
+      "title": "RELIGION",
+      "filename": "l4_3.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fyra/l4_3.pdf",
+      "size": 141540,
+      "url": "https://www.laurency.com/L4/l4_3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fyra",
+      "title": "TEOLOGI",
+      "filename": "l4_4.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fyra/l4_4.pdf",
+      "size": 211655,
+      "url": "https://www.laurency.com/L4/l4_4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fyra",
+      "title": "LITTERATUR",
+      "filename": "l4_5.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fyra/l4_5.pdf",
+      "size": 84434,
+      "url": "https://www.laurency.com/L4/l4_5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fyra",
+      "title": "KONST",
+      "filename": "l4_6.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fyra/l4_6.pdf",
+      "size": 34241,
+      "url": "https://www.laurency.com/L4/l4_6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fyra",
+      "title": "FILOSOFI",
+      "filename": "l4_7.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fyra/l4_7.pdf",
+      "size": 331022,
+      "url": "https://www.laurency.com/L4/l4_7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "GOETHE\r\n  SĹSOM ESOTERIKER",
+      "filename": "l5_1.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_1.pdf",
+      "size": 35980,
+      "url": "https://www.laurency.com/L5/l5_1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "VERKLIGHETSIDEER\r\n  HOS ROUSSEAU",
+      "filename": "l5_2.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_2.pdf",
+      "size": 24629,
+      "url": "https://www.laurency.com/L5/l5_2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "ERIK\r\n  GUSTAF GEIJERS HISTORIEFILOSOFI",
+      "filename": "l5_3.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_3.pdf",
+      "size": 40306,
+      "url": "https://www.laurency.com/L5/l5_3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "KRISHNAMURTI\r\n  OCH UTVECKLINGSLAGEN",
+      "filename": "l5_4.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_4.pdf",
+      "size": 47116,
+      "url": "https://www.laurency.com/L5/l5_4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "VÄGEN\r\n  TILL KUNSKAPEN OCH ENHETEN",
+      "filename": "l5_5.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_5.pdf",
+      "size": 66967,
+      "url": "https://www.laurency.com/L5/l5_5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "EN\r\n  EFFEKTIVITETSFILOSOFI",
+      "filename": "l5_6.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_6.pdf",
+      "size": 72835,
+      "url": "https://www.laurency.com/L5/l5_6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "OM\r\n  KRISTI ĹTERUPPTRÄDANDE",
+      "filename": "l5_7.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_7.pdf",
+      "size": 81850,
+      "url": "https://www.laurency.com/L5/l5_7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "MÄNNISKANS\r\n  FRIGÖRELSE",
+      "filename": "l5_8.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_8.pdf",
+      "size": 30454,
+      "url": "https://www.laurency.com/L5/l5_8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "INDISK\r\n  PSYKOLOGI",
+      "filename": "l5_9.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_9.pdf",
+      "size": 30862,
+      "url": "https://www.laurency.com/L5/l5_9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "VERA STANLEY\r\n  ALDER",
+      "filename": "l5_10.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_10.pdf",
+      "size": 57552,
+      "url": "https://www.laurency.com/L5/l5_10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "POUL BJERRE",
+      "filename": "l5_11.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_11.pdf",
+      "size": 27993,
+      "url": "https://www.laurency.com/L5/l5_11.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "YOGA OCH DEN\r\n  VÄSTERLÄNDSKA PSYKOLOGIN",
+      "filename": "l5_12.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_12.pdf",
+      "size": 29786,
+      "url": "https://www.laurency.com/L5/l5_12.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "EMERSONSTUDIER",
+      "filename": "l5_13.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_13.pdf",
+      "size": 18180,
+      "url": "https://www.laurency.com/L5/l5_13.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "FRÖDINGS\r\n  TEOSOFI",
+      "filename": "l5_14.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_14.pdf",
+      "size": 20150,
+      "url": "https://www.laurency.com/L5/l5_14.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "DAG\r\n  HAMMARSKJÖLD",
+      "filename": "l5_15.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_15.pdf",
+      "size": 16155,
+      "url": "https://www.laurency.com/L5/l5_15.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "THE INITIATE IN\r\n  THE NEW WORLD",
+      "filename": "l5_16.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_16.pdf",
+      "size": 16334,
+      "url": "https://www.laurency.com/L5/l5_16.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "THE REAL H. P.\r\n  BLAVATSKY",
+      "filename": "l5_17.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_17.pdf",
+      "size": 42187,
+      "url": "https://www.laurency.com/L5/l5_17.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "MÄNSKLIGT",
+      "filename": "l5_18.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_18.pdf",
+      "size": 19880,
+      "url": "https://www.laurency.com/L5/l5_18.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "I SAMKLANG MED\r\n  DET OÄNDLIGA",
+      "filename": "l5_19.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_19.pdf",
+      "size": 9261,
+      "url": "https://www.laurency.com/L5/l5_19.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "VETENSKAP",
+      "filename": "l5_20.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_20.pdf",
+      "size": 61098,
+      "url": "https://www.laurency.com/L5/l5_20.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "PSYKOLOGI",
+      "filename": "l5_21.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_21.pdf",
+      "size": 147027,
+      "url": "https://www.laurency.com/L5/l5_21.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "HISTORIA",
+      "filename": "l5_22.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_22.pdf",
+      "size": 71740,
+      "url": "https://www.laurency.com/L5/l5_22.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "SVARTA LOGEN",
+      "filename": "l5_23.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_23.pdf",
+      "size": 93409,
+      "url": "https://www.laurency.com/L5/l5_23.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "GOETHE\r\n  SĹSOM ESOTERIKER",
+      "filename": "l5_1.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_1.pdf",
+      "size": 35980,
+      "url": "https://www.laurency.com/L5/l5_1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "VERKLIGHETSIDEER HOS ROUSSEAU",
+      "filename": "l5_2.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_2.pdf",
+      "size": 24629,
+      "url": "https://www.laurency.com/L5/l5_2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "ERIK GUSTAF GEIJERS HISTORIEFILOSOFI",
+      "filename": "l5_3.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_3.pdf",
+      "size": 40306,
+      "url": "https://www.laurency.com/L5/l5_3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "KRISHNAMURTI OCH UTVECKLINGSLAGEN",
+      "filename": "l5_4.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_4.pdf",
+      "size": 47116,
+      "url": "https://www.laurency.com/L5/l5_4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "VÄGEN\r\n  TILL KUNSKAPEN OCH ENHETEN",
+      "filename": "l5_5.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_5.pdf",
+      "size": 66967,
+      "url": "https://www.laurency.com/L5/l5_5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "EN\r\n  EFFEKTIVITETSFILOSOFI",
+      "filename": "l5_6.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_6.pdf",
+      "size": 72835,
+      "url": "https://www.laurency.com/L5/l5_6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "OM\r\n  KRISTI ĹTERUPPTRÄDANDE",
+      "filename": "l5_7.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_7.pdf",
+      "size": 81850,
+      "url": "https://www.laurency.com/L5/l5_7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "MÄNNISKANS FRIGÖRELSE",
+      "filename": "l5_8.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_8.pdf",
+      "size": 30454,
+      "url": "https://www.laurency.com/L5/l5_8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "INDISK PSYKOLOGI",
+      "filename": "l5_9.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_9.pdf",
+      "size": 30862,
+      "url": "https://www.laurency.com/L5/l5_9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "VERA STANLEY ALDER",
+      "filename": "l5_10.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_10.pdf",
+      "size": 57552,
+      "url": "https://www.laurency.com/L5/l5_10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "POUL BJERRE",
+      "filename": "l5_11.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_11.pdf",
+      "size": 27993,
+      "url": "https://www.laurency.com/L5/l5_11.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "YOGA OCH DEN VÄSTERLÄNDSKA PSYKOLOGIN",
+      "filename": "l5_12.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_12.pdf",
+      "size": 29786,
+      "url": "https://www.laurency.com/L5/l5_12.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "EMERSONSTUDIER",
+      "filename": "l5_13.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_13.pdf",
+      "size": 18180,
+      "url": "https://www.laurency.com/L5/l5_13.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "FRÖDINGS TEOSOFI",
+      "filename": "l5_14.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_14.pdf",
+      "size": 20150,
+      "url": "https://www.laurency.com/L5/l5_14.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "DAG HAMMARSKJÖLD",
+      "filename": "l5_15.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_15.pdf",
+      "size": 16155,
+      "url": "https://www.laurency.com/L5/l5_15.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "THE INITIATE IN THE NEW WORLD",
+      "filename": "l5_16.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_16.pdf",
+      "size": 16334,
+      "url": "https://www.laurency.com/L5/l5_16.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "THE REAL H. P. BLAVATSKY",
+      "filename": "l5_17.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_17.pdf",
+      "size": 42187,
+      "url": "https://www.laurency.com/L5/l5_17.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "MÄNSKLIGT",
+      "filename": "l5_18.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_18.pdf",
+      "size": 19880,
+      "url": "https://www.laurency.com/L5/l5_18.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "I SAMKLANG MED DET OÄNDLIGA",
+      "filename": "l5_19.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_19.pdf",
+      "size": 9261,
+      "url": "https://www.laurency.com/L5/l5_19.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "VETENSKAP",
+      "filename": "l5_20.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_20.pdf",
+      "size": 61098,
+      "url": "https://www.laurency.com/L5/l5_20.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "PSYKOLOGI",
+      "filename": "l5_21.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_21.pdf",
+      "size": 147027,
+      "url": "https://www.laurency.com/L5/l5_21.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "HISTORIA",
+      "filename": "l5_22.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_22.pdf",
+      "size": 71740,
+      "url": "https://www.laurency.com/L5/l5_22.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Livskunskap Fem",
+      "title": "SVARTA\r\n  LOGEN",
+      "filename": "l5_23.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Livskunskap Fem/l5_23.pdf",
+      "size": 93409,
+      "url": "https://www.laurency.com/L5/l5_23.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Småskrifter",
+      "title": "EKON\r\n  FRéN PLANETHIERARKIENS FøRSTA DEPARTEMENT",
+      "filename": "ekon.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Småskrifter/ekon.pdf",
+      "size": 129740,
+      "url": "https://www.laurency.com/Blandade/ekon.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Småskrifter",
+      "title": "KALDEERNAS MAGISKA\r\n  CIRKEL",
+      "filename": "Kaldeernas.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Småskrifter/Kaldeernas.pdf",
+      "size": 113728,
+      "url": "https://www.laurency.com/Blandade/Kaldeernas.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Småskrifter",
+      "title": "OM KRISTI\r\n  éTERUPPTRáDANDE",
+      "filename": "l5_7.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Småskrifter/l5_7.pdf",
+      "size": 81850,
+      "url": "https://www.laurency.com/L5/l5_7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Småskrifter",
+      "title": "SFINXENS TRE FRéGOR: VARIFRéN? HURU? VARTHáN?",
+      "filename": "kv4.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Småskrifter/kv4.pdf",
+      "size": 30410,
+      "url": "https://www.laurency.com/KV/kv4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Småskrifter",
+      "title": "VáGEN TILL KUNSKAPEN OCH ENHETEN",
+      "filename": "l5_5.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Småskrifter/l5_5.pdf",
+      "size": 66967,
+      "url": "https://www.laurency.com/L5/l5_5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Småskrifter",
+      "title": "EN EFFEKTIVITETSFILOSOFI",
+      "filename": "l5_6.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Småskrifter/l5_6.pdf",
+      "size": 72835,
+      "url": "https://www.laurency.com/L5/l5_6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Småskrifter",
+      "title": "MáNNISKANS FRIGøRELSE",
+      "filename": "l5_8.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Småskrifter/l5_8.pdf",
+      "size": 30454,
+      "url": "https://www.laurency.com/L5/l5_8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Förklaringen",
+      "title": "Förord",
+      "filename": "fkinledn.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Förklaringen/fkinledn.pdf",
+      "size": 9565,
+      "url": "https://www.laurency.com/FK/fkinledn.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Förklaringen",
+      "title": "ETT",
+      "filename": "fk1.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Förklaringen/fk1.pdf",
+      "size": 42263,
+      "url": "https://www.laurency.com/FK/fk1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Förklaringen",
+      "title": "TVĹ",
+      "filename": "fk2.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Förklaringen/fk2.pdf",
+      "size": 39427,
+      "url": "https://www.laurency.com/FK/fk2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Förklaringen",
+      "title": "TRE",
+      "filename": "fk3.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Förklaringen/fk3.pdf",
+      "size": 31184,
+      "url": "https://www.laurency.com/FK/fk3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Förklaringen",
+      "title": "FYRA",
+      "filename": "fk4.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Förklaringen/fk4.pdf",
+      "size": 39497,
+      "url": "https://www.laurency.com/FK/fk4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Förklaringen",
+      "title": "FEM",
+      "filename": "fk5.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Förklaringen/fk5.pdf",
+      "size": 41502,
+      "url": "https://www.laurency.com/FK/fk5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Förklaringen",
+      "title": "SEX",
+      "filename": "fk6.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Förklaringen/fk6.pdf",
+      "size": 44601,
+      "url": "https://www.laurency.com/FK/fk6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Förklaringen",
+      "title": "SJU",
+      "filename": "fk7.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Förklaringen/fk7.pdf",
+      "size": 40829,
+      "url": "https://www.laurency.com/FK/fk7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Förklaringen",
+      "title": "ĹTTA",
+      "filename": "fk8.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Förklaringen/fk8.pdf",
+      "size": 43519,
+      "url": "https://www.laurency.com/FK/fk8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Förklaringen",
+      "title": "NIO",
+      "filename": "fk9.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Förklaringen/fk9.pdf",
+      "size": 53837,
+      "url": "https://www.laurency.com/FK/fk9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Förklaringen",
+      "title": "TIO",
+      "filename": "fk10.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Förklaringen/fk10.pdf",
+      "size": 47985,
+      "url": "https://www.laurency.com/FK/fk10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Förklaringen",
+      "title": "ELVA",
+      "filename": "fk11.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Förklaringen/fk11.pdf",
+      "size": 51451,
+      "url": "https://www.laurency.com/FK/fk11.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Förklaringen",
+      "title": "TOLV",
+      "filename": "fk12.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Förklaringen/fk12.pdf",
+      "size": 67653,
+      "url": "https://www.laurency.com/FK/fk12.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Förklaringen",
+      "title": "Rekommenderad litteratur",
+      "filename": "fkrekomm.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Förklaringen/fkrekomm.pdf",
+      "size": 8364,
+      "url": "https://www.laurency.com/FK/fkrekomm.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Förklaringen",
+      "title": "Förord",
+      "filename": "fkinledn.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Förklaringen/fkinledn.pdf",
+      "size": 9565,
+      "url": "https://www.laurency.com/FK/fkinledn.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Förklaringen",
+      "title": "ETT",
+      "filename": "fk1.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Förklaringen/fk1.pdf",
+      "size": 42263,
+      "url": "https://www.laurency.com/FK/fk1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Förklaringen",
+      "title": "TVĹ",
+      "filename": "fk2.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Förklaringen/fk2.pdf",
+      "size": 39427,
+      "url": "https://www.laurency.com/FK/fk2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Förklaringen",
+      "title": "TRE",
+      "filename": "fk3.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Förklaringen/fk3.pdf",
+      "size": 31184,
+      "url": "https://www.laurency.com/FK/fk3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Förklaringen",
+      "title": "FYRA",
+      "filename": "fk4.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Förklaringen/fk4.pdf",
+      "size": 39497,
+      "url": "https://www.laurency.com/FK/fk4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Förklaringen",
+      "title": "FEM",
+      "filename": "fk5.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Förklaringen/fk5.pdf",
+      "size": 41502,
+      "url": "https://www.laurency.com/FK/fk5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Förklaringen",
+      "title": "SEX",
+      "filename": "fk6.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Förklaringen/fk6.pdf",
+      "size": 44601,
+      "url": "https://www.laurency.com/FK/fk6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Förklaringen",
+      "title": "SJU",
+      "filename": "fk7.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Förklaringen/fk7.pdf",
+      "size": 40829,
+      "url": "https://www.laurency.com/FK/fk7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Förklaringen",
+      "title": "ĹTTA",
+      "filename": "fk8.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Förklaringen/fk8.pdf",
+      "size": 43519,
+      "url": "https://www.laurency.com/FK/fk8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Förklaringen",
+      "title": "NIO",
+      "filename": "fk9.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Förklaringen/fk9.pdf",
+      "size": 53837,
+      "url": "https://www.laurency.com/FK/fk9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Förklaringen",
+      "title": "TIO",
+      "filename": "fk10.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Förklaringen/fk10.pdf",
+      "size": 47985,
+      "url": "https://www.laurency.com/FK/fk10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Förklaringen",
+      "title": "ELVA",
+      "filename": "fk11.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Förklaringen/fk11.pdf",
+      "size": 51451,
+      "url": "https://www.laurency.com/FK/fk11.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Förklaringen",
+      "title": "TOLV",
+      "filename": "fk12.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Förklaringen/fk12.pdf",
+      "size": 67653,
+      "url": "https://www.laurency.com/FK/fk12.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Förklaringen",
+      "title": "Rekommenderad litteratur",
+      "filename": "fkrekomm.pdf",
+      "path": "laurency_ultimate/swedish_Svenska/Books/Förklaringen/fkrekomm.pdf",
+      "size": 8364,
+      "url": "https://www.laurency.com/FK/fkrekomm.pdf"
+    },
+    {
+      "type": "dictionary",
+      "title": "Litet esoteriskt lexikon",
+      "path": "laurency_ultimate/swedish_Svenska/Dictionaries/dictionary_swedish.html",
+      "size": 758889,
+      "url": "https://www.laurency.com/Swedish/lexikon.htm"
+    }
+  ]
+}

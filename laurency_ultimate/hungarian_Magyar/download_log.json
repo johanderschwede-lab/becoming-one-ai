@@ -1,0 +1,302 @@
+{
+  "language": "hungarian",
+  "language_info": {
+    "name": "Magyar",
+    "flag": "🇭🇺",
+    "nav_frame": "Hungarian/sidehun.htm",
+    "path": "Hungarian/",
+    "is_original": false
+  },
+  "download_date": "2025-08-18T03:12:17.924177",
+  "total_files": 32,
+  "files": [
+    {
+      "type": "book",
+      "series": "A valóság ismerete",
+      "title": "A \r\n\tVALÓSÁG PROBLÉMÁI, ELSŐ RÉSZ",
+      "filename": "KVhun1.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A valóság ismerete/KVhun1.pdf",
+      "size": 459670,
+      "url": "https://www.laurency.com/KVhun/KVhun1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A valóság ismerete",
+      "title": "A \r\nVALÓSÁG PROBLÉMÁI, MÁSODIK RÉSZ",
+      "filename": "KVhun2.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A valóság ismerete/KVhun2.pdf",
+      "size": 234732,
+      "url": "https://www.laurency.com/KVhun/KVhun2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A valóság ismerete",
+      "title": "A VALÓSÁG PROBLÉMÁI, ELSŐ RÉSZ",
+      "filename": "KVhun1.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A valóság ismerete/KVhun1.pdf",
+      "size": 459670,
+      "url": "https://www.laurency.com/KVhun/KVhun1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A valóság ismerete",
+      "title": "A VALÓSÁG PROBLÉMÁI, \r\nMÁSODIK RÉSZ",
+      "filename": "KVhun2.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A valóság ismerete/KVhun2.pdf",
+      "size": 234732,
+      "url": "https://www.laurency.com/KVhun/KVhun2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A magyarázat",
+      "title": "Egy \r\nelső magyarázat",
+      "filename": "Fkhun_intro.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A magyarázat/Fkhun_intro.pdf",
+      "size": 117777,
+      "url": "https://www.laurency.com/Fkhun/Fkhun_intro.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A magyarázat",
+      "title": "EGY",
+      "filename": "Fkhun1.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A magyarázat/Fkhun1.pdf",
+      "size": 190527,
+      "url": "https://www.laurency.com/Fkhun/Fkhun1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A magyarázat",
+      "title": "KETTŐ",
+      "filename": "Fkhun2.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A magyarázat/Fkhun2.pdf",
+      "size": 186725,
+      "url": "https://www.laurency.com/Fkhun/Fkhun2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A magyarázat",
+      "title": "HÁROM",
+      "filename": "Fkhun3.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A magyarázat/Fkhun3.pdf",
+      "size": 161657,
+      "url": "https://www.laurency.com/Fkhun/Fkhun3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A magyarázat",
+      "title": "NÉGY",
+      "filename": "Fkhun4.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A magyarázat/Fkhun4.pdf",
+      "size": 194770,
+      "url": "https://www.laurency.com/Fkhun/Fkhun4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A magyarázat",
+      "title": "ÖT",
+      "filename": "Fkhun5.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A magyarázat/Fkhun5.pdf",
+      "size": 188916,
+      "url": "https://www.laurency.com/Fkhun/Fkhun5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A magyarázat",
+      "title": "HAT",
+      "filename": "Fkhun6.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A magyarázat/Fkhun6.pdf",
+      "size": 177678,
+      "url": "https://www.laurency.com/Fkhun/Fkhun6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A magyarázat",
+      "title": "HÉT",
+      "filename": "Fkhun7.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A magyarázat/Fkhun7.pdf",
+      "size": 201884,
+      "url": "https://www.laurency.com/Fkhun/Fkhun7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A magyarázat",
+      "title": "NYOLC",
+      "filename": "Fkhun8.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A magyarázat/Fkhun8.pdf",
+      "size": 212509,
+      "url": "https://www.laurency.com/Fkhun/Fkhun8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A magyarázat",
+      "title": "KILENC",
+      "filename": "Fkhun9.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A magyarázat/Fkhun9.pdf",
+      "size": 239622,
+      "url": "https://www.laurency.com/Fkhun/Fkhun9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A magyarázat",
+      "title": "TÍZ",
+      "filename": "Fkhun10.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A magyarázat/Fkhun10.pdf",
+      "size": 219471,
+      "url": "https://www.laurency.com/Fkhun/Fkhun10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A magyarázat",
+      "title": "TIZENEGY",
+      "filename": "Fkhun11.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A magyarázat/Fkhun11.pdf",
+      "size": 211866,
+      "url": "https://www.laurency.com/Fkhun/Fkhun11.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A magyarázat",
+      "title": "TIZENKETTŐ",
+      "filename": "Fkhun12.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A magyarázat/Fkhun12.pdf",
+      "size": 297274,
+      "url": "https://www.laurency.com/Fkhun/Fkhun12.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A magyarázat",
+      "title": "Tartalomjegyzék",
+      "filename": "Fkhun_cont.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A magyarázat/Fkhun_cont.pdf",
+      "size": 126651,
+      "url": "https://www.laurency.com/Fkhun/Fkhun_cont.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A magyarázat",
+      "title": "EGY",
+      "filename": "Fkhun1.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A magyarázat/Fkhun1.pdf",
+      "size": 190527,
+      "url": "https://www.laurency.com/Fkhun/Fkhun1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A magyarázat",
+      "title": "",
+      "filename": "Fkhun1.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A magyarázat/Fkhun1.pdf",
+      "size": 190527,
+      "url": "https://www.laurency.com/Fkhun/Fkhun1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A magyarázat",
+      "title": ".",
+      "filename": "Fkhun1.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A magyarázat/Fkhun1.pdf",
+      "size": 190527,
+      "url": "https://www.laurency.com/Fkhun/Fkhun1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A magyarázat",
+      "title": "KETTŐ",
+      "filename": "Fkhun2.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A magyarázat/Fkhun2.pdf",
+      "size": 186725,
+      "url": "https://www.laurency.com/Fkhun/Fkhun2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A magyarázat",
+      "title": "HÁROM",
+      "filename": "Fkhun3.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A magyarázat/Fkhun3.pdf",
+      "size": 161657,
+      "url": "https://www.laurency.com/Fkhun/Fkhun3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A magyarázat",
+      "title": "NÉGY",
+      "filename": "Fkhun4.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A magyarázat/Fkhun4.pdf",
+      "size": 194770,
+      "url": "https://www.laurency.com/Fkhun/Fkhun4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A magyarázat",
+      "title": "ÖT",
+      "filename": "Fkhun5.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A magyarázat/Fkhun5.pdf",
+      "size": 188916,
+      "url": "https://www.laurency.com/Fkhun/Fkhun5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A magyarázat",
+      "title": "HAT",
+      "filename": "Fkhun6.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A magyarázat/Fkhun6.pdf",
+      "size": 177678,
+      "url": "https://www.laurency.com/Fkhun/Fkhun6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A magyarázat",
+      "title": "HÉT",
+      "filename": "Fkhun7.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A magyarázat/Fkhun7.pdf",
+      "size": 201884,
+      "url": "https://www.laurency.com/Fkhun/Fkhun7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A magyarázat",
+      "title": "NYOLC",
+      "filename": "Fkhun8.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A magyarázat/Fkhun8.pdf",
+      "size": 212509,
+      "url": "https://www.laurency.com/Fkhun/Fkhun8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A magyarázat",
+      "title": "KILENC",
+      "filename": "Fkhun9.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A magyarázat/Fkhun9.pdf",
+      "size": 239622,
+      "url": "https://www.laurency.com/Fkhun/Fkhun9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A magyarázat",
+      "title": "TÍZ",
+      "filename": "Fkhun10.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A magyarázat/Fkhun10.pdf",
+      "size": 219471,
+      "url": "https://www.laurency.com/Fkhun/Fkhun10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A magyarázat",
+      "title": "TIZENEGY",
+      "filename": "Fkhun11.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A magyarázat/Fkhun11.pdf",
+      "size": 211866,
+      "url": "https://www.laurency.com/Fkhun/Fkhun11.pdf"
+    },
+    {
+      "type": "book",
+      "series": "A magyarázat",
+      "title": "TIZENKETTŐ",
+      "filename": "Fkhun12.pdf",
+      "path": "laurency_ultimate/hungarian_Magyar/Books/A magyarázat/Fkhun12.pdf",
+      "size": 297274,
+      "url": "https://www.laurency.com/Fkhun/Fkhun12.pdf"
+    }
+  ]
+}

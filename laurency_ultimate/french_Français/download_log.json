@@ -1,0 +1,104 @@
+{
+  "language": "french",
+  "language_info": {
+    "name": "Français",
+    "flag": "🇫🇷",
+    "nav_frame": "French/sidefr.htm",
+    "path": "French/",
+    "is_original": false
+  },
+  "download_date": "2025-08-18T03:05:10.164720",
+  "total_files": 10,
+  "files": [
+    {
+      "type": "book",
+      "series": "La Pierre des Sages",
+      "title": "VISION \r\n\tEXOTERIQUE DU MONDE ET DE LA VIE",
+      "filename": "DVSfr1.pdf",
+      "path": "laurency_ultimate/french_Français/Books/La Pierre des Sages/DVSfr1.pdf",
+      "size": 447580,
+      "url": "https://www.laurency.com/DVSfr/DVSfr1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "La Pierre des Sages",
+      "title": "LA VISION ÉSOTÉRIQUE DU MONDE",
+      "filename": "DVSfr2.pdf",
+      "path": "laurency_ultimate/french_Français/Books/La Pierre des Sages/DVSfr2.pdf",
+      "size": 390332,
+      "url": "https://www.laurency.com/DVSfr/DVSfr2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "La Pierre des Sages",
+      "title": "VISION ÉSOTÉRIQUE DE LA VIE",
+      "filename": "DVSfr3.pdf",
+      "path": "laurency_ultimate/french_Français/Books/La Pierre des Sages/DVSfr3.pdf",
+      "size": 440710,
+      "url": "https://www.laurency.com/DVSfr/DVSfr3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "La Pierre des Sages",
+      "title": "La Pierre \r\n\tdes Sages",
+      "filename": "DVSfr_all.pdf",
+      "path": "laurency_ultimate/french_Français/Books/La Pierre des Sages/DVSfr_all.pdf",
+      "size": 998442,
+      "url": "https://www.laurency.com/DVSfr/DVSfr_all.pdf"
+    },
+    {
+      "type": "book",
+      "series": "La Pierre des Sages",
+      "title": "VISION \r\n\tEXOTERIQUE DU MONDE ET DE LA VIE",
+      "filename": "DVSfr1.pdf",
+      "path": "laurency_ultimate/french_Français/Books/La Pierre des Sages/DVSfr1.pdf",
+      "size": 447580,
+      "url": "https://www.laurency.com/DVSfr/DVSfr1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "La Pierre des Sages",
+      "title": "LA VISION ÉSOTÉRIQUE DU MONDE",
+      "filename": "DVSfr2.pdf",
+      "path": "laurency_ultimate/french_Français/Books/La Pierre des Sages/DVSfr2.pdf",
+      "size": 390332,
+      "url": "https://www.laurency.com/DVSfr/DVSfr2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "La Pierre des Sages",
+      "title": "VISION \r\n\tÉSOTÉRIQUE DE LA VIE",
+      "filename": "DVSfr3.pdf",
+      "path": "laurency_ultimate/french_Français/Books/La Pierre des Sages/DVSfr3.pdf",
+      "size": 440710,
+      "url": "https://www.laurency.com/DVSfr/DVSfr3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "La Connaissance de la Réalité",
+      "title": "LES \r\n\tPROBLČMES DE LA RÉALITÉ,1črepartie",
+      "filename": "KVfr1a.pdf",
+      "path": "laurency_ultimate/french_Français/Books/La Connaissance de la Réalité/KVfr1a.pdf",
+      "size": 185129,
+      "url": "https://www.laurency.com/KVfr/KVfr1a.pdf"
+    },
+    {
+      "type": "book",
+      "series": "La Connaissance de la Réalité",
+      "title": "LES \r\n\tPROBLČMES DE LA RÉALITÉ,1črepartie",
+      "filename": "KVfr1a.pdf",
+      "path": "laurency_ultimate/french_Français/Books/La Connaissance de la Réalité/KVfr1a.pdf",
+      "size": 185129,
+      "url": "https://www.laurency.com/KVfr/KVfr1a.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Terminologie ésotérique",
+      "title": "Le \r\n\t\tvocabulaire comme fichier PDF",
+      "filename": "dic_eng-fr.pdf",
+      "path": "laurency_ultimate/french_Français/Books/Terminologie ésotérique/dic_eng-fr.pdf",
+      "size": 35325,
+      "url": "https://www.laurency.com/Miscfr/dic_eng-fr.pdf"
+    }
+  ]
+}

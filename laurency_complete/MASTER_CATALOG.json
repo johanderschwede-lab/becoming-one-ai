@@ -1,0 +1,1649 @@
+{
+  "harvest_date": "2025-08-18T02:57:30.825685",
+  "total_languages": 2,
+  "languages": {
+    "english": {
+      "name": "English",
+      "flag": "🇬🇧",
+      "is_original": false,
+      "books_count": 230,
+      "dictionaries_count": 1,
+      "books": [
+        {
+          "title": "THE PROBLEMS OF REALITY, PART ONE",
+          "series": "The Knowledge of Reality",
+          "url": "https://www.laurency.com/KVe/kr1.pdf",
+          "filename": "kr1.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE PROBLEMS OF REALITY, PART TWO",
+          "series": "The Knowledge of Reality",
+          "url": "https://www.laurency.com/KVe/kr2.pdf",
+          "filename": "kr2.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE ORIGIN OF THE KNOWLEDGE AND THE FICTIONS",
+          "series": "The Knowledge of Reality",
+          "url": "https://www.laurency.com/KVe/kr3.pdf",
+          "filename": "kr3.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE THREE QUESTIONS OF THE SPHINX: WHENCE? HOW? WHITHER?",
+          "series": "The Knowledge of Reality",
+          "url": "https://www.laurency.com/KVe/kr4.pdf",
+          "filename": "kr4.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "AN ESOTERICIAN’S\r\n  VIEW OF THE HISTORY OF EUROPEAN PHILOSOPHY",
+          "series": "The Knowledge of Reality",
+          "url": "https://www.laurency.com/KVe/kr5.pdf",
+          "filename": "kr5.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "ANTHROPOSOPHY – STEINER’S\r\n  SPIRITUAL SCIENCE",
+          "series": "The Knowledge of Reality",
+          "url": "https://www.laurency.com/KVe/kr6.pdf",
+          "filename": "kr6.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "YOGA IN THE LIGHT OF ESOTERICS",
+          "series": "The Knowledge of Reality",
+          "url": "https://www.laurency.com/KVe/kr7.pdf",
+          "filename": "kr7.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "1. THE PROBLEMS OF REALITY, PART ONE",
+          "series": "The Knowledge of Reality",
+          "url": "https://www.laurency.com/KVe/kr1.pdf",
+          "filename": "kr1.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "2.\r\n  THE PROBLEMS OF REALITY, PART TWO",
+          "series": "The Knowledge of Reality",
+          "url": "https://www.laurency.com/KVe/kr2.pdf",
+          "filename": "kr2.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "3.\r\n  THE ORIGIN OF THE KNOWLEDGE AND THE FICTIONS",
+          "series": "The Knowledge of Reality",
+          "url": "https://www.laurency.com/KVe/kr3.pdf",
+          "filename": "kr3.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "4.\r\n  THE THREE QUESTIONS OF THE SPHINX. WHENCE? HOW? WHITHER?",
+          "series": "The Knowledge of Reality",
+          "url": "https://www.laurency.com/KVe/kr4.pdf",
+          "filename": "kr4.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "5. AN ESOTERICIAN’S VIEW OF THE HISTORY OF EUROPEAN PHILOSOPHY",
+          "series": "The Knowledge of Reality",
+          "url": "https://www.laurency.com/KVe/kr5.pdf",
+          "filename": "kr5.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "6.\r\n  ANTHROPOSOPHY – STEINER’S SPIRITUAL SCIENCE",
+          "series": "The Knowledge of Reality",
+          "url": "https://www.laurency.com/KVe/kr6.pdf",
+          "filename": "kr6.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "7.\r\n  YOGA IN THE LIGHT OF ESOTERICS",
+          "series": "The Knowledge of Reality",
+          "url": "https://www.laurency.com/KVe/kr7.pdf",
+          "filename": "kr7.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "EXOTERIC WORLD VIEW AND LIFE VIEW",
+          "series": "The Philosopher's Stone",
+          "url": "https://www.laurency.com/DVSe/ps1.pdf",
+          "filename": "ps1.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE ESOTERIC WORLD VIEW",
+          "series": "The Philosopher's Stone",
+          "url": "https://www.laurency.com/DVSe/ps2.pdf",
+          "filename": "ps2.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "ESOTERIC LIFE VIEW",
+          "series": "The Philosopher's Stone",
+          "url": "https://www.laurency.com/DVSe/ps3.pdf",
+          "filename": "ps3.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "1. EXOTERIC WORLD VIEW AND LIFE VIEW",
+          "series": "The Philosopher's Stone",
+          "url": "https://www.laurency.com/DVSe/ps1.pdf",
+          "filename": "ps1.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "2. THE ESOTERIC WORLD VIEW",
+          "series": "The Philosopher's Stone",
+          "url": "https://www.laurency.com/DVSe/ps2.pdf",
+          "filename": "ps2.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "3. ESOTERIC LIFE VIEW",
+          "series": "The Philosopher's Stone",
+          "url": "https://www.laurency.com/DVSe/ps3.pdf",
+          "filename": "ps3.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "INTRODUCTIONS",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm1.pdf",
+          "filename": "wm1.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE MONAD LADDER",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm2.pdf",
+          "filename": "wm2.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE FIRST SELF",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm3.pdf",
+          "filename": "wm3.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE PHYSICAL BEING OF THE FIRST SELF",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm4.pdf",
+          "filename": "wm4.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE EMOTIONAL BEING OF THE FIRST SELF",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm5.pdf",
+          "filename": "wm5.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE MENTAL BEING OF THE FIRST SELF",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm6.pdf",
+          "filename": "wm6.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE CAUSAL BEING",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm7.pdf",
+          "filename": "wm7.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "AUGOEIDES",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm8.pdf",
+          "filename": "wm8.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE SECOND SELF",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm9.pdf",
+          "filename": "wm9.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE\r\n  CAUSAL SELF",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm10.pdf",
+          "filename": "wm10.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE\r\n  ESSENTIAL SELF",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm11.pdf",
+          "filename": "wm11.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE\r\n  SUPERESSENTIAL SELF",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm12.pdf",
+          "filename": "wm12.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "PROTOGONOS AND THE THIRD SELF",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm13.pdf",
+          "filename": "wm13.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE SUBMANIFESTAL SELF",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm14.pdf",
+          "filename": "wm14.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE\r\n  MANIFESTAL SELF",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm15.pdf",
+          "filename": "wm15.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE\r\n  PLANETARY HIERARCHY",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm16.pdf",
+          "filename": "wm16.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE PLANETARY GOVERNMENT",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm17.pdf",
+          "filename": "wm17.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "TERMINOLOGY AND SYMBOLISM",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm18.pdf",
+          "filename": "wm18.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "1.\r\nINTRODUCTIONS",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm1.pdf",
+          "filename": "wm1.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "2.\r\n  THE MONAD LADDER",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm2.pdf",
+          "filename": "wm2.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "3. THE FIRST\r\nSELF",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm3.pdf",
+          "filename": "wm3.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "4.\r\n  THE PHYSICAL BEING OF THE FIRST SELF",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm4.pdf",
+          "filename": "wm4.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "5.\r\n  THE EMOTIONAL BEING OF THE FIRST SELF",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm5.pdf",
+          "filename": "wm5.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "6.\r\n  THE MENTAL BEING OF THE FIRST SELF",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm6.pdf",
+          "filename": "wm6.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "7. THE CAUSAL BEING",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm7.pdf",
+          "filename": "wm7.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "8. AUGOEIDES",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm8.pdf",
+          "filename": "wm8.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "9. THE SECOND SELF",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm9.pdf",
+          "filename": "wm9.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "10. THE CAUSAL\r\nSELF",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm10.pdf",
+          "filename": "wm10.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "11. THE\r\nESSENTIAL SELF",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm11.pdf",
+          "filename": "wm11.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "12. THE SUPERESSENTIAL SELF",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm12.pdf",
+          "filename": "wm12.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "13.\r\nPROTOGONOS AND THE THIRD SELF",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm13.pdf",
+          "filename": "wm13.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "14. THE SUBMANIFESTAL SELF",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm14.pdf",
+          "filename": "wm14.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "15.THE MANIFESTAL SELF",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm15.pdf",
+          "filename": "wm15.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "16. THE PLANETARY HIERARCHY",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm16.pdf",
+          "filename": "wm16.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "17. THE PLANETARY GOVERNMENT",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm17.pdf",
+          "filename": "wm17.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "18. TERMINOLOGY AND SYMBOLISM",
+          "series": "The Way of Man",
+          "url": "https://www.laurency.com/MVe/wm18.pdf",
+          "filename": "wm18.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "MEDITATION",
+          "series": "Knowledge of Life One",
+          "url": "https://www.laurency.com/L1e/kl1_1.pdf",
+          "filename": "kl1_1.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "GNOSTICS",
+          "series": "Knowledge of Life One",
+          "url": "https://www.laurency.com/L1e/kl1_2.pdf",
+          "filename": "kl1_2.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "GNOSTIC\r\n  SYMBOLS",
+          "series": "Knowledge of Life One",
+          "url": "https://www.laurency.com/L1e/kl1_3.pdf",
+          "filename": "kl1_3.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "DISCIPLESHIP",
+          "series": "Knowledge of Life One",
+          "url": "https://www.laurency.com/L1e/kl1_4.pdf",
+          "filename": "kl1_4.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE\r\n  PLANETARY HIERARCHY",
+          "series": "Knowledge of Life One",
+          "url": "https://www.laurency.com/L1e/kl1_5.pdf",
+          "filename": "kl1_5.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "IDENTIFICATION AND LIBERATION",
+          "series": "Knowledge of Life One",
+          "url": "https://www.laurency.com/L1e/kl1_6.pdf",
+          "filename": "kl1_6.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "EDUCATION",
+          "series": "Knowledge of Life One",
+          "url": "https://www.laurency.com/L1e/kl1_7.pdf",
+          "filename": "kl1_7.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE CONCEPTION OF RIGHT",
+          "series": "Knowledge of Life One",
+          "url": "https://www.laurency.com/L1e/kl1_8.pdf",
+          "filename": "kl1_8.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE LAW",
+          "series": "Knowledge of Life One",
+          "url": "https://www.laurency.com/L1e/kl1_9.pdf",
+          "filename": "kl1_9.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE SECRET OF THE SPHINX",
+          "series": "Knowledge of Life One",
+          "url": "https://www.laurency.com/L1e/kl1_10.pdf",
+          "filename": "kl1_10.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "1.\r\n  MEDITATION",
+          "series": "Knowledge of Life One",
+          "url": "https://www.laurency.com/L1e/kl1_1.pdf",
+          "filename": "kl1_1.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "2. GNOSTICS",
+          "series": "Knowledge of Life One",
+          "url": "https://www.laurency.com/L1e/kl1_2.pdf",
+          "filename": "kl1_2.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "3. GNOSTIC\r\n  SYMBOLS",
+          "series": "Knowledge of Life One",
+          "url": "https://www.laurency.com/L1e/kl1_3.pdf",
+          "filename": "kl1_3.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "4.\r\n  DISCIPLESHIP",
+          "series": "Knowledge of Life One",
+          "url": "https://www.laurency.com/L1e/kl1_4.pdf",
+          "filename": "kl1_4.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "5. THE\r\n  PLANETARY HIERARCHY",
+          "series": "Knowledge of Life One",
+          "url": "https://www.laurency.com/L1e/kl1_5.pdf",
+          "filename": "kl1_5.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "6.\r\n  IDENTIFICATION AND LIBERATION",
+          "series": "Knowledge of Life One",
+          "url": "https://www.laurency.com/L1e/kl1_6.pdf",
+          "filename": "kl1_6.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "7.\r\n  EDUCATION",
+          "series": "Knowledge of Life One",
+          "url": "https://www.laurency.com/L1e/kl1_7.pdf",
+          "filename": "kl1_7.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "8. THE\r\n  CONCEPTION OF RIGHT",
+          "series": "Knowledge of Life One",
+          "url": "https://www.laurency.com/L1e/kl1_8.pdf",
+          "filename": "kl1_8.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "9. THE LAW",
+          "series": "Knowledge of Life One",
+          "url": "https://www.laurency.com/L1e/kl1_9.pdf",
+          "filename": "kl1_9.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "10.\r\n  THE SECRET OF THE SPHINX",
+          "series": "Knowledge of Life One",
+          "url": "https://www.laurency.com/L1e/kl1_10.pdf",
+          "filename": "kl1_10.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "HYLOZOICS",
+          "series": "Knowledge of Life Two",
+          "url": "https://www.laurency.com/L2e/kl2_1.pdf",
+          "filename": "kl2_1.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE\r\n  HYLOZOIC WORLD VIEW",
+          "series": "Knowledge of Life Two",
+          "url": "https://www.laurency.com/L2e/kl2_2.pdf",
+          "filename": "kl2_2.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "ESOTERICS",
+          "series": "Knowledge of Life Two",
+          "url": "https://www.laurency.com/L2e/kl2_3.pdf",
+          "filename": "kl2_3.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE MOTION ASPECT",
+          "series": "Knowledge of Life Two",
+          "url": "https://www.laurency.com/L2e/kl2_4.pdf",
+          "filename": "kl2_4.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE CONSCIOUSNESS ASPECT",
+          "series": "Knowledge of Life Two",
+          "url": "https://www.laurency.com/L2e/kl2_5.pdf",
+          "filename": "kl2_5.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE MATTER ASPECT",
+          "series": "Knowledge of Life Two",
+          "url": "https://www.laurency.com/L2e/kl2_6.pdf",
+          "filename": "kl2_6.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "CONSCIOUSNESS DEVELOPMENT",
+          "series": "Knowledge of Life Two",
+          "url": "https://www.laurency.com/L2e/kl2_7.pdf",
+          "filename": "kl2_7.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE STAGES OF HUMAN DEVELOPMENT",
+          "series": "Knowledge of Life Two",
+          "url": "https://www.laurency.com/L2e/kl2_8.pdf",
+          "filename": "kl2_8.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "ESOTERIC PHILOSOPHY",
+          "series": "Knowledge of Life Two",
+          "url": "https://www.laurency.com/L2e/kl2_9.pdf",
+          "filename": "kl2_9.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "ESOTERIC PSYCHOLOGY",
+          "series": "Knowledge of Life Two",
+          "url": "https://www.laurency.com/L2e/kl2_10.pdf",
+          "filename": "kl2_10.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "1.\r\n  HYLOZOICS",
+          "series": "Knowledge of Life Two",
+          "url": "https://www.laurency.com/L2e/kl2_1.pdf",
+          "filename": "kl2_1.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "2.  THE\r\n  HYLOZOIC WORLD VIEW",
+          "series": "Knowledge of Life Two",
+          "url": "https://www.laurency.com/L2e/kl2_2.pdf",
+          "filename": "kl2_2.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "3.  ESOTERICS",
+          "series": "Knowledge of Life Two",
+          "url": "https://www.laurency.com/L2e/kl2_3.pdf",
+          "filename": "kl2_3.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "4. \r\n  THE MOTION ASPECT",
+          "series": "Knowledge of Life Two",
+          "url": "https://www.laurency.com/L2e/kl2_4.pdf",
+          "filename": "kl2_4.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "5. \r\n  THE CONSCIOUSNESS ASPECT",
+          "series": "Knowledge of Life Two",
+          "url": "https://www.laurency.com/L2e/kl2_5.pdf",
+          "filename": "kl2_5.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "6. \r\n  THE MATTER ASPECT",
+          "series": "Knowledge of Life Two",
+          "url": "https://www.laurency.com/L2e/kl2_6.pdf",
+          "filename": "kl2_6.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "7. \r\n  CONSCIOUSNESS DEVELOPMENT",
+          "series": "Knowledge of Life Two",
+          "url": "https://www.laurency.com/L2e/kl2_7.pdf",
+          "filename": "kl2_7.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "8. \r\n  THE STAGES OF HUMAN DEVELOPMENT",
+          "series": "Knowledge of Life Two",
+          "url": "https://www.laurency.com/L2e/kl2_8.pdf",
+          "filename": "kl2_8.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "9.  ESOTERIC PHILOSOPHY",
+          "series": "Knowledge of Life Two",
+          "url": "https://www.laurency.com/L2e/kl2_9.pdf",
+          "filename": "kl2_9.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "10.  ESOTERIC PSYCHOLOGY",
+          "series": "Knowledge of Life Two",
+          "url": "https://www.laurency.com/L2e/kl2_10.pdf",
+          "filename": "kl2_10.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "ESOTERIC \r\n  KNOWLEDGE ORDERS",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e1.pdf",
+          "filename": "L3e1.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "SYMBOLS",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e2.pdf",
+          "filename": "L3e2.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "ESOTERIC \r\n  TERMINOLOGY",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e3.pdf",
+          "filename": "L3e3.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "ALICE \r\n  A. BAILEY AND D.K.",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e4.pdf",
+          "filename": "L3e4.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THEOSOPHY",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e5.pdf",
+          "filename": "L3e5.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "OCCULT \r\n  SECTS",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e6.pdf",
+          "filename": "L3e6.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "YOGA",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e7.pdf",
+          "filename": "L3e7.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "MYSTICISM",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e8.pdf",
+          "filename": "L3e8.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "SPIRITUALISM",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e9.pdf",
+          "filename": "L3e9.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "LIFE \r\n  BETWEEN INCARNATIONS",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e10.pdf",
+          "filename": "L3e10.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "REINCARNATION",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e11.pdf",
+          "filename": "L3e11.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "DEVAS",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e12.pdf",
+          "filename": "L3e12.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "HEALTH",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e13.pdf",
+          "filename": "L3e13.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE \r\n  SEVEN DEPARTMENTS",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e14.pdf",
+          "filename": "L3e14.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "CENTRES \r\n  IN THE ENVELOPES OF MAN",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e15.pdf",
+          "filename": "L3e15.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "MAGIC",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e16.pdf",
+          "filename": "L3e16.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "ASTROLOGY",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e17.pdf",
+          "filename": "L3e17.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "OUR \r\n\tEPOCH",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e18.pdf",
+          "filename": "L3e18.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "1.ESOTERIC KNOWLEDGE ORDERS",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e1.pdf",
+          "filename": "L3e1.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "2.  SYMBOLS",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e2.pdf",
+          "filename": "L3e2.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "3.  ESOTERIC \r\n  TERMINOLOGY",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e3.pdf",
+          "filename": "L3e3.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "4.  \r\n  ALICE A. BAILEY AND D.K.",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e4.pdf",
+          "filename": "L3e4.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "5.  THEOSOPHY",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e5.pdf",
+          "filename": "L3e5.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "6.  OCCULT SECTS",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e6.pdf",
+          "filename": "L3e6.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "7.  YOGA",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e7.pdf",
+          "filename": "L3e7.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "8.  MYSTICISM",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e8.pdf",
+          "filename": "L3e8.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "9.SPIRITUALISM",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e9.pdf",
+          "filename": "L3e9.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "10",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e10.pdf",
+          "filename": "L3e10.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": ".",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e10.pdf",
+          "filename": "L3e10.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "LIFE \r\n  BETWEEN INCARNATIONS",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e10.pdf",
+          "filename": "L3e10.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "11.REINCARNATION",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e11.pdf",
+          "filename": "L3e11.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "12.",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e12.pdf",
+          "filename": "L3e12.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "L3E12",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e12.pdf",
+          "filename": "L3e12.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "DEVAS",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e12.pdf",
+          "filename": "L3e12.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "13.",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e13.pdf",
+          "filename": "L3e13.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "L3E13",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e13.pdf",
+          "filename": "L3e13.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "HEALTH",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e13.pdf",
+          "filename": "L3e13.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "14.",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e14.pdf",
+          "filename": "L3e14.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "L3E14",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e14.pdf",
+          "filename": "L3e14.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE \r\nSEVEN DEPARTMENTS",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e14.pdf",
+          "filename": "L3e14.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "15.  CENTRES IN THE ENVELOPES OF \r\nMAN",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e15.pdf",
+          "filename": "L3e15.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "16.  MAGIC",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e16.pdf",
+          "filename": "L3e16.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "17.ASTROLOGY",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e17.pdf",
+          "filename": "L3e17.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "18.  OUR \r\nEPOCH",
+          "series": "Knowledge of Life Three",
+          "url": "https://www.laurency.com/L3e/L3e18.pdf",
+          "filename": "L3e18.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "LAURENCY",
+          "series": "Knowledge of Life Four",
+          "url": "https://www.laurency.com/L4e/L4E1.pdf",
+          "filename": "L4E1.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "CULTURE",
+          "series": "Knowledge of Life Four",
+          "url": "https://www.laurency.com/L4e/L4E2.pdf",
+          "filename": "L4E2.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "RELIGION",
+          "series": "Knowledge of Life Four",
+          "url": "https://www.laurency.com/L4e/L4E3.pdf",
+          "filename": "L4E3.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THEOLOGY",
+          "series": "Knowledge of Life Four",
+          "url": "https://www.laurency.com/L4e/L4E4.pdf",
+          "filename": "L4E4.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "LITERATURE",
+          "series": "Knowledge of Life Four",
+          "url": "https://www.laurency.com/L4e/L4E5.pdf",
+          "filename": "L4E5.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "ART",
+          "series": "Knowledge of Life Four",
+          "url": "https://www.laurency.com/L4e/L4E6.pdf",
+          "filename": "L4E6.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "PHILOSOPHY",
+          "series": "Knowledge of Life Four",
+          "url": "https://www.laurency.com/L4e/L4E7.pdf",
+          "filename": "L4E7.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "1.  LAURENCY",
+          "series": "Knowledge of Life Four",
+          "url": "https://www.laurency.com/L4e/L4E1.pdf",
+          "filename": "L4E1.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "2.CULTURE",
+          "series": "Knowledge of Life Four",
+          "url": "https://www.laurency.com/L4e/L4E2.pdf",
+          "filename": "L4E2.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "3.RELIGION",
+          "series": "Knowledge of Life Four",
+          "url": "https://www.laurency.com/L4e/L4E3.pdf",
+          "filename": "L4E3.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "4.THEOLOGY",
+          "series": "Knowledge of Life Four",
+          "url": "https://www.laurency.com/L4e/L4E4.pdf",
+          "filename": "L4E4.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "5.LITERATURE",
+          "series": "Knowledge of Life Four",
+          "url": "https://www.laurency.com/L4e/L4E5.pdf",
+          "filename": "L4E5.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "6.ART",
+          "series": "Knowledge of Life Four",
+          "url": "https://www.laurency.com/L4e/L4E6.pdf",
+          "filename": "L4E6.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "7.PHILOSOPHY",
+          "series": "Knowledge of Life Four",
+          "url": "https://www.laurency.com/L4e/L4E7.pdf",
+          "filename": "L4E7.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "GOETHE (1749–1832) AS AN \r\n\tESOTERICIAN",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e1.pdf",
+          "filename": "L5e1.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "REALITY \r\n\tIDEAS (ESOTERISMS) IN ROUSSEAU (1712–1778)WITH \r\n\tCOMMENTARIES",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e2.pdf",
+          "filename": "L5e2.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "ERIK \r\n\tGUSTAF GEIJER’S (1783–1847)PHILOSOPHY OF HISTORY",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e3.pdf",
+          "filename": "L5e3.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "KRISHNAMURTI AND THE LAW OF \r\n\tDEVELOPMENT",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e4.pdf",
+          "filename": "L5e4.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE \r\n  PATH TO KNOWLEDGE AND UNITY",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e5.pdf",
+          "filename": "L5e5.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "EFFICIENT \r\n  PHILOSOPHY",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e6.pdf",
+          "filename": "L5e6.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "ON ALICE A. BAILEY’S BOOKTHE REAPPEARANCE OF THE CHRIST",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e7.pdf",
+          "filename": "L5e7.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE EMANCIPATION OF MAN",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e8.pdf",
+          "filename": "L5e8.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "HINDU PSYCHOLOGY",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e9.pdf",
+          "filename": "L5e9.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "VERA STANLEY \r\n\tALDER",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e10.pdf",
+          "filename": "L5e10.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "POUL BJERRE",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e11.pdf",
+          "filename": "L5e11.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "YOGA AND WESTERN PSYCHOLOGY",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e12.pdf",
+          "filename": "L5e12.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "STUDIES IN EMERSON",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e13.pdf",
+          "filename": "L5e13.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "F",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e14.pdf",
+          "filename": "L5e14.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "RÖDING’S \r\n\tTHEOSOPHY",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e14.pdf",
+          "filename": "L5e14.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "DAG HAMMARSKJÖLD",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e15.pdf",
+          "filename": "L5e15.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE INITIATE IN THE NEW WORLD",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e16.pdf",
+          "filename": "L5e16.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE REAL H. P. BLAVATSKY",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e17.pdf",
+          "filename": "L5e17.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "ON THINGS HUMAN",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e18.pdf",
+          "filename": "L5e18.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "IN TUNE WITH THE INFINITE",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e19.pdf",
+          "filename": "L5e19.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "SCIENCE",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e20.pdf",
+          "filename": "L5e20.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "PSYCHOLOGY",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e21.pdf",
+          "filename": "L5e21.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "HISTORY",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e22.pdf",
+          "filename": "L5e22.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THE \r\n  BLACK LODGE",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e23.pdf",
+          "filename": "L5e23.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "1. GOETHE (1749–1832) AS AN ESOTERICIAN",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e1.pdf",
+          "filename": "L5e1.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "2. REALITY IDEAS (ESOTERISMS) IN \r\n\tROUSSEAU (1712–1778) WITH COMMENTARIES",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e2.pdf",
+          "filename": "L5e2.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "3. ERIK GUSTAF GEIJER’S (1783–1847) \r\n\tPHILOSOPHY OF HISTORY",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e3.pdf",
+          "filename": "L5e3.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "4. KRISHNAMURTI AND THE LAW OF \r\n\tDEVELOPMENT",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e4.pdf",
+          "filename": "L5e4.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "5. THE \r\n  PATH TO KNOWLEDGE AND UNITY",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e5.pdf",
+          "filename": "L5e5.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "6. EFFICIENT \r\n  PHILOSOPHY",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e6.pdf",
+          "filename": "L5e6.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "7. ON ALICE A. BAILEY’S BOOK THE \r\nREAPPEARANCE OF THE CHRIST",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e7.pdf",
+          "filename": "L5e7.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "8. THE EMANCIPATION OF MAN",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e8.pdf",
+          "filename": "L5e8.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "9. HINDU PSYCHOLOGY",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e9.pdf",
+          "filename": "L5e9.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "10. VERA STANLEY ALDER",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e10.pdf",
+          "filename": "L5e10.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "11. POUL BJERRE",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e11.pdf",
+          "filename": "L5e11.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "12. YOGA AND WESTERN PSYCHOLOGY",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e12.pdf",
+          "filename": "L5e12.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "13. STUDIES IN EMERSON",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e13.pdf",
+          "filename": "L5e13.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "14. FRÖDING’S THEOSOPHY",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e14.pdf",
+          "filename": "L5e14.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "15. DAG HAMMARSKJÖLD",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e15.pdf",
+          "filename": "L5e15.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "16. THE INITIATE IN THE NEW WORLD",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e16.pdf",
+          "filename": "L5e16.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "17. THE REAL H. P. BLAVATSKY",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e17.pdf",
+          "filename": "L5e17.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "18. ON THINGS HUMAN",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e18.pdf",
+          "filename": "L5e18.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "19. IN TUNE WITH THE INFINITE",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e19.pdf",
+          "filename": "L5e19.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "20. SCIENCE",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e20.pdf",
+          "filename": "L5e20.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "21. PSYCHOLOGY",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e21.pdf",
+          "filename": "L5e21.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "22. HISTORY",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e22.pdf",
+          "filename": "L5e22.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "23. THE BLACK \r\n  LODGE",
+          "series": "Knowledge of Life Five",
+          "url": "https://www.laurency.com/L5e/L5e23.pdf",
+          "filename": "L5e23.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "A First \r\n\tExplanation",
+          "series": "The Explanation",
+          "url": "https://www.laurency.com/Fke/Fke_intro.pdf",
+          "filename": "Fke_intro.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "ONE",
+          "series": "The Explanation",
+          "url": "https://www.laurency.com/Fke/Fke1.pdf",
+          "filename": "Fke1.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "TWO",
+          "series": "The Explanation",
+          "url": "https://www.laurency.com/Fke/Fke2.pdf",
+          "filename": "Fke2.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "THREE",
+          "series": "The Explanation",
+          "url": "https://www.laurency.com/Fke/Fke3.pdf",
+          "filename": "Fke3.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "FOUR",
+          "series": "The Explanation",
+          "url": "https://www.laurency.com/Fke/Fke4.pdf",
+          "filename": "Fke4.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "FIVE",
+          "series": "The Explanation",
+          "url": "https://www.laurency.com/Fke/Fke5.pdf",
+          "filename": "Fke5.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "SIX",
+          "series": "The Explanation",
+          "url": "https://www.laurency.com/Fke/Fke6.pdf",
+          "filename": "Fke6.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "SEVEN",
+          "series": "The Explanation",
+          "url": "https://www.laurency.com/Fke/Fke7.pdf",
+          "filename": "Fke7.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "EIGHT",
+          "series": "The Explanation",
+          "url": "https://www.laurency.com/Fke/Fke8.pdf",
+          "filename": "Fke8.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "NINE",
+          "series": "The Explanation",
+          "url": "https://www.laurency.com/Fke/Fke9.pdf",
+          "filename": "Fke9.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "TEN",
+          "series": "The Explanation",
+          "url": "https://www.laurency.com/Fke/Fke10.pdf",
+          "filename": "Fke10.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "ELEVEN",
+          "series": "The Explanation",
+          "url": "https://www.laurency.com/Fke/Fke11.pdf",
+          "filename": "Fke11.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "TWELVE",
+          "series": "The Explanation",
+          "url": "https://www.laurency.com/Fke/Fke12.pdf",
+          "filename": "Fke12.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "Study Questions",
+          "series": "The Explanation",
+          "url": "https://www.laurency.com/Fke/Fke_study.pdf",
+          "filename": "Fke_study.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "Commentaries",
+          "series": "The Explanation",
+          "url": "https://www.laurency.com/Fke/Fke_comm.pdf",
+          "filename": "Fke_comm.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "\"The Explanation\"",
+          "series": "The Explanation",
+          "url": "https://www.laurency.com/Fke/Fke.pdf",
+          "filename": "Fke.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "Introduction",
+          "series": "The Explanation",
+          "url": "https://www.laurency.com/Fke/Fke_intro.pdf",
+          "filename": "Fke_intro.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "1.ONE",
+          "series": "The Explanation",
+          "url": "https://www.laurency.com/Fke/Fke1.pdf",
+          "filename": "Fke1.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "2. TWO",
+          "series": "The Explanation",
+          "url": "https://www.laurency.com/Fke/Fke2.pdf",
+          "filename": "Fke2.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "3.THREE",
+          "series": "The Explanation",
+          "url": "https://www.laurency.com/Fke/Fke3.pdf",
+          "filename": "Fke3.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "4.FOUR",
+          "series": "The Explanation",
+          "url": "https://www.laurency.com/Fke/Fke4.pdf",
+          "filename": "Fke4.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "5.FIVE",
+          "series": "The Explanation",
+          "url": "https://www.laurency.com/Fke/Fke5.pdf",
+          "filename": "Fke5.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "6.SIX",
+          "series": "The Explanation",
+          "url": "https://www.laurency.com/Fke/Fke6.pdf",
+          "filename": "Fke6.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "7. SEVEN",
+          "series": "The Explanation",
+          "url": "https://www.laurency.com/Fke/Fke7.pdf",
+          "filename": "Fke7.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "8. EIGHT",
+          "series": "The Explanation",
+          "url": "https://www.laurency.com/Fke/Fke8.pdf",
+          "filename": "Fke8.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "9. NINE",
+          "series": "The Explanation",
+          "url": "https://www.laurency.com/Fke/Fke9.pdf",
+          "filename": "Fke9.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "10.TEN",
+          "series": "The Explanation",
+          "url": "https://www.laurency.com/Fke/Fke10.pdf",
+          "filename": "Fke10.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "11. ELEVEN",
+          "series": "The Explanation",
+          "url": "https://www.laurency.com/Fke/Fke11.pdf",
+          "filename": "Fke11.pdf",
+          "type": "pdf_chapter"
+        },
+        {
+          "title": "12. TWELVE",
+          "series": "The Explanation",
+          "url": "https://www.laurency.com/Fke/Fke12.pdf",
+          "filename": "Fke12.pdf",
+          "type": "pdf_chapter"
+        }
+      ],
+      "dictionaries": [
+        {
+          "title": "Basic Esoteric Dictionary",
+          "url": "https://www.laurency.com/Dictionary.htm",
+          "type": "dictionary"
+        }
+      ]
+    },
+    "swedish": {
+      "name": "Svenska",
+      "flag": "🇸🇪",
+      "is_original": true,
+      "books_count": 0,
+      "dictionaries_count": 1,
+      "books": [],
+      "dictionaries": [
+        {
+          "title": "Litet esoteriskt lexikon",
+          "url": "https://www.laurency.com/Swedish/lexikon.htm",
+          "type": "dictionary"
+        }
+      ]
+    }
+  },
+  "total_books": 230,
+  "total_dictionaries": 2
+}

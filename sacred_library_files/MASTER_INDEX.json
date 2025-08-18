@@ -1,0 +1,26 @@
+{
+  "created_at": "2025-08-18T07:21:07.476625",
+  "total_quotes": 4871,
+  "total_languages": 2,
+  "total_books": 1,
+  "languages": [
+    "sv",
+    "de"
+  ],
+  "books": [
+    "Unknown Series"
+  ],
+  "stats": {
+    "pdfs_processed": 50,
+    "chunks_created": 4871,
+    "quotes_saved": 4871,
+    "languages_found": [
+      "sv",
+      "de"
+    ],
+    "books_found": [
+      "Unknown Series"
+    ],
+    "errors": []
+  }
+}

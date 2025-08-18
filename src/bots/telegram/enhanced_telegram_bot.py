@@ -22,6 +22,7 @@ from ...database.operations import db
 from ...core.ai_engine import BecomingOneAI
 from ...integrations.make_webhooks import MakeWebhookClient
 from ...core.rbac_system import SimpleRBAC, UserTier, Permission
+from .commands.sacred_library_commands import sacred_search_handler, sacred_browse_handler, sacred_callback_handler
 
 
 class EnhancedBecomingOneTelegramBot:
@@ -120,6 +121,10 @@ Ready to explore what might be useful for you?
 /profile - Your current access level
 /menu - Quick menu
 /upgrade - See access options
+
+**Sacred Library:**
+/sacred <term> - Search Hylozoics quotes
+/browse_sacred - Browse Sacred Library
 
 **Your Access Level:** {user_profile.tier.value.title()}
 **What You Can Use:**
@@ -673,8 +678,13 @@ What level would work best for you?
         self.application.add_handler(CommandHandler("profile", self.profile_command))
         self.application.add_handler(CommandHandler("upgrade", self.upgrade_command))
         
+        # Sacred Library commands
+        self.application.add_handler(CommandHandler("sacred", sacred_search_handler))
+        self.application.add_handler(CommandHandler("browse_sacred", sacred_browse_handler))
+        
         # Callback query handlers
         self.application.add_handler(CallbackQueryHandler(self.handle_upgrade_callback))
+        self.application.add_handler(CallbackQueryHandler(sacred_callback_handler, pattern="^sacred_"))
         
         # Payment handlers
         self.application.add_handler(PreCheckoutQueryHandler(self.precheckout_callback))

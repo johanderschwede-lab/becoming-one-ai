@@ -1,0 +1,1976 @@
+{
+  "language": "russian",
+  "language_info": {
+    "name": "Русский",
+    "flag": "🇷🇺",
+    "nav_frame": "Russian/siderus.htm",
+    "path": "Russian/",
+    "is_original": false
+  },
+  "download_date": "2025-08-18T03:11:36.926160",
+  "total_files": 218,
+  "files": [
+    {
+      "type": "book",
+      "series": "Знание реальности",
+      "title": "ПРОБЛЕМЫ \r\n\tРЕАЛЬНОСТИ, ЧАСТЬ ПЕРВАЯ",
+      "filename": "KVru1.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание реальности/KVru1.pdf",
+      "size": 699962,
+      "url": "https://www.laurency.com/KVru/KVru1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание реальности",
+      "title": "ПРОБЛЕМЫ \r\n\tРЕАЛЬНОСТИ, ЧАСТЬ ВТОРАЯ",
+      "filename": "KVru2.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание реальности/KVru2.pdf",
+      "size": 343270,
+      "url": "https://www.laurency.com/KVru/KVru2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание реальности",
+      "title": "ПРОИСХОЖДЕНИЕ \r\nЗНАНИЯ И ФИКЦИЙ",
+      "filename": "KVru3.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание реальности/KVru3.pdf",
+      "size": 510745,
+      "url": "https://www.laurency.com/KVru/KVru3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание реальности",
+      "title": "ТРИ \r\nВОПРОСА СФИНКСА: ОТКУДА? КАК? КУДА?",
+      "filename": "KVru4.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание реальности/KVru4.pdf",
+      "size": 192644,
+      "url": "https://www.laurency.com/KVru/KVru4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание реальности",
+      "title": "ВЗГЛЯД \r\nОДНОГО ЭЗОТЕРИКА НА ИСТОРИЮ ЕВРОПЕЙСКОЙ ФИЛОСОФИИ",
+      "filename": "KVru5.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание реальности/KVru5.pdf",
+      "size": 1726600,
+      "url": "https://www.laurency.com/KVru/KVru5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание реальности",
+      "title": "АНТРОПОСОФИЯ \r\n– ДУХОВНАЯ НАУКА ШТАЙНЕРА",
+      "filename": "KVru6.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание реальности/KVru6.pdf",
+      "size": 473541,
+      "url": "https://www.laurency.com/KVru/KVru6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание реальности",
+      "title": "ЙОГА \r\nВ СВЕТЕ ЭЗОТЕРИКИ",
+      "filename": "KVru7.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание реальности/KVru7.pdf",
+      "size": 706969,
+      "url": "https://www.laurency.com/KVru/KVru7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание реальности",
+      "title": "ПРОБЛЕМЫ РЕАЛЬНОСТИ, ЧАСТЬ ПЕРВАЯ",
+      "filename": "KVru1.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание реальности/KVru1.pdf",
+      "size": 699962,
+      "url": "https://www.laurency.com/KVru/KVru1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание реальности",
+      "title": "ПРОБЛЕМЫ \r\nРЕАЛЬНОСТИ, ЧАСТЬ ВТОРАЯ",
+      "filename": "KVru2.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание реальности/KVru2.pdf",
+      "size": 343270,
+      "url": "https://www.laurency.com/KVru/KVru2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание реальности",
+      "title": "ПРОИСХОЖДЕНИЕ \r\nЗНАНИЯ И ФИКЦИЙ",
+      "filename": "KVru3.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание реальности/KVru3.pdf",
+      "size": 510745,
+      "url": "https://www.laurency.com/KVru/KVru3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание реальности",
+      "title": "ТРИ \r\nВОПРОСА СФИНКСА: ОТКУДА? КАК? КУДА?",
+      "filename": "KVru4.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание реальности/KVru4.pdf",
+      "size": 192644,
+      "url": "https://www.laurency.com/KVru/KVru4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание реальности",
+      "title": "ВЗГЛЯД \r\nОДНОГО ЭЗОТЕРИКА НА ИСТОРИЮ ЕВРОПЕЙСКОЙ ФИЛОСОФИИ",
+      "filename": "KVru5.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание реальности/KVru5.pdf",
+      "size": 1726600,
+      "url": "https://www.laurency.com/KVru/KVru5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание реальности",
+      "title": "АНТРОПОСОФИЯ – ДУХОВНАЯ НАУКА ШТАЙНЕРА",
+      "filename": "KVru6.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание реальности/KVru6.pdf",
+      "size": 473541,
+      "url": "https://www.laurency.com/KVru/KVru6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание реальности",
+      "title": "ЙОГА \r\nВ СВЕТЕ ЭЗОТЕРИКИ",
+      "filename": "KVru7.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание реальности/KVru7.pdf",
+      "size": 706969,
+      "url": "https://www.laurency.com/KVru/KVru7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Философский камень",
+      "title": "ЭКЗОТЕРИЧЕСКОЕ \r\n\tМИРО- И ЖИЗНЕВОЗЗРЕНИЕ",
+      "filename": "DVSru1.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Философский камень/DVSru1.pdf",
+      "size": 1041055,
+      "url": "https://www.laurency.com/DVSru/DVSru1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Философский камень",
+      "title": "ЭЗОТЕРИЧЕСКОЕ \r\n\tМИРОВОЗЗРЕНИЕ",
+      "filename": "DVSru2.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Философский камень/DVSru2.pdf",
+      "size": 2264552,
+      "url": "https://www.laurency.com/DVSru/DVSru2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Философский камень",
+      "title": "ЭЗОТЕРИЧЕСКОЕ ЖИЗНЕВОЗЗРЕНИЕ",
+      "filename": "DVSru3.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Философский камень/DVSru3.pdf",
+      "size": 2213395,
+      "url": "https://www.laurency.com/DVSru/DVSru3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Философский камень",
+      "title": "ЭКЗОТЕРИЧЕСКОЕ МИРО- И ЖИЗНЕВОЗЗРЕНИЕ",
+      "filename": "DVSru1.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Философский камень/DVSru1.pdf",
+      "size": 1041055,
+      "url": "https://www.laurency.com/DVSru/DVSru1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Философский камень",
+      "title": "ЭЗОТЕРИЧЕСКОЕ МИРОВОЗЗРЕНИЕ",
+      "filename": "DVSru2.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Философский камень/DVSru2.pdf",
+      "size": 2264552,
+      "url": "https://www.laurency.com/DVSru/DVSru2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Философский камень",
+      "title": "ЭЗОТЕРИЧЕСКОЕ ЖИЗНЕВОЗЗРЕНИЕ",
+      "filename": "DVSru3.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Философский камень/DVSru3.pdf",
+      "size": 2213395,
+      "url": "https://www.laurency.com/DVSru/DVSru3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "ВВЕДЕНИЯ",
+      "filename": "MVru1.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru1.pdf",
+      "size": 1342416,
+      "url": "https://www.laurency.com/MVru/MVru1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "ЛЕСТНИЦА \r\nМОНАДЫ",
+      "filename": "MVru2.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru2.pdf",
+      "size": 270321,
+      "url": "https://www.laurency.com/MVru/MVru2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "ПЕРВОЕ \r\nЯ",
+      "filename": "MVru3.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru3.pdf",
+      "size": 876896,
+      "url": "https://www.laurency.com/MVru/MVru3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "ФИЗИЧЕСКОЕ \r\nСУЩЕСТВО ПЕРВОГО Я",
+      "filename": "MVru4.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru4.pdf",
+      "size": 419883,
+      "url": "https://www.laurency.com/MVru/MVru4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "ЭМОЦИОНАЛЬНОЕ \r\nСУЩЕСТВО ПЕРВОГО Я",
+      "filename": "MVru5.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru5.pdf",
+      "size": 1268655,
+      "url": "https://www.laurency.com/MVru/MVru5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "МЕНТАЛЬНОЕ \r\nСУЩЕСТВО ПЕРВОГО Я",
+      "filename": "MVru6.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru6.pdf",
+      "size": 859631,
+      "url": "https://www.laurency.com/MVru/MVru6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "КАУЗАЛЬНОЕ \r\nСУЩЕСТВО",
+      "filename": "MVru7.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru7.pdf",
+      "size": 428386,
+      "url": "https://www.laurency.com/MVru/MVru7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "АУГОЭЙД",
+      "filename": "MVru8.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru8.pdf",
+      "size": 864931,
+      "url": "https://www.laurency.com/MVru/MVru8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "ВТОРОЕ \r\nЯ",
+      "filename": "MVru9.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru9.pdf",
+      "size": 3373397,
+      "url": "https://www.laurency.com/MVru/MVru9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "КАУЗАЛЬНОЕ Я",
+      "filename": "MVru10.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru10.pdf",
+      "size": 560018,
+      "url": "https://www.laurency.com/MVru/MVru10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "ЭССЕНЦИАЛЬНОЕ Я",
+      "filename": "MVru11.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru11.pdf",
+      "size": 459584,
+      "url": "https://www.laurency.com/MVru/MVru11.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "СУПЕРЭССЕНЦИАЛЬНОЕ Я",
+      "filename": "MVru12.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru12.pdf",
+      "size": 141508,
+      "url": "https://www.laurency.com/MVru/MVru12.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "ПРОТОГОН \r\nИ ТРЕТЬЕ Я",
+      "filename": "MVru13.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru13.pdf",
+      "size": 293109,
+      "url": "https://www.laurency.com/MVru/MVru13.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "СУБМАНИФЕСТАЛЬНОЕ \r\nЯ",
+      "filename": "MVru14.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru14.pdf",
+      "size": 117466,
+      "url": "https://www.laurency.com/MVru/MVru14.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "МАНИФЕСТАЛЬНОЕ \r\nЯ",
+      "filename": "MVru15.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru15.pdf",
+      "size": 142034,
+      "url": "https://www.laurency.com/MVru/MVru15.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "ПЛАНЕТАРНАЯ \r\nИЕРАРХИЯ",
+      "filename": "MVru16.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru16.pdf",
+      "size": 560276,
+      "url": "https://www.laurency.com/MVru/MVru16.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "ПЛАНЕТАРНОЕ \r\nПРАВИТЕЛЬСТВО",
+      "filename": "MVru17.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru17.pdf",
+      "size": 318514,
+      "url": "https://www.laurency.com/MVru/MVru17.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "ТЕРМИНОЛОГИЯ \r\nИ СИМВОЛИКА",
+      "filename": "MVru18.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru18.pdf",
+      "size": 405550,
+      "url": "https://www.laurency.com/MVru/MVru18.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "ВВЕДЕНИЯ",
+      "filename": "MVru1.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru1.pdf",
+      "size": 1342416,
+      "url": "https://www.laurency.com/MVru/MVru1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "ЛЕСТНИЦА \r\nМОНАДЫ",
+      "filename": "MVru2.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru2.pdf",
+      "size": 270321,
+      "url": "https://www.laurency.com/MVru/MVru2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "ПЕРВОЕ \r\nЯ",
+      "filename": "MVru3.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru3.pdf",
+      "size": 876896,
+      "url": "https://www.laurency.com/MVru/MVru3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "ФИЗИЧЕСКОЕ СУЩЕСТВО ПЕРВОГО Я",
+      "filename": "MVru4.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru4.pdf",
+      "size": 419883,
+      "url": "https://www.laurency.com/MVru/MVru4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "ЭМОЦИОНАЛЬНОЕ СУЩЕСТВО ПЕРВОГО Я",
+      "filename": "MVru5.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru5.pdf",
+      "size": 1268655,
+      "url": "https://www.laurency.com/MVru/MVru5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "МЕНТАЛЬНОЕ \r\nСУЩЕСТВО ПЕРВОГО Я",
+      "filename": "MVru6.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru6.pdf",
+      "size": 859631,
+      "url": "https://www.laurency.com/MVru/MVru6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "КАУЗАЛЬНОЕ \r\nСУЩЕСТВО",
+      "filename": "MVru7.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru7.pdf",
+      "size": 428386,
+      "url": "https://www.laurency.com/MVru/MVru7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "АУГОЭЙД",
+      "filename": "MVru8.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru8.pdf",
+      "size": 864931,
+      "url": "https://www.laurency.com/MVru/MVru8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "ВТОРОЕ Я",
+      "filename": "MVru9.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru9.pdf",
+      "size": 3373397,
+      "url": "https://www.laurency.com/MVru/MVru9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "КАУЗАЛЬНОЕ Я",
+      "filename": "MVru10.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru10.pdf",
+      "size": 560018,
+      "url": "https://www.laurency.com/MVru/MVru10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "ЭССЕНЦИАЛЬНОЕ Я",
+      "filename": "MVru11.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru11.pdf",
+      "size": 459584,
+      "url": "https://www.laurency.com/MVru/MVru11.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "СУПЕРЭССЕНЦИАЛЬНОЕ Я",
+      "filename": "MVru12.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru12.pdf",
+      "size": 141508,
+      "url": "https://www.laurency.com/MVru/MVru12.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "ПРОТОГОН \r\nИ ТРЕТЬЕ Я",
+      "filename": "MVru13.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru13.pdf",
+      "size": 293109,
+      "url": "https://www.laurency.com/MVru/MVru13.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "СУБМАНИФЕСТАЛЬНОЕ Я",
+      "filename": "MVru14.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru14.pdf",
+      "size": 117466,
+      "url": "https://www.laurency.com/MVru/MVru14.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "МАНИФЕСТАЛЬНОЕ Я",
+      "filename": "MVru15.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru15.pdf",
+      "size": 142034,
+      "url": "https://www.laurency.com/MVru/MVru15.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "ПЛАНЕТАРНАЯ ИЕРАРХИЯ",
+      "filename": "MVru16.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru16.pdf",
+      "size": 560276,
+      "url": "https://www.laurency.com/MVru/MVru16.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "ПЛАНЕТАРНОЕ ПРАВИТЕЛЬСТВО",
+      "filename": "MVru17.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru17.pdf",
+      "size": 318514,
+      "url": "https://www.laurency.com/MVru/MVru17.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Путь человека",
+      "title": "ТЕРМИНОЛОГИЯ И СИМВОЛИКА",
+      "filename": "MVru18.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Путь человека/MVru18.pdf",
+      "size": 405550,
+      "url": "https://www.laurency.com/MVru/MVru18.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Один",
+      "title": "МЕДИТАЦИЯ",
+      "filename": "L1ru1.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Один/L1ru1.pdf",
+      "size": 553050,
+      "url": "https://www.laurency.com/L1ru/L1ru1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Один",
+      "title": "ГНОСТИКА",
+      "filename": "L1ru2.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Один/L1ru2.pdf",
+      "size": 480947,
+      "url": "https://www.laurency.com/L1ru/L1ru2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Один",
+      "title": "ГНОСТИЧЕСКИЕ \r\nСИМВОЛЫ",
+      "filename": "L1ru3.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Один/L1ru3.pdf",
+      "size": 441190,
+      "url": "https://www.laurency.com/L1ru/L1ru3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Один",
+      "title": "УЧЕНИЧЕСТВО",
+      "filename": "L1ru4.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Один/L1ru4.pdf",
+      "size": 1183741,
+      "url": "https://www.laurency.com/L1ru/L1ru4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Один",
+      "title": "ПЛАНЕТАРНАЯ \r\nИЕРАРХИЯ",
+      "filename": "L1ru5.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Один/L1ru5.pdf",
+      "size": 798212,
+      "url": "https://www.laurency.com/L1ru/L1ru5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Один",
+      "title": "ОТОЖДЕСТВЛЕНИЕ \r\nИ ОСВОБОЖДЕНИЕ",
+      "filename": "L1ru6.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Один/L1ru6.pdf",
+      "size": 295133,
+      "url": "https://www.laurency.com/L1ru/L1ru6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Один",
+      "title": "ПЕДАГОГИКА",
+      "filename": "L1ru7.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Один/L1ru7.pdf",
+      "size": 780571,
+      "url": "https://www.laurency.com/L1ru/L1ru7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Один",
+      "title": "ПРАВОВОЕ \r\nПРЕДСТАВЛЕНИЕ",
+      "filename": "L1ru8.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Один/L1ru8.pdf",
+      "size": 605429,
+      "url": "https://www.laurency.com/L1ru/L1ru8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Один",
+      "title": "ЗАКОН",
+      "filename": "L1ru9.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Один/L1ru9.pdf",
+      "size": 2344535,
+      "url": "https://www.laurency.com/L1ru/L1ru9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Один",
+      "title": "ТАЙНА \r\nСФИНКСА",
+      "filename": "L1ru10.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Один/L1ru10.pdf",
+      "size": 82185,
+      "url": "https://www.laurency.com/L1ru/L1ru10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Один",
+      "title": "МЕДИТАЦИЯ",
+      "filename": "L1ru1.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Один/L1ru1.pdf",
+      "size": 553050,
+      "url": "https://www.laurency.com/L1ru/L1ru1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Один",
+      "title": "ГНОСТИКА",
+      "filename": "L1ru2.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Один/L1ru2.pdf",
+      "size": 480947,
+      "url": "https://www.laurency.com/L1ru/L1ru2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Один",
+      "title": "ГНОСТИЧЕСКИЕ СИМВОЛЫ",
+      "filename": "L1ru3.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Один/L1ru3.pdf",
+      "size": 441190,
+      "url": "https://www.laurency.com/L1ru/L1ru3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Один",
+      "title": "УЧЕНИЧЕСТВО",
+      "filename": "L1ru4.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Один/L1ru4.pdf",
+      "size": 1183741,
+      "url": "https://www.laurency.com/L1ru/L1ru4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Один",
+      "title": "ПЛАНЕТАРНАЯ \r\nИЕРАРХИЯ",
+      "filename": "L1ru5.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Один/L1ru5.pdf",
+      "size": 798212,
+      "url": "https://www.laurency.com/L1ru/L1ru5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Один",
+      "title": "ОТОЖДЕСТВЛЕНИЕ \r\nИ ОСВОБОЖДЕНИЕ",
+      "filename": "L1ru6.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Один/L1ru6.pdf",
+      "size": 295133,
+      "url": "https://www.laurency.com/L1ru/L1ru6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Один",
+      "title": "ПЕДАГОГИКА",
+      "filename": "L1ru7.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Один/L1ru7.pdf",
+      "size": 780571,
+      "url": "https://www.laurency.com/L1ru/L1ru7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Один",
+      "title": "ПРАВОВОЕ \r\nПРЕДСТАВЛЕНИЕ",
+      "filename": "L1ru8.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Один/L1ru8.pdf",
+      "size": 605429,
+      "url": "https://www.laurency.com/L1ru/L1ru8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Один",
+      "title": "ЗАКОН",
+      "filename": "L1ru9.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Один/L1ru9.pdf",
+      "size": 2344535,
+      "url": "https://www.laurency.com/L1ru/L1ru9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Один",
+      "title": "ТАЙНА СФИНКСА",
+      "filename": "L1ru10.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Один/L1ru10.pdf",
+      "size": 82185,
+      "url": "https://www.laurency.com/L1ru/L1ru10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Два",
+      "title": "ГИЛОЗОИКА",
+      "filename": "L2ru1.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Два/L2ru1.pdf",
+      "size": 476890,
+      "url": "https://www.laurency.com/L2ru/L2ru1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Два",
+      "title": "ГИЛОЗОИЧЕСКОЕ \r\nМИРОВОЗЗРЕНИЕ",
+      "filename": "L2ru2.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Два/L2ru2.pdf",
+      "size": 751376,
+      "url": "https://www.laurency.com/L2ru/L2ru2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Два",
+      "title": "ЭЗОТЕРИКА",
+      "filename": "L2ru3.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Два/L2ru3.pdf",
+      "size": 1113372,
+      "url": "https://www.laurency.com/L2ru/L2ru3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Два",
+      "title": "АСПЕКТ \r\nДВИЖЕНИЯ",
+      "filename": "L2ru4.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Два/L2ru4.pdf",
+      "size": 437472,
+      "url": "https://www.laurency.com/L2ru/L2ru4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Два",
+      "title": "АСПЕКТ \r\nСОЗНАНИЯ",
+      "filename": "L2ru5.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Два/L2ru5.pdf",
+      "size": 814615,
+      "url": "https://www.laurency.com/L2ru/L2ru5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Два",
+      "title": "АСПЕКТ \r\nМАТЕРИИ",
+      "filename": "L2ru6.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Два/L2ru6.pdf",
+      "size": 547359,
+      "url": "https://www.laurency.com/L2ru/L2ru6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Два",
+      "title": "РАЗВИТИЕ \r\nСОЗНАНИЯ",
+      "filename": "L2ru7.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Два/L2ru7.pdf",
+      "size": 616415,
+      "url": "https://www.laurency.com/L2ru/L2ru7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Два",
+      "title": "СТАДИИ \r\nРАЗВИТИЯ ЧЕЛОВЕКА",
+      "filename": "L2ru8.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Два/L2ru8.pdf",
+      "size": 834075,
+      "url": "https://www.laurency.com/L2ru/L2ru8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Два",
+      "title": "ЭЗОТЕРИЧЕСКАЯ \r\nФИЛОСОФИЯ",
+      "filename": "L2ru9.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Два/L2ru9.pdf",
+      "size": 1133840,
+      "url": "https://www.laurency.com/L2ru/L2ru9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Два",
+      "title": "ЭЗОТЕРИЧЕСКАЯ \r\nПСИХОЛОГИЯ",
+      "filename": "L2ru10.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Два/L2ru10.pdf",
+      "size": 903098,
+      "url": "https://www.laurency.com/L2ru/L2ru10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Два",
+      "title": "ГИЛОЗОИКА",
+      "filename": "L2ru1.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Два/L2ru1.pdf",
+      "size": 476890,
+      "url": "https://www.laurency.com/L2ru/L2ru1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Два",
+      "title": "ГИЛОЗОИЧЕСКОЕ МИРОВОЗЗРЕНИЕ",
+      "filename": "L2ru2.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Два/L2ru2.pdf",
+      "size": 751376,
+      "url": "https://www.laurency.com/L2ru/L2ru2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Два",
+      "title": "ЭЗОТЕРИКА",
+      "filename": "L2ru3.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Два/L2ru3.pdf",
+      "size": 1113372,
+      "url": "https://www.laurency.com/L2ru/L2ru3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Два",
+      "title": "АСПЕКТ \r\nДВИЖЕНИЯ",
+      "filename": "L2ru4.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Два/L2ru4.pdf",
+      "size": 437472,
+      "url": "https://www.laurency.com/L2ru/L2ru4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Два",
+      "title": "АСПЕКТ \r\nСОЗНАНИЯ",
+      "filename": "L2ru5.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Два/L2ru5.pdf",
+      "size": 814615,
+      "url": "https://www.laurency.com/L2ru/L2ru5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Два",
+      "title": "АСПЕКТ МАТЕРИИ",
+      "filename": "L2ru6.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Два/L2ru6.pdf",
+      "size": 547359,
+      "url": "https://www.laurency.com/L2ru/L2ru6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Два",
+      "title": "РАЗВИТИЕ \r\nСОЗНАНИЯ",
+      "filename": "L2ru7.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Два/L2ru7.pdf",
+      "size": 616415,
+      "url": "https://www.laurency.com/L2ru/L2ru7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Два",
+      "title": "СТАДИИ РАЗВИТИЯ ЧЕЛОВЕКА",
+      "filename": "L2ru8.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Два/L2ru8.pdf",
+      "size": 834075,
+      "url": "https://www.laurency.com/L2ru/L2ru8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Два",
+      "title": "ЭЗОТЕРИЧЕСКАЯ \r\nФИЛОСОФИЯ",
+      "filename": "L2ru9.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Два/L2ru9.pdf",
+      "size": 1133840,
+      "url": "https://www.laurency.com/L2ru/L2ru9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Два",
+      "title": "ЭЗОТЕРИЧЕСКАЯ \r\nПСИХОЛОГИЯ",
+      "filename": "L2ru10.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Два/L2ru10.pdf",
+      "size": 903098,
+      "url": "https://www.laurency.com/L2ru/L2ru10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "ОРДЕНЫ \r\n\tЭЗОТЕРИЧЕСКОГО ЗНАНИЯ",
+      "filename": "L3ru1.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru1.pdf",
+      "size": 511398,
+      "url": "https://www.laurency.com/L3ru/L3ru1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "СИМВОЛЫ",
+      "filename": "L3ru2.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru2.pdf",
+      "size": 671133,
+      "url": "https://www.laurency.com/L3ru/L3ru2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "ЭЗОТЕРИЧЕСКАЯ \r\nТЕРМИНОЛОГИЯ",
+      "filename": "L3ru3.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru3.pdf",
+      "size": 456849,
+      "url": "https://www.laurency.com/L3ru/L3ru3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "АЛИСА \r\nА. БЕЙЛИ И Д.К.",
+      "filename": "L3ru4.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru4.pdf",
+      "size": 207687,
+      "url": "https://www.laurency.com/L3ru/L3ru4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "ТЕОСОФИЯ",
+      "filename": "L3ru5.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru5.pdf",
+      "size": 816430,
+      "url": "https://www.laurency.com/L3ru/L3ru5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "ОККУЛЬТНЫЕ \r\nСЕКТЫ",
+      "filename": "L3ru6.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru6.pdf",
+      "size": 709597,
+      "url": "https://www.laurency.com/L3ru/L3ru6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "ЙОГА",
+      "filename": "L3ru7.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru7.pdf",
+      "size": 467852,
+      "url": "https://www.laurency.com/L3ru/L3ru7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "МИСТИКА",
+      "filename": "L3ru8.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru8.pdf",
+      "size": 694390,
+      "url": "https://www.laurency.com/L3ru/L3ru8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "СПИРИТУАЛИИЗМ",
+      "filename": "L3ru9.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru9.pdf",
+      "size": 156124,
+      "url": "https://www.laurency.com/L3ru/L3ru9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "ЖИЗНЬ \r\nМЕЖДУ ВОПЛОЩЕНИЯМИ",
+      "filename": "L3ru10.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru10.pdf",
+      "size": 279380,
+      "url": "https://www.laurency.com/L3ru/L3ru10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "ПЕРЕВОПЛОЩЕНИЕ",
+      "filename": "L3ru11.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru11.pdf",
+      "size": 489433,
+      "url": "https://www.laurency.com/L3ru/L3ru11.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "ДЭВЫ",
+      "filename": "L3ru12.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru12.pdf",
+      "size": 108936,
+      "url": "https://www.laurency.com/L3ru/L3ru12.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "ЗДОРОВЬЕ",
+      "filename": "L3ru13.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru13.pdf",
+      "size": 251053,
+      "url": "https://www.laurency.com/L3ru/L3ru13.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "СЕМЬ \r\nОТДЕЛОВ",
+      "filename": "L3ru14.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru14.pdf",
+      "size": 697531,
+      "url": "https://www.laurency.com/L3ru/L3ru14.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "ЦЕНТРЫ \r\nВ ОБОЛОЧКАХ ЧЕЛОВЕКА",
+      "filename": "L3ru15.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru15.pdf",
+      "size": 314110,
+      "url": "https://www.laurency.com/L3ru/L3ru15.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "МАГИЯ",
+      "filename": "L3ru16.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru16.pdf",
+      "size": 191990,
+      "url": "https://www.laurency.com/L3ru/L3ru16.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "АСТРОЛОГИЯ",
+      "filename": "L3ru17.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru17.pdf",
+      "size": 613446,
+      "url": "https://www.laurency.com/L3ru/L3ru17.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "НАША ЭПОХА",
+      "filename": "L3ru18.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru18.pdf",
+      "size": 488536,
+      "url": "https://www.laurency.com/L3ru/L3ru18.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "ОРДЕНЫ ЭЗОТЕРИЧЕСКОГО \r\nЗНАНИЯ",
+      "filename": "L3ru1.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru1.pdf",
+      "size": 511398,
+      "url": "https://www.laurency.com/L3ru/L3ru1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "СИМВОЛЫ",
+      "filename": "L3ru2.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru2.pdf",
+      "size": 671133,
+      "url": "https://www.laurency.com/L3ru/L3ru2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "ЭЗОТЕРИЧЕСКАЯ \r\nТЕРМИНОЛОГИЯ",
+      "filename": "L3ru3.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru3.pdf",
+      "size": 456849,
+      "url": "https://www.laurency.com/L3ru/L3ru3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "АЛИСА А. БЕЙЛИ И Д.К.",
+      "filename": "L3ru4.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru4.pdf",
+      "size": 207687,
+      "url": "https://www.laurency.com/L3ru/L3ru4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "ТЕОСОФИЯ",
+      "filename": "L3ru5.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru5.pdf",
+      "size": 816430,
+      "url": "https://www.laurency.com/L3ru/L3ru5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "ОККУЛЬТНЫЕ СЕКТЫ",
+      "filename": "L3ru6.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru6.pdf",
+      "size": 709597,
+      "url": "https://www.laurency.com/L3ru/L3ru6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "ЙОГА",
+      "filename": "L3ru7.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru7.pdf",
+      "size": 467852,
+      "url": "https://www.laurency.com/L3ru/L3ru7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "МИСТИКА",
+      "filename": "L3ru8.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru8.pdf",
+      "size": 694390,
+      "url": "https://www.laurency.com/L3ru/L3ru8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "СПИРИТУАЛИИЗМ",
+      "filename": "L3ru9.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru9.pdf",
+      "size": 156124,
+      "url": "https://www.laurency.com/L3ru/L3ru9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "ЖИЗНЬ \r\nМЕЖДУ ВОПЛОЩЕНИЯМИ",
+      "filename": "L3ru10.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru10.pdf",
+      "size": 279380,
+      "url": "https://www.laurency.com/L3ru/L3ru10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "ПЕРЕВОПЛОЩЕНИЕ",
+      "filename": "L3ru11.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru11.pdf",
+      "size": 489433,
+      "url": "https://www.laurency.com/L3ru/L3ru11.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "ДЭВЫ",
+      "filename": "L3ru12.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru12.pdf",
+      "size": 108936,
+      "url": "https://www.laurency.com/L3ru/L3ru12.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "ЗДОРОВЬЕ",
+      "filename": "L3ru13.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru13.pdf",
+      "size": 251053,
+      "url": "https://www.laurency.com/L3ru/L3ru13.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "СЕМЬ \r\nОТДЕЛОВ",
+      "filename": "L3ru14.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru14.pdf",
+      "size": 697531,
+      "url": "https://www.laurency.com/L3ru/L3ru14.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "ЦЕНТРЫ В ОБОЛОЧКАХ ЧЕЛОВЕКА",
+      "filename": "L3ru15.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru15.pdf",
+      "size": 314110,
+      "url": "https://www.laurency.com/L3ru/L3ru15.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "МАГИЯ",
+      "filename": "L3ru16.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru16.pdf",
+      "size": 191990,
+      "url": "https://www.laurency.com/L3ru/L3ru16.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "АСТРОЛОГИЯ",
+      "filename": "L3ru17.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru17.pdf",
+      "size": 613446,
+      "url": "https://www.laurency.com/L3ru/L3ru17.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Три",
+      "title": "НАША \r\nЭПОХА",
+      "filename": "L3ru18.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Три/L3ru18.pdf",
+      "size": 488536,
+      "url": "https://www.laurency.com/L3ru/L3ru18.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Четыре",
+      "title": "ЛОРЕНСИ",
+      "filename": "L4ru1.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Четыре/L4ru1.pdf",
+      "size": 913201,
+      "url": "https://www.laurency.com/L4ru/L4ru1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Четыре",
+      "title": "КУЛЬТУРА",
+      "filename": "L4ru2.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Четыре/L4ru2.pdf",
+      "size": 830429,
+      "url": "https://www.laurency.com/L4ru/L4ru2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Четыре",
+      "title": "РЕЛИГИЯ",
+      "filename": "L4ru3.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Четыре/L4ru3.pdf",
+      "size": 804980,
+      "url": "https://www.laurency.com/L4ru/L4ru3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Четыре",
+      "title": "ТЕОЛОГИЯ",
+      "filename": "L4ru4.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Четыре/L4ru4.pdf",
+      "size": 1190265,
+      "url": "https://www.laurency.com/L4ru/L4ru4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Четыре",
+      "title": "ЛИТЕРАТУРА",
+      "filename": "L4ru5.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Четыре/L4ru5.pdf",
+      "size": 578593,
+      "url": "https://www.laurency.com/L4ru/L4ru5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Четыре",
+      "title": "ИСКУССТВО",
+      "filename": "L4ru6.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Четыре/L4ru6.pdf",
+      "size": 255154,
+      "url": "https://www.laurency.com/L4ru/L4ru6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Четыре",
+      "title": "ФИЛОСОФИЯ",
+      "filename": "L4ru7.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Четыре/L4ru7.pdf",
+      "size": 1723598,
+      "url": "https://www.laurency.com/L4ru/L4ru7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Четыре",
+      "title": "ЛОРЕНСИ",
+      "filename": "L4ru1.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Четыре/L4ru1.pdf",
+      "size": 913201,
+      "url": "https://www.laurency.com/L4ru/L4ru1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Четыре",
+      "title": "КУЛЬТУРА",
+      "filename": "L4ru2.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Четыре/L4ru2.pdf",
+      "size": 830429,
+      "url": "https://www.laurency.com/L4ru/L4ru2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Четыре",
+      "title": "РЕЛИГИЯ",
+      "filename": "L4ru3.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Четыре/L4ru3.pdf",
+      "size": 804980,
+      "url": "https://www.laurency.com/L4ru/L4ru3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Четыре",
+      "title": "ТЕОЛОГИЯ",
+      "filename": "L4ru4.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Четыре/L4ru4.pdf",
+      "size": 1190265,
+      "url": "https://www.laurency.com/L4ru/L4ru4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Четыре",
+      "title": "ЛИТЕРАТУРА",
+      "filename": "L4ru5.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Четыре/L4ru5.pdf",
+      "size": 578593,
+      "url": "https://www.laurency.com/L4ru/L4ru5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Четыре",
+      "title": "ИСКУССТВО",
+      "filename": "L4ru6.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Четыре/L4ru6.pdf",
+      "size": 255154,
+      "url": "https://www.laurency.com/L4ru/L4ru6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Четыре",
+      "title": "ФИЛОСОФИЯ",
+      "filename": "L4ru7.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Четыре/L4ru7.pdf",
+      "size": 1723598,
+      "url": "https://www.laurency.com/L4ru/L4ru7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ГЕТЕ \r\n\t(1749–1832) КАК ЭЗОТЕРИК",
+      "filename": "L5ru1.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru1.pdf",
+      "size": 260977,
+      "url": "https://www.laurency.com/L5ru/L5ru1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ИДЕИ \r\nРЕАЛЬНОСТИ (ЭЗОТЕРИЗМЫ) У РУССО (1712–1778) С КОММЕНТАРИЯМИ",
+      "filename": "L5ru2.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru2.pdf",
+      "size": 172649,
+      "url": "https://www.laurency.com/L5ru/L5ru2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ФИЛОСОФИЯ \r\nИСТОРИИЭРИКА ГУСТАВА ГЕЙЕРА (1783–1847)",
+      "filename": "L5ru3.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru3.pdf",
+      "size": 255837,
+      "url": "https://www.laurency.com/L5ru/L5ru3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "КРИШНАМУРТИ \r\nИ ЗАКОН РАЗВИТИЯ",
+      "filename": "L5ru4.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru4.pdf",
+      "size": 318250,
+      "url": "https://www.laurency.com/L5ru/L5ru4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ПУТЬ \r\nК ЗНАНИЮ И ЕДИНСТВУ",
+      "filename": "L5ru5.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru5.pdf",
+      "size": 410915,
+      "url": "https://www.laurency.com/L5ru/L5ru5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ФИЛОСОФИЯ \r\nЭФФЕКТИВНОСТИ, или ЧТО ПОЛОЖИТЕЛЬНО? ЧТО ОТРИЦАТЕЛЬНО?",
+      "filename": "L5ru6.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru6.pdf",
+      "size": 448024,
+      "url": "https://www.laurency.com/L5ru/L5ru6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "О \r\nКНИГЕ АЛИСЫ А. БЕЙЛИ «НОВОЕ ЯВЛЕНИЕ ХРИСТА",
+      "filename": "L5ru7.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru7.pdf",
+      "size": 498926,
+      "url": "https://www.laurency.com/L5ru/L5ru7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ОСВОБОЖДЕНИЕ \r\nЧЕЛОВЕКА",
+      "filename": "L5ru8.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru8.pdf",
+      "size": 221614,
+      "url": "https://www.laurency.com/L5ru/L5ru8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ИНДУИСТСКАЯ \r\nПСИХОЛОГИЯСвами Акхилананды",
+      "filename": "L5ru9.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru9.pdf",
+      "size": 205783,
+      "url": "https://www.laurency.com/L5ru/L5ru9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ВЕРА СТЭНЛИ АЛЬДЕР",
+      "filename": "L5ru10.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru10.pdf",
+      "size": 373168,
+      "url": "https://www.laurency.com/L5ru/L5ru10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ПОЛЬ \r\nБЬЕРРЕ",
+      "filename": "L5ru11.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru11.pdf",
+      "size": 213757,
+      "url": "https://www.laurency.com/L5ru/L5ru11.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ЙОГА \r\nИ ЗАПАДНАЯ ПСИХОЛОГИЯ",
+      "filename": "L5ru12.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru12.pdf",
+      "size": 229525,
+      "url": "https://www.laurency.com/L5ru/L5ru12.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "УЧЕБА \r\nВ ЭМЕРСОНЕ",
+      "filename": "L5ru13.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru13.pdf",
+      "size": 166301,
+      "url": "https://www.laurency.com/L5ru/L5ru13.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ТЕОСОФИЯ \r\nФРЕДИНГА",
+      "filename": "L5ru14.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru14.pdf",
+      "size": 163309,
+      "url": "https://www.laurency.com/L5ru/L5ru14.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ДАГ \r\nХАММАРШЕЛЬД",
+      "filename": "L5ru15.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru15.pdf",
+      "size": 107255,
+      "url": "https://www.laurency.com/L5ru/L5ru15.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ПОСВЯЩЕННЫЙ \r\nВ НОВОМ МИРЕ",
+      "filename": "L5ru16.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru16.pdf",
+      "size": 111948,
+      "url": "https://www.laurency.com/L5ru/L5ru16.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "НАСТОЯЩАЯ \r\nЕ. П. БЛАВАТСКАЯ",
+      "filename": "L5ru17.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru17.pdf",
+      "size": 282315,
+      "url": "https://www.laurency.com/L5ru/L5ru17.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "О ВЕЩАХ \r\nЧЕЛОВЕЧЕСКИХ",
+      "filename": "L5ru18.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru18.pdf",
+      "size": 211979,
+      "url": "https://www.laurency.com/L5ru/L5ru18.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "В \r\nГАРМОНИИ С БЕСКОНЕЧНЫМ",
+      "filename": "L5ru19.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru19.pdf",
+      "size": 78170,
+      "url": "https://www.laurency.com/L5ru/L5ru19.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "НАУКА",
+      "filename": "L5ru20.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru20.pdf",
+      "size": 389082,
+      "url": "https://www.laurency.com/L5ru/L5ru20.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ПСИХОЛОГИЯ",
+      "filename": "L5ru21.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru21.pdf",
+      "size": 846088,
+      "url": "https://www.laurency.com/L5ru/L5ru21.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ИСТОРИЯ",
+      "filename": "L5ru22.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru22.pdf",
+      "size": 469381,
+      "url": "https://www.laurency.com/L5ru/L5ru22.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ЧЕРНАЯ \r\nЛОЖА",
+      "filename": "L5ru23.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru23.pdf",
+      "size": 547481,
+      "url": "https://www.laurency.com/L5ru/L5ru23.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ГЕТЕ (1749–1832) КАК ЭЗОТЕРИК",
+      "filename": "L5ru1.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru1.pdf",
+      "size": 260977,
+      "url": "https://www.laurency.com/L5ru/L5ru1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ИДЕИ \r\nРЕАЛЬНОСТИ (ЭЗОТЕРИЗМЫ) У РУССО (1712–1778) С КОММЕНТАРИЯМИ",
+      "filename": "L5ru2.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru2.pdf",
+      "size": 172649,
+      "url": "https://www.laurency.com/L5ru/L5ru2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ФИЛОСОФИЯ ИСТОРИИЭРИКА ГУСТАВА ГЕЙЕРА (1783–1847)",
+      "filename": "L5ru3.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru3.pdf",
+      "size": 255837,
+      "url": "https://www.laurency.com/L5ru/L5ru3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "КРИШНАМУРТИ И \r\nЗАКОН РАЗВИТИЯ",
+      "filename": "L5ru4.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru4.pdf",
+      "size": 318250,
+      "url": "https://www.laurency.com/L5ru/L5ru4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ПУТЬ К ЗНАНИЮ И \r\nЕДИНСТВУ",
+      "filename": "L5ru5.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru5.pdf",
+      "size": 410915,
+      "url": "https://www.laurency.com/L5ru/L5ru5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ФИЛОСОФИЯ \r\nЭФФЕКТИВНОСТИ, или",
+      "filename": "L5ru6.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru6.pdf",
+      "size": 448024,
+      "url": "https://www.laurency.com/L5ru/L5ru6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ЧТО ПОЛОЖИТЕЛЬНО? ЧТО ОТРИЦАТЕЛЬНО?",
+      "filename": "L5ru6.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru6.pdf",
+      "size": 448024,
+      "url": "https://www.laurency.com/L5ru/L5ru6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "О КНИГЕ \r\nАЛИСЫ А. БЕЙЛИ «НОВОЕ ЯВЛЕНИЕ ХРИСТА»",
+      "filename": "L5ru7.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru7.pdf",
+      "size": 498926,
+      "url": "https://www.laurency.com/L5ru/L5ru7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ОСВОБОЖДЕНИЕ ЧЕЛОВЕКА",
+      "filename": "L5ru8.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru8.pdf",
+      "size": 221614,
+      "url": "https://www.laurency.com/L5ru/L5ru8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ИНДУИСТСКАЯ ПСИХОЛОГИЯСвами Акхилананды",
+      "filename": "L5ru9.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru9.pdf",
+      "size": 205783,
+      "url": "https://www.laurency.com/L5ru/L5ru9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ВЕРА СТЭНЛИ АЛЬДЕР",
+      "filename": "L5ru10.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru10.pdf",
+      "size": 373168,
+      "url": "https://www.laurency.com/L5ru/L5ru10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ПОЛЬ БЬЕРРЕ",
+      "filename": "L5ru11.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru11.pdf",
+      "size": 213757,
+      "url": "https://www.laurency.com/L5ru/L5ru11.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ЙОГА И ЗАПАДНАЯ ПСИХОЛОГИЯ",
+      "filename": "L5ru12.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru12.pdf",
+      "size": 229525,
+      "url": "https://www.laurency.com/L5ru/L5ru12.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "УЧЕБА В ЭМЕРСОНЕ",
+      "filename": "L5ru13.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru13.pdf",
+      "size": 166301,
+      "url": "https://www.laurency.com/L5ru/L5ru13.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ТЕОСОФИЯ ФРЕДИНГА",
+      "filename": "L5ru14.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru14.pdf",
+      "size": 163309,
+      "url": "https://www.laurency.com/L5ru/L5ru14.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ДАГ ХАММАРШЕЛЬД",
+      "filename": "L5ru15.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru15.pdf",
+      "size": 107255,
+      "url": "https://www.laurency.com/L5ru/L5ru15.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ПОСВЯЩЕННЫЙ В НОВОМ МИРЕ",
+      "filename": "L5ru16.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru16.pdf",
+      "size": 111948,
+      "url": "https://www.laurency.com/L5ru/L5ru16.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "НАСТОЯЩАЯ Е. П. БЛАВАТСКАЯ",
+      "filename": "L5ru17.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru17.pdf",
+      "size": 282315,
+      "url": "https://www.laurency.com/L5ru/L5ru17.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "О ВЕЩАХ ЧЕЛОВЕЧЕСКИХ",
+      "filename": "L5ru18.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru18.pdf",
+      "size": 211979,
+      "url": "https://www.laurency.com/L5ru/L5ru18.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "В ГАРМОНИИ С БЕСКОНЕЧНЫМ",
+      "filename": "L5ru19.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru19.pdf",
+      "size": 78170,
+      "url": "https://www.laurency.com/L5ru/L5ru19.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "НАУКА",
+      "filename": "L5ru20.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru20.pdf",
+      "size": 389082,
+      "url": "https://www.laurency.com/L5ru/L5ru20.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ПСИХОЛОГИЯ",
+      "filename": "L5ru21.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru21.pdf",
+      "size": 846088,
+      "url": "https://www.laurency.com/L5ru/L5ru21.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ИСТОРИЯ",
+      "filename": "L5ru22.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru22.pdf",
+      "size": 469381,
+      "url": "https://www.laurency.com/L5ru/L5ru22.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Знание жизни Пять",
+      "title": "ЧЕРНАЯ ЛОЖА",
+      "filename": "L5ru23.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Знание жизни Пять/L5ru23.pdf",
+      "size": 547481,
+      "url": "https://www.laurency.com/L5ru/L5ru23.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Объяснение",
+      "title": "Первое \r\nобъяснение",
+      "filename": "FKru_cont.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Объяснение/FKru_cont.pdf",
+      "size": 65097,
+      "url": "https://www.laurency.com/Fkru/FKru_cont.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Объяснение",
+      "title": "ОДИН",
+      "filename": "Fkru1.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Объяснение/Fkru1.pdf",
+      "size": 281494,
+      "url": "https://www.laurency.com/Fkru/Fkru1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Объяснение",
+      "title": "ДВA",
+      "filename": "Fkru2.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Объяснение/Fkru2.pdf",
+      "size": 271527,
+      "url": "https://www.laurency.com/Fkru/Fkru2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Объяснение",
+      "title": "ТРИ",
+      "filename": "Fkru3.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Объяснение/Fkru3.pdf",
+      "size": 224635,
+      "url": "https://www.laurency.com/Fkru/Fkru3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Объяснение",
+      "title": "ЧЕТЫРЕ",
+      "filename": "Fkru4.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Объяснение/Fkru4.pdf",
+      "size": 286780,
+      "url": "https://www.laurency.com/Fkru/Fkru4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Объяснение",
+      "title": "ПЯТЬ",
+      "filename": "Fkru5.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Объяснение/Fkru5.pdf",
+      "size": 290851,
+      "url": "https://www.laurency.com/Fkru/Fkru5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Объяснение",
+      "title": "ШЕСТЬ",
+      "filename": "Fkru6.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Объяснение/Fkru6.pdf",
+      "size": 309200,
+      "url": "https://www.laurency.com/Fkru/Fkru6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Объяснение",
+      "title": "СЕМЬ",
+      "filename": "Fkru7.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Объяснение/Fkru7.pdf",
+      "size": 276193,
+      "url": "https://www.laurency.com/Fkru/Fkru7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Объяснение",
+      "title": "ВОСЕМЬ",
+      "filename": "Fkru8.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Объяснение/Fkru8.pdf",
+      "size": 305162,
+      "url": "https://www.laurency.com/Fkru/Fkru8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Объяснение",
+      "title": "ДЕВЯТЬ",
+      "filename": "Fkru9.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Объяснение/Fkru9.pdf",
+      "size": 358582,
+      "url": "https://www.laurency.com/Fkru/Fkru9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Объяснение",
+      "title": "ДЕСЯТЬ",
+      "filename": "Fkru10.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Объяснение/Fkru10.pdf",
+      "size": 331457,
+      "url": "https://www.laurency.com/Fkru/Fkru10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Объяснение",
+      "title": "ОДИННАДЦАТЬ",
+      "filename": "Fkru11.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Объяснение/Fkru11.pdf",
+      "size": 345897,
+      "url": "https://www.laurency.com/Fkru/Fkru11.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Объяснение",
+      "title": "ДВЕНАДЦАТЬ",
+      "filename": "Fkru12.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Объяснение/Fkru12.pdf",
+      "size": 434391,
+      "url": "https://www.laurency.com/Fkru/Fkru12.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Объяснение",
+      "title": "ОДИН",
+      "filename": "Fkru1.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Объяснение/Fkru1.pdf",
+      "size": 281494,
+      "url": "https://www.laurency.com/Fkru/Fkru1.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Объяснение",
+      "title": "ДВA",
+      "filename": "Fkru2.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Объяснение/Fkru2.pdf",
+      "size": 271527,
+      "url": "https://www.laurency.com/Fkru/Fkru2.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Объяснение",
+      "title": "ТРИ",
+      "filename": "Fkru3.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Объяснение/Fkru3.pdf",
+      "size": 224635,
+      "url": "https://www.laurency.com/Fkru/Fkru3.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Объяснение",
+      "title": "ЧЕТЫРЕ",
+      "filename": "Fkru4.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Объяснение/Fkru4.pdf",
+      "size": 286780,
+      "url": "https://www.laurency.com/Fkru/Fkru4.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Объяснение",
+      "title": "ПЯТЬ",
+      "filename": "Fkru5.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Объяснение/Fkru5.pdf",
+      "size": 290851,
+      "url": "https://www.laurency.com/Fkru/Fkru5.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Объяснение",
+      "title": "ШЕСТЬ",
+      "filename": "Fkru6.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Объяснение/Fkru6.pdf",
+      "size": 309200,
+      "url": "https://www.laurency.com/Fkru/Fkru6.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Объяснение",
+      "title": "СЕМЬ",
+      "filename": "Fkru7.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Объяснение/Fkru7.pdf",
+      "size": 276193,
+      "url": "https://www.laurency.com/Fkru/Fkru7.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Объяснение",
+      "title": "ВОСЕМЬ",
+      "filename": "Fkru8.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Объяснение/Fkru8.pdf",
+      "size": 305162,
+      "url": "https://www.laurency.com/Fkru/Fkru8.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Объяснение",
+      "title": "ДЕВЯТЬ",
+      "filename": "Fkru9.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Объяснение/Fkru9.pdf",
+      "size": 358582,
+      "url": "https://www.laurency.com/Fkru/Fkru9.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Объяснение",
+      "title": "ДЕСЯТЬ",
+      "filename": "Fkru10.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Объяснение/Fkru10.pdf",
+      "size": 331457,
+      "url": "https://www.laurency.com/Fkru/Fkru10.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Объяснение",
+      "title": "ОДИННАДЦАТЬ",
+      "filename": "Fkru11.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Объяснение/Fkru11.pdf",
+      "size": 345897,
+      "url": "https://www.laurency.com/Fkru/Fkru11.pdf"
+    },
+    {
+      "type": "book",
+      "series": "Объяснение",
+      "title": "ДВЕНАДЦАТЬ",
+      "filename": "Fkru12.pdf",
+      "path": "laurency_ultimate/russian_Русский/Books/Объяснение/Fkru12.pdf",
+      "size": 434391,
+      "url": "https://www.laurency.com/Fkru/Fkru12.pdf"
+    }
+  ]
+}
