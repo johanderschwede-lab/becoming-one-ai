@@ -145,7 +145,7 @@ Type /help for more commands!"""
         )
         print("✅ Message handler added")
     
-    async def run(self):
+    def run(self):
         """Run the enhanced bot"""
         print("🚀 Starting bot application...")
         try:
@@ -162,7 +162,7 @@ Type /help for more commands!"""
             print(f"    Token (first 10): {self.token[:10]}...")
             
             logger.info("▲ Starting Becoming One™ Telegram Bot...")
-            await self.application.run_polling(
+            self.application.run_polling(
                 allowed_updates=Update.ALL_TYPES,
                 drop_pending_updates=True
             )
@@ -177,7 +177,7 @@ if __name__ == "__main__":
     try:
         # Initialize and run bot
         bot = EnhancedBecomingOneTelegramBot()
-        asyncio.run(bot.run())
+        bot.run()
     except KeyboardInterrupt:
         print("\n● Bot stopped by user")
     except Exception as e:

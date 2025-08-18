@@ -119,7 +119,7 @@ async def main():
         
         # Mark bot as running
         print("🚀 Starting bot...")
-        await bot.run()
+        bot.run()
         
     except Exception as e:
         error_msg = f"Bot startup failed: {str(e)}"
