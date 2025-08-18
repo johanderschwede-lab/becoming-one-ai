@@ -37,15 +37,68 @@ async def verify_locally():
     print("✅ Local verification passed")
     return True
 
+def get_deploy_version():
+    """Get the next deployment version"""
+    try:
+        with open('.deploy_version', 'r') as f:
+            version = int(f.read().strip())
+    except:
+        version = 0
+    
+    version += 1
+    with open('.deploy_version', 'w') as f:
+        f.write(str(version))
+    
+    return version
+
+def get_changes_summary():
+    """Get a summary of changes since last commit"""
+    code, out, err = run_cmd("git diff --cached --name-only")
+    if code != 0:
+        return "unknown changes"
+    
+    files = out.strip().split('\n')
+    if not files or files == ['']:
+        return "no file changes"
+    
+    categories = {
+        'bot': [],
+        'core': [],
+        'scripts': [],
+        'other': []
+    }
+    
+    for file in files:
+        if 'bot' in file:
+            categories['bot'].append(file)
+        elif 'core' in file:
+            categories['core'].append(file)
+        elif 'scripts' in file:
+            categories['scripts'].append(file)
+        else:
+            categories['other'].append(file)
+    
+    summary = []
+    if categories['bot']: summary.append('bot')
+    if categories['core']: summary.append('core')
+    if categories['scripts']: summary.append('scripts')
+    if categories['other']: summary.append('other')
+    
+    return ' + '.join(summary) + ' changes'
+
 def deploy_to_railway():
     """Deploy to Railway"""
     print("\n=== Deploying to Railway ===")
     
+    # Get deployment version and changes
+    version = get_deploy_version()
+    changes = get_changes_summary()
+    
     # Commit any changes
-    print("📝 Committing changes...")
+    print(f"📝 Committing changes (v{version})...")
     cmds = [
         "git add .",
-        'git commit -m "deploy: Fast deploy with verified changes"',
+        f'git commit -m "deploy v{version}: {changes}"',
         "git push origin main"
     ]
     

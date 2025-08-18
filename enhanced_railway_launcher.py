@@ -49,12 +49,21 @@ def start_health_server():
 
 # Fallback function removed - Enhanced Bot only
 
+async def get_deploy_version():
+    """Get current deployment version"""
+    try:
+        with open('.deploy_version', 'r') as f:
+            return int(f.read().strip())
+    except:
+        return 0
+
 async def main():
     """Main launcher function - Enhanced Bot only"""
+    version = get_deploy_version()
     print("\n" + "="*60)
     print("▲ BECOMING ONE™ AI TELEGRAM BOT")
     print("="*60)
-    print("🏛️ ENHANCED BOT WITH SACRED LIBRARY")
+    print(f"🏛️ ENHANCED BOT WITH SACRED LIBRARY (v{version})")
     print("◆ Initializing...")
     
     # Start health server in background
