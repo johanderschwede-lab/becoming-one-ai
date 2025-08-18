@@ -49,7 +49,7 @@ def start_health_server():
 
 # Fallback function removed - Enhanced Bot only
 
-def main():
+async def main():
     """Main launcher function - Enhanced Bot only"""
     print("\n" + "="*60)
     print("▲ BECOMING ONE™ AI TELEGRAM BOT")
@@ -159,7 +159,23 @@ def main():
     # Run Enhanced Bot
     print("🚀 Starting Enhanced Bot...")
     try:
-        asyncio.run(bot.run())
+        # Test OpenAI connection first
+        print("  🔍 Testing OpenAI connection...")
+        test_response = bot.openai_client.chat.completions.create(
+            model="gpt-4-turbo-preview",
+            messages=[{"role": "user", "content": "test"}],
+            max_tokens=1
+        )
+        print("  ✅ OpenAI connection working")
+        
+        # Test Telegram webhook
+        print("  🔍 Testing Telegram webhook...")
+        me = await bot.application.bot.get_me()
+        print(f"  ✅ Telegram bot active: @{me.username}")
+        
+        # Run the bot
+        print("  🚀 Starting bot polling...")
+        await bot.run()
     except Exception as run_error:
         print(f"❌ CRITICAL: Enhanced Bot runtime error: {run_error}")
         import traceback
@@ -174,7 +190,7 @@ def main():
 
 if __name__ == "__main__":
     try:
-        main()
+        asyncio.run(main())
     except KeyboardInterrupt:
         print("\n● Bot stopped by user")
     except Exception as e:
