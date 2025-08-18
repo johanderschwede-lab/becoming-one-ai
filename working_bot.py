@@ -31,8 +31,6 @@ try:
     logger.info("✅ Enhanced AI engine with Sacred Library loaded")
 except Exception as e:
     logger.error(f"❌ Could not load enhanced AI engine: {e}")
-    import traceback
-    logger.error(f"Full traceback: {traceback.format_exc()}")
     ai_engine = None
 
 # Load environment variables

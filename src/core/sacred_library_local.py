@@ -15,7 +15,9 @@ class LocalSacredLibrary:
     """Local Sacred Library search when Supabase is unavailable"""
     
     def __init__(self):
-        self.sacred_dir = Path("sacred_library_files")
+        # Use absolute path from project root
+        project_root = Path(__file__).parent.parent.parent
+        self.sacred_dir = project_root / "sacred_library_files"
         self.quotes_dir = self.sacred_dir / "quotes"
         self.cache = {}  # Simple in-memory cache
         

@@ -26,7 +26,9 @@ class EnhancedSacredLibrary:
     def __init__(self):
         self.openai_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY")) if os.getenv("OPENAI_API_KEY") else None
         self.pinecone_client = PineconeClient() if PINECONE_AVAILABLE and os.getenv("PINECONE_API_KEY") else None
-        self.sacred_dir = Path("sacred_library_files")
+        # Use absolute path from project root
+        project_root = Path(__file__).parent.parent.parent
+        self.sacred_dir = project_root / "sacred_library_files"
         
     async def enhanced_search(self, query: str, limit: int = 3, target_language: str = "en") -> List[Dict[str, Any]]:
         """
