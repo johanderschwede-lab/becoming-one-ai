@@ -789,14 +789,32 @@ What level would work best for you?
     async def run(self):
         """Run the enhanced bot"""
         print("🚀 Starting bot application...")
-        self.application = Application.builder().token(self.token).build()
-        
-        print("📝 Setting up handlers...")
-        self.setup_handlers()
-        
-        print("▶️ Starting polling...")
-        logger.info("▲ Starting Becoming One™ Telegram Bot with RBAC and Payments...")
-        await self.application.run_polling(allowed_updates=Update.ALL_TYPES)
+        try:
+            print("  🔧 Building application...")
+            self.application = Application.builder().token(self.token).build()
+            print("  ✅ Application built")
+            
+            print("  📝 Setting up handlers...")
+            self.setup_handlers()
+            print("  ✅ Handlers set up")
+            
+            print("  ▶️ Starting polling...")
+            print("  📋 Configuration:")
+            print(f"    Token (first 10): {self.token[:10]}...")
+            print(f"    Updates: {Update.ALL_TYPES}")
+            
+            logger.info("▲ Starting Becoming One™ Telegram Bot with RBAC and Payments...")
+            await self.application.run_polling(
+                allowed_updates=Update.ALL_TYPES,
+                drop_pending_updates=True,  # Start fresh
+                close_loop=False  # Keep event loop running
+            )
+        except Exception as e:
+            print(f"❌ Error in run(): {e}")
+            print("📋 Full error details:")
+            import traceback
+            traceback.print_exc()
+            raise e
 
 
 if __name__ == "__main__":

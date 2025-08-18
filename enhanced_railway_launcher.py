@@ -159,20 +159,40 @@ async def main():
     # Run Enhanced Bot
     print("🚀 Starting Enhanced Bot...")
     try:
+        # Check environment variables first
+        print("  🔍 Checking environment variables...")
+        required_vars = {
+            'TELEGRAM_BOT_TOKEN': os.getenv('TELEGRAM_BOT_TOKEN'),
+            'OPENAI_API_KEY': os.getenv('OPENAI_API_KEY'),
+            'SUPABASE_URL': os.getenv('SUPABASE_URL'),
+            'SUPABASE_ANON_KEY': os.getenv('SUPABASE_ANON_KEY')
+        }
+        
+        for var_name, var_value in required_vars.items():
+            if not var_value:
+                print(f"  ❌ Missing {var_name}")
+            else:
+                print(f"  ✅ Found {var_name} ({var_value[:10]}...)")
+        
         # Test OpenAI connection first
         print("  🔍 Testing OpenAI connection...")
         try:
+            print("    Creating test completion...")
             test_response = bot.openai_client.chat.completions.create(
                 model="gpt-4-turbo-preview",
                 messages=[{"role": "user", "content": "test"}],
                 max_tokens=1
             )
+            print(f"    Response: {test_response}")
             print("  ✅ OpenAI connection working")
         except Exception as openai_error:
             print(f"  ❌ OpenAI error: {openai_error}")
             print("  🔍 OpenAI configuration:")
             print(f"    API Key (first 10 chars): {os.getenv('OPENAI_API_KEY')[:10]}...")
             print(f"    Base URL: {bot.openai_client.base_url}")
+            print(f"    Full error: {openai_error.__class__.__name__}: {str(openai_error)}")
+            if hasattr(openai_error, 'response'):
+                print(f"    Response: {openai_error.response}")
             raise openai_error
         
         # Test Telegram webhook
