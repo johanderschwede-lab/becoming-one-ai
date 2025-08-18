@@ -35,9 +35,11 @@ class BecomingOneAI:
         
         # Queue for background analysis
         self.analysis_queue = asyncio.Queue()
+        self.background_task = None
         
-        # Start background analysis task
-        asyncio.create_task(self._process_analysis_queue())
+        # Start background analysis task (only if not in test mode)
+        if not os.getenv("TESTING_MODE"):
+            self.background_task = asyncio.create_task(self._process_analysis_queue())
     
     async def search_sacred_library(self, query: str, limit: int = 3) -> List[Dict[str, Any]]:
         """Search Sacred Library for relevant quotes"""
@@ -164,40 +166,48 @@ What feels most important to you right now in this moment?"""
                 # Get next message from queue
                 message_data = await self.analysis_queue.get()
                 
-                # Run full personality analysis
-                analysis_results = await self.personality_analyzer.analyze_message(
-                    person_id=message_data['person_id'],
-                    message=message_data['message'],
-                    context={"source": message_data['source']}
-                )
+                try:
+                    # Run full personality analysis
+                    analysis_results = await self.personality_analyzer.analyze_message(
+                        person_id=message_data['person_id'],
+                        message=message_data['message'],
+                        context={"source": message_data['source']}
+                    )
+                    
+                    # Get or create personality profile
+                    profile = await self._get_or_create_personality_profile(message_data['person_id'])
+                    
+                    # Update profile with new analysis
+                    updated_profile = await self.personality_analyzer.update_personality_profile(
+                        person_id=message_data['person_id'],
+                        analysis_results=analysis_results,
+                        existing_profile=profile
+                    )
+                    
+                    # Store results
+                    await self._store_analysis_results(
+                        person_id=message_data['person_id'],
+                        analysis=analysis_results,
+                        profile=updated_profile,
+                        message_data=message_data
+                    )
+                    
+                    logger.info(f"Completed background analysis for person {message_data['person_id']}")
+                    
+                except Exception as e:
+                    logger.error(f"Error in background analysis: {e}")
+                finally:
+                    # Mark task as done
+                    self.analysis_queue.task_done()
                 
-                # Get or create personality profile
-                profile = await self._get_or_create_personality_profile(message_data['person_id'])
-                
-                # Update profile with new analysis
-                updated_profile = await self.personality_analyzer.update_personality_profile(
-                    person_id=message_data['person_id'],
-                    analysis_results=analysis_results,
-                    existing_profile=profile
-                )
-                
-                # Store results
-                await self._store_analysis_results(
-                    person_id=message_data['person_id'],
-                    analysis=analysis_results,
-                    profile=updated_profile,
-                    message_data=message_data
-                )
-                
-                logger.info(f"Completed background analysis for person {message_data['person_id']}")
-                
+            except asyncio.CancelledError:
+                # Handle graceful shutdown
+                logger.info("Background analysis queue cancelled")
+                break
             except Exception as e:
-                logger.error(f"Error in background analysis: {e}")
-            finally:
-                self.analysis_queue.task_done()
-            
-            # Small delay to prevent CPU overuse
-            await asyncio.sleep(0.1)
+                logger.error(f"Critical error in analysis queue: {e}")
+                # Small delay before continuing
+                await asyncio.sleep(1.0)
     
     async def _get_quick_personality_context(self, person_id: str) -> Optional[Dict[str, Any]]:
         """Get cached personality context for quick access"""

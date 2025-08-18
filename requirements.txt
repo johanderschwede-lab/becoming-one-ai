@@ -6,6 +6,7 @@ openai>=1.0,<2.0
 supabase>=2.0,<3.0
 passlib==1.7.4
 pinecone-client==5.0.1
-PyPDF2==3.0.1
-PyMuPDF==1.23.26
-beautifulsoup4==4.12.2
+httpx>=0.24.1,<0.25.0  # Required for Supabase
+aiohttp>=3.8.0  # Required for async operations
+python-dateutil  # Required for date handling
+pytz  # Required for timezone handling

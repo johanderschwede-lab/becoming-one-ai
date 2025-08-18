@@ -25,8 +25,8 @@ async def verify_locally():
     """Run local verification"""
     print("\n=== Running Local Verification ===")
     
-    # Run the debug script
-    cmd = "python3 scripts/debug_bot_locally.py"
+    # Run the local test script
+    cmd = "python3 scripts/test_railway_locally.py"
     code, out, err = run_cmd(cmd)
     
     if code != 0:

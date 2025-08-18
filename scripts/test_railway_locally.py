@@ -9,6 +9,10 @@ import importlib
 import logging
 from pathlib import Path
 from typing import List, Tuple
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 # Add src to path
 sys.path.insert(0, str(Path(__file__).parent.parent / 'src'))
@@ -71,7 +75,7 @@ def test_imports() -> Tuple[bool, List[str]]:
         logger.error(f"✗ Failed to import database operations: {e}")
 
     try:
-        from core.ai_engine import AIEngine
+        from core.ai_engine import BecomingOneAI
         logger.info("✓ AI engine imported")
     except Exception as e:
         errors.append(f"AI engine: {str(e)}")
