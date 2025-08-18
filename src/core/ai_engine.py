@@ -14,7 +14,6 @@ from database.operations import db
 from core.personality_analyzer import BecomingOnePersonalityAnalyzer
 from core.personality_synthesis_model import SynthesisPersonalityProfile
 from core.sacred_library_local import local_sacred_library
-from core.sacred_library_enhanced import enhanced_sacred_library
 
 class BecomingOneAI:
     """Main AI processing engine with async analysis"""
@@ -112,28 +111,7 @@ class BecomingOneAI:
         
         return []
     
-    async def _search_sacred_library_enhanced(self, query: str, limit: int = 3) -> List[Dict[str, Any]]:
-        """Enhanced Sacred Library search with vector understanding"""
-        try:
-            # Try enhanced search first (vector + improved local search)
-            results = await enhanced_sacred_library.enhanced_search(
-                query=query,
-                limit=limit,
-                target_language="en"  # Default to English, could be detected from query
-            )
-            
-            if results:
-                logger.info(f"Enhanced Sacred Library search found {len(results)} results")
-                return results
-            else:
-                logger.info("Enhanced search found no results, falling back to basic search")
-                # Fallback to basic search
-                return await self.search_sacred_library(query, limit=limit)
-                
-        except Exception as e:
-            logger.warning(f"Enhanced Sacred Library search failed: {e}")
-            # Fallback to basic search
-            return await self.search_sacred_library(query, limit=limit)
+
         
     async def process_message(
         self, 
@@ -160,8 +138,8 @@ class BecomingOneAI:
             # Get any existing personality insights
             personality_context = await self._get_quick_personality_context(person_id)
             
-            # Search Sacred Library with enhanced search
-            sacred_quotes = await self._search_sacred_library_enhanced(message, limit=2)
+            # Search Sacred Library
+            sacred_quotes = await self.search_sacred_library(message, limit=2)
             
             # Build system prompt
             system_prompt = """You are an AI mentor trained in the Becoming One™ method, a transformative approach to personal growth and authentic living.

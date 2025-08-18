@@ -225,9 +225,9 @@ Continue sharing what's alive for you - I'm here to support your transformation!
 def main():
     """Main function to run the bot"""
     print("\n" + "="*60)
-    print("🌟 BECOMING ONE™ AI TELEGRAM BOT")
+    print("🌟 BECOMING ONE™ AI TELEGRAM BOT v2.0")
     print("="*60)
-    print("Initializing your AI mentorship system...")
+    print("Initializing Enhanced AI with Sacred Library...")
     
     # Check environment variables
     required_vars = ["TELEGRAM_BOT_TOKEN", "OPENAI_API_KEY", "SUPABASE_URL", "SUPABASE_ANON_KEY"]
