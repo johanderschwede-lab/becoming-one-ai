@@ -23,10 +23,12 @@ class BecomingOneAI:
         if not api_key:
             raise ValueError("OPENAI_API_KEY must be set")
             
-        # Always use organization ID with service accounts
+        # Initialize OpenAI client with default configuration
         self.openai_client = OpenAI(
             api_key=api_key,
-            organization="org-becoming-one-ai"
+            base_url="https://api.openai.com/v1",
+            timeout=60.0,
+            max_retries=2
         )
             
         self.pinecone_client = PineconeClient()
