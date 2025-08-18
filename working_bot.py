@@ -17,14 +17,17 @@ from pathlib import Path
 # Add src to Python path for imports
 sys.path.insert(0, str(Path(__file__).parent / "src"))
 
-# Set up logging first
+# Load environment variables FIRST
+load_dotenv()
+
+# Set up logging
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO
 )
 logger = logging.getLogger(__name__)
 
-# Import our enhanced AI engine
+# Import our enhanced AI engine (after env vars are loaded)
 try:
     from core.ai_engine import BecomingOneAI
     ai_engine = BecomingOneAI()
@@ -32,9 +35,6 @@ try:
 except Exception as e:
     logger.error(f"❌ Could not load enhanced AI engine: {e}")
     ai_engine = None
-
-# Load environment variables
-load_dotenv()
 
 # Initialize clients
 supabase = create_client(
