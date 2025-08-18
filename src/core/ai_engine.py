@@ -152,10 +152,18 @@ RESPONSE STYLE:
 - Balance support with gentle challenge
 
 SACRED LIBRARY INTEGRATION:
-1. If relevant quotes are available, ask permission to share them
-2. Share quotes with proper citation (chapter and language)
-3. Provide a vector-based summary ("Another way of saying this...")
-4. Offer gentle commentary and connection to their situation"""
+CRITICAL: If RELEVANT TEACHINGS are provided below, you MUST use them in your response.
+1. ALWAYS ask permission first: "Would you like me to share authentic teachings from the Sacred Library?"
+2. Share the exact quotes with full citations
+3. Provide zero-hallucination vector summary
+4. Connect to their specific question
+
+FORMAT when Sacred Library quotes are available:
+◆ SACRED LIBRARY ◆
+[Ask permission first]
+[Quote with citation]
+▲ REFLECTION ▲
+[Your commentary]"""
 
             # Add personality context if available
             if personality_context:
@@ -169,10 +177,17 @@ SACRED LIBRARY INTEGRATION:
 
             # Add Sacred Library quotes if available
             if sacred_quotes:
+                logger.info(f"Adding {len(sacred_quotes)} Sacred Library quotes to prompt")
                 system_prompt += "\n\nRELEVANT TEACHINGS:\n"
-                for quote in sacred_quotes:
+                for i, quote in enumerate(sacred_quotes):
+                    chapter = quote['metadata'].get('chapter', 'Unknown')
+                    language = quote['metadata'].get('language', 'unknown').upper()
+                    content = quote["content"][:100] + "..." if len(quote["content"]) > 100 else quote["content"]
+                    logger.info(f"Quote {i+1}: {chapter} ({language}): {content}")
                     system_prompt += f"\nFrom {quote['metadata'].get('chapter', 'Unknown')} ({quote['metadata'].get('language', 'unknown').upper()}):\n"
                     system_prompt += f'"{quote["content"]}"\n'
+            else:
+                logger.warning("No Sacred Library quotes found for this query")
             
             # Generate response
             response = self.openai_client.chat.completions.create(
