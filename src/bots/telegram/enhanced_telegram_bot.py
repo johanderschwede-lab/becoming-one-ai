@@ -547,12 +547,12 @@ Ready to try your new access? Type /menu to get started.
             #     "response": response,
             #     "source": "telegram",
             #     "tier": user_profile.tier.value,
-                "user_info": {
-                    "telegram_id": user.id,
-                    "username": user.username,
-                    "name": f"{user.first_name} {user.last_name}".strip()
-                }
-            })
+            #     "user_info": {
+            #         "telegram_id": user.id,
+            #         "username": user.username,
+            #         "name": f"{user.first_name} {user.last_name}".strip()
+            #     }
+            # })
             
         except Exception as e:
             logger.error(f"Error processing message: {e}")
