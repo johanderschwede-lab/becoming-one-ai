@@ -1,1 +1,1 @@
-web: python src/bots/telegram/enhanced_telegram_bot.py
+web: python enhanced_railway_launcher.py

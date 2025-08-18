@@ -1,7 +1,5 @@
-# Railway configuration for Becoming One™ AI
 [build]
 builder = "nixpacks"
-buildCommand = "python -m venv --copies /opt/venv && . /opt/venv/bin/activate && pip install -r requirements.txt"
 
 [deploy]
 startCommand = "python enhanced_railway_launcher.py"
@@ -12,9 +10,3 @@ restartPolicyMaxRetries = 3
 
 [service]
 name = "becoming-one-ai"
-region = "europe-west4"
-
-# Environment configuration
-[variables]
-PYTHON_VERSION = "3.11"
-NIXPACKS_PYTHON_VERSION = "3.11"
