@@ -1,1 +1,1 @@
-web: python enhanced_railway_launcher.py
+web: python simple_working_bot.py
