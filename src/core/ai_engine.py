@@ -15,14 +15,6 @@ from core.personality_analyzer import BecomingOnePersonalityAnalyzer
 from core.personality_synthesis_model import SynthesisPersonalityProfile
 from core.sacred_library_local import local_sacred_library
 
-# Try to import enhanced library, but don't fail if it's not available
-try:
-    from core.sacred_library_enhanced import enhanced_sacred_library
-    ENHANCED_LIBRARY_AVAILABLE = True
-except ImportError as e:
-    logger.warning(f"Enhanced Sacred Library not available: {e}")
-    ENHANCED_LIBRARY_AVAILABLE = False
-
 class BecomingOneAI:
     """Main AI processing engine with async analysis"""
     
@@ -119,12 +111,10 @@ class BecomingOneAI:
         
         return []
     
-
-        
     async def process_message(
         self, 
         person_id: str,
-        message: str, 
+        message: str,
         source: str,
         user_tier: str = "free"
     ) -> str:
@@ -146,15 +136,8 @@ class BecomingOneAI:
             # Get any existing personality insights
             personality_context = await self._get_quick_personality_context(person_id)
             
-            # Search Sacred Library (try enhanced first, fallback to basic)
-            if ENHANCED_LIBRARY_AVAILABLE:
-                try:
-                    sacred_quotes = await enhanced_sacred_library.enhanced_search(message, limit=2)
-                except Exception as e:
-                    logger.warning(f"Enhanced search failed: {e}, falling back to basic search")
-                    sacred_quotes = await self.search_sacred_library(message, limit=2)
-            else:
-                sacred_quotes = await self.search_sacred_library(message, limit=2)
+            # Search Sacred Library
+            sacred_quotes = await self.search_sacred_library(message, limit=2)
             
             # Build system prompt
             system_prompt = """You are an AI mentor trained in the Becoming One™ method, a transformative approach to personal growth and authentic living.
@@ -197,42 +180,10 @@ Reference: [Chapter] ([Language])
 
             # Add Sacred Library quotes if available
             if sacred_quotes:
-                logger.info(f"Adding {len(sacred_quotes)} Sacred Library quotes to prompt")
                 system_prompt += "\n\nRELEVANT TEACHINGS:\n"
-                
-                exact_quotes = []
-                semantic_insights = []
-                
-                for i, quote in enumerate(sacred_quotes):
-                    chapter = quote['metadata'].get('chapter', 'Unknown')
-                    language = quote['metadata'].get('language', 'unknown').upper()
-                    search_source = quote['metadata'].get('search_source', 'local')
-                    content = quote["content"][:100] + "..." if len(quote["content"]) > 100 else quote["content"]
-                    
-                    logger.info(f"Quote {i+1}: {chapter} ({language}) [{search_source}]: {content}")
-                    
-                    if search_source == 'vector':
-                        semantic_insights.append(quote)
-                    else:
-                        exact_quotes.append(quote)
-                
-                # Add exact quotes
-                if exact_quotes:
-                    system_prompt += "\nEXACT QUOTES (use in ■ SOURCE ■ section):\n"
-                    for quote in exact_quotes:
-                        system_prompt += f"\nFrom {quote['metadata'].get('chapter', 'Unknown')} ({quote['metadata'].get('language', 'unknown').upper()}):\n"
-                        system_prompt += f'"{quote["content"]}"\n'
-                
-                # Add semantic insights
-                if semantic_insights:
-                    system_prompt += "\nSEMANTIC INSIGHTS (use in ● COMMENT ● section, clearly mark as interpretive):\n"
-                    for quote in semantic_insights:
-                        similarity = quote['metadata'].get('similarity_score', 0.0)
-                        system_prompt += f"\nSemantically related content (similarity: {similarity:.2f}) from {quote['metadata'].get('chapter', 'Unknown')}:\n"
-                        system_prompt += f'"{quote["content"]}"\n'
-                        
-            else:
-                logger.warning("No Sacred Library quotes found for this query")
+                for quote in sacred_quotes:
+                    system_prompt += f"\nFrom {quote['metadata'].get('chapter', 'Unknown')} ({quote['metadata'].get('language', 'unknown').upper()}):\n"
+                    system_prompt += f'"{quote["content"]}"\n'
             
             # Generate response
             response = self.openai_client.chat.completions.create(
@@ -242,7 +193,7 @@ Reference: [Chapter] ([Language])
                     {"role": "user", "content": message}
                 ],
                 temperature=0.7,
-                max_tokens=400  # Shorter responses for better chat experience
+                max_tokens=400
             )
             
             return response.choices[0].message.content.strip()
