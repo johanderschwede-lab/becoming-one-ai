@@ -11,13 +11,27 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 from supabase import create_client
 from openai import OpenAI
 from dotenv import load_dotenv
+import sys
+from pathlib import Path
 
-# Set up logging
+# Add src to Python path for imports
+sys.path.insert(0, str(Path(__file__).parent / "src"))
+
+# Set up logging first
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO
 )
 logger = logging.getLogger(__name__)
+
+# Import our enhanced AI engine
+try:
+    from core.ai_engine import BecomingOneAI
+    ai_engine = BecomingOneAI()
+    logger.info("✅ Enhanced AI engine with Sacred Library loaded")
+except Exception as e:
+    logger.warning(f"Could not load enhanced AI engine: {e}")
+    ai_engine = None
 
 # Load environment variables
 load_dotenv()
@@ -104,8 +118,20 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             action="typing"
         )
         
-        # Create Becoming One™ system prompt
-        system_prompt = """You are an AI mentor trained in the Becoming One™ method, a transformative approach to personal growth and authentic living.
+        # Use enhanced AI engine if available, otherwise fallback to simple OpenAI
+        if ai_engine:
+            # Use our enhanced AI engine with Sacred Library
+            person_id = str(user.id)
+            ai_response = await ai_engine.process_message(
+                person_id=person_id,
+                message=message_text,
+                source="telegram",
+                user_tier="free"
+            )
+            logger.info(f"Enhanced AI response generated: {len(ai_response)} characters")
+        else:
+            # Fallback to simple OpenAI
+            system_prompt = """You are an AI mentor trained in the Becoming One™ method, a transformative approach to personal growth and authentic living.
 
 CORE MISSION: Guide this person toward discovering, integrating, and expressing their most authentic self while fostering deeper connections and purposeful living.
 
@@ -132,19 +158,19 @@ RESPONSE STYLE:
 
 Remember: You're facilitating a journey of becoming. Every interaction should leave them feeling more connected to their authentic self."""
 
-        # Generate AI response
-        response = openai_client.chat.completions.create(
-            model="gpt-4-turbo-preview",
-            messages=[
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": message_text}
-            ],
-            temperature=0.7,
-            max_tokens=1000
-        )
-        
-        ai_response = response.choices[0].message.content.strip()
-        logger.info(f"AI response generated: {len(ai_response)} characters")
+            # Generate AI response
+            response = openai_client.chat.completions.create(
+                model="gpt-4-turbo-preview",
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": message_text}
+                ],
+                temperature=0.7,
+                max_tokens=1000
+            )
+            
+            ai_response = response.choices[0].message.content.strip()
+            logger.info(f"Fallback AI response generated: {len(ai_response)} characters")
         
         # Log the interaction
         try:
