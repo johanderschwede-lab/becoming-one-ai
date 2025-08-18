@@ -709,41 +709,94 @@ What level would work best for you?
     
     def setup_handlers(self):
         """Set up all bot handlers"""
+        print("📝 Setting up message handlers...")
+        
+        # Error handler (first to catch any issues)
+        self.application.add_error_handler(self._error_handler)
+        print("  ✅ Error handler added")
+        
         # Command handlers
+        print("  📋 Adding command handlers...")
         self.application.add_handler(CommandHandler("start", self.start_command))
         self.application.add_handler(CommandHandler("help", self.help_command))
         self.application.add_handler(CommandHandler("menu", self.menu_command))
         self.application.add_handler(CommandHandler("profile", self.profile_command))
         self.application.add_handler(CommandHandler("upgrade", self.upgrade_command))
+        print("  ✅ Basic commands added")
         
         # Sacred Library commands
+        print("  📚 Adding Sacred Library handlers...")
         self.application.add_handler(CommandHandler("sacred", sacred_search_handler))
         self.application.add_handler(CommandHandler("browse_sacred", sacred_browse_handler))
         self.application.add_handler(CommandHandler("study", enter_hylozoic_study_handler))
         self.application.add_handler(CommandHandler("hylozoic", enter_hylozoic_study_handler))
+        print("  ✅ Sacred Library commands added")
         
         # Callback query handlers
+        print("  🔄 Adding callback handlers...")
         self.application.add_handler(CallbackQueryHandler(self.handle_upgrade_callback))
         self.application.add_handler(CallbackQueryHandler(sacred_callback_handler, pattern="^sacred_"))
         self.application.add_handler(CallbackQueryHandler(hylozoic_study_callback_handler, pattern="^study_"))
+        print("  ✅ Callback handlers added")
         
         # Payment handlers
+        print("  💳 Adding payment handlers...")
         self.application.add_handler(PreCheckoutQueryHandler(self.precheckout_callback))
         self.application.add_handler(MessageHandler(filters.SUCCESSFUL_PAYMENT, self.successful_payment_callback))
+        print("  ✅ Payment handlers added")
         
-        # General message handler (must be last)
-        self.application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, self.handle_message))
-        self.application.add_handler(
-            MessageHandler(filters.VOICE, self.handle_message)
+        # General message handlers
+        print("  💬 Adding message handlers...")
+        
+        # Voice messages (check first)
+        voice_handler = MessageHandler(filters.VOICE, self.handle_message)
+        self.application.add_handler(voice_handler)
+        print("  ✅ Voice handler added")
+        
+        # Text messages (non-commands, last to catch all other messages)
+        text_handler = MessageHandler(
+            filters.TEXT & ~filters.COMMAND,
+            self.handle_message,
+            block=False  # Don't block other handlers
         )
+        self.application.add_handler(text_handler)
+        print("  ✅ Text handler added")
+    
+    async def _error_handler(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+        """Handle errors in message processing"""
+        print(f"❌ Error handling message: {context.error}")
+        logger.error(f"Error handling message: {context.error}")
+        
+        try:
+            # Log the error
+            error_details = {
+                "error": str(context.error),
+                "update": update.to_dict() if update else None,
+                "chat_id": update.effective_chat.id if update and update.effective_chat else None,
+                "user_id": update.effective_user.id if update and update.effective_user else None,
+                "message": update.message.text if update and update.message else None
+            }
+            logger.error(f"Detailed error info: {error_details}")
+            
+            # Notify the user
+            if update and update.effective_message:
+                await update.effective_message.reply_text(
+                    "■ I encountered an issue processing your message. The team has been notified."
+                )
+        except Exception as e:
+            logger.error(f"Error in error handler: {e}")
     
     async def run(self):
         """Run the enhanced bot"""
+        print("🚀 Starting bot application...")
         self.application = Application.builder().token(self.token).build()
+        
+        print("📝 Setting up handlers...")
         self.setup_handlers()
         
+        print("▶️ Starting polling...")
         logger.info("▲ Starting Becoming One™ Telegram Bot with RBAC and Payments...")
-        await self.application.run_polling()
+        await self.application.run_polling(allowed_updates=Update.ALL_TYPES)
 
 
 if __name__ == "__main__":
