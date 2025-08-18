@@ -1,1 +1,1 @@
-web: python simple_working_bot.py
+web: python working_bot.py
