@@ -18,7 +18,31 @@ class SupabaseClient:
         if not url or not key:
             raise ValueError("SUPABASE_URL and SUPABASE_ANON_KEY must be set")
         
-        self.client: Client = create_client(url, key)
+        try:
+            # Try normal client creation
+            self.client: Client = create_client(url, key)
+        except TypeError as e:
+            if "proxy" in str(e):
+                # Workaround for proxy argument error
+                import httpx
+                from supabase import create_client as _create_client
+                
+                # Create httpx client without problematic proxy settings
+                http_client = httpx.Client()
+                
+                # Try with custom options
+                options = {
+                    'headers': {'User-Agent': 'Becoming-One-AI/1.0'},
+                    'timeout': 30
+                }
+                
+                try:
+                    self.client: Client = _create_client(url, key, options)
+                except:
+                    # Final fallback - basic client
+                    self.client: Client = _create_client(url, key)
+            else:
+                raise e
     
     async def get_or_create_person_id(
         self, 
