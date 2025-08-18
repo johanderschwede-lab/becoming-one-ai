@@ -26,6 +26,70 @@ class BecomingOneAI:
         
         self.model = os.getenv("OPENAI_MODEL", "gpt-4-turbo-preview")
         
+    async def search_sacred_library(self, query: str, limit: int = 3) -> List[Dict[str, Any]]:
+        """Search Sacred Library for relevant Hylozoics quotes"""
+        try:
+            # Extract key concepts for better search
+            search_terms = self._extract_search_terms(query)
+            all_quotes = []
+            
+            for term in search_terms[:3]:  # Try top 3 concepts
+                result = db.client.table('teaching_materials').select(
+                    'content, title, metadata'
+                ).eq(
+                    'material_type', 'sacred_quote'
+                ).ilike(
+                    'content', f'%{term}%'
+                ).limit(limit).execute()
+                
+                if result.data:
+                    all_quotes.extend(result.data)
+            
+            # Remove duplicates and return top results
+            seen = set()
+            unique_quotes = []
+            for quote in all_quotes:
+                quote_id = quote['title'] + quote['content'][:50]
+                if quote_id not in seen:
+                    seen.add(quote_id)
+                    unique_quotes.append(quote)
+                    if len(unique_quotes) >= limit:
+                        break
+            
+            return unique_quotes
+        except Exception as e:
+            logger.error(f"Error searching Sacred Library: {e}")
+            return []
+    
+    def _extract_search_terms(self, message: str) -> List[str]:
+        """Extract key search terms from user message"""
+        # Key concepts that often have relevant Hylozoics content
+        spiritual_concepts = [
+            'meditation', 'consciousness', 'development', 'evolution', 'knowledge',
+            'wisdom', 'understanding', 'reality', 'truth', 'purpose', 'meaning',
+            'growth', 'learning', 'experience', 'awareness', 'mind', 'thinking',
+            'emotion', 'feeling', 'relationship', 'love', 'life', 'death',
+            'soul', 'spirit', 'energy', 'power', 'will', 'harmony', 'peace'
+        ]
+        
+        message_lower = message.lower()
+        found_terms = []
+        
+        # Find spiritual concepts in the message
+        for concept in spiritual_concepts:
+            if concept in message_lower:
+                found_terms.append(concept)
+        
+        # If no spiritual concepts found, try key words from the message
+        if not found_terms:
+            words = message_lower.split()
+            # Filter out common words and keep meaningful ones
+            meaningful_words = [w for w in words if len(w) > 4 and w not in 
+                             ['that', 'this', 'with', 'from', 'they', 'have', 'been', 'were']]
+            found_terms.extend(meaningful_words[:3])
+        
+        return found_terms if found_terms else ['life', 'development']
+
     async def process_message(
         self, 
         person_id: uuid.UUID, 
@@ -66,6 +130,11 @@ class BecomingOneAI:
                 top_k=5
             )
             
+            # STEP 6.5: Search Sacred Library for relevant Hylozoics quotes
+            sacred_quotes = await self.search_sacred_library(message, limit=2)
+            if sacred_quotes:
+                logger.info(f"Found {len(sacred_quotes)} relevant Sacred Library quotes")
+            
             # STEP 7: Generate personalized response using complete personality synthesis
             personalized_response = self.personality_analyzer.generate_personalized_response(
                 profile=updated_profile,
@@ -74,7 +143,8 @@ class BecomingOneAI:
                     "user_profile": user_profile,
                     "recent_history": recent_history,
                     "relevant_context": relevant_context,
-                    "source": source
+                    "source": source,
+                    "sacred_quotes": sacred_quotes
                 }
             )
             
@@ -85,7 +155,8 @@ class BecomingOneAI:
                     user_profile=user_profile,
                     recent_history=recent_history,
                     relevant_context=relevant_context,
-                    user_tier=user_tier
+                    user_tier=user_tier,
+                    sacred_quotes=sacred_quotes
                 )
                 
                 # Build conversation context

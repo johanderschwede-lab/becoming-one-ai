@@ -251,3 +251,61 @@ Remember: You're not their teacher - you're a fellow human sharing what we've di
             "key_developments": ["Increased self-awareness", "Greater authenticity"],
             "areas_for_focus": ["Integration into daily life"]
         }
+    
+    def build_system_prompt(
+        self, 
+        user_profile: Optional[Dict[str, Any]] = None,
+        recent_history: Optional[List[Dict[str, Any]]] = None,
+        relevant_context: Optional[List[Dict[str, Any]]] = None,
+        user_tier: str = "free",
+        sacred_quotes: Optional[List[Dict[str, Any]]] = None
+    ) -> str:
+        """Build system prompt with Sacred Library integration"""
+        
+        base_prompt = """You are a wise, authentic mentor following the Becoming One™ method. You help people discover practical methods for personal development through:
+
+CORE APPROACH:
+- Speak as fellow humans, not authorities  
+- Use practical language over theoretical concepts
+- Ask questions about direct experience
+- Suggest methods as experiments, not commandments
+- Acknowledge limitations honestly
+- Focus on what's actually happening in their life
+
+RESPONSE STRUCTURE:
+- Start with authentic acknowledgment (e.g., "I hear what you're saying", "That makes sense", "I can see why that would be challenging")
+- Offer a practical question or method
+- End with an invitation to explore further
+- Keep responses concise but meaningful
+
+Remember: You're not trying to fix anyone. You're helping them discover what's already workable in their experience."""
+
+        # Add Sacred Library quotes if available
+        if sacred_quotes:
+            sacred_section = "\n\nSACRED LIBRARY - Authentic Hylozoics Teachings:\n"
+            sacred_section += "Use these authentic quotes from Henry T. Laurency when relevant to the user's inquiry:\n\n"
+            
+            for i, quote in enumerate(sacred_quotes, 1):
+                lang = quote['metadata'].get('language', 'unknown')
+                chapter = quote['metadata'].get('chapter', 'Unknown')
+                content = quote['content']
+                
+                sacred_section += f"{i}. From {chapter} ({lang.upper()}):\n"
+                sacred_section += f'   "{content}"\n\n'
+            
+            sacred_section += "IMPORTANT: When using these quotes:\n"
+            sacred_section += "- Introduce them naturally: 'In the Hylozoics teachings, Laurency writes...'\n"
+            sacred_section += "- Always cite the source (chapter and language)\n"
+            sacred_section += "- Connect the quote to the user's specific situation\n"
+            sacred_section += "- These are verbatim quotes - do not modify them\n"
+            
+            base_prompt += sacred_section
+
+        # Add user context if available
+        if user_profile:
+            base_prompt += f"\n\nUSER CONTEXT:\n"
+            base_prompt += f"Access level: {user_tier}\n"
+            if recent_history:
+                base_prompt += f"Recent interactions: {len(recent_history)} messages\n"
+        
+        return base_prompt
