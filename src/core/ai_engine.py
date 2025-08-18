@@ -20,15 +20,14 @@ class BecomingOneAI:
     
     def __init__(self):
         api_key = os.getenv("OPENAI_API_KEY")
-        if api_key and api_key.startswith("sk-proj-"):
-            # Handle service account key
-            self.openai_client = OpenAI(
-                api_key=api_key,
-                organization="org-becoming-one-ai"  # Add your org ID here
-            )
-        else:
-            # Regular API key
-            self.openai_client = OpenAI(api_key=api_key)
+        if not api_key:
+            raise ValueError("OPENAI_API_KEY must be set")
+            
+        # Always use organization ID with service accounts
+        self.openai_client = OpenAI(
+            api_key=api_key,
+            organization="org-becoming-one-ai"
+        )
             
         self.pinecone_client = PineconeClient()
         self.becoming_one = BecomingOneMethod()
