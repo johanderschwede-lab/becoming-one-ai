@@ -1,19 +1,13 @@
 """
 Core AI Engine for Becoming One™ Method
-Integrates OpenAI, Pinecone, and comprehensive personality analysis
+Integrates OpenAI and Sacred Library
 """
 import os
-from typing import Dict, Any, List, Optional
+from typing import Dict, Any, List
 from openai import OpenAI
-import uuid
 from loguru import logger
 
 from database.operations import db
-from integrations.pinecone_client import PineconeClient
-from core.becoming_one_method import BecomingOneMethod
-from core.personality_analyzer import BecomingOnePersonalityAnalyzer
-from core.personality_synthesis_model import SynthesisPersonalityProfile
-
 
 class BecomingOneAI:
     """Main AI processing engine"""
@@ -23,28 +17,26 @@ class BecomingOneAI:
         if not api_key:
             raise ValueError("OPENAI_API_KEY must be set")
             
-        # Initialize OpenAI client with default configuration
+        # Initialize OpenAI client
         self.openai_client = OpenAI(
             api_key=api_key,
             base_url="https://api.openai.com/v1",
             timeout=60.0,
             max_retries=2
         )
-            
-        self.pinecone_client = PineconeClient()
-        self.becoming_one = BecomingOneMethod()
-        self.personality_analyzer = BecomingOnePersonalityAnalyzer()
         
         self.model = os.getenv("OPENAI_MODEL", "gpt-4-turbo-preview")
-        
+    
     async def search_sacred_library(self, query: str, limit: int = 3) -> List[Dict[str, Any]]:
-        """Search Sacred Library for relevant Hylozoics quotes"""
+        """Search Sacred Library for relevant quotes"""
         try:
-            # Extract key concepts for better search
-            search_terms = self._extract_search_terms(query)
-            all_quotes = []
+            # Extract key terms
+            words = [w for w in query.lower().split() if len(w) > 4]
+            search_terms = words[:3] if words else ['life', 'development']
             
-            for term in search_terms[:3]:  # Try top 3 concepts
+            # Search for each term
+            all_quotes = []
+            for term in search_terms:
                 result = db.client.table('teaching_materials').select(
                     'content, title, metadata'
                 ).eq(
@@ -56,7 +48,7 @@ class BecomingOneAI:
                 if result.data:
                     all_quotes.extend(result.data)
             
-            # Remove duplicates and return top results
+            # Remove duplicates
             seen = set()
             unique_quotes = []
             for quote in all_quotes:
@@ -68,471 +60,66 @@ class BecomingOneAI:
                         break
             
             return unique_quotes
+            
         except Exception as e:
             logger.error(f"Error searching Sacred Library: {e}")
             return []
     
-    def _extract_search_terms(self, message: str) -> List[str]:
-        """Extract key search terms from user message"""
-        # Key concepts that often have relevant Hylozoics content
-        spiritual_concepts = [
-            'meditation', 'consciousness', 'development', 'evolution', 'knowledge',
-            'wisdom', 'understanding', 'reality', 'truth', 'purpose', 'meaning',
-            'growth', 'learning', 'experience', 'awareness', 'mind', 'thinking',
-            'emotion', 'feeling', 'relationship', 'love', 'life', 'death',
-            'soul', 'spirit', 'energy', 'power', 'will', 'harmony', 'peace'
-        ]
-        
-        message_lower = message.lower()
-        found_terms = []
-        
-        # Find spiritual concepts in the message
-        for concept in spiritual_concepts:
-            if concept in message_lower:
-                found_terms.append(concept)
-        
-        # If no spiritual concepts found, try key words from the message
-        if not found_terms:
-            words = message_lower.split()
-            # Filter out common words and keep meaningful ones
-            meaningful_words = [w for w in words if len(w) > 4 and w not in 
-                             ['that', 'this', 'with', 'from', 'they', 'have', 'been', 'were']]
-            found_terms.extend(meaningful_words[:3])
-        
-        return found_terms if found_terms else ['life', 'development']
-    
-    async def vector_search_sacred_library(self, query: str, limit: int = 3) -> List[Dict[str, Any]]:
-        """Vector search Sacred Library for semantically relevant quotes"""
-        try:
-            # Create embedding for the query
-            embedding_response = self.openai_client.embeddings.create(
-                model="text-embedding-3-large",
-                input=query
-            )
-            
-            query_embedding = embedding_response.data[0].embedding
-            
-            # Search Pinecone for sacred library content
-            search_results = self.pinecone_client.index.query(
-                vector=query_embedding,
-                filter={"sacred_library": True},
-                top_k=limit,
-                include_metadata=True
-            )
-            
-            # Convert Pinecone results to our format
-            sacred_quotes = []
-            for match in search_results.matches:
-                if match.score > 0.7:  # Only high-confidence matches
-                    metadata = match.metadata
-                    quote_data = {
-                        'material_id': metadata.get('material_id'),
-                        'content': metadata.get('content', ''),
-                        'title': metadata.get('title', ''),
-                        'metadata': {
-                            'language': metadata.get('language', 'unknown'),
-                            'chapter': metadata.get('chapter', 'Unknown'),
-                            'book': metadata.get('book', 'Unknown'),
-                            'author': metadata.get('author', 'Henry T. Laurency'),
-                            'tradition': metadata.get('tradition', 'hylozoics'),
-                            'semantic_score': match.score
-                        }
-                    }
-                    sacred_quotes.append(quote_data)
-            
-            return sacred_quotes
-            
-        except Exception as e:
-            logger.error(f"Error in vector search Sacred Library: {e}")
-            return []
-
     async def process_message(
         self, 
-        person_id: uuid.UUID, 
-        message: str, 
+        person_id: str,
+        message: str,
         source: str,
         user_tier: str = "free"
     ) -> str:
-        """Process a user message with comprehensive personality analysis and generate personalized response"""
+        """Process a user message and generate response"""
         try:
-            # STEP 1: Analyze message for personality patterns
-            personality_analysis = await self.personality_analyzer.analyze_message(
-                person_id=person_id,
-                message=message,
-                context={"source": source}
-            )
-            
-            # STEP 2: Get or create personality synthesis profile
-            personality_profile = await self._get_or_create_personality_profile(person_id)
-            
-            # STEP 3: Update personality profile with new analysis
-            updated_profile = await self.personality_analyzer.update_personality_profile(
-                person_id=person_id,
-                analysis_results=personality_analysis,
-                existing_profile=personality_profile
-            )
-            
-            # STEP 4: Store personality insights in database
-            await self._store_personality_insights(person_id, personality_analysis, updated_profile)
-            
-            # STEP 5: Get user context and history
-            user_profile = await db.get_user_profile(person_id)
-            recent_history = await db.get_user_history(person_id, limit=10)
-            
-            # STEP 6: Retrieve relevant context from Pinecone
-            relevant_context = await self.pinecone_client.search_similar_content(
-                query=message,
-                person_id=person_id,
-                top_k=5
-            )
-            
-            # STEP 6.5: Search Sacred Library for relevant Hylozoics quotes
+            # Search Sacred Library
             sacred_quotes = await self.search_sacred_library(message, limit=2)
+            
+            # Build system prompt
+            system_prompt = """You are an AI mentor trained in the Becoming One™ method, a transformative approach to personal growth and authentic living.
+
+CORE MISSION: Guide this person toward discovering, integrating, and expressing their most authentic self.
+
+RESPONSE STYLE:
+- Be warm, empathetic, and genuinely curious
+- Ask powerful questions that promote self-reflection
+- Offer insights without being prescriptive
+- Use "I wonder..." and "What if..." to invite exploration
+- Balance support with gentle challenge
+
+SACRED LIBRARY INTEGRATION:
+1. If relevant quotes are available, ask permission to share them
+2. Share quotes with proper citation (chapter and language)
+3. Provide a vector-based summary ("Another way of saying this...")
+4. Offer gentle commentary and connection to their situation"""
+
+            # Add Sacred Library quotes if available
             if sacred_quotes:
-                logger.info(f"Found {len(sacred_quotes)} relevant Sacred Library quotes")
+                system_prompt += "\n\nRELEVANT TEACHINGS:\n"
+                for quote in sacred_quotes:
+                    system_prompt += f"\nFrom {quote['metadata'].get('chapter', 'Unknown')} ({quote['metadata'].get('language', 'unknown').upper()}):\n"
+                    system_prompt += f'"{quote["content"]}"\n'
             
-            # STEP 6.6: Vector search Sacred Library for semantic matches
-            vector_sacred_quotes = await self.vector_search_sacred_library(message, limit=2)
-            if vector_sacred_quotes:
-                logger.info(f"Found {len(vector_sacred_quotes)} semantic Sacred Library matches")
-                # Combine with keyword search results, avoiding duplicates
-                combined_quotes = sacred_quotes.copy()
-                for vq in vector_sacred_quotes:
-                    if not any(q.get('material_id') == vq.get('material_id') for q in combined_quotes):
-                        combined_quotes.append(vq)
-                sacred_quotes = combined_quotes[:3]  # Keep best 3 total
-            
-            # STEP 7: Generate personalized response using complete personality synthesis
-            personalized_response = self.personality_analyzer.generate_personalized_response(
-                profile=updated_profile,
-                current_message=message,
-                context={
-                    "user_profile": user_profile,
-                    "recent_history": recent_history,
-                    "relevant_context": relevant_context,
-                    "source": source,
-                    "sacred_quotes": sacred_quotes
-                }
-            )
-            
-            # STEP 8: If personalized response fails, fall back to standard method
-            if personalized_response.get("personalization_level") == "fallback":
-                # Build system prompt using Becoming One™ method
-                system_prompt = self.becoming_one.build_system_prompt(
-                    user_profile=user_profile,
-                    recent_history=recent_history,
-                    relevant_context=relevant_context,
-                    user_tier=user_tier,
-                    sacred_quotes=sacred_quotes
-                )
-                
-                # Build conversation context
-                messages = self._build_conversation_context(
-                    system_prompt=system_prompt,
-                    recent_history=recent_history,
-                    current_message=message
-                )
-                
-                # Generate response with OpenAI
-                response = await self._generate_response(messages)
-            else:
-                response = personalized_response["personalized_response"]
-            
-            # STEP 9: Store the interaction in Pinecone for future retrieval
-            await self.pinecone_client.store_interaction(
-                person_id=person_id,
-                message=message,
-                response=response,
-                source=source
-            )
-            
-            return response
-            
-        except Exception as e:
-            logger.error(f"Error processing message with personality analysis: {e}")
-            return self._get_fallback_response()
-    
-    def _build_conversation_context(
-        self, 
-        system_prompt: str, 
-        recent_history: List[Dict[str, Any]], 
-        current_message: str
-    ) -> List[Dict[str, str]]:
-        """Build conversation context for OpenAI"""
-        messages = [{"role": "system", "content": system_prompt}]
-        
-        # Add recent history (alternating user/assistant)
-        for event in reversed(recent_history[-6:]):  # Last 6 events (3 exchanges)
-            if event["type"] == "message":
-                messages.append({
-                    "role": "user",
-                    "content": event["content"]
-                })
-            elif event["type"] == "response":
-                messages.append({
-                    "role": "assistant", 
-                    "content": event["content"]
-                })
-        
-        # Add current message
-        messages.append({"role": "user", "content": current_message})
-        
-        return messages
-    
-    async def _generate_response(self, messages: List[Dict[str, str]]) -> str:
-        """Generate response using OpenAI"""
-        try:
+            # Generate response
             response = self.openai_client.chat.completions.create(
                 model=self.model,
-                messages=messages,
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": message}
+                ],
                 temperature=0.7,
-                max_tokens=1000,
-                presence_penalty=0.1,
-                frequency_penalty=0.1
+                max_tokens=1000
             )
             
             return response.choices[0].message.content.strip()
             
         except Exception as e:
-            logger.error(f"OpenAI API error: {e}")
-            return self._get_fallback_response()
-    
-    def _get_fallback_response(self) -> str:
-        """Fallback response when AI processing fails"""
-        return """
-I'm experiencing a temporary issue processing your message. 
+            logger.error(f"Error processing message: {e}")
+            return """I'm experiencing a temporary issue processing your message. 
 
 In the spirit of the Becoming One™ method, let me offer this:
 Sometimes the most profound insights come from pausing and reflecting. 
 
-What feels most important to you right now in this moment?
-        """.strip()
-    
-    async def analyze_user_journey(self, person_id: uuid.UUID) -> Dict[str, Any]:
-        """Analyze user's journey progress and insights"""
-        history = await db.get_user_history(person_id, limit=100)
-        
-        # Extract patterns and insights
-        message_count = len([h for h in history if h["type"] == "message"])
-        topics = self._extract_topics(history)
-        sentiment_trend = self._analyze_sentiment_trend(history)
-        
-        return {
-            "total_interactions": message_count,
-            "primary_topics": topics,
-            "sentiment_trend": sentiment_trend,
-            "journey_stage": self._determine_journey_stage(history),
-            "recommendations": self._generate_recommendations(history)
-        }
-    
-    def _extract_topics(self, history: List[Dict[str, Any]]) -> List[str]:
-        """Extract main topics from conversation history"""
-        # Simple keyword extraction (can be enhanced with NLP)
-        topics = []
-        content_texts = [h["content"] for h in history if h.get("content")]
-        
-        # Common Becoming One™ themes
-        theme_keywords = {
-            "identity": ["identity", "self", "who am i", "purpose"],
-            "growth": ["growth", "develop", "improve", "change"],
-            "relationships": ["relationship", "connection", "love", "family"],
-            "career": ["work", "career", "job", "professional"],
-            "spirituality": ["spiritual", "meaning", "soul", "purpose"],
-            "creativity": ["creative", "art", "express", "create"]
-        }
-        
-        for theme, keywords in theme_keywords.items():
-            if any(keyword in " ".join(content_texts).lower() for keyword in keywords):
-                topics.append(theme)
-        
-        return topics[:3]  # Top 3 topics
-    
-    def _analyze_sentiment_trend(self, history: List[Dict[str, Any]]) -> str:
-        """Analyze sentiment trend over time"""
-        # Simplified sentiment analysis
-        return "positive_growth"  # Placeholder
-    
-    def _determine_journey_stage(self, history: List[Dict[str, Any]]) -> str:
-        """Determine user's current journey stage"""
-        interaction_count = len(history)
-        
-        if interaction_count < 5:
-            return "discovery"
-        elif interaction_count < 20:
-            return "exploration"
-        elif interaction_count < 50:
-            return "integration"
-        else:
-            return "mastery"
-    
-    def _generate_recommendations(self, history: List[Dict[str, Any]]) -> List[str]:
-        """Generate personalized recommendations"""
-        return [
-            "Continue exploring your authentic self",
-            "Practice daily reflection and mindfulness",
-            "Consider journaling your insights"
-        ]
-    
-    # ============================================================================
-    # PERSONALITY SYNTHESIS INTEGRATION METHODS
-    # ============================================================================
-    
-    async def _get_or_create_personality_profile(self, person_id: uuid.UUID) -> Optional[SynthesisPersonalityProfile]:
-        """Get existing personality profile or create new one"""
-        try:
-            # Try to get existing profile from database
-            # This would need to be implemented in database operations
-            # For now, return None to create new profiles each time
-            return None
-        except Exception as e:
-            logger.error(f"Error retrieving personality profile: {e}")
-            return None
-    
-    async def _store_personality_insights(
-        self, 
-        person_id: uuid.UUID, 
-        analysis: Dict[str, Any], 
-        profile: SynthesisPersonalityProfile
-    ) -> bool:
-        """Store personality analysis insights in database"""
-        try:
-            # Store personality indicators
-            await self._store_personality_indicators(person_id, analysis)
-            
-            # Store emotional anchor activations
-            await self._store_anchor_activations(person_id, analysis)
-            
-            # Store avoidance pattern detections
-            await self._store_avoidance_detections(person_id, analysis)
-            
-            # Store synthesis profile updates
-            await self._store_synthesis_profile(profile)
-            
-            logger.info(f"Stored personality insights for person {person_id}")
-            return True
-            
-        except Exception as e:
-            logger.error(f"Error storing personality insights: {e}")
-            return False
-    
-    async def _store_personality_indicators(self, person_id: uuid.UUID, analysis: Dict[str, Any]):
-        """Store detected personality indicators"""
-        indicators_to_store = []
-        
-        # Process Enneagram indicators
-        enneagram_data = analysis.get("enneagram_analysis", {})
-        if "primary_type_indicators" in enneagram_data:
-            for indicator in enneagram_data["primary_type_indicators"]:
-                indicators_to_store.append({
-                    "person_id": person_id,
-                    "system_type": "enneagram",
-                    "indicator_type": f"type_{indicator.get('type')}",
-                    "indicator_value": str(indicator.get('type')),
-                    "confidence": indicator.get('confidence', 0.0),
-                    "source": "text_analysis",
-                    "metadata": {"evidence": indicator.get('evidence', '')}
-                })
-        
-        # Process Human Design indicators
-        hd_data = analysis.get("human_design_analysis", {})
-        if "type_indicators" in hd_data:
-            for indicator in hd_data["type_indicators"]:
-                indicators_to_store.append({
-                    "person_id": person_id,
-                    "system_type": "human_design",
-                    "indicator_type": "type",
-                    "indicator_value": indicator.get('type'),
-                    "confidence": indicator.get('confidence', 0.0),
-                    "source": "text_analysis",
-                    "metadata": {}
-                })
-        
-        # Process Essence Level indicators
-        essence_data = analysis.get("essence_level_analysis", {})
-        if "level_indicators" in essence_data:
-            for indicator in essence_data["level_indicators"]:
-                indicators_to_store.append({
-                    "person_id": person_id,
-                    "system_type": "becoming_one",
-                    "indicator_type": "essence_level",
-                    "indicator_value": indicator.get('level'),
-                    "confidence": indicator.get('confidence', 0.0),
-                    "source": "text_analysis",
-                    "metadata": {"evidence": indicator.get('evidence', '')}
-                })
-        
-        # Store all indicators (would need database implementation)
-        # For now, just log them
-        for indicator in indicators_to_store:
-            logger.info(f"Personality indicator: {indicator}")
-    
-    async def _store_anchor_activations(self, person_id: uuid.UUID, analysis: Dict[str, Any]):
-        """Store emotional anchor activations"""
-        anchor_data = analysis.get("emotional_anchor_analysis", {})
-        
-        if "anchor_activations" in anchor_data:
-            for activation in anchor_data["anchor_activations"]:
-                anchor_info = {
-                    "person_id": person_id,
-                    "anchor_type": activation.get('anchor'),
-                    "intensity": activation.get('intensity', 0.0),
-                    "trigger_context": activation.get('evidence', ''),
-                    "somatic_markers": anchor_data.get('somatic_markers', []),
-                    "language_patterns": [],  # Could be extracted from analysis
-                }
-                
-                # Log anchor activation (would need database implementation)
-                logger.info(f"Anchor activation: {anchor_info}")
-    
-    async def _store_avoidance_detections(self, person_id: uuid.UUID, analysis: Dict[str, Any]):
-        """Store avoidance pattern detections"""
-        avoidance_data = analysis.get("avoidance_pattern_analysis", {})
-        
-        if "avoidance_signatures" in avoidance_data:
-            for pattern in avoidance_data["avoidance_signatures"]:
-                avoidance_info = {
-                    "person_id": person_id,
-                    "avoidance_type": pattern.get('pattern'),
-                    "behavioral_markers": [],
-                    "language_hedges": avoidance_data.get('hedging_language', []),
-                    "time_patterns": avoidance_data.get('time_patterns', {}),
-                    "underlying_fears": avoidance_data.get('underlying_fears', [])
-                }
-                
-                # Log avoidance detection (would need database implementation)
-                logger.info(f"Avoidance pattern: {avoidance_info}")
-    
-    async def _store_synthesis_profile(self, profile: SynthesisPersonalityProfile):
-        """Store or update synthesis personality profile"""
-        try:
-            # This would need to be implemented with proper database operations
-            # For now, just log the profile summary
-            logger.info(f"Synthesis profile update for {profile.person_id}:")
-            logger.info(f"  Core patterns: {profile.core_patterns}")
-            logger.info(f"  Growth edges: {profile.growth_edges}")
-            logger.info(f"  Recommended practices: {profile.recommended_practices}")
-            
-            if profile.becoming_one:
-                logger.info(f"  Essence level: {profile.becoming_one.primary_essence_level}")
-                logger.info(f"  Vertical stage: {profile.becoming_one.current_vertical_stage}")
-                logger.info(f"  Anchor patterns: {[a.value for a in profile.becoming_one.dominant_anchor_patterns]}")
-            
-        except Exception as e:
-            logger.error(f"Error storing synthesis profile: {e}")
-    
-    async def get_personality_context_for_ai(self, person_id: uuid.UUID) -> Dict[str, Any]:
-        """Get personality context for AI prompt enhancement"""
-        try:
-            # This would retrieve from database using the SQL function we created
-            # For now, return empty context
-            return {
-                "personality_available": False,
-                "systems_identified": [],
-                "confidence_scores": {},
-                "core_patterns": [],
-                "anchor_patterns": [],
-                "growth_edges": []
-            }
-        except Exception as e:
-            logger.error(f"Error getting personality context: {e}")
-            return {}
+What feels most important to you right now in this moment?"""
