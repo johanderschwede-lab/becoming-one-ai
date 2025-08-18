@@ -8,11 +8,11 @@ from openai import OpenAI
 import uuid
 from loguru import logger
 
-from ..database.operations import db
-from ..integrations.pinecone_client import PineconeClient
-from .becoming_one_method import BecomingOneMethod
-from .personality_analyzer import BecomingOnePersonalityAnalyzer
-from .personality_synthesis_model import SynthesisPersonalityProfile
+from database.operations import db
+from integrations.pinecone_client import PineconeClient
+from core.becoming_one_method import BecomingOneMethod
+from core.personality_analyzer import BecomingOnePersonalityAnalyzer
+from core.personality_synthesis_model import SynthesisPersonalityProfile
 
 
 class BecomingOneAI:

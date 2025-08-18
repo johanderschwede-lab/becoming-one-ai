@@ -9,8 +9,14 @@ from telegram.ext import ContextTypes
 from loguru import logger
 import uuid
 
-from ....database.operations import db
-from ....core.ai_engine import BecomingOneAI
+import sys
+from pathlib import Path
+
+# Add src to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent.parent.parent))
+
+from database.operations import db
+from core.ai_engine import BecomingOneAI
 
 # Initialize AI engine for study sessions
 study_ai = BecomingOneAI()

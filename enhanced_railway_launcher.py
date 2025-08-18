@@ -91,6 +91,18 @@ def main():
     # Load Enhanced Bot
     print("🤖 Loading Enhanced Telegram Bot...")
     try:
+        # Test individual imports first
+        print("  🔍 Testing core imports...")
+        from database.operations import db
+        print("  ✅ Database operations imported")
+        
+        from core.ai_engine import BecomingOneAI
+        print("  ✅ AI engine imported")
+        
+        from core.rbac_system import SimpleRBAC, UserTier, Permission
+        print("  ✅ RBAC system imported")
+        
+        print("  🔍 Testing bot imports...")
         from bots.telegram.enhanced_telegram_bot import EnhancedBecomingOneTelegramBot
         print("✅ Enhanced Bot module imported successfully")
     except ImportError as import_error:
@@ -98,10 +110,39 @@ def main():
         import traceback
         traceback.print_exc()
         return
+    except Exception as other_error:
+        print(f"❌ CRITICAL: Other import error: {other_error}")
+        import traceback
+        traceback.print_exc()
+        return
     
     # Initialize Enhanced Bot
     print("⚙️  Initializing Enhanced Bot...")
     try:
+        # Test environment variables first
+        print("  🔍 Checking environment variables...")
+        bot_token = os.getenv("TELEGRAM_BOT_TOKEN")
+        supabase_url = os.getenv("SUPABASE_URL")
+        supabase_key = os.getenv("SUPABASE_ANON_KEY")
+        openai_key = os.getenv("OPENAI_API_KEY")
+        
+        if not bot_token:
+            print("❌ TELEGRAM_BOT_TOKEN missing")
+            return
+        if not supabase_url:
+            print("❌ SUPABASE_URL missing")
+            return
+        if not supabase_key:
+            print("❌ SUPABASE_ANON_KEY missing")
+            return
+        if not openai_key:
+            print("❌ OPENAI_API_KEY missing")
+            return
+            
+        print("  ✅ All environment variables present")
+        
+        # Initialize bot
+        print("  🤖 Creating Enhanced Bot instance...")
         bot = EnhancedBecomingOneTelegramBot()
         print("✅ Enhanced Bot initialized successfully")
         print("■ RBAC system: ENABLED")
@@ -123,6 +164,12 @@ def main():
         print(f"❌ CRITICAL: Enhanced Bot runtime error: {run_error}")
         import traceback
         traceback.print_exc()
+        print("🏥 Keeping health server alive for Railway...")
+        # Keep health server running so Railway doesn't kill the deployment
+        import time
+        while True:
+            time.sleep(60)
+            print("💓 Health server still running...")
         return
 
 if __name__ == "__main__":

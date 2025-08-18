@@ -7,7 +7,7 @@ import os
 from typing import Dict, Any, List, Optional
 from openai import OpenAI
 from loguru import logger
-from ..database.operations import db
+from database.operations import db
 
 
 class SacredLibraryIntegration:

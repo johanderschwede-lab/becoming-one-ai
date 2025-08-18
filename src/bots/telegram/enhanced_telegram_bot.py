@@ -18,12 +18,12 @@ from telegram.ext import (
 )
 from loguru import logger
 
-from ...database.operations import db
-from ...core.ai_engine import BecomingOneAI
-from ...integrations.make_webhooks import MakeWebhookClient
-from ...core.rbac_system import SimpleRBAC, UserTier, Permission
-from .commands.sacred_library_commands import sacred_search_handler, sacred_browse_handler, sacred_callback_handler
-from .commands.hylozoic_study_commands import (
+from database.operations import db
+from core.ai_engine import BecomingOneAI
+from integrations.make_webhooks import MakeWebhookClient
+from core.rbac_system import SimpleRBAC, UserTier, Permission
+from bots.telegram.commands.sacred_library_commands import sacred_search_handler, sacred_browse_handler, sacred_callback_handler
+from bots.telegram.commands.hylozoic_study_commands import (
     enter_hylozoic_study_handler, 
     hylozoic_study_callback_handler,
     process_study_question
