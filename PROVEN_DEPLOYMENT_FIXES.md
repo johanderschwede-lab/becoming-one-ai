@@ -44,10 +44,14 @@ from core.ai_engine import BecomingOneAI
 
 ---
 
-### **STEP 2: Fix httpx Version Conflict (CONFIRMED WORKING)**
-**Problem:** `TypeError: Client.__init__() got an unexpected keyword argument 'proxy'`
+### **STEP 2: Fix Dependency Conflicts (CONFIRMED WORKING)**
+**Problem:** `ERROR: ResolutionImpossible` - httpx version conflicts between packages
 
-**Solution:** Pin httpx version in `requirements.txt`:
+**Root Cause:** 
+- `python-telegram-bot==20.7` requires `httpx~=0.25.2`
+- `supabase==2.7.4` conflicts with this httpx version
+
+**Solution:** Use compatible package versions in `requirements.txt`:
 
 ```txt
 python-telegram-bot==20.7
@@ -55,12 +59,12 @@ python-dotenv==1.0.0
 requests==2.31.0
 loguru==0.7.2
 openai==1.51.0
-supabase==2.7.4
-httpx==0.24.1  # ← CRITICAL: Pin this version
+supabase==2.6.0  # ← CRITICAL: Use 2.6.0 (not 2.7.4)
 pinecone-client==5.0.1
 PyPDF2==3.0.1
 PyMuPDF==1.23.26
 beautifulsoup4==4.12.2
+# DO NOT pin httpx - let pip resolve compatible version
 ```
 
 ---

@@ -11,11 +11,13 @@ sed -i 's/from \.\.\./from /g' src/bots/telegram/enhanced_telegram_bot.py
 sed -i 's/from \.\./from /g' src/core/ai_engine.py
 ```
 
-### **httpx Error Fix:**
+### **Dependency Conflict Fix:**
 ```bash
-# Error: "Client.__init__() got unexpected keyword argument 'proxy'"
-# Fix: Add to requirements.txt:
-echo "httpx==0.24.1" >> requirements.txt
+# Error: "ERROR: ResolutionImpossible" with httpx versions
+# Fix: Use compatible versions in requirements.txt:
+# supabase==2.6.0 (not 2.7.4)
+# python-telegram-bot==20.7
+# DO NOT pin httpx explicitly
 ```
 
 ### **Deploy Commands:**
