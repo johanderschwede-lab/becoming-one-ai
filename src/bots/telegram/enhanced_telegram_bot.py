@@ -3,17 +3,22 @@ Enhanced Telegram Bot for Becoming One™ AI Journey System
 Integrates RBAC, Sacred Library, and Advanced Features
 """
 import os
+import sys
 import asyncio
 import uuid
+from pathlib import Path
 from typing import Optional, Dict, Any
 from datetime import datetime
 from telegram import Update, Bot, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 from loguru import logger
+from dotenv import load_dotenv
 
-from database.operations import db
-from core.ai_engine import BecomingOneAI
-from core.rbac_system import SimpleRBAC, UserTier, Permission
+# Add src to path
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+
+# Load environment variables
+load_dotenv()
 
 class EnhancedBecomingOneTelegramBot:
     """Enhanced Telegram bot with RBAC and Sacred Library"""
@@ -23,6 +28,12 @@ class EnhancedBecomingOneTelegramBot:
         if not self.token:
             raise ValueError("TELEGRAM_BOT_TOKEN must be set")
         
+        # Initialize clients
+        from database.operations import db
+        from core.ai_engine import BecomingOneAI
+        from core.rbac_system import SimpleRBAC, UserTier, Permission
+        
+        self.db = db
         self.ai_engine = BecomingOneAI()
         self.rbac = SimpleRBAC()
         self.application = None
@@ -81,8 +92,8 @@ Type /help for more commands!"""
         try:
             print("📨 Received message...")
             
-        user = update.effective_user
-        chat_id = str(update.effective_chat.id)
+            user = update.effective_user
+            chat_id = str(update.effective_chat.id)
             message_text = update.message.text if update.message.text else ""
             
             print(f"  👤 From: {user.first_name} (ID: {user.id})")
@@ -130,7 +141,7 @@ Type /help for more commands!"""
                 filters.TEXT & ~filters.COMMAND,
                 self.handle_message,
                 block=False
-        )
+            )
         )
         print("✅ Message handler added")
     
@@ -139,11 +150,11 @@ Type /help for more commands!"""
         print("🚀 Starting bot application...")
         try:
             print("  🔧 Building application...")
-        self.application = Application.builder().token(self.token).build()
+            self.application = Application.builder().token(self.token).build()
             print("  ✅ Application built")
             
             print("  📝 Setting up handlers...")
-        self.setup_handlers()
+            self.setup_handlers()
             print("  ✅ Handlers set up")
             
             print("  ▶️ Starting polling...")
@@ -161,3 +172,14 @@ Type /help for more commands!"""
             import traceback
             traceback.print_exc()
             raise e
+
+if __name__ == "__main__":
+    try:
+        # Initialize and run bot
+        bot = EnhancedBecomingOneTelegramBot()
+        asyncio.run(bot.run())
+    except KeyboardInterrupt:
+        print("\n● Bot stopped by user")
+    except Exception as e:
+        print(f"\n❌ Error: {e}")
+        print("Check your configuration and try again.")
