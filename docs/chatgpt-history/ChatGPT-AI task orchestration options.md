@@ -8286,7 +8286,7 @@ and I’ll walk you into **Step 3: Deploying to Railway**.
 Let’s go — generate your token, then come back.
 
 ## Prompt:
-here is the token: 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
+here is the token: [REDACTED_TOKEN]
 
 ## Response:
 Great — you now have your **GitHub Personal Access Token (PAT)**.
@@ -8310,7 +8310,7 @@ When prompted:
 *   **Password** → paste your token:
 
 ```
-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
+[REDACTED_TOKEN]
 ```
 
 * * *
@@ -8346,8 +8346,8 @@ Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/johanderschwede-lab/pinecone_retrieval_api.git
  * [new branch]      main -> main
 branch 'main' set up to track 'origin/main'.
-MacBook-Pro:pinecone_retrieval_api johanniklasson$ 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
--bash: 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: command not found
+MacBook-Pro:pinecone_retrieval_api johanniklasson$ [REDACTED_TOKEN]
+-bash: [REDACTED_TOKEN]: command not found
 MacBook-Pro:pinecone_retrieval_api johanniklasson$
 
 ## Response:

@@ -16,7 +16,7 @@
 ### ✅ **1. GitHub Authentication Fixed**
 - **Problem**: GitHub push failing with 403 permission denied
 - **Solution**: Updated git remote URL with new Personal Access Token
-- **Command**: `git remote set-url origin https://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@github.com/johanderschwede-lab/becoming-one-ai.git`
+- **Command**: `git remote set-url origin https://[REDACTED_TOKEN]@github.com/johanderschwede-lab/becoming-one-ai.git`
 - **Result**: Auto-deployment pipeline GitHub → Railway now working perfectly
 
 ### ✅ **2. Enhanced Bot Deployment**

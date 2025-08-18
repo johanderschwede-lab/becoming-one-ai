@@ -1,6 +1,22 @@
+# Environment files
 .env
 .env.local
 .env.production
+.env.development
+*.env
+
+# Security - NEVER commit these
+*token*
+*key*
+*secret*
+*password*
+*.pem
+*.p12
+*.pfx
+credentials.json
+auth.json
+
+# Python
 __pycache__/
 *.pyc
 *.pyo
@@ -11,7 +27,30 @@ venv/
 .venv/
 pip-log.txt
 pip-delete-this-directory.txt
+
+# System files
 .DS_Store
 *.log
+Thumbs.db
+
+# Dependencies
 node_modules/
+
+# Deployment
 .railway/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# Chat logs that might contain sensitive info
+CHAT_SESSION_*.md
+*_CHAT_*.md
