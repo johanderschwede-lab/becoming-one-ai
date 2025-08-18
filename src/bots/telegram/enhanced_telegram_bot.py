@@ -20,7 +20,8 @@ from loguru import logger
 
 from database.operations import db
 from core.ai_engine import BecomingOneAI
-from integrations.make_webhooks import MakeWebhookClient
+# Make.com integration removed for now
+# from integrations.make_webhooks import MakeWebhookClient
 from core.rbac_system import SimpleRBAC, UserTier, Permission
 from bots.telegram.commands.sacred_library_commands import sacred_search_handler, sacred_browse_handler, sacred_callback_handler
 from bots.telegram.commands.hylozoic_study_commands import (
@@ -41,7 +42,8 @@ class EnhancedBecomingOneTelegramBot:
         self.payment_provider_token = os.getenv("TELEGRAM_PAYMENT_PROVIDER_TOKEN")
         
         self.ai_engine = BecomingOneAI()
-        self.make_client = MakeWebhookClient()
+        # Make.com integration removed for now
+        # self.make_client = MakeWebhookClient()
         self.rbac = SimpleRBAC()
         self.application = None
         
@@ -538,13 +540,13 @@ Ready to try your new access? Type /menu to get started.
             # Send response
             await update.message.reply_text(response, parse_mode='Markdown')
             
-            # Trigger webhook with tier info
-            await self.make_client.trigger_message_webhook({
-                "person_id": str(person_id),
-                "message": message_text,
-                "response": response,
-                "source": "telegram",
-                "tier": user_profile.tier.value,
+            # Make.com webhook removed for now
+            # await self.make_client.trigger_message_webhook({
+            #     "person_id": str(person_id),
+            #     "message": message_text,
+            #     "response": response,
+            #     "source": "telegram",
+            #     "tier": user_profile.tier.value,
                 "user_info": {
                     "telegram_id": user.id,
                     "username": user.username,
