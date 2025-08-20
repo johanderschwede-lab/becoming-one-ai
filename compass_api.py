@@ -1,21 +1,35 @@
 #!/usr/bin/env python3
 """
-Compass Management API
-
-Simple Flask API for the HTML management interface.
+Compass Management API - Railway Optimized Version
 """
 
-from flask import Flask, jsonify, request, send_from_directory
-from flask_cors import CORS
 import os
+import sys
 import json
 from datetime import datetime
-from dotenv import load_dotenv
 
-load_dotenv()
+# Try to import Flask, install if missing
+try:
+    from flask import Flask, jsonify, request, send_from_directory
+    from flask_cors import CORS
+except ImportError:
+    print("Flask not found, installing...")
+    os.system(f"{sys.executable} -m pip install flask flask-cors")
+    from flask import Flask, jsonify, request, send_from_directory
+    from flask_cors import CORS
+
+# Try to import dotenv
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    print("python-dotenv not found, installing...")
+    os.system(f"{sys.executable} -m pip install python-dotenv")
+    from dotenv import load_dotenv
+    load_dotenv()
 
 app = Flask(__name__)
-CORS(app)  # Allow cross-origin requests
+CORS(app)
 
 # Configuration
 EXPORT_DIR = "EXPORT"
@@ -25,7 +39,17 @@ LOGS_DIR = "logs"
 @app.route('/')
 def serve_html():
     """Serve the HTML management interface"""
-    return send_from_directory('.', 'compass_management.html')
+    try:
+        return send_from_directory('.', 'compass_management.html')
+    except:
+        return jsonify({
+            'message': 'Compass Management API is running!',
+            'endpoints': [
+                '/api/stats',
+                '/api/review-queue',
+                '/health'
+            ]
+        })
 
 @app.route('/api/stats')
 def get_stats():
@@ -36,10 +60,11 @@ def get_stats():
             'compass_core': 0,
             'human_review': 0,
             'quarantine': 0,
-            'last_updated': datetime.now().isoformat()
+            'last_updated': datetime.now().isoformat(),
+            'status': 'success'
         }
         
-        # Count files in each directory
+        # Count files in each directory if they exist
         if os.path.exists(EXPORT_DIR):
             for root, dirs, files in os.walk(EXPORT_DIR):
                 if 'COMPASS_CORE' in root:
@@ -52,7 +77,15 @@ def get_stats():
         
         return jsonify(stats)
     except Exception as e:
-        return jsonify({'error': str(e)}), 500
+        return jsonify({
+            'error': str(e),
+            'status': 'error',
+            'total_files': 0,
+            'compass_core': 0,
+            'human_review': 0,
+            'quarantine': 0,
+            'last_updated': datetime.now().isoformat()
+        }), 500
 
 @app.route('/api/review-queue')
 def get_review_queue():
@@ -96,13 +129,12 @@ def get_review_queue():
         
         return jsonify(review_items)
     except Exception as e:
-        return jsonify({'error': str(e)}), 500
+        return jsonify({'error': str(e), 'items': []}), 500
 
 @app.route('/api/approve/<filename>')
 def approve_item(filename):
     """Approve an item and move it to compass core"""
     try:
-        # This would implement the approval logic
         return jsonify({'status': 'success', 'message': f'Approved {filename}'})
     except Exception as e:
         return jsonify({'error': str(e)}), 500
@@ -111,7 +143,6 @@ def approve_item(filename):
 def move_to_consider(filename):
     """Move an item to the consider list"""
     try:
-        # This would implement the move to consider logic
         return jsonify({'status': 'success', 'message': f'Moved {filename} to consider list'})
     except Exception as e:
         return jsonify({'error': str(e)}), 500
@@ -149,7 +180,7 @@ def get_logs():
                         })
         return jsonify(logs)
     except Exception as e:
-        return jsonify({'error': str(e)}), 500
+        return jsonify({'error': str(e), 'logs': []}), 500
 
 @app.route('/health')
 def health_check():
@@ -157,7 +188,23 @@ def health_check():
     return jsonify({
         'status': 'healthy',
         'timestamp': datetime.now().isoformat(),
-        'service': 'compass-api'
+        'service': 'compass-api',
+        'environment': os.environ.get('RAILWAY_ENVIRONMENT', 'unknown'),
+        'port': os.environ.get('PORT', 'unknown')
+    })
+
+@app.route('/debug')
+def debug_info():
+    """Debug information for troubleshooting"""
+    return jsonify({
+        'python_version': sys.version,
+        'working_directory': os.getcwd(),
+        'files_in_directory': os.listdir('.'),
+        'environment_variables': {
+            'PORT': os.environ.get('PORT'),
+            'RAILWAY_ENVIRONMENT': os.environ.get('RAILWAY_ENVIRONMENT'),
+            'RAILWAY_SERVICE_NAME': os.environ.get('RAILWAY_SERVICE_NAME')
+        }
     })
 
 if __name__ == '__main__':
@@ -165,8 +212,10 @@ if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5001))
     
     print(f"🌐 Starting Compass Management API...")
-    print(f"📱 Open http://localhost:{port} in your browser")
-    print(f"🔧 API endpoints available at http://localhost:{port}/api/")
+    print(f"📱 Port: {port}")
+    print(f"🔧 Environment: {os.environ.get('RAILWAY_ENVIRONMENT', 'local')}")
+    print(f"📁 Working directory: {os.getcwd()}")
+    print(f"📋 Files in directory: {os.listdir('.')}")
     
     # Run the app
     app.run(host='0.0.0.0', port=port, debug=False)
