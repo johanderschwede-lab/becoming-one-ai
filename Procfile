@@ -1,1 +1,1 @@
-web: python compass_api.py
+web: python compass_management_api.py
