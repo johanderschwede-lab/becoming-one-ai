@@ -9,33 +9,5 @@
     "healthcheckTimeout": 100,
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 10
-  },
-  "services": [
-    {
-      "name": "web",
-      "build": {
-        "builder": "NIXPACKS"
-      },
-      "deploy": {
-        "startCommand": "python compass_api.py",
-        "healthcheckPath": "/health",
-        "healthcheckTimeout": 100,
-        "restartPolicyType": "ON_FAILURE",
-        "restartPolicyMaxRetries": 10
-      }
-    },
-    {
-      "name": "compass-api",
-      "build": {
-        "builder": "NIXPACKS"
-      },
-      "deploy": {
-        "startCommand": "python compass_api.py",
-        "healthcheckPath": "/health",
-        "healthcheckTimeout": 100,
-        "restartPolicyType": "ON_FAILURE",
-        "restartPolicyMaxRetries": 10
-      }
-    }
-  ]
+  }
 }
