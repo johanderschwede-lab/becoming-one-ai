@@ -1,0 +1,119 @@
+# Category schema for document classification
+
+method_core:
+  name: "Method Core"
+  keywords:
+    - "Becoming One"
+    - "emotional anchor"
+    - "feeling-state"
+    - "The Pearl"
+    - "transformation"
+    - "essence"
+    - "digestion"
+    - "manifestation"
+  file_patterns:
+    - "BECOMING_ONE"
+    - "METHOD"
+    - "TRANSFORMATION"
+
+personality_systems:
+  name: "Personality Systems"
+  keywords:
+    - "Enneagram"
+    - "Human Design"
+    - "Astrology"
+    - "Gene Keys"
+    - "Hylozoics"
+    - "personality"
+    - "profile"
+    - "synthesis"
+  file_patterns:
+    - "PERSONALITY"
+    - "SYNTHESIS"
+    - "MAPPING"
+
+technical:
+  name: "Technical Implementation"
+  keywords:
+    - "implementation"
+    - "code"
+    - "architecture"
+    - "API"
+    - "database"
+    - "deployment"
+    - "integration"
+  file_patterns:
+    - "TECHNICAL"
+    - "IMPLEMENTATION"
+    - "ARCHITECTURE"
+
+documentation:
+  name: "Documentation"
+  keywords:
+    - "guide"
+    - "manual"
+    - "instructions"
+    - "documentation"
+    - "README"
+    - "overview"
+  file_patterns:
+    - "GUIDE"
+    - "MANUAL"
+    - "INSTRUCTIONS"
+    - "README"
+
+master_prompt:
+  name: "Master Prompts"
+  keywords:
+    - "master prompt"
+    - "system prompt"
+    - "agent behavior"
+    - "AI instruction"
+    - "compass"
+  file_patterns:
+    - "MASTER_PROMPT"
+    - "SYSTEM_PROMPT"
+    - "COMPASS"
+
+ai_agents:
+  name: "AI Agents"
+  keywords:
+    - "agent"
+    - "bot"
+    - "persona"
+    - "behavior"
+    - "interaction"
+    - "dialogue"
+  file_patterns:
+    - "AGENT"
+    - "BOT"
+    - "PERSONA"
+
+sacred_library:
+  name: "Sacred Library"
+  keywords:
+    - "sacred"
+    - "library"
+    - "wisdom"
+    - "knowledge"
+    - "hylozoics"
+    - "laurency"
+  file_patterns:
+    - "SACRED"
+    - "LIBRARY"
+    - "HYLOZOICS"
+
+content_processing:
+  name: "Content Processing"
+  keywords:
+    - "content"
+    - "processing"
+    - "pipeline"
+    - "extraction"
+    - "transcription"
+    - "INBOX"
+  file_patterns:
+    - "CONTENT"
+    - "PROCESSING"
+    - "PIPELINE"
+    - "INBOX"

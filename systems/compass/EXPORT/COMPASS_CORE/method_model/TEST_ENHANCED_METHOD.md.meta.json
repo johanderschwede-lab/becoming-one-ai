@@ -1,0 +1,99 @@
+{
+  "export_info": {
+    "exported_at": "2025-08-19T13:33:21.502210",
+    "source_file": "documents_to_process/TEST_ENHANCED_METHOD.md",
+    "export_path": "COMPASS_CORE/method_model",
+    "export_version": "1.0"
+  },
+  "classification": {
+    "primary_category": "method_model",
+    "secondary_categories": [
+      "strategy",
+      "prompt_module",
+      "platform"
+    ],
+    "confidence": 0.539,
+    "keywords_found": [
+      "pearl",
+      "framework",
+      "system",
+      "anti-bypass",
+      "data",
+      "telegram",
+      "emotional anchor",
+      "insight",
+      "support",
+      "database",
+      "development",
+      "process",
+      "stance",
+      "persona",
+      "role",
+      "nervous system",
+      "supabase",
+      "approach",
+      "system prompt"
+    ],
+    "compass_tags": [
+      "compass:prompt_module",
+      "compass:method_model",
+      "compass:offer",
+      "compass:platform",
+      "compass:community",
+      "compass:research",
+      "compass:strategy",
+      "keyword:emotional_anchor",
+      "keyword:system_prompt",
+      "keyword:nervous_system",
+      "keyword:stance",
+      "keyword:telegram",
+      "keyword:supabase"
+    ],
+    "processing_priority": "critical",
+    "export_path": "HUMAN_REVIEW/method_model"
+  },
+  "strategic_score": {
+    "signal_score": 6.0,
+    "danger_score": 1.0,
+    "quality_score": 2.5,
+    "originality_score": 3.386,
+    "actionability_score": 3.5,
+    "total_score": 14.886,
+    "recommendations": [
+      "High signal content - prioritize for Compass core",
+      "High originality - valuable unique insights",
+      "Highly actionable - implement immediately"
+    ],
+    "risk_factors": [],
+    "processing_decision": "SAFE_CORE - Add directly to Compass core"
+  },
+  "file_info": {
+    "filename": "TEST_ENHANCED_METHOD.md",
+    "file_size": 714,
+    "file_extension": ".md"
+  },
+  "fluff_analysis": {
+    "fluff_score": 0.095,
+    "signal_score": 5.0,
+    "danger_score": 0.2,
+    "rescue_reasons": [
+      "Contains 10 domain terms",
+      "Good structure quality: excellent"
+    ],
+    "domain_terms": [
+      "stance",
+      "nervous system",
+      "emotional anchor",
+      "pearl",
+      "anti-bypass",
+      "system prompt",
+      "persona",
+      "role",
+      "telegram",
+      "supabase"
+    ],
+    "structure_quality": "excellent",
+    "recommendation": "SAFE - Add to Compass core",
+    "confidence": 1.0
+  }
+}

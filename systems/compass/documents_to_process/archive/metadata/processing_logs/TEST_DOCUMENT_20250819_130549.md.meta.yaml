@@ -1,0 +1,43 @@
+original_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/TEST_DOCUMENT.md
+archived_at: '2025-08-19T13:05:49.611613'
+status: processed
+category: documentation
+file_hash: f887def7bc7789f837ad4331e37fe5b9311276db8a27b94fae1f19162b07a7da
+analysis_summary:
+  categories:
+  - documentation
+  analysis:
+    content: '# Test Document for Master Prompt Review
+
+
+      This is a test document that should automatically trigger a master prompt review.
+
+
+      ## Key Changes:
+
+      - Enhanced user experience
+
+      - Improved system performance
+
+      - Better integration capabilities
+
+
+      This document should be processed as a potential master prompt change.
+
+      '
+    analysis: 'TOPICS: Test Document, Master Prompt Review, User Experience, System
+      Performance, Integration Capabilities
+
+      TYPE: Review Document
+
+      CONCEPTS: Master Prompt Review, Enhanced User Experience, Improved System Performance,
+      Better Integration Capabilities
+
+      RATIO: 40% Technical / 60% Conceptual
+
+      DETAILS: The document does not provide specific implementation details. It focuses
+      on the key changes such as enhanced user experience, improved system performance,
+      and better integration capabilities.'
+    analyzed_at: '2025-08-19T13:05:49.609862'
+  destination: Phase1_Legacy_Imports/documentation
+size_bytes: 304

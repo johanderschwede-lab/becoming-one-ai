@@ -1,0 +1,120 @@
+original_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/MASTER_TECHNICAL_INVENTORY.md
+archived_at: '2025-08-19T11:19:23.029204'
+status: processed
+category: technical
+file_hash: 82b89e4d33c5badaaabe8bed76adc873a2c0cb7b93007a0ea2e37db44672661d
+analysis_summary:
+  categories:
+  - technical
+  - content_processing
+  analysis:
+    content: "# \U0001F527 MASTER TECHNICAL INVENTORY\n## Complete System Architecture\
+      \ & Integration Points\n\n### Make.com Scenario Inventory\n\n#### Core Orchestration\
+      \ Scenarios\n1. **Channel Router**\n   - Telegram webhook ingestion\n   - WhatsApp\
+      \ message processing\n   - Social media comment harvesting\n   - BuddyBoss chat\
+      \ integration\n   - Identity resolution across platforms\n\n2. **Knowledge Pipeline**\n\
+      \   - Zoom/Meet recording ingestion\n   - YouTube video processing\n   - PDF\
+      \ document extraction\n   - Obsidian vault synchronization\n   - Notion database\
+      \ integration\n   - Transcription service (Whisper)\n   - Chunking and embedding\
+      \ generation\n   - Vector store updates (Pinecone)\n\n3. **Journey Orchestration**\n\
+      \   - User state management\n   - Intent classification\n   - Handler routing\
+      \ (FAQ, Sales, Course, Support)\n   - Response composition\n   - Safety checks\
+      \ and disclaimers\n   - Interaction logging\n\n4. **Content Processing**\n \
+      \  - Live call transcription\n   - Video content extraction\n   - Document parsing\n\
+      \   - Metadata enrichment\n   - Tag application\n   - Knowledge graph updates\n\
+      \n5. **Analytics & Insights**\n   - User journey tracking\n   - Content effectiveness\
+      \ analysis\n   - Tag performance metrics\n   - Safety incident monitoring\n\
+      \   - System health checks\n\n### Data Architecture\n\n#### Core Data Stores\n\
+      1. **Identity Management**\n   ```sql\n   -- People Registry\n   CREATE TABLE\
+      \ identity_registry (\n       person_id UUID PRIMARY KEY,\n       created_at\
+      \ TIMESTAMPTZ DEFAULT NOW(),\n       last_seen_at TIMESTAMPTZ,\n       consent_status\
+      \ JSONB,\n       safety_flags TEXT[]\n   );\n\n   -- Cross-Platform Identity\
+      \ Links\n   CREATE TABLE identity_links (\n       link_id UUID PRIMARY KEY,\n\
+      \       person_id UUID REFERENCES identity_registry(person_id),\n       platform\
+      \ TEXT,\n       platform_id TEXT,\n       verified BOOLEAN,\n       UNIQUE(platform,\
+      \ platform_id)\n   );\n   ```\n\n2. **Interaction Tracking**\n   ```sql\n  \
+      \ -- Event Log\n   CREATE TABLE event_log (\n       event_id UUID PRIMARY KEY,\n\
+      \       person_id UUID REFERENCES identity_registry(person_id),\n       event_type\
+      \ TEXT,\n       platform TEXT,\n       content JSONB,\n       metadata JSONB,\n\
+      \       created_at TIMESTAMPTZ DEFAULT NOW()\n   );\n\n   -- Journey States\n\
+      \   CREATE TABLE journey_states (\n       state_id UUID PRIMARY KEY,\n     \
+      \  person_id UUID REFERENCES identity_registry(person_id),\n       current_stage\
+      \ TEXT,\n       progress JSONB,\n       last_interaction TIMESTAMPTZ,\n    \
+      \   next_actions TEXT[]\n   );\n   ```\n\n3. **Knowledge Management**\n   ```sql\n\
+      \   -- Content Items\n   CREATE TABLE content_items (\n       item_id UUID PRIMARY\
+      \ KEY,\n       content_type TEXT,\n       source_url TEXT,\n       content TEXT,\n\
+      \       metadata JSONB,\n       vector_id TEXT,\n       tags TEXT[]\n   );\n\
+      \n   -- Transcript Chunks\n   CREATE TABLE transcript_chunks (\n       chunk_id\
+      \ UUID PRIMARY KEY,\n       item_id UUID REFERENCES content_items(item_id),\n\
+      \       content TEXT,\n       start_time FLOAT,\n       end_time FLOAT,\n  \
+      \     speaker TEXT,\n       vector_id TEXT\n   );\n   ```\n\n### Integration\
+      \ Points\n\n#### 1. Content Sources\n- **Obsidian Vault**\n  - Markdown files\
+      \ with YAML frontmatter\n  - Stable file IDs for versioning\n  - Bi-directional\
+      \ sync with knowledge base\n\n- **Notion Workspace**\n  - Database templates\
+      \ for content\n  - Project management views\n  - Team collaboration spaces\n\
+      \n- **Video Platforms**\n  - YouTube channel integration\n  - TikTok content\
+      \ harvesting\n  - Instagram story archival\n  - Live stream processing\n\n####\
+      \ 2. Community Platforms\n- **BuddyBoss**\n  - Member profiles\n  - Course progress\n\
+      \  - Forum interactions\n  - Private messaging\n\n- **Social Media**\n  - Comment\
+      \ monitoring\n  - DM management\n  - Engagement tracking\n  - Content distribution\n\
+      \n#### 3. Learning Management\n- **LearnDash**\n  - Course completion tracking\n\
+      \  - Quiz results\n  - Assignment submissions\n  - Progress certificates\n\n\
+      - **WooCommerce**\n  - Product access levels\n  - Subscription management\n\
+      \  - Purchase history\n  - Digital delivery\n\n### Safety & Governance\n\n####\
+      \ 1. Content Safety\n```python\nclass SafetyLayer:\n    def __init__(self):\n\
+      \        self.disclaimers = {\n            \"medical\": \"This is not medical\
+      \ advice...\",\n            \"financial\": \"This is not financial advice...\"\
+      ,\n            \"legal\": \"This is not legal advice...\"\n        }\n     \
+      \   self.age_gates = {\n            \"general\": 18,\n            \"sensitive\"\
+      : 21\n        }\n        self.content_flags = [\n            \"medical_discussion\"\
+      ,\n            \"mental_health\",\n            \"crisis_support\",\n       \
+      \     \"substance_use\"\n        ]\n    \n    async def check_content(self,\
+      \ message, user_profile):\n        flags = []\n        for topic in self.content_flags:\n\
+      \            if self.detect_topic(message, topic):\n                flags.append(topic)\n\
+      \        \n        if flags:\n            return await self.get_appropriate_disclaimer(flags)\n\
+      ```\n\n#### 2. User Consent\n```python\nclass ConsentManager:\n    def __init__(self):\n\
+      \        self.consent_types = {\n            \"data_processing\": \"Basic data\
+      \ processing...\",\n            \"communication\": \"Marketing communications...\"\
+      ,\n            \"research\": \"Anonymous data analysis...\",\n            \"\
+      sensitive_topics\": \"Discussion of sensitive topics...\"\n        }\n    \n\
+      \    async def verify_consent(self, user_id, required_types):\n        user_consents\
+      \ = await self.get_user_consents(user_id)\n        missing = [t for t in required_types\
+      \ if t not in user_consents]\n        if missing:\n            return await\
+      \ self.request_consent(user_id, missing)\n```\n\n### System Health Monitoring\n\
+      \n#### 1. Performance Metrics\n- Response times by channel\n- Queue depths\n\
+      - Processing latencies\n- Error rates\n- Resource utilization\n\n#### 2. Business\
+      \ Metrics\n- User engagement rates\n- Content effectiveness\n- Journey progression\n\
+      - Revenue attribution\n- Retention analytics\n\n#### 3. Safety Metrics\n- Incident\
+      \ response times\n- Flag accuracy rates\n- Consent coverage\n- Compliance adherence\n\
+      - Risk assessments\n\nThis inventory represents the current state of all technical\
+      \ systems and integration points. It should be updated as new components are\
+      \ added or modified.\n"
+    analysis: 'TOPICS: System Architecture, Integration Points, Channel Router, Knowledge
+      Pipeline, Journey Orchestration, Content Processing
+
+
+      TYPE: Technical Inventory Document
+
+
+      CONCEPTS: Webhook ingestion, Message processing, Chat integration, Identity
+      resolution, Video processing, Document extraction, Vault synchronization, Database
+      integration, Transcription service, Chunking and embedding, Vector store updates,
+      User state management, Intent classification, Handler routing, Response composition,
+      Safety checks, Interaction logging, Live call transcription, Video content extraction,
+      Document parsing, Metadata enrichment
+
+
+      RATIO: 80% Technical / 20% Conceptual
+
+
+      DETAILS: The document provides a detailed overview of the technical inventory
+      for a system architecture, including specific tools and processes used in different
+      scenarios. For instance, Telegram webhook ingestion and WhatsApp message processing
+      are used in the Channel Router scenario, while Zoom/Meet recording ingestion,
+      YouTube video processing, and PDF document extraction are part of the Knowledge
+      Pipeline. The document also mentions specific services and platforms, such as
+      Whisper for transcription, Pinecone for vector store updates, and BuddyBoss
+      for chat integration.'
+    analyzed_at: '2025-08-19T11:19:23.026445'
+  destination: Phase1_Legacy_Imports/technical
+size_bytes: 6039

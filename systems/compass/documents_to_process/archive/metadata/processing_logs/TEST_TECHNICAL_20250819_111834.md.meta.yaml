@@ -1,0 +1,76 @@
+original_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/TEST_TECHNICAL.md
+archived_at: '2025-08-19T11:18:34.385881'
+status: processed
+category: technical
+file_hash: 8422bd5501d4cafddd0bfaf767ddaff110fd59e343e6b378ee9307d2711a26e2
+analysis_summary:
+  categories:
+  - technical
+  analysis:
+    content: '# Technical Implementation Guide
+
+
+      ## System Architecture
+
+
+      This document outlines the technical implementation of our core systems.
+
+
+      ### Components
+
+      1. Database Layer
+
+      - Supabase for structured data
+
+      - Pinecone for vector storage
+
+      - Redis for caching
+
+
+      2. API Integration
+
+      - FastAPI backend
+
+      - RESTful endpoints
+
+      - WebSocket support
+
+
+      3. Deployment
+
+      - Railway for hosting
+
+      - GitHub Actions for CI/CD
+
+      - Docker containers
+
+
+      ## Implementation Details
+
+      - Use async/await patterns
+
+      - Implement proper error handling
+
+      - Follow SOLID principles
+
+      - Maintain test coverage'
+    analysis: 'TOPICS: System Architecture, Components, API Integration, Deployment,
+      Implementation Details
+
+      TYPE: Technical Implementation Guide
+
+      CONCEPTS: Database Layer, Supabase, Pinecone, Redis, API Integration, FastAPI
+      backend, RESTful endpoints, WebSocket support, Deployment, Railway hosting,
+      GitHub Actions, Docker containers, async/await patterns, error handling, SOLID
+      principles, test coverage
+
+      RATIO: 80% Technical / 20% Conceptual
+
+      DETAILS: The document details the use of various technologies and tools for
+      system architecture including Supabase, Pinecone, Redis, FastAPI, RESTful endpoints,
+      WebSocket, Railway, GitHub Actions, and Docker containers. It also discusses
+      the implementation of async/await patterns, proper error handling, adherence
+      to SOLID principles, and maintaining test coverage.'
+    analyzed_at: '2025-08-19T11:18:34.382483'
+  destination: Phase1_Legacy_Imports/technical
+size_bytes: 546

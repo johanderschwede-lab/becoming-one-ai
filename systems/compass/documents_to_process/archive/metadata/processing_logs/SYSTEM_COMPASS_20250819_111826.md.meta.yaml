@@ -1,0 +1,118 @@
+original_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/SYSTEM_COMPASS.md
+archived_at: '2025-08-19T11:18:26.523796'
+status: processed
+category: documentation
+file_hash: f308c65beb94861942476fe0a35397be511b45e184e366ff7b7299663d2941d9
+analysis_summary:
+  categories:
+  - technical
+  - ai_agents
+  - sacred_library
+  analysis:
+    content: "# Becoming One\u2122 \u2014 System Compass (v1)\n\n> This is the single\
+      \ source of truth that keeps the bot, prompts, and team aligned. Treat it as\
+      \ **read-first** and **write-deliberately**. All changes should be versioned.\n\
+      \n---\n\n## 0) Metadata\n\n* **Compass ID:** `compass-2025-08-v1`\n* **Owner:**\
+      \ Johan Niklasson\n* **Today's date:** 2025-08-18\n* **Status:** Draft (to be\
+      \ signed)\n* **Applies to:** Telegram Bot (entryway), Supabase memory, LLM Orchestrator,\
+      \ Retrieval Layer, Offer Router\n\n---\n\n## 1) North Star\n\n**Purpose (one\
+      \ sentence):**\n> To provide authentic, practical human development tools through\
+      \ an AI-powered system that respects and enhances genuine human connection.\n\
+      \n**Mission (3 bullets max):**\n* Create an accessible entryway to authentic\
+      \ personal development through modern technology\n* Deliver practical methods\
+      \ that work, backed by structured knowledge and real experience\n* Foster genuine\
+      \ human connections while avoiding spiritual bypassing or guru positioning\n\
+      \n**Non\u2011negotiables / Red lines:**\n* Never position as spiritual authority\
+      \ - always maintain authentic human connection\n* No mystical jargon or guru-like\
+      \ positioning - use clear, simple language\n* Protect user privacy and consent\
+      \ at all levels\n* Maintain strict version control on all prompts and knowledge\n\
+      \n**Primary audience(s):**\n* Individuals seeking practical personal development\
+      \ methods\n* People interested in authentic human connection without spiritual\
+      \ bypassing\n* Users looking for structured, clear guidance without mystical\
+      \ overlay\n\n**Tone & stance:**\nClear, simple language that a child could understand.\
+      \ Authentic human voice, never authoritative. Practical and grounded, focusing\
+      \ on what actually works rather than theory.\n\n---\n\n## 2) Core Principles\
+      \ (Do/Don't)\n\n**Do:**\n* Freeze scope for the current phase; changes go through\
+      \ change control\n* Fetch from canonical memory; never invent policy\n* Prefer\
+      \ simplicity and determinism over cleverness\n* Use clear, descriptive variable\
+      \ names and explicit typing\n* Write docstrings for all classes and functions\n\
+      * Follow PEP 8 with 88-character line limit (Black formatter)\n* Implement proper\
+      \ error handling with meaningful messages\n* Use structured logging (loguru)\n\
+      * Configure via environment variables\n\n**Don't:**\n* Don't ship unversioned\
+      \ prompts or schemas\n* Don't route to new tools without explicit approval\n\
+      * Don't expand scope mid-sprint\n* Don't use mystical jargon or guru-like positioning\n\
+      * Don't store sensitive information (API keys, tokens)\n* Don't log sensitive\
+      \ user data\n* Don't mix spiritual authority with practical guidance\n\n---\n\
+      \n## 3) Definitions & Glossary\n\n* **\"Canonical memory\"** \u2192 structured,\
+      \ versioned facts in Supabase\n* **\"Orchestrator\"** \u2192 deterministic state\
+      \ machine that reads from memory and returns events\n* **\"MVP\"** \u2192 Onboarding,\
+      \ Routing, FAQ, Lead Capture, Offer Links, Human Escalation\n* **Key Domain\
+      \ Terms:**\n  * **Becoming One\u2122** \u2192 The core brand and methodology\
+      \ for authentic human development\n  * **Sacred Library** \u2192 4,871 authentic\
+      \ Hylozoics quotes stored in Supabase\n  * **Enhanced Bot** \u2192 The primary\
+      \ Telegram interface with full feature integration\n  * **Facilitator** \u2192\
+      \ Human guide trained in the Becoming One\u2122 methodology\n\n---\n\n## 4)\
+      \ Scope Boundaries (This Phase)\n\n**In scope:**\n* Telegram bot with webhook\
+      \ integration\n* Supabase for structured data and memory\n* Retrieval system\
+      \ (Pinecone or FTS)\n* LLM orchestration (GPT/Claude) behind clean interface\n\
+      * Railway deployment\n* Redis queue for async operations\n* Structured logging\n\
+      \n**Out of scope (deferred):**\n* Payments in Telegram\n* Notion/Make.com integrations\n\
+      * Multi-platform router (WhatsApp/IG)\n* CRM synchronization\n* Complex analytics\n\
+      \n**Exit criteria for this phase:**\n* [ ] End-to-end reply within 3s p50 (queue\
+      \ + worker path proven)\n* [ ] Retrieval top\u2011k results logged with doc/version\n\
+      * [ ] FSM transitions observable in admin view\n* [ ] Prompt registry v1 signed\
+      \ and immutable\n\n---\n\n## 5) Canonical Artifacts & Versions\n\n* **Prompt\
+      \ Registry:** `orchestrator:v2025-08-15`, `routing:v2025-08-15`, `style:v2025-08-15`\n\
+      * **FSM Definition:** `fsm:v1.0` (NEW \u2192 ONBOARDING \u2192 ROUTING \u2192\
+      \ ANSWER \u2192 FOLLOWUP)\n* **DB Schema:** `db:v1.0` (migrations applied)\n\
+      * **Retrieval Index:** `kb:v2025-08-18`\n\n---\n\n## 6) Decision Rules & Change\
+      \ Control\n\n* **Prioritization:** Safety \u2192 Correctness \u2192 Simplicity\
+      \ \u2192 Speed \u2192 Features\n* **Change proposal format:** Context \u2192\
+      \ Proposed change \u2192 Impact \u2192 Rollback \u2192 Owner \u2192 Effective\
+      \ date\n* **Approval:** Owner signs in this Compass; version bumps required\n\
+      \n**Open proposals:**\n* None yet\n\n---\n\n## 7) Operating Modes\n\n* **MVP\
+      \ Mode:** temp=0.2, strict routing, retrieval required for factual answers\n\
+      * **Maintenance Mode:** bugfix-only; no schema/prompt changes without version\
+      \ bump\n* **Experiment Mode:** separate namespace, never touches production\
+      \ artifacts\n\n---\n\n## 8) Orchestrator Contract (I/O)\n\n**Input (minimum):**\n\
+      * run_id, message_id, user_id\n* state + state_payload\n* last N messages (N\
+      \ \u2264 6)\n* prompt_version, policy_version\n* retrieval params (if any)\n\
+      \n**Output:**\n* `events[]` (type, payload)\n* `assistant_message` (text + optional\
+      \ links)\n* `new_state`\n\n**Forbidden:** direct network side-effects; only\
+      \ events for the worker to handle\n\n---\n\n## 9) Memory Policy\n\n**What we\
+      \ store:**\n* Decisions, prompts, schemas\n* Route outcomes\n* Retrieval hits\n\
+      * User consent + tags\n* Audit trails for important operations\n\n**What we\
+      \ never store:**\n* Raw PII beyond Telegram basics\n* Sensitive health data\n\
+      * API keys or tokens\n* Anything marked ephemeral\n\n**Retention:**\n* Raw logs:\
+      \ 90 days\n* Canonical artifacts: forever (versioned)\n\n**Tagging:**\n* `phase:mvp`\n\
+      * `domain:becoming-one`\n* `offer:deep-dive`\n\n---\n\n## 10) Success Metrics\
+      \ & SLAs\n\n* **Accuracy:** \u2265 90% acceptable answers on curated test set\n\
+      * **Latency:** p50 \u2264 3s (cached), p95 \u2264 10s (with LLM)\n* **Hallucination\
+      \ rate:** \u2264 2% on test set with retrieval enabled\n* **Human escalation:**\
+      \ triggered on < 0.7 confidence or outside scope\n\n---\n\n## 11) Security &\
+      \ Compliance\n\n* Secrets via environment variables only\n* Audit trail for\
+      \ all admin actions\n* Principle of least privilege for DB/storage\n* Row-level\
+      \ security in Supabase\n* Rate limiting implementation\n* Input validation at\
+      \ all levels\n\n---\n\n## 12) Rollout Plan (MVP \u2192 Stable)\n\n1. Scaffold\
+      \ & webhook echo\n2. Queue/worker + FSM skeleton\n3. Prompt registry + retrieval\n\
+      4. Admin view + metrics\n5. Seed knowledge base (10 docs)\n6. Soft launch in\
+      \ private TG group\n\n---\n\n## 13) Parked Ideas / Later\n\n* TON payments integration\n\
+      * Multi\u2011platform router (WhatsApp/IG/YouTube)\n* Notion/Make.com executors\n\
+      * Advanced analytics & cohorts\n* Complex CRM integrations\n\n---\n\n## 14)\
+      \ Sign\u2011off\n\n* **Owner approval:** \u2610 Johan (date: ___)\n* **\"Golden\
+      \ snapshot\" created:** \u2610 Yes (commit SHA: ___)\n\n\n"
+    analysis: 'TOPICS: System Compass, Bot Alignment, Human Development Tools, AI-Powered
+      System, Personal Development, Human Connection
+
+      TYPE: Guideline Document
+
+      CONCEPTS: Single Source of Truth, Read-First, Write-Deliberately, Versioned
+      Changes, North Star, Purpose, Mission, Non-negotiables
+
+      RATIO: 30% Technical / 70% Conceptual
+
+      DETAILS: The document applies to several systems including Telegram Bot (entryway),
+      Supabase memory, LLM Orchestrator, Retrieval Layer, Offer Router.'
+    analyzed_at: '2025-08-19T11:18:26.519323'
+  destination: Phase3_AgentExpansions/technical
+size_bytes: 6817

@@ -1,0 +1,57 @@
+# Enhanced fluff detection patterns
+
+common_gpt_phrases:
+  - "In today's fast-paced world"
+  - "At the intersection of"
+  - "Harnessing the power of"
+  - "Revolutionizing the way we"
+  - "Unlocking new paradigms"
+  - "A comprehensive suite of"
+  - "A transformative approach to"
+  - "This document explores"
+  - "Leveraging cutting-edge"
+  - "State-of-the-art solution"
+  - "Game-changing innovation"
+  - "Next-generation platform"
+
+circular_definitions:
+  - "X is defined as the process of X-ing"
+  - "Becoming is the process of becoming one"
+  - "Understanding comes from understanding"
+  - "Growth happens through growing"
+  - "Transformation transforms through transformation"
+  - "The journey is about journeying"
+
+empty_buzz_structures:
+  - "This framework provides a synergistic alignment of modalities"
+  - "The core essence of the essence is the essence"
+  - "A visionary blueprint for interdimensional emergence"
+  - "Paradigm-shifting consciousness evolution matrix"
+  - "Quantum leap in transformational dynamics"
+  - "Multidimensional synthesis of synergistic potentials"
+
+redundancy_pairs:
+  - "Foundational core essence"
+  - "Holistic total transformation"
+  - "Spiritual awakening journey process"
+  - "Complete comprehensive solution"
+  - "Fundamental basic principle"
+  - "Universal cosmic consciousness"
+  - "Integrated holistic system"
+  - "Total complete transformation"
+
+review_required_patterns:
+  - "innovative solution"
+  - "powerful framework"
+  - "seamless integration"
+  - "dynamic platform"
+  - "revolutionary approach"
+  - "groundbreaking methodology"
+
+rescue_indicators:
+  - "specific example:"
+  - "concrete steps:"
+  - "technical implementation:"
+  - "code sample:"
+  - "practical exercise:"
+  - "measured results:"

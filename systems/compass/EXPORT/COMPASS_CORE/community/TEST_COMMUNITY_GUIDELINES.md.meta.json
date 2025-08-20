@@ -1,0 +1,98 @@
+{
+  "export_info": {
+    "exported_at": "2025-08-19T14:27:21.760271",
+    "source_file": "documents_to_process/TEST_COMMUNITY_GUIDELINES.md",
+    "export_path": "COMPASS_CORE/community",
+    "export_version": "1.0"
+  },
+  "classification": {
+    "primary_category": "community",
+    "secondary_categories": [
+      "offer",
+      "platform",
+      "tone"
+    ],
+    "confidence": 0.453,
+    "keywords_found": [
+      "support",
+      "authentic",
+      "user experience",
+      "railway",
+      "willb.one",
+      "deployment",
+      "process",
+      "stance",
+      "guidance",
+      "human",
+      "development",
+      "telegram",
+      "guide",
+      "resource",
+      "practical",
+      "community",
+      "emotional anchor",
+      "material",
+      "system",
+      "framework",
+      "pinecone",
+      "instruction",
+      "supabase",
+      "group",
+      "connection"
+    ],
+    "compass_tags": [
+      "compass:prompt_module",
+      "compass:method_model",
+      "compass:offer",
+      "compass:platform",
+      "compass:tone",
+      "compass:community",
+      "compass:content",
+      "compass:strategy",
+      "keyword:emotional_anchor",
+      "keyword:stance",
+      "keyword:willb.one",
+      "keyword:telegram",
+      "keyword:supabase"
+    ],
+    "processing_priority": "high",
+    "export_path": "HUMAN_REVIEW/community"
+  },
+  "strategic_score": {
+    "signal_score": 3.4,
+    "danger_score": 1.0,
+    "quality_score": 1.5,
+    "originality_score": 2.278,
+    "actionability_score": 1.9,
+    "total_score": 8.578,
+    "recommendations": [],
+    "risk_factors": [],
+    "processing_decision": "SAFE_CORE - Add directly to Compass core"
+  },
+  "file_info": {
+    "filename": "TEST_COMMUNITY_GUIDELINES.md",
+    "file_size": 977,
+    "file_extension": ".md"
+  },
+  "fluff_analysis": {
+    "fluff_score": 0.075,
+    "signal_score": 3.1,
+    "danger_score": 0.0,
+    "rescue_reasons": [
+      "Contains 7 domain terms",
+      "Good structure quality: excellent"
+    ],
+    "domain_terms": [
+      "stance",
+      "emotional anchor",
+      "willb.one",
+      "telegram",
+      "supabase",
+      "pinecone",
+      "railway"
+    ],
+    "structure_quality": "excellent",
+    "recommendation": "SAFE - Add to Compass core",
+    "confidence": 1.0
+  }
+}

@@ -1,0 +1,51 @@
+original_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/TEST_MASTER_PROMPT.md
+archived_at: '2025-08-19T12:58:15.252720'
+status: processed
+category: prompts
+file_hash: 0d9ef02ced8cbee5cbe91998be8ff86cfae3d3b5d2afa9ac1683f00ec69b6ee7
+analysis_summary:
+  categories:
+  - master_prompt
+  analysis:
+    content: '# Master Prompt Document
+
+
+      This is a master prompt document that should trigger the review system.
+
+
+      ## Key Changes:
+
+      - Enhanced personality analysis capabilities
+
+      - Improved emotional anchor detection
+
+      - Better integration with WillB.one community
+
+
+      This document should be automatically detected as a master prompt and create
+      a review request.
+
+
+      ## System Prompt Updates:
+
+      The AI system should now provide more accurate guidance for personal development.
+
+      '
+    analysis: 'TOPICS: Master prompt document, review system, personality analysis,
+      emotional anchor detection, WillB.one community integration, system prompt updates,
+      personal development
+
+      TYPE: Technical document
+
+      CONCEPTS: Enhanced personality analysis, improved emotional anchor detection,
+      better community integration, accurate guidance for personal development
+
+      RATIO: 70% Technical / 30% Conceptual
+
+      DETAILS: The document discusses improvements in the system''s capabilities such
+      as personality analysis, emotional anchor detection, and community integration.
+      It also mentions the system''s ability to provide more accurate guidance for
+      personal development. No specific implementation details are provided.'
+    analyzed_at: '2025-08-19T12:58:15.251215'
+  destination: Phase2_Clean_Logic/master_prompt
+size_bytes: 449

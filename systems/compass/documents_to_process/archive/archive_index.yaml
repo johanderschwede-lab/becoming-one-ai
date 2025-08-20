@@ -1,0 +1,75 @@
+files:
+  ea217693edc4319ffa9262a3d04d4fc64de3ca9b49937a737fc2fe2a61005fd4:
+    archive_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/processed/documentation/DOCUMENT_INDEX_20250819_111813.md
+    metadata_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/metadata/processing_logs/DOCUMENT_INDEX_20250819_111813.md.meta.yaml
+    archived_at: '2025-08-19T11:18:13.129798'
+  44b8c2a1a6771043eb06eda37f5cce961b465bd895d828292b2f1b1f8610af92:
+    archive_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/processed/documentation/JOURNEY_ORCHESTRATION_20250819_111821.md
+    metadata_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/metadata/processing_logs/JOURNEY_ORCHESTRATION_20250819_111821.md.meta.yaml
+    archived_at: '2025-08-19T11:18:21.486292'
+  f308c65beb94861942476fe0a35397be511b45e184e366ff7b7299663d2941d9:
+    archive_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/processed/documentation/SYSTEM_COMPASS_20250819_111826.md
+    metadata_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/metadata/processing_logs/SYSTEM_COMPASS_20250819_111826.md.meta.yaml
+    archived_at: '2025-08-19T11:18:26.523796'
+  8422bd5501d4cafddd0bfaf767ddaff110fd59e343e6b378ee9307d2711a26e2:
+    archive_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/processed/technical/TEST_TECHNICAL_20250819_111834.md
+    metadata_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/metadata/processing_logs/TEST_TECHNICAL_20250819_111834.md.meta.yaml
+    archived_at: '2025-08-19T11:18:34.385881'
+  79ae7486ec4b5ef1d117f54ca7f43f6d2d9f94a48a172d2a34d83c7de16389b2:
+    archive_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/processed/documentation/STORAGE_STRATEGY_20250819_111842.md
+    metadata_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/metadata/processing_logs/STORAGE_STRATEGY_20250819_111842.md.meta.yaml
+    archived_at: '2025-08-19T11:18:42.092650'
+  c24997be60b0c5c009a991cdd12207dfdd05997746c982aca8e20df74bcaa253:
+    archive_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/processed/documentation/SIMPLE_STARTING_POINT_20250819_111846.md
+    metadata_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/metadata/processing_logs/SIMPLE_STARTING_POINT_20250819_111846.md.meta.yaml
+    archived_at: '2025-08-19T11:18:46.359830'
+  878e7a52fd24e4ffb1b3944a0f2c326b25703773450625604336981f091ff4b8:
+    archive_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/processed/documentation/SYSTEM_ARCHITECTURE_PRINCIPLES_20250819_111852.md
+    metadata_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/metadata/processing_logs/SYSTEM_ARCHITECTURE_PRINCIPLES_20250819_111852.md.meta.yaml
+    archived_at: '2025-08-19T11:18:52.922208'
+  56aaf35a3eb9eda945ce56e322e6fe449ce976b612a0403bc85fd72e8bb627a4:
+    archive_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/processed/method_core/TEST_METHOD_CORE_20250819_111858.md
+    metadata_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/metadata/processing_logs/TEST_METHOD_CORE_20250819_111858.md.meta.yaml
+    archived_at: '2025-08-19T11:18:58.938235'
+  c9169fe792b2c57a7ff6607203dbc6e1a2b7d8655cf66adececb06db6473fb7a:
+    archive_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/processed/method_core/METHODOLOGICAL_INNOVATIONS_20250819_111904.md
+    metadata_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/metadata/processing_logs/METHODOLOGICAL_INNOVATIONS_20250819_111904.md.meta.yaml
+    archived_at: '2025-08-19T11:19:04.771286'
+  1bea1cb2a38e3c71f6828f2851fa83e6d17cf2b633a0d0df1f98b342ff2732f9:
+    archive_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/processed/prompts/BECOMING_ONE_AI_COMPLETE_PROJECT_MASTER_PROMPT_20250819_111911.md
+    metadata_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/metadata/processing_logs/BECOMING_ONE_AI_COMPLETE_PROJECT_MASTER_PROMPT_20250819_111911.md.meta.yaml
+    archived_at: '2025-08-19T11:19:11.257943'
+  82b89e4d33c5badaaabe8bed76adc873a2c0cb7b93007a0ea2e37db44672661d:
+    archive_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/processed/technical/MASTER_TECHNICAL_INVENTORY_20250819_111923.md
+    metadata_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/metadata/processing_logs/MASTER_TECHNICAL_INVENTORY_20250819_111923.md.meta.yaml
+    archived_at: '2025-08-19T11:19:23.029204'
+  9306c9402f46c9f7bf3bd7d1915e127454c88ad9dbab3ff71a80d6d2beb766c3:
+    archive_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/processed/prompts/TEST_MASTER_PROMPT_20250819_124258.md
+    metadata_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/metadata/processing_logs/TEST_MASTER_PROMPT_20250819_124258.md.meta.yaml
+    archived_at: '2025-08-19T12:42:58.131302'
+  d253d0fc7cd7f7f63c61ed9b0231446f8653530d2d3e593890ac9fac8abb4ea5:
+    archive_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/processed/prompts/TEST_MASTER_PROMPT_20250819_125426.md
+    metadata_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/metadata/processing_logs/TEST_MASTER_PROMPT_20250819_125426.md.meta.yaml
+    archived_at: '2025-08-19T12:54:26.454566'
+  f10898a1ab8f7b724b1b20d5418f38b2695a2f8a9b3448dbf76622ebce691732:
+    archive_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/processed/documentation/TEST_AI_AGENT_20250819_125432.md
+    metadata_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/metadata/processing_logs/TEST_AI_AGENT_20250819_125432.md.meta.yaml
+    archived_at: '2025-08-19T12:54:32.337972'
+  0d9ef02ced8cbee5cbe91998be8ff86cfae3d3b5d2afa9ac1683f00ec69b6ee7:
+    archive_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/processed/prompts/TEST_MASTER_PROMPT_20250819_125815.md
+    metadata_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/metadata/processing_logs/TEST_MASTER_PROMPT_20250819_125815.md.meta.yaml
+    archived_at: '2025-08-19T12:58:15.252720'
+  f887def7bc7789f837ad4331e37fe5b9311276db8a27b94fae1f19162b07a7da:
+    archive_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/processed/documentation/TEST_DOCUMENT_20250819_130549.md
+    metadata_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/archive/metadata/processing_logs/TEST_DOCUMENT_20250819_130549.md.meta.yaml
+    archived_at: '2025-08-19T13:05:49.611613'
+statistics:
+  total_archived: 16
+  by_category:
+    documentation: 8
+    technical: 2
+    method_core: 2
+    prompts: 4
+  by_status:
+    processed: 16
+last_updated: '2025-08-19T13:05:49.613058'
