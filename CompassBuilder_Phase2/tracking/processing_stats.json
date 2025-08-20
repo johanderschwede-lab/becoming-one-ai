@@ -1,0 +1,15 @@
+{
+  "total_processed": 16,
+  "by_category": {
+    "method_core": 4,
+    "personality_systems": 2,
+    "technical": 11,
+    "documentation": 5,
+    "ai_agents": 6,
+    "sacred_library": 3,
+    "content_processing": 7,
+    "master_prompt": 1
+  },
+  "by_status": {},
+  "last_updated": "2025-08-19T13:05:49.611268"
+}

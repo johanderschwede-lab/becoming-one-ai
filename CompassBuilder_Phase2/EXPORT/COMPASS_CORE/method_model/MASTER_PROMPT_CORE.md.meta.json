@@ -1,0 +1,117 @@
+{
+  "export_info": {
+    "exported_at": "2025-08-19T13:58:57.788640",
+    "source_file": "documents_to_process/MASTER_PROMPT_CORE.md",
+    "export_path": "COMPASS_CORE/method_model",
+    "export_version": "1.0"
+  },
+  "classification": {
+    "primary_category": "method_model",
+    "secondary_categories": [
+      "strategy",
+      "platform",
+      "community"
+    ],
+    "confidence": 0.513,
+    "keywords_found": [
+      "data",
+      "anti-bypass",
+      "process",
+      "database",
+      "willb.one",
+      "inner field",
+      "instruction",
+      "connection",
+      "pattern",
+      "real",
+      "guide",
+      "awareness",
+      "field",
+      "railway",
+      "insight",
+      "supabase",
+      "system",
+      "development",
+      "emotional anchor",
+      "stance",
+      "session",
+      "community",
+      "framework",
+      "digest",
+      "user experience",
+      "support",
+      "deployment",
+      "telegram",
+      "approach",
+      "pearl",
+      "pinecone",
+      "nervous system"
+    ],
+    "compass_tags": [
+      "compass:prompt_module",
+      "compass:method_model",
+      "compass:offer",
+      "compass:platform",
+      "compass:tone",
+      "compass:community",
+      "compass:content",
+      "compass:research",
+      "compass:strategy",
+      "keyword:emotional_anchor",
+      "keyword:nervous_system",
+      "keyword:stance",
+      "keyword:field",
+      "keyword:willb.one",
+      "keyword:telegram",
+      "keyword:supabase"
+    ],
+    "processing_priority": "critical",
+    "export_path": "HUMAN_REVIEW/method_model"
+  },
+  "strategic_score": {
+    "signal_score": 6.2,
+    "danger_score": 1.0,
+    "quality_score": 1.0,
+    "originality_score": 3.798,
+    "actionability_score": 2.7,
+    "total_score": 13.198,
+    "recommendations": [
+      "High signal content - prioritize for Compass core",
+      "High originality - valuable unique insights"
+    ],
+    "risk_factors": [],
+    "processing_decision": "SAFE_CORE - Add directly to Compass core"
+  },
+  "file_info": {
+    "filename": "MASTER_PROMPT_CORE.md",
+    "file_size": 1157,
+    "file_extension": ".md"
+  },
+  "fluff_analysis": {
+    "fluff_score": 0.119,
+    "signal_score": 5.0,
+    "danger_score": 0.0,
+    "rescue_reasons": [
+      "Protected folder",
+      "Contains 12 domain terms",
+      "Good structure quality: excellent"
+    ],
+    "domain_terms": [
+      "stance",
+      "digest",
+      "inner field",
+      "nervous system",
+      "emotional anchor",
+      "pearl",
+      "anti-bypass",
+      "willb.one",
+      "telegram",
+      "supabase",
+      "pinecone",
+      "railway"
+    ],
+    "structure_quality": "excellent",
+    "recommendation": "PROTECTED - Never quarantine",
+    "confidence": 0.8
+  }
+}

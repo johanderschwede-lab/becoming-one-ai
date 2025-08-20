@@ -1,0 +1,88 @@
+{
+  "export_info": {
+    "exported_at": "2025-08-19T14:27:20.925606",
+    "source_file": "test_comprehensive.md",
+    "export_path": "COMPASS_CORE/method_model",
+    "export_version": "1.0"
+  },
+  "classification": {
+    "primary_category": "method_model",
+    "secondary_categories": [
+      "platform",
+      "strategy",
+      "prompt_module"
+    ],
+    "confidence": 0.715,
+    "keywords_found": [
+      "nervous system",
+      "schaubild",
+      "field-aware",
+      "telegram",
+      "supabase",
+      "role",
+      "process",
+      "stance",
+      "emotional anchor",
+      "database",
+      "system",
+      "data",
+      "field"
+    ],
+    "compass_tags": [
+      "compass:prompt_module",
+      "compass:method_model",
+      "compass:platform",
+      "compass:tone",
+      "compass:strategy",
+      "keyword:schaubild",
+      "keyword:emotional_anchor",
+      "keyword:nervous_system",
+      "keyword:stance",
+      "keyword:field",
+      "keyword:telegram",
+      "keyword:supabase"
+    ],
+    "processing_priority": "critical",
+    "export_path": "HUMAN_REVIEW/method_model"
+  },
+  "strategic_score": {
+    "signal_score": 3.5,
+    "danger_score": 0.0,
+    "quality_score": 1.0,
+    "originality_score": 3.65,
+    "actionability_score": 1.7,
+    "total_score": 9.85,
+    "recommendations": [
+      "High originality - valuable unique insights",
+      "Low risk - safe for automated processing"
+    ],
+    "risk_factors": [],
+    "processing_decision": "SAFE_CORE - Add directly to Compass core"
+  },
+  "file_info": {
+    "filename": "test_comprehensive.md",
+    "file_size": 440,
+    "file_extension": ".md"
+  },
+  "fluff_analysis": {
+    "fluff_score": 0.0,
+    "signal_score": 2.9,
+    "danger_score": 0.0,
+    "rescue_reasons": [
+      "Contains 8 domain terms"
+    ],
+    "domain_terms": [
+      "stance",
+      "schaubild",
+      "nervous system",
+      "emotional anchor",
+      "field-aware",
+      "role",
+      "telegram",
+      "supabase"
+    ],
+    "structure_quality": "poor",
+    "recommendation": "RESCUE - High signal, low fluff",
+    "confidence": 0.8
+  }
+}

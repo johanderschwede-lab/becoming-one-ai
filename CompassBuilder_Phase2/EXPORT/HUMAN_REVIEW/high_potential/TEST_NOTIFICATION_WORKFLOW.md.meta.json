@@ -1,0 +1,74 @@
+{
+  "export_info": {
+    "exported_at": "2025-08-19T14:40:02.298611",
+    "source_file": "documents_to_process/TEST_NOTIFICATION_WORKFLOW.md",
+    "export_path": "HUMAN_REVIEW/high_potential",
+    "export_version": "1.0"
+  },
+  "classification": {
+    "primary_category": "strategy",
+    "secondary_categories": [
+      "content",
+      "research",
+      "platform"
+    ],
+    "confidence": 0.711,
+    "keywords_found": [
+      "system",
+      "workflow",
+      "analysis",
+      "human",
+      "format",
+      "data",
+      "process",
+      "telegram",
+      "instruction",
+      "structure"
+    ],
+    "compass_tags": [
+      "compass:prompt_module",
+      "compass:platform",
+      "compass:tone",
+      "compass:content",
+      "compass:research",
+      "compass:strategy",
+      "keyword:telegram"
+    ],
+    "processing_priority": "high",
+    "export_path": "HUMAN_REVIEW/strategy"
+  },
+  "strategic_score": {
+    "signal_score": 2.5,
+    "danger_score": 1.0,
+    "quality_score": 1.0,
+    "originality_score": 1.485,
+    "actionability_score": 2.1,
+    "total_score": 6.585,
+    "recommendations": [],
+    "risk_factors": [
+      "High risk, low reward content"
+    ],
+    "processing_decision": "RESCUE_QUEUE - High potential, needs refinement"
+  },
+  "file_info": {
+    "filename": "TEST_NOTIFICATION_WORKFLOW.md",
+    "file_size": 1562,
+    "file_extension": ".md"
+  },
+  "fluff_analysis": {
+    "fluff_score": 0.043,
+    "signal_score": 2.6,
+    "danger_score": 0.0,
+    "rescue_reasons": [
+      "Contains 2 domain terms",
+      "Good structure quality: excellent"
+    ],
+    "domain_terms": [
+      "compass",
+      "telegram"
+    ],
+    "structure_quality": "excellent",
+    "recommendation": "RESCUE - High signal, low fluff",
+    "confidence": 0.8
+  }
+}

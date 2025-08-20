@@ -15,6 +15,14 @@ from core.personality_analyzer import BecomingOnePersonalityAnalyzer
 from core.personality_synthesis_model import SynthesisPersonalityProfile
 from core.sacred_library_local import local_sacred_library
 
+# Import proper knowledge management system
+try:
+    from core.knowledge_management_system import BecomingOneKnowledgeSystem
+    KNOWLEDGE_SYSTEM_AVAILABLE = True
+except ImportError as e:
+    logger.warning(f"Knowledge Management System not available: {e}")
+    KNOWLEDGE_SYSTEM_AVAILABLE = False
+
 class BecomingOneAI:
     """Main AI processing engine with async analysis"""
     
@@ -33,6 +41,17 @@ class BecomingOneAI:
         
         self.personality_analyzer = BecomingOnePersonalityAnalyzer()
         self.model = os.getenv("OPENAI_MODEL", "gpt-4-turbo-preview")
+        
+        # Initialize knowledge management system
+        if KNOWLEDGE_SYSTEM_AVAILABLE:
+            try:
+                self.knowledge_system = BecomingOneKnowledgeSystem()
+                logger.info("✅ Knowledge Management System initialized")
+            except Exception as e:
+                logger.warning(f"Failed to initialize Knowledge Management System: {e}")
+                self.knowledge_system = None
+        else:
+            self.knowledge_system = None
         
         # Queue for background analysis
         self.analysis_queue = asyncio.Queue()
@@ -94,7 +113,7 @@ class BecomingOneAI:
         # Fallback to local search
         try:
             if local_sacred_library.is_available():
-                local_quotes = local_sacred_library.search_quotes(query, limit=limit)
+                local_quotes = local_sacred_library.search_quotes(query, language="en", limit=limit)
                 if local_quotes:
                     logger.info(f"Sacred Library search via local fallback: found {len(local_quotes)} quotes")
                     return local_quotes
@@ -110,11 +129,11 @@ class BecomingOneAI:
             logger.error(f"Local Sacred Library error: {e}")
         
         return []
-    
+        
     async def process_message(
         self, 
         person_id: str,
-        message: str,
+        message: str, 
         source: str,
         user_tier: str = "free"
     ) -> str:

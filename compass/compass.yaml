@@ -1,0 +1,124 @@
+id: compass-2025-08-v1
+version: 1
+north_star:
+  purpose: "To provide authentic, practical human development tools through an AI-powered system that respects and enhances genuine human connection"
+  mission:
+    - "Create an accessible entryway to authentic personal development through modern technology"
+    - "Deliver practical methods that work, backed by structured knowledge and real experience"
+    - "Foster genuine human connections while avoiding spiritual bypassing or guru positioning"
+  non_negotiables:
+    - "Never position as spiritual authority - always maintain authentic human connection"
+    - "No mystical jargon or guru-like positioning - use clear, simple language"
+    - "Protect user privacy and consent at all levels"
+    - "Maintain strict version control on all prompts and knowledge"
+
+principles:
+  do:
+    - "Freeze scope for the current phase; changes go through change control"
+    - "Fetch from canonical memory; never invent policy"
+    - "Prefer simplicity and determinism over cleverness"
+    - "Use clear, descriptive variable names and explicit typing"
+    - "Write docstrings for all classes and functions"
+    - "Follow PEP 8 with 88-character line limit"
+    - "Implement proper error handling with meaningful messages"
+    - "Use structured logging (loguru)"
+    - "Configure via environment variables"
+  dont:
+    - "Don't ship unversioned prompts or schemas"
+    - "Don't route to new tools without explicit approval"
+    - "Don't expand scope mid-sprint"
+    - "Don't use mystical jargon or guru-like positioning"
+    - "Don't store sensitive information"
+    - "Don't log sensitive user data"
+    - "Don't mix spiritual authority with practical guidance"
+
+scope:
+  in:
+    - "Telegram bot with webhook integration"
+    - "Supabase for structured data and memory"
+    - "Retrieval system (Pinecone or FTS)"
+    - "LLM orchestration (GPT/Claude)"
+    - "Railway deployment"
+    - "Redis queue"
+    - "Structured logging"
+  out:
+    - "Payments in Telegram"
+    - "Notion/Make.com integrations"
+    - "Multi-platform router"
+    - "CRM synchronization"
+    - "Complex analytics"
+
+artifacts:
+  prompts:
+    orchestrator: v2025-08-15
+    routing: v2025-08-15
+    style: v2025-08-15
+  fsm: v1.0
+  db: v1.0
+  retrieval_index: kb:v2025-08-18
+
+change_control:
+  priority:
+    - safety
+    - correctness
+    - simplicity
+    - speed
+    - features
+
+operating_modes:
+  - mvp
+  - maintenance
+  - experiment
+
+metrics:
+  accuracy: 0.9
+  latency_p50: 3
+  latency_p95: 10
+  hallucination_rate: 0.02
+  human_escalation_confidence: 0.7
+
+memory_policy:
+  store:
+    - decisions
+    - prompts
+    - schemas
+    - route_outcomes
+    - retrieval_hits
+    - user_consent
+    - audit_trails
+  never_store:
+    - raw_pii
+    - sensitive_health
+    - api_keys
+    - ephemeral_data
+  retention_days:
+    logs: 90
+    artifacts: null  # forever
+  tags:
+    - "phase:mvp"
+    - "domain:becoming-one"
+    - "offer:deep-dive"
+
+security:
+  - "Secrets via environment variables only"
+  - "Audit trail for all admin actions"
+  - "Principle of least privilege"
+  - "Row-level security"
+  - "Rate limiting"
+  - "Input validation"
+
+rollout:
+  - "Scaffold & webhook echo"
+  - "Queue/worker + FSM skeleton"
+  - "Prompt registry + retrieval"
+  - "Admin view + metrics"
+  - "Seed knowledge base"
+  - "Soft launch in private TG group"
+
+parked_ideas:
+  - "TON payments"
+  - "Multi-platform router"
+  - "Notion/Make.com executors"
+  - "Advanced analytics"
+  - "Complex CRM integrations"
+

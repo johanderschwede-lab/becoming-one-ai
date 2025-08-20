@@ -1,0 +1,79 @@
+{
+  "export_info": {
+    "exported_at": "2025-08-19T14:42:39.959597",
+    "source_file": "documents_to_process/TEST_NOTIFICATION_SUCCESS.md",
+    "export_path": "HUMAN_REVIEW/high_potential",
+    "export_version": "1.0"
+  },
+  "classification": {
+    "primary_category": "strategy",
+    "secondary_categories": [
+      "platform",
+      "content",
+      "prompt_module"
+    ],
+    "confidence": 0.57,
+    "keywords_found": [
+      "supabase",
+      "user experience",
+      "human",
+      "data",
+      "process",
+      "content",
+      "workflow",
+      "structure",
+      "analysis",
+      "format",
+      "system",
+      "instruction",
+      "telegram",
+      "database",
+      "real"
+    ],
+    "compass_tags": [
+      "compass:prompt_module",
+      "compass:platform",
+      "compass:tone",
+      "compass:content",
+      "compass:research",
+      "compass:strategy",
+      "keyword:telegram",
+      "keyword:supabase"
+    ],
+    "processing_priority": "critical",
+    "export_path": "HUMAN_REVIEW/strategy"
+  },
+  "strategic_score": {
+    "signal_score": 3.5,
+    "danger_score": 1.3,
+    "quality_score": 1.0,
+    "originality_score": 1.549,
+    "actionability_score": 2.3,
+    "total_score": 7.699,
+    "recommendations": [],
+    "risk_factors": [],
+    "processing_decision": "RESCUE_QUEUE - High potential, needs refinement"
+  },
+  "file_info": {
+    "filename": "TEST_NOTIFICATION_SUCCESS.md",
+    "file_size": 1525,
+    "file_extension": ".md"
+  },
+  "fluff_analysis": {
+    "fluff_score": 0.044,
+    "signal_score": 3.4,
+    "danger_score": 0.0,
+    "rescue_reasons": [
+      "Contains 3 domain terms",
+      "Good structure quality: excellent"
+    ],
+    "domain_terms": [
+      "compass",
+      "telegram",
+      "supabase"
+    ],
+    "structure_quality": "excellent",
+    "recommendation": "SAFE - Add to Compass core",
+    "confidence": 1.0
+  }
+}

@@ -1,0 +1,34 @@
+original_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/TEST_METHOD_CORE.md
+archived_at: '2025-08-19T11:18:58.938235'
+status: processed
+category: method_core
+file_hash: 56aaf35a3eb9eda945ce56e322e6fe449ce976b612a0403bc85fd72e8bb627a4
+analysis_summary:
+  categories:
+  - method_core
+  - technical
+  analysis:
+    content: "# Becoming One\u2122 Method Core Concepts\n\nThis document outlines\
+      \ the core concepts of emotional anchor recognition and feeling-state transformation\
+      \ in the Becoming One\u2122 method.\n\n## Key Components\n\n1. Emotional Anchors\n\
+      - Recognition of stuck patterns\n- Understanding resistance points\n- Identifying\
+      \ transformation opportunities\n\n2. The Pearl Process\n- Digesting emotional\
+      \ content\n- Extracting wisdom\n- Integration of insights\n\n3. Feeling-State\
+      \ Navigation\n- Present moment awareness\n- Direct access to feelings\n- Transformation\
+      \ through presence\n\n## Implementation Guidelines\n\nFollow these steps for\
+      \ emotional anchor work:\n1. Identify the anchor point\n2. Feel into the resistance\n\
+      3. Allow transformation\n4. Extract The Pearl\n5. Integrate the wisdom"
+    analysis: "TOPICS: Emotional anchor recognition, feeling-state transformation,\
+      \ Becoming One\u2122 method, The Pearl Process, Feeling-State Navigation\nTYPE:\
+      \ Instructional/Conceptual Document\nCONCEPTS: Emotional Anchors, Recognition\
+      \ of stuck patterns, Understanding resistance points, Identifying transformation\
+      \ opportunities, The Pearl Process, Digesting emotional content, Extracting\
+      \ wisdom, Integration of insights, Feeling-State Navigation, Present moment\
+      \ awareness, Direct access to feelings, Transformation through presence\nRATIO:\
+      \ 20% Technical / 80% Conceptual\nDETAILS: The document provides a step-by-step\
+      \ guide for emotional anchor work which includes identifying the anchor point,\
+      \ feeling into the resistance, allowing transformation, extracting the Pearl,\
+      \ and integrating the wisdom."
+    analyzed_at: '2025-08-19T11:18:58.937292'
+  destination: Phase1_Legacy_Imports/method_core
+size_bytes: 745

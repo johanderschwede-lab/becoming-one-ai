@@ -26,6 +26,7 @@ railway variables set START_COMMAND="python compass_api.py"
 ### 3. Configure Environment Variables
 Add these environment variables to the compass-api service:
 - `COMPASS_BOT_TOKEN` - Your new Compass Management Bot token
+- `TELEGRAM_BOT_TOKEN` - Your existing bot token (for compatibility)
 - `TELEGRAM_CHAT_ID` - Your chat ID (1139989892)
 - `SUPABASE_URL` - Your Supabase URL
 - `SUPABASE_ANON_KEY` - Your Supabase anon key

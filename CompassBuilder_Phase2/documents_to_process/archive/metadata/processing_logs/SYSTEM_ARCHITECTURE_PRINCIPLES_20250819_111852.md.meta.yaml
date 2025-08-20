@@ -1,0 +1,118 @@
+original_path: /Users/johanniklasson/Documents/becoming-one-ai/CompassBuilder_Phase2/documents_to_process/SYSTEM_ARCHITECTURE_PRINCIPLES.md
+archived_at: '2025-08-19T11:18:52.922208'
+status: processed
+category: documentation
+file_hash: 878e7a52fd24e4ffb1b3944a0f2c326b25703773450625604336981f091ff4b8
+analysis_summary:
+  categories:
+  - technical
+  - content_processing
+  analysis:
+    content: "# \U0001F3D7\uFE0F System Architecture Principles\n## Clean Separation\
+      \ of Concerns & Component Independence\n\n### 1. Core Architectural Principles\n\
+      \n#### Loose Coupling\n```\nComponent A \u27F7 Message Queue \u27F7 Component\
+      \ B\n                   \u2195\n             Event Stream\n```\n\nInstead of\
+      \ direct dependencies, components communicate through:\n- Message queues for\
+      \ commands\n- Event streams for state changes\n- HTTP APIs for queries\n\n####\
+      \ Independent Data Stores\n```\nUser Identity DB \u2260 Interaction Log DB \u2260\
+      \ Knowledge Base\n      \u2193                  \u2193                  \u2193\
+      \nSeparate Evolution  Real-time Stream  Vector Storage\n```\n\nEach type of\
+      \ data has its own specialized store:\n- Identity: PostgreSQL (clean, simple\
+      \ schema)\n- Interactions: Time-series DB or event store\n- Knowledge: Vector\
+      \ DB + metadata store\n- State: Redis or similar for real-time\n\n### 2. Component\
+      \ Breakdown\n\n#### Identity Service (Simple & Stable)\n```python\n# Simple\
+      \ PostgreSQL schema\nCREATE TABLE identity_registry (\n    person_id UUID PRIMARY\
+      \ KEY,\n    created_at TIMESTAMPTZ DEFAULT NOW()\n);\n\nCREATE TABLE identity_links\
+      \ (\n    platform TEXT,\n    platform_id TEXT,\n    person_id UUID REFERENCES\
+      \ identity_registry(person_id),\n    UNIQUE(platform, platform_id)\n);\n```\n\
+      \n- Focused only on cross-platform identity\n- No complex business logic\n-\
+      \ Simple REST API for queries\n- Event stream for changes\n\n#### Interaction\
+      \ Logger (High Volume, Simple Schema)\n```python\n# Time-series optimized\n\
+      class InteractionLogger:\n    async def log_interaction(self, data: dict):\n\
+      \        # Write to time-series store\n        await self.timeseries_db.write(\n\
+      \            measurement=\"interactions\",\n            tags={\n           \
+      \     \"platform\": data[\"platform\"],\n                \"type\": data[\"type\"\
+      ]\n            },\n            fields={\n                \"person_id\": data[\"\
+      person_id\"],\n                \"content\": data[\"content\"]\n            }\n\
+      \        )\n```\n\n- Write-optimized for high volume\n- Simple schema, no joins\n\
+      - Retention policies for old data\n- Async processing only\n\n#### Knowledge\
+      \ Base (Specialized Storage)\n```python\nclass KnowledgeStore:\n    def __init__(self):\n\
+      \        self.vector_db = PineconeClient()  # For semantic search\n        self.metadata_db\
+      \ = PostgresClient() # For structured data\n        \n    async def store_knowledge(self,\
+      \ content: str, metadata: dict):\n        # Store vector embedding\n       \
+      \ vector_id = await self.vector_db.store(\n            self.get_embedding(content)\n\
+      \        )\n        \n        # Store metadata separately\n        await self.metadata_db.store(\n\
+      \            vector_id=vector_id,\n            metadata=metadata\n        )\n\
+      ```\n\n- Separate vector store from metadata\n- Clear boundaries between types\
+      \ of knowledge\n- Independent scaling and optimization\n\n### 3. Processing\
+      \ Pipeline Principles\n\n#### Instead of One Massive Make.com Scenario:\n```\n\
+      Input \u2192 [Small, Independent Processors] \u2192 Output\n\nProcessor Types:\n\
+      1. Channel Adapters (one per platform)\n2. Content Processors (specialized by\
+      \ type)\n3. State Updaters (focused on specific states)\n4. Response Generators\
+      \ (modular by type)\n```\n\nEach processor:\n- Has a single responsibility\n\
+      - Runs independently\n- Can be replaced/upgraded separately\n- Communicates\
+      \ through standard messages\n\n#### Example: Content Processing\n```python\n\
+      # Instead of one massive processor:\nclass ContentProcessor:\n    async def\
+      \ process(self, content: Any):\n        if isinstance(content, Video):\n   \
+      \         # Video processing logic\n        elif isinstance(content, Audio):\n\
+      \            # Audio processing logic\n        elif isinstance(content, Text):\n\
+      \            # Text processing logic\n            \n# Use specialized processors:\n\
+      class VideoProcessor:\n    async def process(self, video: Video):\n        #\
+      \ Only video logic here\n\nclass AudioProcessor:\n    async def process(self,\
+      \ audio: Audio):\n        # Only audio logic here\n```\n\n### 4. State Management\
+      \ Principles\n\n#### Distributed State\n```\nUser State        Journey State\
+      \     Learning State\n    \u2193                  \u2193                 \u2193\
+      \nRedis Cache     Event Store     Progress Tracker\n```\n\n- Break down state\
+      \ by domain\n- Use appropriate storage for each\n- Clear ownership of state\
+      \ types\n- Event-sourced where valuable\n\n#### Example: Journey State\n```python\n\
+      class JourneyStateManager:\n    def __init__(self):\n        self.event_store\
+      \ = EventStore()\n        self.state_cache = StateCache()\n    \n    async def\
+      \ get_current_state(self, person_id: str) -> JourneyState:\n        # Try cache\
+      \ first\n        cached = await self.state_cache.get(person_id)\n        if\
+      \ cached:\n            return cached\n            \n        # Rebuild from events\
+      \ if needed\n        events = await self.event_store.get_events(person_id)\n\
+      \        state = self.rebuild_state(events)\n        \n        # Cache for next\
+      \ time\n        await self.state_cache.set(person_id, state)\n        return\
+      \ state\n```\n\n### 5. Integration Patterns\n\n#### Message-Based Integration\n\
+      ```\n[Service A] \u2192 Message \u2192 [Queue] \u2192 Message \u2192 [Service\
+      \ B]\n```\n\nBenefits:\n- Asynchronous processing\n- Natural retry points\n\
+      - Easy to add new consumers\n- Simple to monitor and debug\n\n#### Example:\
+      \ Channel Integration\n```python\nclass ChannelAdapter:\n    def __init__(self,\
+      \ channel: str):\n        self.channel = channel\n        self.queue = MessageQueue()\n\
+      \        \n    async def handle_input(self, raw_input: dict):\n        # Convert\
+      \ to standard message format\n        message = self.normalize_input(raw_input)\n\
+      \        \n        # Send to processing queue\n        await self.queue.send(\n\
+      \            topic=\"raw_input\",\n            message=message\n        )\n\
+      ```\n\n### 6. Scaling Principles\n\n#### Horizontal Scaling\n```\nLoad Balancer\n\
+      \     \u2193\n[Service Instance 1]\n[Service Instance 2]\n[Service Instance\
+      \ 3]\n```\n\n- Each component scales independently\n- No shared state between\
+      \ instances\n- Clear capacity planning per component\n\n#### Example: Knowledge\
+      \ Processing\n```python\nclass KnowledgeProcessor:\n    def __init__(self, worker_id:\
+      \ str):\n        self.worker_id = worker_id\n        self.queue = ProcessingQueue()\n\
+      \        \n    async def start(self):\n        while True:\n            # Get\
+      \ next item to process\n            item = await self.queue.receive()\n    \
+      \        \n            # Process independently\n            await self.process_item(item)\n\
+      \            \n            # Acknowledge completion\n            await self.queue.ack(item)\n\
+      ```\n\nThis architectural approach:\n1. Keeps components simple and focused\n\
+      2. Allows independent scaling\n3. Makes testing and debugging easier\n4. Enables\
+      \ gradual evolution\n5. Prevents \"big ball of mud\" syndrome\n\nRemember: Start\
+      \ with the simplest possible implementation of each component and let them evolve\
+      \ based on real needs rather than premature optimization.\n"
+    analysis: 'TOPICS: System Architecture, Separation of Concerns, Component Independence,
+      Loose Coupling, Independent Data Stores, Component Breakdown
+
+      TYPE: Technical Document/Guide
+
+      CONCEPTS: Core Architectural Principles, Message Queues, Event Streams, HTTP
+      APIs, Data Stores, PostgreSQL, Time-series DB, Vector DB, Redis, Identity Service
+
+      RATIO: 70% Technical / 30% Conceptual
+
+      DETAILS: The document provides specific implementation details such as the use
+      of PostgreSQL for identity data, Time-series DB or event store for interactions,
+      Vector DB + metadata store for knowledge, and Redis or similar for real-time
+      state. It also includes a truncated Python code snippet for creating an identity
+      registry in PostgreSQL.'
+    analyzed_at: '2025-08-19T11:18:52.917851'
+  destination: Phase1_Legacy_Imports/technical
+size_bytes: 6681

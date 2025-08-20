@@ -1,0 +1,100 @@
+# Enhanced phase folder structure
+
+base_phase_structure:
+  "00_docs":
+    description: "Prompts, markdown docs, roadmap items"
+    allowed_extensions: [".md", ".txt", ".yaml"]
+    readme: |
+      # Documentation Directory
+      
+      This folder contains all documentation, prompts, and roadmap items for the current phase.
+      
+      ## Contents
+      - Markdown documentation
+      - System prompts
+      - Roadmap and planning documents
+      
+      ## Evolution
+      Documents here should be refined and structured for the next phase.
+  
+  "10_code":
+    description: "Python or JS automation logic"
+    allowed_extensions: [".py", ".js", ".ts"]
+    readme: |
+      # Code Directory
+      
+      Contains all automation logic and implementation code.
+      
+      ## Contents
+      - Python scripts
+      - JavaScript/TypeScript code
+      - Automation tools
+      
+      ## Evolution
+      Code should be tested, documented, and optimized for the next phase.
+  
+  "20_configs":
+    description: "YAMLs, schemas, settings"
+    allowed_extensions: [".yaml", ".yml", ".json"]
+    readme: |
+      # Configuration Directory
+      
+      Houses all configuration files and schemas.
+      
+      ## Contents
+      - YAML configurations
+      - JSON schemas
+      - System settings
+      
+      ## Evolution
+      Configs should be validated and optimized for the next phase.
+  
+  "30_agents":
+    description: "Persona/system prompts only"
+    allowed_extensions: [".yaml", ".md"]
+    readme: |
+      # Agent Directory
+      
+      Contains all AI agent definitions and persona prompts.
+      
+      ## Contents
+      - Agent personas
+      - System prompts
+      - Behavior definitions
+      
+      ## Evolution
+      Agents should be tested and refined for the next phase.
+  
+  "40_drafts":
+    description: "Incomplete ideas, concepts"
+    allowed_extensions: [".md", ".txt"]
+    readme: |
+      # Drafts Directory
+      
+      Storage for work-in-progress ideas and concepts.
+      
+      ## Contents
+      - Draft documents
+      - Concept explorations
+      - Incomplete work
+      
+      ## Evolution
+      Drafts should be completed or archived before next phase.
+  
+  "99_trash_quarantine":
+    description: "AI fluff, hallucinations, noise"
+    allowed_extensions: ["*"]
+    readme: |
+      # Quarantine Directory
+      
+      Storage for potentially low-value or AI-generated content.
+      
+      ## Contents
+      - Detected fluff
+      - AI hallucinations
+      - Redundant content
+      
+      ## Review Process
+      1. Regular review of quarantined content
+      2. Rescue valuable content
+      3. Delete confirmed fluff

@@ -1,0 +1,246 @@
+# Core category schema for document processing
+
+master_prompt:
+  name: "Master Prompt Infrastructure"
+  keywords:
+    - "master plan"
+    - "system prompt"
+    - "AI agent behavior"
+    - "escalation rules"
+    - "tone settings"
+    - "modular prompt"
+  file_patterns:
+    - "MASTER_PLAN"
+    - "Master Prompt"
+    - "Master_Prompt"
+  subcategories:
+    - system_prompts
+    - agent_behavior
+    - escalation_rules
+    - tone_settings
+    - prompt_logic
+
+technical_implementation:
+  name: "Technical Implementation"
+  keywords:
+    - "Supabase"
+    - "Railway"
+    - "deployment"
+    - "sync"
+    - "upload"
+    - "YAML"
+    - "GitHub"
+  file_patterns:
+    - "SUPABASE_SYNC"
+    - "RAILWAY_DEPLOYMENT"
+    - "UPLOAD.PY"
+  subcategories:
+    - database_schema
+    - deployment
+    - sync_tools
+    - local_dev
+
+omnichannel:
+  name: "Omnichannel Orchestration"
+  keywords:
+    - "channel"
+    - "Telegram"
+    - "YouTube"
+    - "WhatsApp"
+    - "Website"
+    - "MVP"
+    - "taskboard"
+  file_patterns:
+    - "Omnichannel_Blueprint"
+    - "WillBeOne_MVP"
+  subcategories:
+    - channel_strategy
+    - mvp_scope
+    - messaging_systems
+    - agent_routing
+
+products_and_offers:
+  name: "Product & Offer Architecture"
+  keywords:
+    - "Deep Dive"
+    - "Facilitator Training"
+    - "Microdosing"
+    - "journey"
+    - "subscription"
+    - "monetization"
+  file_patterns:
+    - "Product Descriptions"
+    - "Deep Dive"
+    - "Facilitator"
+  subcategories:
+    - journey_modules
+    - subscription_tiers
+    - monetization
+
+becoming_one_method:
+  name: "Becoming One™ Method"
+  keywords:
+    - "essence work"
+    - "transformation"
+    - "digestion"
+    - "Schaubilder"
+    - "manifestation"
+  file_patterns:
+    - "BECOMING_ONE"
+    - "Manifestation"
+  subcategories:
+    - core_methodology
+    - models
+    - schaubilder
+    - book_content
+
+ai_agents:
+  name: "AI Agent System"
+  keywords:
+    - "Laurency"
+    - "Amanita"
+    - "Coach"
+    - "bot persona"
+    - "trigger logic"
+  file_patterns:
+    - "Bot"
+    - "Agent"
+    - "AI_System"
+  subcategories:
+    - specialist_bots
+    - role_definitions
+    - trigger_logic
+    - emotional_stance
+
+sacred_library:
+  name: "Knowledge Mapping & Sacred Library"
+  keywords:
+    - "consciousness mapping"
+    - "Hylozoics"
+    - "sacred texts"
+    - "knowledge base"
+  file_patterns:
+    - "CONSCIOUSNESS_MAPPING"
+    - "HYLOZOICS"
+    - "SACRED_LIBRARY"
+  subcategories:
+    - mapped_texts
+    - extractors
+    - validation
+    - references
+
+positioning:
+  name: "Positioning & Messaging"
+  keywords:
+    - "positioning"
+    - "messaging"
+    - "narrative"
+    - "campaign"
+    - "psychological"
+  file_patterns:
+    - "POSITIONING_STRATEGY"
+    - "MESSAGING"
+  subcategories:
+    - narrative_tone
+    - campaign_copy
+    - triggers
+
+visual_ux:
+  name: "Visual UX & Indexing"
+  keywords:
+    - "visual"
+    - "dashboard"
+    - "UX"
+    - "interface"
+    - "streamlit"
+  file_patterns:
+    - "visual_index"
+    - "dashboard"
+    - "UX_STRATEGY"
+  subcategories:
+    - navigators
+    - dashboards
+    - agent_maps
+
+versioning:
+  name: "Versioning & Change Tracking"
+  keywords:
+    - "version"
+    - "diff"
+    - "compare"
+    - "change"
+    - "track"
+  file_patterns:
+    - "compare.py"
+    - "diff_explainer"
+    - "versions"
+  subcategories:
+    - diffing
+    - summaries
+    - tracking
+
+legal:
+  name: "Compliance, Legal & Security"
+  keywords:
+    - "privacy"
+    - "terms"
+    - "compliance"
+    - "security"
+    - "disclaimer"
+  file_patterns:
+    - "PRIVACY"
+    - "TERMS"
+    - "COMPLIANCE"
+  subcategories:
+    - privacy
+    - terms
+    - disclaimers
+    - security
+
+auto_docs:
+  name: "Auto-Documentation & Schema Builders"
+  keywords:
+    - "documentation"
+    - "generator"
+    - "schema"
+    - "template"
+  file_patterns:
+    - "generator.py"
+    - "doc_generator"
+    - "template"
+  subcategories:
+    - extractors
+    - templates
+    - indexes
+
+plugins:
+  name: "Plugin & Extensibility Design"
+  keywords:
+    - "plugin"
+    - "extension"
+    - "modular"
+    - "hook"
+  file_patterns:
+    - "plugin"
+    - "extension"
+    - "hook"
+  subcategories:
+    - hooks
+    - modules
+    - integrations
+
+cursor_integration:
+  name: "Cursor Integration + Phase Builder"
+  keywords:
+    - "Cursor"
+    - "Phase"
+    - "Builder"
+    - "Integration"
+  file_patterns:
+    - "Cursor_Instructions"
+    - "CompassBuilder"
+    - "Phase"
+  subcategories:
+    - instructions
+    - phases
+    - integration
