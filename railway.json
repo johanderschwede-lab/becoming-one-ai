@@ -4,7 +4,7 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "python compass_api.py",
+    "startCommand": "python simple_test.py",
     "healthcheckPath": "/health",
     "healthcheckTimeout": 100,
     "restartPolicyType": "ON_FAILURE",
@@ -17,7 +17,7 @@
         "builder": "NIXPACKS"
       },
       "deploy": {
-        "startCommand": "python compass_api.py",
+        "startCommand": "python simple_test.py",
         "healthcheckPath": "/health",
         "healthcheckTimeout": 100,
         "restartPolicyType": "ON_FAILURE",
