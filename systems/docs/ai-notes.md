@@ -49,6 +49,18 @@ last_updated: 2025-08-20
 - Testing Protocol (TESTING_PROTOCOL.md)
 - Project Awareness (PROJECT_AWARENESS.md)
 - Development Practices (DEVELOPMENT_PRACTICES.md)
+- Task Template (TASK_TEMPLATE.md)
+
+## @Docs Configuration
+Required:
+- README files
+- Architecture diagrams
+- API specifications
+- Development standards
+
+Optional:
+- Master Prompt excerpts
+- Implementation guides
 
 ## Recent Changes
 2025-08-20:

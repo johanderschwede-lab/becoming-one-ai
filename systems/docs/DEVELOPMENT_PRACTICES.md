@@ -30,7 +30,8 @@ name: Development Practices & Guardrails
 - No deployment without test coverage
 
 ### 4. Context Hygiene
-- Keep @Docs focused and relevant
+- Keep @Docs lean and authoritative
+- Add/remove @Docs as project evolves
 - Use .cursorignore aggressively
 - Exclude:
   - Generated files
@@ -38,4 +39,11 @@ name: Development Practices & Guardrails
   - Large binary files
   - Logs and temporary files
 - Regular cleanup of stale documentation
-- Update ai-notes.md with context changes
+- Update ai-notes.md after EVERY decision
+
+### 5. Task Execution
+- Use TASK_TEMPLATE.md for all new tasks
+- Always read ai-notes.md before starting work
+- Quote-then-answer for architectural/API questions
+- Enforce diff-only outputs unless full rewrites requested
+- Maintain clear documentation trail
