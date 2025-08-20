@@ -1,1 +1,1 @@
-web: python working_bot.py
+web: python compass_api.py
