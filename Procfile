@@ -1,1 +1,1 @@
-web: python compass_management_api.py
+web: python minimal_test.py
