@@ -6,6 +6,7 @@ Compass Management API - Railway Optimized Version
 import os
 import sys
 import json
+import requests
 from datetime import datetime
 
 # Try to import Flask, install if missing
@@ -35,6 +36,29 @@ CORS(app)
 EXPORT_DIR = "EXPORT"
 DOCS_TO_PROCESS_DIR = "documents_to_process"
 LOGS_DIR = "logs"
+
+# Bot configuration
+COMPASS_BOT_TOKEN = os.environ.get('COMPASS_BOT_TOKEN')
+TELEGRAM_CHAT_ID = os.environ.get('TELEGRAM_CHAT_ID', '1139989892')
+
+def send_compass_notification(message):
+    """Send notification using the Compass Management Bot"""
+    if not COMPASS_BOT_TOKEN:
+        print("Warning: COMPASS_BOT_TOKEN not set")
+        return False
+    
+    try:
+        url = f"https://api.telegram.org/bot{COMPASS_BOT_TOKEN}/sendMessage"
+        data = {
+            'chat_id': TELEGRAM_CHAT_ID,
+            'text': f"🔧 Compass System: {message}",
+            'parse_mode': 'HTML'
+        }
+        response = requests.post(url, data=data, timeout=10)
+        return response.status_code == 200
+    except Exception as e:
+        print(f"Error sending notification: {e}")
+        return False
 
 @app.route('/')
 def serve_html():
@@ -135,6 +159,9 @@ def get_review_queue():
 def approve_item(filename):
     """Approve an item and move it to compass core"""
     try:
+        # Send notification about approval
+        send_compass_notification(f"✅ Approved: {filename}")
+        
         return jsonify({'status': 'success', 'message': f'Approved {filename}'})
     except Exception as e:
         return jsonify({'error': str(e)}), 500
@@ -143,6 +170,9 @@ def approve_item(filename):
 def move_to_consider(filename):
     """Move an item to the consider list"""
     try:
+        # Send notification about move to consider
+        send_compass_notification(f"📋 Moved to Consider: {filename}")
+        
         return jsonify({'status': 'success', 'message': f'Moved {filename} to consider list'})
     except Exception as e:
         return jsonify({'error': str(e)}), 500
@@ -151,7 +181,11 @@ def move_to_consider(filename):
 def test_notification():
     """Test notification system"""
     try:
-        return jsonify({'status': 'success', 'message': 'Test notification sent'})
+        success = send_compass_notification("🧪 Test notification from Compass Management API")
+        return jsonify({
+            'status': 'success' if success else 'error',
+            'message': 'Test notification sent' if success else 'Failed to send notification'
+        })
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
@@ -159,6 +193,9 @@ def test_notification():
 def start_watcher():
     """Start the folder watcher"""
     try:
+        # Send notification about watcher start
+        send_compass_notification("🚀 Folder watcher started")
+        
         return jsonify({'status': 'success', 'message': 'Folder watcher started'})
     except Exception as e:
         return jsonify({'error': str(e)}), 500
@@ -190,7 +227,8 @@ def health_check():
         'timestamp': datetime.now().isoformat(),
         'service': 'compass-api',
         'environment': os.environ.get('RAILWAY_ENVIRONMENT', 'unknown'),
-        'port': os.environ.get('PORT', 'unknown')
+        'port': os.environ.get('PORT', 'unknown'),
+        'compass_bot_configured': bool(COMPASS_BOT_TOKEN)
     })
 
 @app.route('/debug')
@@ -203,7 +241,9 @@ def debug_info():
         'environment_variables': {
             'PORT': os.environ.get('PORT'),
             'RAILWAY_ENVIRONMENT': os.environ.get('RAILWAY_ENVIRONMENT'),
-            'RAILWAY_SERVICE_NAME': os.environ.get('RAILWAY_SERVICE_NAME')
+            'RAILWAY_SERVICE_NAME': os.environ.get('RAILWAY_SERVICE_NAME'),
+            'COMPASS_BOT_TOKEN': '***' if COMPASS_BOT_TOKEN else 'NOT_SET',
+            'TELEGRAM_CHAT_ID': TELEGRAM_CHAT_ID
         }
     })
 
@@ -216,6 +256,11 @@ if __name__ == '__main__':
     print(f"🔧 Environment: {os.environ.get('RAILWAY_ENVIRONMENT', 'local')}")
     print(f"📁 Working directory: {os.getcwd()}")
     print(f"📋 Files in directory: {os.listdir('.')}")
+    print(f"🤖 Compass Bot configured: {bool(COMPASS_BOT_TOKEN)}")
+    
+    # Send startup notification
+    if COMPASS_BOT_TOKEN:
+        send_compass_notification("🚀 Compass Management API started")
     
     # Run the app
     app.run(host='0.0.0.0', port=port, debug=False)

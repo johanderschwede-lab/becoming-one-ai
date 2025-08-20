@@ -1,1 +1,1 @@
-web: python test_api.py
+web: python compass_api.py
